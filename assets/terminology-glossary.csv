@@ -1,0 +1,17 @@
+﻿dari_term,english_term,latin_term,abbreviation,preferred_form,forbidden_forms,source_authority,usage_notes,first_appearance
+شفاخانه,Hospital,,Hosp,شفاخانه (Hospital),بیمارستان,Afghan MoPH standard terminology,Always use شفاخانه in Afghan Dari context; بیمارستان is Iranian Persian.,Front Matter
+مرکز صحی / کلینیک,Health Center / Clinic,,BHC/CHC,مرکز صحی (Health Facility) / کلینیک (Clinic),درمانگاه,Afghan MoPH standard terminology,Use مرکز صحی or کلینیک; درمانگاه is Iranian Persian.,Chapter 1
+راپور / راپوردهی,Report / Reporting,,Rep,راپور (Report) / راپوردهی (Reporting),گزارش;گزارش‌دهی,Afghan administrative & health terminology,Standard Afghan official term is راپور; do not use گزارش in official NGO/MoPH context.,Chapter 1
+داکتر,Doctor / Physician,Medicus,MD / Dr.,داکتر (Doctor),پزشک,Afghan MoPH / University usage,Always داکتر; پزشک is Iranian Persian.,Chapter 1
+قابله,Midwife,,MW,قابله (Midwife),ماما;مامایی,Afghan MoPH / National Midwifery Association,Always قابله; ماما in Afghan Dari means maternal uncle!,Chapter 3
+فارمسست,Pharmacist,,Pharm,فارمسست (Pharmacist) / مسئول دواخانه,داروساز;داروسازی,Afghan MoPH standard terminology,Use فارمسست or مسئول دواخانه.,Chapter 3
+معاش,Salary,,Sal,معاش (Salary),حقوق کارمند;دستمزد ساعتی,Afghan Labor Law & Civil Service,Always معاش.,Chapter 17
+غیرحاضری,Absenteeism,,Abs,غیرحاضری (Absenteeism),غیبت کارمند;غیبت غیرموجه,Afghan Civil Service & NGO HR Policy,Use غیرحاضری.,Chapter 1
+رخصتی,Leave,,Lv,رخصتی (Leave),مرخصی;مرخصی استعلاجی,Afghan Labor Law,Always رخصتی (ضروری، ولادی، مریضی، تفریحی).,Chapter 17
+مصرف / مصارف,Expense / Expenditure / Cost,,Exp,مصرف / مصارف (Expenditure / Cost),هزینه;هزینه‌ها,Afghan financial & accounting usage,Use مصرف / مصارف in operational budgets.,Chapter 13
+تدارکات,Procurement,,Proc,تدارکات (Procurement),سفارش خرید;خرید سازمانی,Afghan Procurement Law (NPA / PPHD),Use تدارکات / فرمایش تدارکاتی.,Chapter 15
+گدام / دیپو / ذخیره‌گاه,Warehouse / Depot / Storage,,WH,گدام / دیپو (Warehouse / Depot),انبار کالا;انبارداری,Afghan MoPH Logistics Manual,Use گدام or دیپو or ذخیره‌گاه.,Chapter 10
+سراپا,Outpatient Department,,OPD,شعبه سراپا (OPD / Outpatient Department),بخش سرپایی,Afghan MoPH HMIS Manual,Always شعبه سراپا / OPD.,Chapter 5
+بستر,Inpatient Department,,IPD,شعبه بستر (IPD / Inpatient Department),بخش بستری,Afghan MoPH HMIS Manual,Always بستر / IPD.,Chapter 5
+ولادت,Delivery / Childbirth,Partus,Del,ولادت (Delivery),زایمان,Afghan MoPH Reproductive Health,Always ولادت; زایمان is Iranian Persian.,Chapter 5
+سوء تغذی,Malnutrition,,Malnut,سوء تغذی (Malnutrition),سوء تغذیه,Afghan MoPH Nutrition Department,Spelled سوء تغذی in Afghan health guidelines.,Chapter 8
