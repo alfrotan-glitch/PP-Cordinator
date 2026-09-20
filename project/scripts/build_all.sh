@@ -22,9 +22,11 @@ python3 project/scripts/make_cover.py
 
 echo "== 6 DOCX";  python3 project/scripts/build_docx.py
 echo "== 6 PDF";   python3 project/scripts/build_pdf.py
+echo "== 5 fonts"; python3 project/scripts/make_webfonts.py
 echo "== 6 EPUB";  python3 project/scripts/build_epub.py
 
 echo "== 7 QA";    python3 project/scripts/qa.py
+echo "== 7 review"; python3 project/scripts/preview_epub.py
 echo "== 8 logs";  python3 project/scripts/make_logs.py
 
 echo "Done. Outputs in output/ ; reports in project/logs/"

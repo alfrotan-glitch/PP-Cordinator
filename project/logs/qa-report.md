@@ -29,7 +29,7 @@
 | Typography | Emoji replaced with print-safe symbols | WARN | emoji mapped to typographic marks (⭐→★, 🔴→●, ✅→✓, ❌→✗) — fonts carry no emoji glyphs |
 | Layout | DOCX built | PASS | قانون_زبان_Provincial_Coordinator_DOCX_نسخه_نهایی.docx (240 KB) |
 | Layout | PDFs built (print + screen) | PASS | قانون_زبان_Provincial_Coordinator_دیجیتال_A4.pdf (521 KB); قانون_زبان_Provincial_Coordinator_چاپی_17x24.pdf (583 KB) |
-| Layout | EPUB built | PASS | قانون_زبان_Provincial_Coordinator.epub (238 KB) |
+| Layout | EPUB built | PASS | قانون_زبان_Provincial_Coordinator.epub (301 KB) |
 | DOCX | Real Word styles used (not manual formatting) | PASS | 176 styles defined; chapter/section/body/callout styles present |
 | DOCX | RTL paragraph direction and runs | PASS | 2694 bidi paragraphs, 2729 rtl runs |
 | DOCX | Table of contents field auto-updates on open | PASS | TOC field present + w:updateFields=true (no manual "Update Field" step) |
@@ -41,15 +41,21 @@
 | PDF | قانون_زبان_Provincial_Coordinator_چاپی_17x24.pdf: table of contents generated with page numbers | PASS | TOC page text length 499 |
 | PDF | RTL shaping loses no characters (NFKC multiset check) | PASS | all paragraphs checked: shaped visual text is a permutation of the source text (ZWNJ removed and brackets mirrored, as bidi requires) |
 | EPUB | mimetype is the first entry and uncompressed | PASS | mimetype, compress_type=0 |
-| EPUB | All XHTML documents are well-formed | PASS | 24 documents parsed; no errors |
+| EPUB | All XHTML documents are well-formed | PASS | 27 documents parsed; no errors |
 | EPUB | Manifest references resolve | PASS | all manifest hrefs present in package |
 | EPUB | Navigation document + NCX present | PASS | nav.xhtml and toc.ncx generated |
 | EPUB | RTL reading order declared | PASS | OPF spine + XHTML documents carry RTL direction |
-| EPUB | Dari font embedded and cover present | PASS | Vazir.woff2 embedded, cover image included |
-| EPUB | epubcheck executed | WARN | epubcheck (Java) is not available in this build environment — structural validation above was run instead; run epubcheck before print/distribution |
+| EPUB | Dari fonts embedded and cover present | PASS | 3 woff2 fonts (Vazir text, Samim bold, BookSymbols fallback), cover image, font licence document |
+| EPUB | Cover page declared as SVG and cover-image in the manifest | PASS | manifest properties: svg on cover.xhtml, cover-image on the PNG |
+| EPUB | Nested navigation (chapters + their sections) | PASS | 90 section anchors in a nested nav, plus landmarks for cover / TOC / start of text |
+| EPUB | No manuscript text lost in the EPUB conversion | PASS | 439 manuscript paragraphs checked against the extracted EPUB text; all present |
+| EPUB | Internal links resolve (nav, NCX, TOC page) | PASS | every href/#anchor found in the package |
+| EPUB | Accessibility metadata present (EPUB Accessibility 1.1) | PASS | accessMode / accessModeSufficient / accessibilityFeature / accessibilityHazard / accessibilitySummary written |
+| EPUB | No CSS rule forbidden by the EPUB spec | PASS | stylesheet carries no direction/unicode-bidi property; RTL comes from the dir attributes and the OPF spine page-progression-direction |
+| EPUB | epubcheck (EPUBCheck 5.3.0) reported no errors | PASS | EPUBCheck 5.3.0: 0 errors, 0 warnings |
 | References | Original manuscript preserved untouched | PASS | کتاب_Provincial_Coordinator_نسخه_ویرایش‌شده.docx present in the repository root, unmodified |
 | References | Sources listed for the corrected claims | PASS | پیوست ۵ lists MoPH BPHS, HMIS manual, WHO EMRO, IASC PSEA, UNICEF HER/NFA |
 
-**خلاصه:** PASS: 39 · WARN: 4
+**خلاصه:** PASS: 46 · WARN: 3
 
 **مانع‌های نشر:** هیچ

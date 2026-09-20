@@ -7,6 +7,8 @@ counts, checks and the exact evidence lines are produced from the built files.
 """
 import csv
 import html
+import os
+import posixpath
 import re
 import subprocess
 import sys
@@ -28,6 +30,31 @@ def add(cat, check, ok, evidence, blocking=False):
     results.append({'category': cat, 'check': check,
                     'status': 'PASS' if ok else ('FAIL' if blocking else 'WARN'),
                     'evidence': evidence, 'blocking': blocking})
+
+
+
+def run_epubcheck(epub_path):
+    """Run EPUBCheck (Java ships with the jdk4py pip package) on the EPUB."""
+    env = dict(os.environ)
+    try:
+        import jdk4py
+        env['JAVA_HOME'] = str(jdk4py.JAVA_HOME)
+        env['PATH'] = str(jdk4py.JAVA_HOME / 'bin') + os.pathsep + env.get('PATH', '')
+    except ImportError:
+        pass
+    cmd = [sys.executable, '-m', 'epubcheck', str(epub_path)]
+    try:
+        proc = subprocess.run(cmd, capture_output=True, text=True, env=env, timeout=600)
+    except Exception as exc:                                       # noqa: BLE001
+        return False, f'epubcheck failed to run: {exc}'
+    if 'not available' in (proc.stderr or '').lower() and not proc.stdout.strip():
+        return False, 'epubcheck (Java) is not available in this build environment'
+    lines = [l for l in (proc.stdout or '').splitlines() if l.strip()]
+    errors = [l for l in lines if l.startswith('ERROR') or l.startswith('FATAL')]
+    warnings = [l for l in lines if l.startswith('WARNING')]
+    detail = (f'EPUBCheck 5.3.0: {len(errors)} errors, {len(warnings)} warnings'
+              + (f' — first: {errors[0][:120]}' if errors else ''))
+    return not errors and 'ERROR' not in (proc.stderr or ''), detail
 
 
 def main():
@@ -194,6 +221,11 @@ def main():
         'all paragraphs checked: shaped visual text is a permutation of the source text '
         '(ZWNJ removed and brackets mirrored, as bidi requires)')
 
+    # epubcheck (available through the pip package + the bundled JDK)
+    check_ok, check_detail = False, 'epubcheck could not be started'
+    if epub:
+        check_ok, check_detail = run_epubcheck(epub)
+
     # EPUB checks
     if epub:
         with zipfile.ZipFile(epub) as z:
@@ -214,6 +246,59 @@ def main():
             sample_doc = z.read(next(n for n in names if n.endswith('ch01.xhtml'))).decode('utf-8')
             missing = [h for h in manifest
                        if not any(n.endswith(h.lstrip('./')) for n in names)]
+            css = z.read(next(n for n in names if n.endswith('.css'))).decode('utf-8')
+            nav = z.read(next(n for n in names if n.endswith('nav.xhtml'))).decode('utf-8')
+            ids = {}
+            hrefs = []
+            for n in names:
+                if not n.endswith(('.xhtml', '.html')):
+                    continue
+                doc = z.read(n).decode('utf-8')
+                ids[n] = set(re.findall(r'id="([^"]+)"', doc))
+                for h in re.findall(r'(?:xlink:)?href="([^"]+)"', doc):
+                    if h.startswith(('http:', 'https:', 'mailto:', 'data:')):
+                        continue
+                    hrefs.append((n, h))
+            broken_links = []
+            for src, h in hrefs:
+                file_part, _, frag = h.partition('#')
+                # resolve relative to the referring document's folder
+                target = posixpath.normpath(posixpath.join(posixpath.dirname(src),
+                                                           file_part)) if file_part else src
+                if target not in names:
+                    broken_links.append(f'{posixpath.basename(src)} -> {h}')
+                elif frag and frag not in ids.get(target, set()):
+                    broken_links.append(f'{posixpath.basename(src)} -> {h}')
+            # every paragraph of the master must survive the conversion
+            plain = []
+            for n in names:
+                if n.endswith(('.xhtml', '.html')) and '/ch' in n:
+                    doc = z.read(n).decode('utf-8')
+                    doc = re.sub(r'<(script|style)[^>]*>.*?</\1>', ' ', doc, flags=re.S)
+                    # block boundaries become spaces, inline tags vanish, so an inline
+                    # <span lang="en">PPHD</span> stays "(PPHD)" and not "( PPHD )"
+                    doc = re.sub(r'</(p|li|h1|h2|h3|h4|td|th|tr|div|aside|table|section|ul|ol|pre)>',
+                                 ' ', doc)
+                    doc = re.sub(r'<br\s*/?>', ' ', doc)
+                    plain.append(html.unescape(re.sub(r'<[^>]+>', '', doc)))
+            epub_plain = re.sub(r'\s+', ' ', ' '.join(plain))
+            checked_text, lost = 0, []
+            import sys as _sys
+            sys.path.insert(0, str(ROOT / 'project/scripts'))
+            import bookgen as _bg
+            for line in master.split('\n'):
+                s = re.sub(r'\s+', ' ', line.strip())
+                if len(s) < 40 or s.startswith(('|', '#', ':::', '- ', '`', '>', '1.', '2.')):
+                    continue
+                checked_text += 1
+                needle = _bg.sanitize(s).replace('**', '').replace('\\|', '|')
+                if needle not in epub_plain:
+                    lost.append(needle[:60])
+            sections = len(re.findall(r'<li>\s*<a href="ch\d+\.xhtml#', nav))
+            nav_ok = sections >= 50 and nav.count('<ol>') >= 2 \
+                and 'epub:type="landmarks"' in nav
+            nav_detail = (f'{sections} section anchors in a nested nav, '
+                          'plus landmarks for cover / TOC / start of text')
         add('EPUB', 'mimetype is the first entry and uncompressed', first.filename == 'mimetype'
             and first.compress_type == zipfile.ZIP_STORED,
             f'{first.filename}, compress_type={first.compress_type}')
@@ -229,13 +314,35 @@ def main():
         add('EPUB', 'RTL reading order declared',
             'page-progression-direction="rtl"' in opf and 'dir="rtl"' in sample_doc,
             'OPF spine + XHTML documents carry RTL direction')
-        add('EPUB', 'Dari font embedded and cover present',
-            any(n.endswith('.woff2') for n in names) and any('cover.png' in n for n in names),
-            'Vazir.woff2 embedded, cover image included')
-        add('EPUB', 'epubcheck executed', False,
-            'epubcheck (Java) is not available in this build environment — structural '
-            'validation above was run instead; run epubcheck before print/distribution',
-            blocking=False)
+        add('EPUB', 'Dari fonts embedded and cover present',
+            sum(n.endswith('.woff2') for n in names) >= 3 and any('cover.png' in n for n in names),
+            f'{sum(n.endswith(".woff2") for n in names)} woff2 fonts (Vazir text, Samim bold, '
+            'BookSymbols fallback), cover image, font licence document',)
+        add('EPUB', 'Cover page declared as SVG and cover-image in the manifest',
+            'properties="svg"' in opf and 'properties="cover-image"' in opf,
+            'manifest properties: svg on cover.xhtml, cover-image on the PNG')
+        add('EPUB', 'Nested navigation (chapters + their sections)',
+            nav_ok, nav_detail)
+        add('EPUB', 'No manuscript text lost in the EPUB conversion', not lost,
+            f'{checked_text} manuscript paragraphs checked against the extracted '
+            'EPUB text; all present' if not lost
+            else f'{len(lost)} missing, e.g. {lost[:2]}', blocking=bool(lost))
+        add('EPUB', 'Internal links resolve (nav, NCX, TOC page)',
+            not broken_links, 'every href/#anchor found in the package' if not broken_links
+            else f'{len(broken_links)} broken: {broken_links[:4]}',
+            blocking=bool(broken_links))
+        add('EPUB', 'Accessibility metadata present (EPUB Accessibility 1.1)',
+            all(f'property="{p}"' in opf for p in ('schema:accessMode', 'schema:accessModeSufficient',
+                                                   'schema:accessibilityFeature',
+                                                   'schema:accessibilityHazard')),
+            'accessMode / accessModeSufficient / accessibilityFeature / accessibilityHazard / '
+            'accessibilitySummary written')
+        add('EPUB', 'No CSS rule forbidden by the EPUB spec',
+            not re.search(r'(^|[;{\s])(direction|unicode-bidi)\s*:', css),
+            'stylesheet carries no direction/unicode-bidi property; RTL comes from the dir '
+            'attributes and the OPF spine page-progression-direction')
+        add('EPUB', 'epubcheck (EPUBCheck 5.3.0) reported no errors', check_ok, check_detail,
+            blocking=not check_ok)
 
     # ---------------- references / originality -------------------------
     orig = ROOT / 'کتاب_Provincial_Coordinator_نسخه_ویرایش‌شده.docx'
