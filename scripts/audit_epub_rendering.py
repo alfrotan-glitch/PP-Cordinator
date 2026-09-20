@@ -103,7 +103,7 @@ def audit_book(book_name, epub_path):
         for name in zf.namelist():
             if name.endswith('.xhtml'):
                 c = zf.read(name).decode('utf-8')
-                if 'BPHS' in c and 'صحت' in c:
+                if any(k in c for k in ['BPHS', 'SWOT', 'SMART', 'RACI']) and any(d in c for d in ['صحت', 'مدیریت']):
                     found_mixed = True
                     break
         assert found_mixed, "No mixed text found"
@@ -132,3 +132,4 @@ def audit_book(book_name, epub_path):
 if __name__ == '__main__':
     audit_book("Book 1 (Provincial Coordinator)", "build/Provincial_Coordinator_24Hour_Exam_Master_Guide.epub")
     audit_book("Book 2 (Health Management)", "build/Health_Management_Master_Guide.epub")
+    audit_book("Book 3 (Management: The Essentials)", "build/Management_The_Essentials_Afghan_Edition.epub")

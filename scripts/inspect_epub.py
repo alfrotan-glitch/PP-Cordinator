@@ -70,5 +70,6 @@ def validate_epub(epub_path):
 if __name__ == "__main__":
     ok1 = validate_epub("build/Provincial_Coordinator_24Hour_Exam_Master_Guide.epub")
     ok2 = validate_epub("build/Health_Management_Master_Guide.epub")
-    if ok1 and ok2:
-        print("ALL EPUB EDITIONS VERIFIED 100% COMPLIANT AND READY FOR DISTRIBUTION!")
+    ok3 = validate_epub("build/Management_The_Essentials_Afghan_Edition.epub")
+    if ok1 and ok2 and ok3:
+        print("ALL EPUB EDITIONS (BOOKS 1, 2, AND 3) VERIFIED 100% COMPLIANT AND READY FOR DISTRIBUTION!")
