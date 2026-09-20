@@ -1,5 +1,5 @@
 # HEALTH MANAGEMENT — 24-HOUR EXAM & FIELD PRACTICE MASTER GUIDE
-## رهنما و مرجع جامع مدیریت صحی: آمادگی ۲۴ ساعته آزمون‌های استخدامی و کار عملی در پروژه‌های صحی افغانستان
+### رهنما و مرجع جامع مدیریت صحی: آمادگی ۲۴ ساعته آزمون‌های استخدامی و کار عملی در پروژه‌های صحی افغانستان
 ### A Rigorous, Field-Tested Exam Preparation & Practical Operational Manual for Health Facility Managers, Project Managers, and Health Coordinators
 
 ---
@@ -18,7 +18,7 @@
 
 ---
 
-## مقدمه و راهنمای مطالعه سریع ۲۴ ساعته (How to Master Health Management in 24 Hours)
+### مقدمه و راهنمای مطالعه سریع ۲۴ ساعته (How to Master Health Management in 24 Hours)
 
 این کتاب به عنوان **کتاب دوم و مکمل تخصصی** کتاب «Provincial Coordinator Master Guide» تدوین شده است. در حالی که جلد اول بر مهارت‌های کلان هماهنگی ولایتی و رهبری پروژه‌ای تمرکز داشت، این اثر به صورت عمیق و کاربردی به **هسته مرکزی مدیریت صحی (Health Management)، مدیریت مراکز خدمات صحی (Health Facility Operations)، رهبری تیم‌های درمانی، ارتقای مداوم کیفیت (Quality Improvement)، نظارت حمایتی، مدیریت سیستم معلومات صحی (HMIS/DHIS2)، اکمالات ادویه و زنجیره سرد، و حل بحران‌های کلینیکی** در بستر نظام صحی افغانستان (BPHS, EPHS, HER Project) می‌پردازد.
 
@@ -31,7 +31,7 @@ $$\mathbf{تعریف\ علمی \rightarrow مثال\ بومی\ کلینیکی \r
 
 ---
 
-## چارچوب‌های بنیادین و اصول زرین کتاب (The Core Master Frameworks)
+### چارچوب‌های بنیادین و اصول زرین کتاب (The Core Master Frameworks)
 
 در سراسر این راهنما، شش چارچوب استراتژیک به کار گرفته شده است که سلاح اصلی شما در هر آزمون تحریری و مصاحبه تخصصی خواهد بود:
 
@@ -76,7 +76,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 
 
-# PART I — مبانی و اصول بنیادین مدیریت صحی (Foundations of Health Management)
+# بخش: مبانی و اصول بنیادین مدیریت صحی (Foundations of Health Management)
 
 ---
 
@@ -165,7 +165,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-# PART II — معماری و ساختار نظام صحی افغانستان (Afghanistan Health System Architecture)
+# بخش: معماری و ساختار نظام صحی افغانستان (Afghanistan Health System Architecture)
 
 ---
 
@@ -216,7 +216,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل دهم: نقش مؤسسات تطبیق‌کننده (NGOs / Implementing Partners)
+### نقش مؤسسات تطبیق‌کننده (NGOs / Implementing Partners)
 ### Contracting-Out Model & Humanitarian Principles
 
 در افغانستان، وزارت صحت عامه از مدل **Contracting-out (برون‌سپاری تطبیق خدمات)** استفاده می‌کند. مؤسسات غیردولتی ملی و بین‌المللی (مانند سازمان شهدا) پس از برنده شدن در داوطلبی آزاد، مسئولیت مدیریت عملیاتی مراکز صحی را به عهده می‌گیرند:
@@ -225,7 +225,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل یازدهم: میکانیزم‌های رسمی هماهنگی با مقامات محلی و شوراها
+## فصل دهم: میکانیزم‌های رسمی هماهنگی با مقامات محلی و شوراها
 ### Local Government, District Coordination & Community Shuras
 
 مدیر کلینیک در خلأ کار نمی‌کند؛ او در محیطی سنتی و پیچیده فعالیت می‌نماید:
@@ -236,11 +236,11 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 
 
-# PART III — مدیریت عملیاتی مرکز صحی (Health Facility Management)
+# بخش: مدیریت عملیاتی مرکز صحی (Health Facility Management)
 
 ---
 
-## فصل دوازدهم: پلان‌گذاری مرکز صحی
+## فصل یازدهم: پلان‌گذاری مرکز صحی
 ### Facility Planning: Micro-Planning, Seasonal Workplans & Task Allocation
 
 پلان‌گذاری در سطح کلینیک (Micro-Planning) هنر تطبیق منابع موجود با نیازمندی‌های صحی جمعیت تحت پوشش است. یک مدیر موفق هرگز روز کاری خود را بدون پلان آغاز نمی‌کند:
@@ -249,7 +249,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل سیزدهم: مدیریت عملیات و فعالیت‌های روزمره
+## فصل دوازدهم: مدیریت عملیات و فعالیت‌های روزمره
 ### Daily Operations: The Morning Huddle, Checklist & End-of-Day Debrief
 
 یک روز معیاری در مرکز صحی با یک برنامه زمانی مشخص هدایت می‌شود:
@@ -262,7 +262,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل چهاردهم: جریان حرکت مراجعین و تریاژ
+## فصل سیزدهم: جریان حرکت مراجعین و تریاژ
 ### Patient Flow Optimization & Clinical Triage
 
 ازدحام و سردرگمی مراجعین نشان‌دهنده ضعف مدیریت جریان حرکت مراجعین و مریضان (Patient Flow) است. مدیر صحی باید تریاژ سه سطحی را مستقر سازد:
@@ -284,7 +284,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل پانزدهم: سازماندهی خدمات، شیفت‌های کاری و خدمات ۲۴ ساعته
+## فصل چهاردهم: سازماندهی خدمات، شیفت‌های کاری و خدمات ۲۴ ساعته
 ### Service Organization: Duty Rosters & 24/7 Maternity Coverage
 
 در مراکز صحی دارای بستر و خدمات عاجل ولادی (BEmONC در CHC و CEmONC در شفاخانه‌ها)، عرضه خدمات باید ۲۴ ساعته باشد:
@@ -293,7 +293,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل شانزدهم: تخصیص عادلانه پرسونل و وظایف
+## فصل پانزدهم: تخصیص عادلانه پرسونل و وظایف
 ### Staff Allocation, Workload Balance & Task Shifting
 
 * **تحلیل بار کاری (Workload Analysis):** مقایسه حجم کار روزانه هر بخش؛ اگر بخش اطفال روزانه ۸۰ مریض و بخش جلدی ۱۰ مریض دارد، تخصیص مساوی نرس‌ها خطای مدیریتی است.
@@ -301,7 +301,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل هفدهم: سیستم ارجاع و ریفرال عاجل مریضان
+## فصل شانزدهم: سیستم ارجاع و ریفرال عاجل مریضان
 ### Referral System, Transport Protocols & Counter-Referral
 
 سیستم ارجاع حلقه وصل سطوح BPHS به شفاخانه‌های تخصصی EPHS است:
@@ -311,7 +311,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل هجدهم: وقایه و کنترول انتان در کلینیک (IPC)
+## فصل هفدهم: وقایه و کنترول انتان در کلینیک (IPC)
 ### Infection Prevention and Control: Standards, Sterilization & Waste Management
 
 عدم رعایت وقایه از انتان، کلینیک را به کانون انتقال امراض خطرناک (مانند هیپاتیت B و C) تبدیل می‌کند:
@@ -325,7 +325,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل نوزدهم: آمادگی و پاسخ به حوادث غیرمترقبه
+## فصل هجدهم: آمادگی و پاسخ به حوادث غیرمترقبه
 ### Facility Disaster Preparedness & Emergency Contingency
 
 هر مرکز صحی در افغانستان باید پلان آمادگی در برابر حوادث اضطراری (زرد، برفکوچ، سیلاب و حوادث ترافیکی) داشته باشد:
@@ -334,18 +334,18 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-# PART IV — مدیریت منابع بشری در صحت (Human Resources for Health)
+# بخش: مدیریت منابع بشری در صحت (Human Resources for Health)
 
 ---
 
-## فصل بیستم: تشکیل معیاری و نیازمندی پرسونل
+## فصل نوزدهم: تشکیل معیاری و نیازمندی پرسونل
 ### Staffing Norms, Gender Diversity & Clinical Organograms
 
 ترکیب پرسونل در نظام صحی افغانستان بر اساس استندرد مصوب بسته‌های BPHS و EPHS تعیین می‌شود. در سکتور صحت، تعادل جنسیتی (Gender Balance) نقشی حیاتی دارد؛ به دلیل هنجارهای فرهنگی در افغانستان، بدون حضور قابله‌ها و نرس‌های اناث، زنان و دختران از دسترسی به خدمات محروم می‌مانند.
 
 ---
 
-## فصل بیست‌ویکم: لایحه وظایف معیاری (ToR) و حدود مسئولیت
+## فصل بیستم: لایحه وظایف معیاری (ToR) و حدود مسئولیت
 ### Job Descriptions, Performance Standards & Lines of Accountability
 
 هر کارمند از روز اول کار باید لایحه وظایف مکتوب (Terms of Reference) با امضای دوطرفه داشته باشد:
@@ -354,7 +354,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل بیست‌ودوم: مدیریت حاضری، رخصتی‌ها و غیرحاضری طبق قانون کار
+## فصل بیست‌ویکم: مدیریت حاضری، رخصتی‌ها و غیرحاضری طبق قانون کار
 ### Attendance Registers, Leave Administration & Due Process for Absenteeism
 
 حاضری کارمندان پایه اصلی دیسیپلین کاری است:
@@ -369,7 +369,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل بیست‌وسوم: مدیریت و ارزیابی عملکرد پرسونل
+## فصل بیست‌ودوم: مدیریت و ارزیابی عملکرد پرسونل
 ### Performance Management: Appraisals, Objective Setting & 360-Degree Feedback
 
 ارزیابی عملکرد نباید مچ‌گیری در پایان سال باشد، بلکه یک فرآیند مداوم گفتگوی مسلکی است:
@@ -377,7 +377,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل بیست‌وچهارم: نظارت حمایتی در برابر تفتیش مچ‌گیرانه
+### نظارت حمایتی در برابر تفتیش مچ‌گیرانه
 ### Supportive Supervision: Mentoring, Joint Problem-Solving & Constructive Feedback
 
 | مؤلفه | تفتیش و بازرسی سنتی (Inspection) | نظارت حمایتی مسلکی (Supportive Supervision) |
@@ -389,7 +389,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل بیست‌وپنجم: حل تعارضات و کشمکش‌های درون‌تیمی
+## فصل بیست‌وسوم: حل تعارضات و کشمکش‌های درون‌تیمی
 ### Team Conflict Resolution: Mediation & Communication Protocols
 
 تعارض میان پرسونل (مانند اختلاف داکتر و قابله در شیفت‌های شبانه، یا نرس و فارمسست) در کلینیک‌های پرفشار طبیعی است:
@@ -401,7 +401,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل بیست‌وششم: استخدام شایسته‌سالارانه و آشناسازی کارمند جدید
+## فصل بیست‌وچهارم: استخدام شایسته‌سالارانه و آشناسازی کارمند جدید
 ### Merit-Based Recruitment, Blind Coding & Structured Onboarding
 
 * **استخدام عادلانه (Merit-Based Recruitment):** اعلان عمومی در ولایت، کدگذاری ناشناس ورقه‌های امتحان تحریری (Blind Coding) جهت حذف تعصبات قومی و شخصی، و مصاحبه ساختاریافته چندنفره.
@@ -409,7 +409,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل بیست‌وهفتم: انگیزش کارمندان در مناطق محروم و کوهستانی
+## فصل بیست‌وپنجم: انگیزش کارمندان در مناطق محروم و کوهستانی
 ### Staff Motivation, Retention & Non-Monetary Incentives
 
 کار در مناطق سخت‌گذر دایکندی، بدخشان، غور یا پکتیکا همراه با فرسودگی شغلی است:
@@ -417,7 +417,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل بیست‌وهشتم: اخلاق مسلکی و منشور رفتاری پرسونل
+## فصل بیست‌وششم: اخلاق مسلکی و منشور رفتاری پرسونل
 ### Professional Conduct, Patient Rights & Anti-Corruption
 
 * **منشور اخلاقی:** ممنوعیت مطلق تقاضای پول، تحفه، شیرینی یا رشوت از مریضان؛ خدمات BPHS در تمام سطوح کلینیکی کاملاً رایگان است.
@@ -427,11 +427,11 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 
 
-# PART V — سیستم معلومات صحی و دیتای DHIS2 (HMIS & Health Data)
+# بخش: سیستم معلومات صحی و دیتای DHIS2 (HMIS & Health Data)
 
 ---
 
-## فصل بیست‌ونهم: مبانی سیستم معلومات مدیریت صحی در افغانستان
+## فصل بیست‌وهفتم: مبانی سیستم معلومات مدیریت صحی در افغانستان
 ### HMIS Fundamentals: Purpose, Architecture & Evidence-Based Health Care
 
 سیستم معلومات مدیریت صحی (**HMIS - Health Management Information System**) ستون فقرات نظام صحت عامه افغانستان است. هر مدیر کلینیک باید بداند که تصمیم‌گیری بدون دیتا، مانند رانندگی در شب با چراغ خاموش است:
@@ -439,7 +439,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل سی‌ام: دیتابیس ملی DHIS2
+### دیتابیس ملی DHIS2
 ### District Health Information Software 2: Workflows, Validation & Lockouts
 
 در سکتور صحت افغانستان، دیتای تمام ولایات در پلتفرم آنلاین **DHIS2** تجمیع می‌گردد:
@@ -448,7 +448,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل سی‌ویکم: اسناد دست اول، کتاب‌های راجستر و تلی‌شیت‌ها
+### اسناد دست اول، کتاب‌های راجستر و تلی‌شیت‌ها
 ### Source Documents: Patient Registers, Tally Sheets & The Primary Source of Truth
 
 * **اصل بنیادین:** «در سیستم صحی، تنها سند قانونی و معتبر، **کتاب راجستر فزیکی مریضان (Patient Register)** است. راپورهای تایپ‌شده یا دیتای کامپیوتر بدون راجستر، از نظر تفتیش فاقد اعتبار است.»
@@ -460,7 +460,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل سی‌ودوم: شاخص‌های کلیدی عملکرد و فرمول‌های محاسباتی
+### شاخص‌های کلیدی عملکرد و فرمول‌های محاسباتی
 ### Key Performance Indicators (KPIs): Numerators, Denominators & Targets
 
 مدیر صحی باید فرمول‌های شاخص‌های کلیدی را حفظ باشد:
@@ -478,7 +478,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل سی‌وسوم: جریان انتقال دیتا از جامعه تا سطح ملی
+### جریان انتقال دیتا از جامعه تا سطح ملی
 ### Data Flow: Health Post to BHC, CHC, PPHD, and MoPH National Server
 
 ```
@@ -497,7 +497,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل سی‌وچهارم: ابعاد چهارگانه کیفیت دیتا: چارچوب ACCT
+### ابعاد چهارگانه کیفیت دیتا: چارچوب ACCT
 ### Data Quality Standards: Accuracy, Completeness, Consistency, Timeliness
 
 هر راپور قبل از تایید نهایی توسط مدیر صحی با چارچوب **ACCT** ممیزی می‌شود:
@@ -508,7 +508,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل سی‌وپنجم: تفتیش کیفیت دیتا (DQA) و ممیزی نظارت شخص ثالث (TPM)
+### تفتیش کیفیت دیتا (DQA) و ممیزی نظارت شخص ثالث (TPM)
 ### Data Quality Audit (DQA), LQAS & Third-Party Monitoring Readiness
 
 * **ممیزی کیفیت دیتا (DQA):** ناظر ولایتی به طور تصادفی صفحات راجستر سه ماه گذشته را با ارقام واردشده در DHIS2 مقایسه می‌کند؛ اگر مغایرت (Verification Factor) بیشتر از ۵٪ باشد، سیستم هشدار بازرسی صادر می‌کند.
@@ -516,7 +516,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل سی‌وششم: تحلیل روندها، نمودارها و کشف خطاهای سیستماتیک
+### تحلیل روندها، نمودارها و کشف خطاهای سیستماتیک
 ### Data Analysis: Trend Charts, Outliers & Cross-Indicator Validation
 
 مدیر کلینیک فقط جمع زننده اعداد نیست، بلکه تحلیل‌گر روندهاست:
@@ -525,7 +525,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل سی‌وهفتم: کاربرد ارقام در تصمیم‌گیری و اصلاح خدمات
+### کاربرد ارقام در تصمیم‌گیری و اصلاح خدمات
 ### Data to Action: Turning HMIS Insights into Operational Solutions
 
 دیتایی که منجر به اقدام اصلاحی نشود، زباله اداری است:
@@ -534,11 +534,11 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-# PART VI — کیفیت خدمات صحی و بهبود مداوم (Health Service Quality)
+# بخش: کیفیت خدمات صحی و بهبود مداوم (Health Service Quality)
 
 ---
 
-## فصل سی‌وهشتم: مفاهیم بنیادین کیفیت مراقبت
+### مفاهیم بنیادین کیفیت مراقبت
 ### Dimensions of Quality: Safety, Effectiveness, Patient-Centeredness & Equity
 
 بر اساس معیارهای جهانی WHO و وزارت صحت عامه، کیفیت خدمات صحی شش بعد تفکیک‌ناپذیر دارد:
@@ -551,7 +551,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل سی‌ونهم: چرخه بهبود مستمر کیفیت (QI Cycle)
+### چرخه بهبود مستمر کیفیت (QI Cycle)
 ### Quality Improvement: The Plan-Do-Study-Act (PDSA) Methodology
 
 بهبود کیفیت با سخنرانی حاصل نمی‌شود، بلکه یک فرآیند گام‌به‌گام است:
@@ -569,7 +569,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل چهلم: چک‌لیست‌های نظارت حمایتی و استندردهای ارزیابی
+### چک‌لیست‌های نظارت حمایتی و استندردهای ارزیابی
 ### Supportive Supervision Checklists & Facility Scoring Benchmarks
 
 در سیستم نظارتی وزارت صحت عامه، ارزیابی کلینیک با چک‌لیست‌های ساختاریافته شامل ۱۰۰ شاخص صورت می‌گیرد:
@@ -578,7 +578,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل چهل‌ویکم: استندردهای کلینیکی و عملیاتی در مراکز BPHS
+### استندردهای کلینیکی و عملیاتی در مراکز BPHS
 ### Clinical Protocols: Rational Use of Drugs, IMNCI & Partograph Adherence
 
 * **تجویز منطقی ادویه (Rational Drug Use):** پرهیز از تجویز انتی‌بیوتیک برای زکام ویروسی ساده، پرهیز از پولی‌فارمسی (تجویز بیش از ۳ قلم دوا در یک نسخه) و تجویز بر اساس نام ژنریک (Generic).
@@ -587,7 +587,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل چهل‌ودوم: سنجش رضایت مراجعین
+### سنجش رضایت مراجعین
 ### Client Satisfaction Surveys & Exit Interviews
 
 کلینیکی که از نظر طبی عالی باشد اما مراجعین از برخورد تند پرسونل ناراضی باشند، شکست‌خورده است:
@@ -595,7 +595,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل چهل‌وسوم: سیستم مدیریت و پاسخگویی به شکایات
+### سیستم مدیریت و پاسخگویی به شکایات
 ### Feedback Mechanisms, Suggestion Boxes & Grievance Redressal
 
 * **صندوق شکایات و پیشنهادات:** نصب صندوق قفل‌دار در دهلیز کلینیک؛ کلید صندوق صرفاً در اختیار سوپروایزر ولایتی یا مسئول صیانت است نه مدیر محلی کلینیک!
@@ -603,7 +603,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل چهل‌وچهارم: پلان اصلاحی عملکرد (Performance Improvement Plan - PIP)
+### پلان اصلاحی عملکرد (Performance Improvement Plan - PIP)
 ### Corrective Action Protocols, Root Cause Analysis (5 Whys) & Follow-up
 
 هرگاه کلینیکی نمره ضعیف (کمتر از ۷۰٪) کسب کند، مدیر صحی موظف به تدوین PIP فوری است:
@@ -620,11 +620,11 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 
 
-# PART VII — مدیریت ادویه، زنجیره سرد و تجهیزات (Medicines, Cold Chain & Logistics)
+# بخش: مدیریت ادویه، زنجیره سرد و تجهیزات (Medicines, Cold Chain & Logistics)
 
 ---
 
-## فصل چهل‌وپنجم: لست ادویه اساسی و طبقه‌بندی ادویه
+### لست ادویه اساسی و طبقه‌بندی ادویه
 ### National Essential Medicines List (NEML) & VEN Classification
 
 * **لست ادویه اساسی (EML):** ادویه‌ای که نیازهای تداوی اکثریت جمعیت را با قیمت مناسب، کیفیت تضمین‌شده و بالاترین اثربخشی پاسخ می‌دهد.
@@ -635,7 +635,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل چهل‌وششم: مدیریت دیپو و استندردهای گدام‌داری
+### مدیریت دیپو و استندردهای گدام‌داری
 ### Warehouse Storage Conditions: GSP Guidelines, Temperature & Security
 
 نگهداری ادویه در شرایط نامناسب، آن را به سم بی‌اثر تبدیل می‌کند:
@@ -645,7 +645,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل چهل‌وهفتم: استاک‌کارت‌ها و تطبیق موجودی فزیکی
+### استاک‌کارت‌ها و تطبیق موجودی فزیکی
 ### Stock Cards, Bin Cards & Physical Count Reconciliation
 
 * **کارت گدام (Stock Card / Bin Card):** شناسنامه هر قلم دوا؛ برای هر شربت، تابلیت یا امپول باید یک استاک‌کارت جداگانه وجود داشته باشد.
@@ -654,7 +654,7 @@ $$\mathbf{Verify \rightarrow Document \rightarrow Apply\ Policy \rightarrow Esca
 
 ---
 
-## فصل چهل‌وهشتم: میانگین مصرف ماهوار (AMC) و زمان رسیدن محموله (Lead Time)
+### میانگین مصرف ماهوار (AMC) و زمان رسیدن محموله (Lead Time)
 ### Consumption Analysis, AMC Formulas & Mountain Isolation Buffers
 
 $$\mathbf{AMC = \frac{\text{مجموع مصرف در ۳ یا ۶ ماه گذشته}}{\text{تعداد ماه‌ها}}}$$
@@ -669,7 +669,7 @@ $$\mathbf{AMC = \frac{\text{مجموع مصرف در ۳ یا ۶ ماه گذشت�
 
 ---
 
-## فصل چهل‌ونهم: مدیریت کمبود حاد (Stockout) و انباشت غیرمجاز (Overstock)
+### مدیریت کمبود حاد (Stockout) و انباشت غیرمجاز (Overstock)
 ### Preventing Stockouts vs Overstocking Risks & Rational Resupply
 
 * **خطر کمبود (Stockout):** از دست رفتن جان مریضان، تخریب اعتبار سازمان، هجوم شکایات مردم و توقف خدمات کلینیک.
@@ -677,7 +677,7 @@ $$\mathbf{AMC = \frac{\text{مجموع مصرف در ۳ یا ۶ ماه گذشت�
 
 ---
 
-## فصل پنجاهم: مدیریت تاریخ انقضا و اصل FEFO
+### مدیریت تاریخ انقضا و اصل FEFO
 ### Expiry Management: First Expired, First Out (FEFO) Protocols
 
 * **اصل FEFO (First Expired, First Out):** دوایی که تاریخ انقضای نزدیک‌تر دارد باید در جلوی قفسه چیده شده و زودتر از سایر محموله‌ها توزیع گردد، حتی اگر دیرتر از کابل رسیده باشد!
@@ -689,7 +689,7 @@ $$\mathbf{AMC = \frac{\text{مجموع مصرف در ۳ یا ۶ ماه گذشت�
 
 ---
 
-## فصل پنجاه‌ویکم: مدیریت زنجیره سرد واکسیناسیون (Cold Chain)
+### مدیریت زنجیره سرد واکسیناسیون (Cold Chain)
 ### Vaccine Cold Chain: Solar Refrigerators, VVM, Temperature Logs & Shake Test
 
 واکسین‌ها مواد بیولوژیکی زنده‌ای هستند که در اثر گرما یا انجماد نابود می‌شوند:
@@ -705,7 +705,7 @@ $$\mathbf{AMC = \frac{\text{مجموع مصرف در ۳ یا ۶ ماه گذشت�
 
 ---
 
-## فصل پنجاه‌ودوم: مدیریت و نگهداری تجهیزات طبی و دارایی‌ها
+### مدیریت و نگهداری تجهیزات طبی و دارایی‌ها
 ### Medical Equipment Maintenance, Preventive Care & Asset Logbooks
 
 * **رجیستر دارایی‌های ثابت (Asset Register):** ثبت سریال‌نمبر، نام دستگاه، قیمت، سال خرید، موقعیت فزیکی و نام شخص تحویل‌گیرنده.
@@ -713,11 +713,11 @@ $$\mathbf{AMC = \frac{\text{مجموع مصرف در ۳ یا ۶ ماه گذشت�
 
 ---
 
-# PART VIII — پلان‌گذاری، نظارت و ارزیابی پروژه (Health Planning & M&E)
+# بخش: پلان‌گذاری، نظارت و ارزیابی پروژه (Health Planning & M&E)
 
 ---
 
-## فصل پنجاه‌وسوم: ارزیابی نیازمندی‌های صحی جامعه
+### ارزیابی نیازمندی‌های صحی جامعه
 ### Community Health Needs Assessment (CHNA) & Epidemiological Profiling
 
 هیچ پروژه یا مداخله صحی بدون ارزیابی نیازمندی‌ها (Needs Assessment) موفق نمی‌شود:
@@ -725,7 +725,7 @@ $$\mathbf{AMC = \frac{\text{مجموع مصرف در ۳ یا ۶ ماه گذشت�
 
 ---
 
-## فصل پنجاه‌وچهارم: تحلیل ریشه‌ای مشکلات: درخت مشکل
+### تحلیل ریشه‌ای مشکلات: درخت مشکل
 ### Problem Tree Analysis: Root Causes, Core Problem & Objective Trees
 
 مدیر موفق علت ریشه‌ای را درمان می‌کند نه علایم ظاهری را:
@@ -740,7 +740,7 @@ $$\mathbf{AMC = \frac{\text{مجموع مصرف در ۳ یا ۶ ماه گذشت�
 
 ---
 
-## فصل پنجاه‌وپنجم: تعیین اهداف هوشمند (SMART Objectives)
+### تعیین اهداف هوشمند (SMART Objectives)
 ### Defining Specific, Measurable, Achievable, Relevant & Time-Bound Goals
 
 یک هدف مدیریتی باید فرمول **SMART** را دارا باشد:
@@ -752,14 +752,14 @@ $$\mathbf{AMC = \frac{\text{مجموع مصرف در ۳ یا ۶ ماه گذشت�
 
 ---
 
-## فصل پنجاه‌وششم: تعریف و ترتیب فعالیت‌های عملیاتی
+### تعریف و ترتیب فعالیت‌های عملیاتی
 ### Activity Scheduling, Resource Mapping & Work Breakdown Structure (WBS)
 
 شکستن اهداف کلان پروژه به فعالیت‌های روزانه، هفتگی و ماهوار با تعیین دقیق مجری، بودجه مورد نیاز و خروجی مورد انتظار.
 
 ---
 
-## فصل پنجاه‌وهفتم: تفکیک حیاتی میان خروجی (Output) و پیامد (Outcome)
+### تفکیک حیاتی میان خروجی (Output) و پیامد (Outcome)
 ### Activity vs Output vs Outcome vs Impact: The Logic Model
 
 یکی از مهم‌ترین تله‌های امتحانی داوطلبان، اشتباه گرفتن این مفاهیم است:
@@ -770,28 +770,28 @@ $$\mathbf{AMC = \frac{\text{مجموع مصرف در ۳ یا ۶ ماه گذشت�
 
 ---
 
-## فصل پنجاه‌وهشتم: شاخص‌های اندازه‌گیری عملکرد
+### شاخص‌های اندازه‌گیری عملکرد
 ### Quantitative vs Qualitative Indicators, Baselines & Targets
 
 هر شاخص باید مقدار خط مبنا (Baseline)، نقاط عطف دوره‌ای (Milestones) و هدف نهایی (Target) داشته باشد.
 
 ---
 
-## فصل پنجاه‌ونهم: ورک‌پلان، گانت‌چارت و مدیریت زمان
+### ورک‌پلان، گانت‌چارت و مدیریت زمان
 ### Detailed Implementation Plans (DIP), Gantt Charts & Critical Paths
 
 ترسیم بصری جدول زمان‌بندی فعالیت‌ها (Gantt Chart)؛ تشخیص فعالیت‌های مسیر بحرانی (Critical Path) که تأخیر در آن‌ها کل پروژه را با شکست مواجه می‌سازد (مانند تدارکات ادویه قبل از آغاز فصل سرما).
 
 ---
 
-## فصل شصتم: نظارت روتین بر روند تطبیق فعالیت‌ها (Monitoring)
+### نظارت روتین بر روند تطبیق فعالیت‌ها (Monitoring)
 ### Routine Process Monitoring, Output Tracking & Field Checklists
 
 نظارت (Monitoring) پیگیری مستمر و منظم مصرف بودجه و پیشرفت فعالیت‌ها در طول عمر پروژه است تا انحرافات به سرعت تصحیح شوند.
 
 ---
 
-## فصل شصت‌ویکم: ارزیابی میان‌دوره‌ای، نهایی و اثرسنجی (Evaluation)
+### ارزیابی میان‌دوره‌ای، نهایی و اثرسنجی (Evaluation)
 ### Mid-Term Reviews, Final Evaluation & DAC Criteria
 
 ارزیابی (Evaluation) بررسی عمیق و مقطعی پروژه در میانه راه (MTR) یا پایان پروژه بر اساس معیارهای شش‌گانه OECD-DAC:
@@ -801,11 +801,11 @@ $$\mathbf{AMC = \frac{\text{مجموع مصرف در ۳ یا ۶ ماه گذشت�
 
 
 
-# PART IX — مدیریت مالی و امور اداری (Health Finance & Administration)
+# بخش: مدیریت مالی و امور اداری (Health Finance & Administration)
 
 ---
 
-## فصل شصت‌ودوم: مفاهیم بودجه‌سازی در پروژه‌های صحی
+### مفاهیم بودجه‌سازی در پروژه‌های صحی
 ### Chart of Accounts, Budget Lines & Health Project Financial Structures
 
 مدیر صحی نیازی نیست حسابدار باشد، اما باید ساختار مالی پروژه را مسلط باشد:
@@ -819,7 +819,7 @@ $$\mathbf{AMC = \frac{\text{مجموع مصرف در ۳ یا ۶ ماه گذشت�
 
 ---
 
-## فصل شصت‌وسوم: مقایسه پلان مالی با مصارف واقعی
+### مقایسه پلان مالی با مصارف واقعی
 ### Budget vs Actual Tracking, Burn Rate & Financial Milestones
 
 * **نرخ مصرف بودجه (Burn Rate):**
@@ -829,7 +829,7 @@ $$\mathbf{AMC = \frac{\text{مجموع مصرف در ۳ یا ۶ ماه گذشت�
 
 ---
 
-## فصل شصت‌وچهارم: تحلیل واریانس و تفاوت بودجه (Variance)
+### تحلیل واریانس و تفاوت بودجه (Variance)
 ### Variance Analysis, Virement Rules & Realignment Protocols
 
 $$\mathbf{Variance = Planned\ Budget - Actual\ Expense}$$
@@ -841,7 +841,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## فصل شصت‌وپنجم: اسناد حمایتی مثبته و تصفیه پیش‌پرداخت‌ها
+### اسناد حمایتی مثبته و تصفیه پیش‌پرداخت‌ها
 ### Financial Documentation: Vouchers, Invoices, Advance Clearance SOPs
 
 تفتیش دونر هرگز بر اساس ادعا پول را نمی‌پذیرد؛ برای هر افغانی مصرف، اسناد پنج‌گانه مثبته الزامی است:
@@ -853,7 +853,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## فصل شصت‌وششم: کنترول‌های اداری، دارایی‌ها و مکاتبات رسمی
+### کنترول‌های اداری، دارایی‌ها و مکاتبات رسمی
 ### Administrative Controls, Separation of Duties & Inward/Outward Books
 
 * **تفکیک وظایف (Segregation of Duties):** کسی که درخواست خرید می‌دهد نباید خودش نرخ‌گیری کند؛ کسی که خرید می‌کند نباید خودش تحویل بگیرد؛ و کسی که پرداخت می‌کند نباید خودش تفتیش نماید!
@@ -861,18 +861,18 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## فصل شصت‌وهفتم: شفافیت مالی و پیشگیری از مصارف مردود
+### شفافیت مالی و پیشگیری از مصارف مردود
 ### Accountability, Audit Readiness & Avoiding Disallowed Costs
 
 * **مصارف مردود (Disallowed Costs):** مصارفی که به دلیل نبود سند معتبر، نبود استعلام کافی یا خارج بودن از پروپوزل توسط ممیزان دونر رد شده و سازمان مجبور است آن را از جیب خود بازپرداخت نماید.
 
 ---
 
-# PART X — تدارکات شفاف و لوژستیک در پروژه (Procurement & Logistics SOPs)
+# بخش: تدارکات شفاف و لوژستیک در پروژه (Procurement & Logistics SOPs)
 
 ---
 
-## فصل شصت‌وهشتم: چرخه ۱۲ مرحله‌ای تدارکات در پروژه‌های صحی
+### چرخه ۱۲ مرحله‌ای تدارکات در پروژه‌های صحی
 ### The 12-Step Health Procurement Cycle
 
 تدارکات در سکتور صحت مستقیماً با جان مریضان مرتبط است؛ فرآیند تدارکات از ۱۲ گام استاندارد تشکیل می‌شود:
@@ -891,21 +891,21 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## فصل شصت‌ونهم: مشخصات دقیق تخنیکی ادویه و اجناس
+### مشخصات دقیق تخنیکی ادویه و اجناس
 ### Writing Objective Technical Specifications for Medical Supplies
 
 در تدارکات صحی، هرگز نباید نام تجاری خاص (Brand Name) درج شود؛ بلکه نام علمی ژنریک (Generic Name)، دوز، شکل دارویی، استندرد بسته‌بندی، تاریخ انقضا (حداقل ۱۸ ماه در زمان تحویل)، و گواهی‌نامه‌های کیفیت (GMP/COA) درج می‌گردد.
 
 ---
 
-## فصل هفتم: فورم درخواست رسمی تدارکات (Requisition Form)
+### فورم درخواست رسمی تدارکات (Requisition Form)
 ### The Procurement Requisition: Verification of Need & Budget Coding
 
 فورم درخواست تدارکات باید کود بودجه، نام درخواست‌کننده، امضای تایید موجودی، و امضای تصدیق وجود بودجه توسط آفیسر مالی را دارا باشد قبل از اینکه به کمیته تدارکات برود.
 
 ---
 
-## فصل هفتادویکم: ارزیابی نرخ‌ها و قانون ۳ استعلام
+### ارزیابی نرخ‌ها و قانون ۳ استعلام
 ### Vendor Selection: The 3-Quotation Rule, CBA & Non-Universal Thresholds
 
 * **قانون ۳ استعلام:** در خریدهای پرچون تا سقف معین، اخذ حداقل ۳ استعلام کتبی و سربسته از دکان‌ها یا شرکت‌های مستقل و دارای جواز رسمی الزامی است.
@@ -914,7 +914,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## فصل هفتادودوم: بازرسی فزیکی کیفیت و سند تسلیمی گدام (GRN)
+### بازرسی فزیکی کیفیت و سند تسلیمی گدام (GRN)
 ### Inspection Committee, Rejection Criteria & Goods Received Note (GRN)
 
 * **هیئت معاینه و تحویل‌گیری:** شامل فارمسست، آفیسر لوژستیک و یک عضو بی‌طرف.
@@ -923,7 +923,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## فصل هفتادوسوم: اخلاق در تدارکات و پیشگیری از تضاد منافع
+### اخلاق در تدارکات و پیشگیری از تضاد منافع
 ### Procurement Ethics: Anti-Fraud, Collusion Prevention & Conflict of Interest
 
 * ممنوعیت مطلق تبانی (Collusion) با شرکت‌ها، دریافت پورسانت، انعام یا خرید از دکان اقارب درجه یک بدون اعلام رسمی تضاد منافع (Declaration of Conflict of Interest).
@@ -932,11 +932,11 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 
 
-# PART XI — رهبری، ارتباطات و هماهنگی ذینفعان (Leadership, Communication & Coordination)
+# بخش: رهبری، ارتباطات و هماهنگی ذینفعان (Leadership, Communication & Coordination)
 
 ---
 
-## فصل هفتادوچهارم: سبک‌های رهبری در کلینیک‌های صحی
+### سبک‌های رهبری در کلینیک‌های صحی
 ### Situational Leadership: Directive, Coaching, Supporting & Delegating
 
 یک رهبر موفق صحی با همه کارمندان با یک شیوه یکسان برخورد نمی‌کند، بلکه سبک رهبری خود را متناسب با سطح شایستگی و تجربه کارمند تغییر می‌دهد (Situational Leadership):
@@ -947,7 +947,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## فصل هفتادوپنجم: اصول تفویض اختیار و پاسخگویی
+### اصول تفویض اختیار و پاسخگویی
 ### Effective Delegation: Accountability, Authority & Avoiding Micromanagement
 
 * **اصل طلایی تفویض:** «مدیر می‌تواند صلاحیت اجرا (Authority) را تفویض کند، اما مسئولیت نهایی پاسخگویی (Accountability) هرگز قابل تفویض نیست!»
@@ -955,7 +955,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## فصل هفتادوششم: ارتباطات حرفه‌ای سازمانی
+### ارتباطات حرفه‌ای سازمانی
 ### Multi-Directional Communication: Upward, Downward, Outward & Inward
 
 * **ارتباط رو به بالا (Upward):** راپوردهی دقیق، فشرده و مستند به دفتر مرکزی در کابل با تمرکز بر حل چالش‌ها.
@@ -965,7 +965,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## فصل هفتادوهفتم: مدیریت جلسات اثربخش و جدول نقاط اقدام
+### مدیریت جلسات اثربخش و جدول نقاط اقدام
 ### Productive Meetings: Agenda, Minutes & The Action Points Matrix
 
 هیچ جلسه‌ای نباید بدون جدول نقاط اقدام (Action Points) به پایان برسد:
@@ -976,7 +976,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## فصل هفتادوهشتم: شناسایی و نقشه‌برداری ذینفعان
+### شناسایی و نقشه‌برداری ذینفعان
 ### Stakeholder Mapping: The Power-Interest Matrix in Afghan Districts
 
 مدیر صحی باید جایگاه هر ذینفع را در ماتریس قدرت-علاقه (Power-Interest Matrix) بشناسد:
@@ -987,14 +987,14 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## فصل هفتادونهم: هماهنگی میان‌بخشی و جلسات ولایتی PHCC
+### هماهنگی میان‌بخشی و جلسات ولایتی PHCC
 ### Inter-Agency Coordination & The Provincial Health Coordination Committee
 
 کمیته هماهنگی صحی ولایت (**PHCC**) مهم‌ترین گردهمایی تصمیم‌گیری در ولایت است. هماهنگ‌کننده باید با آمادگی کامل، ارقام مستند و تسلط بر وضعیت کلینیک‌ها در این جلسه اشتراک کند.
 
 ---
 
-## فصل هشتادم: اصول مذاکره اصولی و حل مطالبات غیرواقعی
+### اصول مذاکره اصولی و حل مطالبات غیرواقعی
 ### Principled Negotiation: Separating People from Problem in Fragile Contexts
 
 هنگامی که یک زورمند محلی تقاضای استخدام غیرقانونی اقارب خود یا اختصاص موتر پروژه را دارد:
@@ -1004,18 +1004,18 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## فصل هشتادویکم: مدیریت تعارض و میانجی‌گری مسلکی
+### مدیریت تعارض و میانجی‌گری مسلکی
 ### Conflict De-escalation & Institutional Mediation Protocols
 
 حل تعارضات بر اساس گفتگوی بی‌طرفانه، مستندسازی شواهد و ایجاد توافق مکتوب، پیش از آنکه تعارض به خصومت فزیکی یا توقف خدمات کلینیک بیانجامد.
 
 ---
 
-# PART XII — مدیریت برنامه‌های صحت عامه (Public Health Program Management)
+# بخش: مدیریت برنامه‌های صحت عامه (Public Health Program Management)
 
 ---
 
-## فصل هشتادودوم: مراقبت و ترصد امراض ساری (NDSR)
+### مراقبت و ترصد امراض ساری (NDSR)
 ### National Disease Surveillance & Response: Early Warning Systems (DEWS)
 
 سیستم ملی مراقبت و پاسخ به بیماری‌ها (**NDSR**) سیستم هشدار اولیه کشور است:
@@ -1024,7 +1024,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## فصل هشتادوسوم: مدیریت طغیان و اپیدمی (Outbreak Management)
+### مدیریت طغیان و اپیدمی (Outbreak Management)
 ### The 10 Steps of Outbreak Investigation & Rapid Response Teams (RRT)
 
 هنگام وقوع شیوع بیماری، مدیر صحی گام‌های ده‌گانه را رهبری می‌کند:
@@ -1041,7 +1041,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## فصل هشتادوچهارم: مدیریت برنامه معافیت کتلوی (EPI)
+### مدیریت برنامه معافیت کتلوی (EPI)
 ### Routine Immunization, Fixed, Outreach & Mobile Strategies
 
 * **استراتژی سه‌گانه معافیت کتلوی:**
@@ -1052,7 +1052,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## فصل هشتادوپنجم: مدیریت صحت مادر و طفل (MCH)
+### مدیریت صحت مادر و طفل (MCH)
 ### Antenatal, Postnatal, BEmONC & CEmONC Management
 
 * **وظایف هفت‌گانه مراقبت عاجل ولادی در CHC (BEmONC Signal Functions):**
@@ -1067,7 +1067,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## فصل هشتادوششم: مدیریت برنامه تغذیه عامه (IMAM)
+### مدیریت برنامه تغذیه عامه (IMAM)
 ### Integrated Management of Acute Malnutrition: MUAC, OPD-SAM & IPD-SAM
 
 * **غربالگری با نوار موک (MUAC - Mid-Upper Arm Circumference):**
@@ -1079,7 +1079,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## فصل هشتادوهفتم: مدیریت امراض ساری عمده
+### مدیریت امراض ساری عمده
 ### Communicable Disease Control: Tuberculosis (DOTS), Malaria & Leishmaniasis
 
 * **توبرکلوز (TB):** سیستم درمان کوتاه‌مدت تحت نظارت مستقیم (DOTS)؛ هرگز به مریض توبرکلوز ادویه یک‌ماهه تحویل داده نمی‌شود تا خودسرانه مصرف کند؛ بلعیدن هر تابلیت باید تحت نظارت مستقیم کارمند صحی یا رابط جامعه باشد.
@@ -1087,7 +1087,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## فصل هشتادوهشتم: مدیریت صحت جامعه (CBHC)
+### مدیریت صحت جامعه (CBHC)
 ### Community-Based Health Care, CHW Support & Village Health Committees
 
 صحت جامعه سنگ‌بنای دسترسی به مناطق محروم است:
@@ -1098,11 +1098,11 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 
 
-# PART XIII — مدیریت بحران و شرایط اضطرار (Crisis Management in Health Operations)
+# بخش: مدیریت بحران و شرایط اضطرار (Crisis Management in Health Operations)
 
 ---
 
-## فصل هشتادونهم: مدیریت عملیات در شرایط ناامنی و چالش‌های ساحوی
+### مدیریت عملیات در شرایط ناامنی و چالش‌های ساحوی
 ### Security Constraints, Remote Management & Staff Safety Protocols
 
 در شرایط بی‌ثباتی امنیتی، مدیر صحی باید اصل «اول مصئونیت پرسونل و مریضان» را پیاده کند:
@@ -1111,7 +1111,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## فصل نودم: پاسخ اضطراری به طغیان بیماری و قرنطین
+### پاسخ اضطراری به طغیان بیماری و قرنطین
 ### Emergency Outbreak Response: Quarantine, Isolation & Treatment Centers
 
 * برپایی خیمه‌های تریاژ و تداوی موقت در بیرون محوطه ساختمان اصلی کلینیک جهت جلوگیری از انتقال انتان به مریضان عادی و نوزادان.
@@ -1119,7 +1119,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## فصل نودویکم: مدیریت بحران صفر شدن ادویه اساسی در کلینیک
+### مدیریت بحران صفر شدن ادویه اساسی در کلینیک
 ### Emergency Medicine Stockout: Inter-Facility Loans & Fast-Track Logistics
 
 هنگامی که ادویه حیاتی به اتمام می‌رسد:
@@ -1130,7 +1130,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## فصل نودودوم: کمبود حاد پرسونل و ترک ناگهانی وظیفه
+### کمبود حاد پرسونل و ترک ناگهانی وظیفه
 ### Acute Staff Shortage, Resignations & Surge Deployment
 
 * **تیم امدادی موقت (Surge Team):** اعزام فوری نرس یا قابله احتیاطی از شفاخانه ولایتی یا کلینیک‌های پرپرسونل تا زمان تکمیل استخدام رسمی کارمند جدید.
@@ -1138,7 +1138,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## فصل نودوسوم: بحران تخریب یا مفقودی اسناد و دیتای کلینیک
+### بحران تخریب یا مفقودی اسناد و دیتای کلینیک
 ### Data Loss, Disaster Recovery & Reconstructing Patient Registers
 
 در صورت آتش‌سوزی، سیلاب یا سرقت کتاب‌های راجستر:
@@ -1146,7 +1146,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## فصل نودوچهارم: مدیریت کاهش ناگهانی بودجه پروژه توسط دونر
+### مدیریت کاهش ناگهانی بودجه پروژه توسط دونر
 ### Funding Reductions: Protecting Frontline Care & Cost Realignment
 
 در صورت کاهش بودجه گرانت:
@@ -1155,7 +1155,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## فصل نودوپنجـم: بحران ریفرال عاجل در یخبندان و انسداد سرک‌ها
+### بحران ریفرال عاجل در یخبندان و انسداد سرک‌ها
 ### Emergency Referral in Mountain Snow & Extreme Geography
 
 هنگام انسداد راه‌های کوهستانی و مواجهه با مادر باردار در حال خونریزی:
@@ -1163,7 +1163,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## فصل نودوششم: مدیریت بحران‌های چندگانه همزمان: تریاژ سازمانی
+### مدیریت بحران‌های چندگانه همزمان: تریاژ سازمانی
 ### Multiple Simultaneous Disasters: The Organizational Triage Matrix
 
 هنگامی که طغیان وبا، خرابی زنجیره سرد، بازرسی سرزده PPHD و اولتیماتوم دونر همزمان رخ می‌دهد:
@@ -1179,21 +1179,21 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-# PART XIV — اخلاق مسلکی، صیانت و PSEA (Ethics, Safeguarding & PSEA)
+# بخش: اخلاق مسلکی، صیانت و PSEA (Ethics, Safeguarding & PSEA)
 
 ---
 
-## فصل نودوهفتم: محرمیت دیتای مریضان و اسرار سازمانی
+### محرمیت دیتای مریضان و اسرار سازمانی
 ### Patient Confidentiality, Medical Records Privacy & Data Protection
 
 * دوسیه‌ها و سوابق طبی بیماران (به‌ویژه معاینات نسایی، تست‌های HIV و صحت روانی) کاملاً محرمانه است و افشای آن بدون اجازه کتبی مریض یا حکم رسمی محکمه جرم است.
 
 ---
 
-## فصل نودوهشتم: اصول رفتار مسلکی کادر صحی و مدیران مراکز صحی
+### اصول رفتار مسلکی کادر صحی و مدیران مراکز صحی
 ### Medical Ethics: Beneficence, Non-Maleficence, Autonomy & Justice
 
-چهار اصل بنیادین اخلاق طبابت و زیست‌طبی (Bioethics) در رهبری کلینیک:
+چهار اصل بنیادین اخلاق زیست‌داکتری در رهبری کلینیک:
 1. **سودرسانی (Beneficence):** تلاش فعالانه برای بهبود صحت مریض.
 2. **عدم ضرررسانی (Non-Maleficence):** پرهیز از آسیب، تجویز اشتباه یا غفلت بالینی.
 3. **احترام به استقلال فردی (Autonomy):** اخذ رضایت آگاهانه (Informed Consent) قبل از هر مداخله تداوی.
@@ -1201,7 +1201,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## فصل نودونهم: کشف، پیشگیری و مستندسازی فریبکاری و تقلب
+### کشف، پیشگیری و مستندسازی فریبکاری و تقلب
 ### Fraud Detection, Prevention & Reporting: Anti-Corruption Protocols
 
 * نمونه‌های تقلب در کلینیک: پرسونل خیالی (Ghost Workers)، بزرگ‌نمایی ارقام ویزیت جهت دریافت تارگت، فروش ادویه رایگان در بازار، و بل‌های جعلی ترانسپورت.
@@ -1209,21 +1209,21 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## فصل صدم: مدیریت تضاد منافع در استخدام و تدارکات
+### مدیریت تضاد منافع در استخدام و تدارکات
 ### Conflict of Interest Management & Mandatory Disclosure
 
 هرگاه یکی از اقارب مدیر کلینیک یا هماهنگ‌کننده در داوطلبی تدارکاتی یا بست استخدامی اشتراک کند، مدیر مکلف است فوراً اعلامیه کتبی تضاد منافع (Declaration of Conflict of Interest) امضا کرده و از پروسه کناره‌گیری نماید.
 
 ---
 
-## فصل صد و یکم: ممنوعیت سوءاستفاده از موقف سازمانی و تبعیض
+### ممنوعیت سوءاستفاده از موقف سازمانی و تبعیض
 ### Preventing Abuse of Authority, Harassment & Workplace Bullying
 
 هیچ مدیری حق ندارد کارمندان زیردست را به کارهای شخصی وادار کند، یا پرسونل زن را به خاطر جنسیت مورد تبعیض قرار دهد.
 
 ---
 
-## فصل صد و دوم: پالیسی صیانت، عدم تحمل مطلق (PSEA) و راپوردهی ۲۴ ساعته
+### پالیسی صیانت، عدم تحمل مطلق (PSEA) و راپوردهی ۲۴ ساعته
 ### Safeguarding & PSEA: Zero Tolerance, 24-Hour Reporting & Survivor Protection
 
 پالیسی حفاظت در برابر استثمار و سوءاستفاده جنسی (**PSEA - Protection from Sexual Exploitation and Abuse**) خط سرخ مطلق تمام نهادهای صحی و بشردوستانه است:
@@ -1235,8 +1235,10 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 
 
-# PART XV — لابراتوار قضایای عملیاتی مدیریت صحی (Practical Health Management Case Lab)
-## 30 Comprehensive Real-World Field Cases with Complete 10-Part Analytical Rubrics
+# بخش دوازدهم: لابراتوار قضایای جامع و جعبه‌ابزار مسلکی مدیر صحی
+## فصل بیست‌وهشتم: تحلیل پیشرفته ۳۰ قضیه عملیاتی مدیریت کلینیک و پروژه‌های صحی
+### 30 Advanced Operational Health Management Cases with Complete 10-Part Rubrics
+### 30 Comprehensive Real-World Field Cases with Complete 10-Part Analytical Rubrics
 
 در این بخش، ۳۰ سناریوی واقعی و ملموس از چالش‌های روزمره کلینیک‌ها و پروژه‌های صحی افغانستان با چارچوب ده گانه تحلیل و حل شده است:
 
@@ -1273,7 +1275,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 ### قضیه ۳: کمبود حاد قابله و نرس در کلینیک دوردست (Acute Midwife Shortage)
 1. **Situation:** تنها قابله CHC خدیر به دلیل بیماری بستری شده و ولادت‌های شبانه بدون کادر مسلکی مانده است.
 2. **Problems:** خطر مرگ مادران در اثر خونریزی بعد از ولادت؛ مراجعه زنان به ولادت‌های ناپاک سنتی در قریه.
-3. **Immediate Priorities:** استقرار قابله مسلکی جایگزین ظرف کمتر از ۱۲ ساعت؛ فعال نگه‌داشتن اتاق ولادت.
+3. **Immediate Priorities:** استقرار کادر قابلگی جایگزین ظرف کمتر از ۱۲ ساعت؛ فعال نگه‌داشتن اتاق ولادت.
 4. **Analysis:** فقدان نیروی احتیاطی (Roving/Surge Midwife) در ساختار ولایت باعث آسیب‌پذیری شدید مرکز شده است.
 5. **Actions:** اعزام موقت قابله چرخشی از شفاخانه ولایتی نیلی؛ آماده‌باش امبولانس کلینیک برای موارد اضطراری.
 6. **Authority Boundary:** مدیر صحی نمی‌تواند شخصاً قابله استخدام کند؛ جلب منظوری اعزام موقت از آمریت منابع بشری کابل الزامی است.
@@ -1603,7 +1605,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 6. **Authority Boundary:** مدیر کلینیک صلاحیت مصاحبه با رسانه‌ها را ندارد؛ بیانیه رسمی صرفاً از طریق سخنگوی سازمان یا ریاست صحت عامه صادر می‌شود.
 7. **Documentation:** تهیه راپور تفصیلی حقیقت‌یابی (Fact-Finding Report) با امضای متخصصین طب عدلی و PPHD.
 8. **Reporting:** ارسال راپور به دفتر مرکزی، یونیسف و WHO جهت مدیریت رسانه‌ای.
-9. **Follow-up:** راه‌اندازی کمپاین روشنگری در مساجد توسط خطبا و علمای معتمد ولایت.
+9. **Follow-up:** راه‌اندازی کمپاین روشنگری در مساجد توسط ملااقابلهن معتمد ولایت.
 10. **Model Answer:** «بررسی میدانی و اثبات بی‌اساس بودن شایعه $\rightarrow$ هماهنگی با PPHD جهت صدور بیانیه مشترک رسمی $\rightarrow$ خودداری از مجادله شخصی در فضای مجازی $\rightarrow$ دعوت از ریش‌سفیدان برای بازرسی شفاف کلینیک $\rightarrow$ خطبه‌های آگاهی‌بخشی در نماز جمعه $\rightarrow$ احیای اعتماد جامعه.»
 
 ---
@@ -1671,8 +1673,11 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 
 
-# PART XVI — بانک جامع آزمون‌های استخدامی مدیریت صحی (Master Exam Bank)
-## بخش اول: ۱۵۰ سؤال چهارجوابی چهارگزینه‌ای (Q1 to Q150) با پاسخ تشریحی کامل
+# بخش دوازدهم: لابراتوار قضایای جامع و جعبه‌ابزار مسلکی مدیر صحی
+### بانک جامع آزمون‌های استخدامی مدیریت صحی
+ تحلیل پیشرفته ۳۰ قضیه عملیاتی مدیریت کلینیک و پروژه‌های صحی
+### 30 Advanced Operational Health Management Cases with Complete 10-Part Rubrics
+### بخش اول: ۱۵۰ سؤال چهارجوابی چهارگزینه‌ای (Q1 to Q150) با پاسخ تشریحی کامل
 
 ---
 
@@ -1730,7 +1735,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 - **C)** صحت مادر، نوزاد و طفل (MNCH)
 - **D)** تریاژ تصادفات ترافیکی
 * **پاسخ صحیح: C**
-* **تشریح:** رکن Maternal, Newborn, and Child Health هسته مرکزی خدمات قابله‌گی و ولادی در استندرد BPHS است.
+* **تشریح:** رکن Maternal, Newborn, and Child Health هسته مرکزی خدمات قابلگی و ولادی در استندرد BPHS است.
 
 #### سؤال Q7 (Scenario Question)
 شفاخانه ولایتی (Provincial Hospital) طبق استندرد بسته EPHS معمولاً دارای چند بستر و چه نوع خدماتی است؟
@@ -2588,7 +2593,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 اگر شاخص ارزیابی نیازمندی‌ها نشان دهد مرگ‌ومیر مادران بالاست اما مرگ ناشی از ملاریا صفر است، اولویت تخصیص بودجه کدام است؟
 - **A)** خرید تجهیزات ملاریا
 - **B)** تقویت خدمات مراقبت عاجل ولادی (BEmONC) و آموزش قابله‌ها
-- **C)** افزایش پرسونل پرسونل طب دندان
+- **C)** افزایش پرسونل دندانداکتری
 - **D)** چاپ پوستر ترافیکی
 * **پاسخ صحیح: B**
 * **تشریح:** اولویت‌بندی منابع باید مستقیماً منطبق بر بار واقعی بیماری‌ها و اولویت نجات جان انسان‌ها باشد.
@@ -3046,7 +3051,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 * **تشریح:** طبق استانداردهای بین‌المللی صیانت، راپوردهی حادثه ظرف ۲۴ ساعت الزامی است.
 
 #### سؤال Q148 (Scenario Question)
-اگر کارمندی با تهدید به افشای بیماری حساس یک مراجعه‌کننده از او تقاضای پول کند، کدام اصل اخلاق طبابت (Medical Ethics) نقض شده است؟
+اگر کارمندی با تهدید به افشای بیماری حساس یک مراجعه‌کننده از او تقاضای پول کند، کدام اصل اخلاق داکتری نقض شده است؟
 - **A)** اصل سودرسانی
 - **B)** اصل محرمیت دیتای مریض (Confidentiality) و ممنوعیت اخاذی و سوءاستفاده از قدرت
 - **C)** اصل انتخاب رنگ لباس
@@ -3076,7 +3081,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 
 
-## بخش دوم: ۳۰ سوال تشریحی مطالعه موردی و سناریوهای آزمون استخدامی (Q151 to Q180)
+### بخش دوم: ۳۰ سوال تشریحی مطالعه موردی و سناریوهای آزمون استخدامی (Q151 to Q180)
 
 ---
 
@@ -3338,7 +3343,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 **پرسش:** استراتژی متقاعدسازی و تامین اضطراری خون نجات‌بخش چیست؟
 * **پاسخ مدل A173:**
   1. گفتگوی سریع و علمی داکتر با همراهان؛ الگوسازی عملی با اهدای خون توسط یکی از پرسونل صحی مرد کلینیک در حضور همراهان.
-  2. توضیح باورهای نادرست طبی و تبیین ارزش دینی نجات جان یک مادر مسلمان بر اساس آیات قرآن.
+  2. توضیح باورهای غلط داکتری و تبیین ارزش دینی نجات جان یک مادر مسلمان بر اساس آیات قرآن.
   3. همزمان فراخوان پرسونل شفاخانه دارای گروه خونی O منفی جهت اهدای خون اضطراری.
   4. انجام تست‌های فوری کراس‌مچ و اسکرینینگ عفونی ظرف ۲۰ دقیقه و آغاز ترانسفیوژن نجات‌بخش در حین لاپاراتومی.
 
@@ -3373,7 +3378,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
   1. حفظ خونسردی، دعوت به نشستن، پذیرایی محترمانه و شنیدن آرام ادعاها بدون موضع‌گیری تند.
   2. تشریح مسلکی اینکه تمام نمرات و اوراق امتحان به صورت آنلاین در سرور کابل و تحت نظارت دونر ثبت می‌شود و تغییر محلی آن سیستماتیک غیرممکن است و باعث بسته شدن کلینیک توسط وزارت می‌شود.
   3. جلب حمایت رئیس صحت عامه ولایت از طریق تماس تلیفونی محرمانه جهت وساطت اداری با مقام ولایت.
-  4. پیشنهاد راه‌حل‌های قانونی مانند معرفی ایشان به کورس‌های ارتقای ظرفیت قابله‌گی برای رقابت‌های بعدی.
+  4. پیشنهاد راه‌حل‌های قانونی مانند معرفی ایشان به کورس‌های ارتقای ظرفیت قابلگی برای رقابت‌های بعدی.
 
 ---
 
@@ -3424,7 +3429,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 
 
-## بخش سوم: ۳۰ سؤال تشریحی پاسخ‌کوتاه و تعاریف استندرد آزمون‌های استخدامی (Q181 to Q210)
+### بخش سوم: ۳۰ سؤال تشریحی پاسخ‌کوتاه و تعاریف استندرد آزمون‌های استخدامی (Q181 to Q210)
 
 ---
 
@@ -3699,7 +3704,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 
 
-## بخش چهارم: ۳۰ سؤال محاسباتی و تحلیل ارقام HMIS و دیتابیس DHIS2 (Q211 to Q240)
+### بخش چهارم: ۳۰ سؤال محاسباتی و تحلیل ارقام HMIS و دیتابیس DHIS2 (Q211 to Q240)
 
 ---
 
@@ -3972,7 +3977,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 
 
-## بخش پنجم: ۳۰ سناریوی رهبری، تصمیم‌گیری استراتژیک و مدیریت تعارض (Q241 to Q270)
+### بخش پنجم: ۳۰ سناریوی رهبری، تصمیم‌گیری استراتژیک و مدیریت تعارض (Q241 to Q270)
 
 ---
 
@@ -4136,7 +4141,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 **پرسش:** به عنوان مدیر چگونه فرهنگ برابری جنسیتی و کار تیمی مشترک را حاکم می‌کنید؟
 * **پاسخ مدل A255:**
   1. اصلاح ساختار جلسات: تعیین نوبت رسمی صحبت برای قابله ارشد و مسئول نرسنگ در آجندای تمام جلسات.
-  2. تاکید بر نقش حیاتی خدمات قابله‌گی به حیث ستون اصلی شاخص‌های BPHS و یادآوری اینکه موفقیت کلینیک در گرو کار قابله‌هاست.
+  2. تاکید بر نقش حیاتی خدمات قابلگی به حیث ستون اصلی شاخص‌های BPHS و یادآوری اینکه موفقیت کلینیک در گرو کار قابله‌هاست.
   3. تذکر به پرسونل خاطی در خصوص منشور رفتاری سازمان و ممنوعیت هرگونه تبعیض جنسیتی.
   4. تشویق و تقدیر علنی از دستاوردهای کادر زن در جلسات عمومی جهت تغییر نگرش سنتی.
 
@@ -4312,7 +4317,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 
 
-## بخش ششم: سه آزمون آزمایشی جامع شبیه‌سازی‌شده (3 Full Mock Exams)
+### بخش ششم: سه آزمون آزمایشی جامع شبیه‌سازی‌شده (3 Full Mock Exams)
 
 ---
 
@@ -4410,7 +4415,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 
 
-## بخش هفتم: ۳۰ سؤال پرتکرار مصاحبه‌های تخصصی استخدامی همراه با پاسخ‌های مدل (30 Technical Interview Questions)
+### بخش هفتم: ۳۰ سؤال پرتکرار مصاحبه‌های تخصصی استخدامی همراه با پاسخ‌های مدل (30 Technical Interview Questions)
 
 ---
 
@@ -4488,7 +4493,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## بخش هشتم: ۲۰ سناریوی یادآوری برق‌آسا (20 Rapid-Recall Mini Cases)
+### بخش هشتم: ۲۰ سناریوی یادآوری برق‌آسا (20 Rapid-Recall Mini Cases)
 
 1. **مینی‌کیس ۱ (دمای یخچال):** دماسنج یخچال واکسین دمای ۱۰+ درجه را نشان می‌دهد $\rightarrow$ **اقدام فوری:** انتقال واکسین‌ها به کلدباکس با آیس‌پک، چک فیوز سولر، بررسی VVM و ثبت در فورم حوادث.
 2. **مینی‌کیس ۲ (VVM مرحله ۳):** واکسیناتور ویال پولیو مرحله ۳ را دست دارد $\rightarrow$ **اقدام فوری:** توقف تزریق، قرنطین ویال، تعویض با ویال سالم مرحله ۱ و تکمیل فورم ضایعات.
@@ -4515,11 +4520,14 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 
 
-# PART XVII — جعبه‌ابزار کاربردی، چک‌لیست‌ها و ضمایم مسلکی (Practical Toolkits & Appendices)
+# بخش دوازدهم: لابراتوار قضایای جامع و جعبه‌ابزار مسلکی مدیر صحی
+## فصل بیست‌ونهم: جعبه‌ابزار جامع مدیر صحی و ضمایم مسلکی
+ تحلیل پیشرفته ۳۰ قضیه عملیاتی مدیریت کلینیک و پروژه‌های صحی
+### 30 Advanced Operational Health Management Cases with Complete 10-Part Rubrics
 
 ---
 
-## جعبه‌ابزار ۱: چک‌لیست جلسه هماهنگی صبحگاهی (Daily Morning Huddle Checklist)
+### جعبه‌ابزار ۱: چک‌لیست جلسه هماهنگی صبحگاهی (Daily Morning Huddle Checklist)
 
 این چک‌لیست هر روز رأس ساعت ۰۸:۰۰ صبح توسط سرپرست مرکز صحی (Clinic In-Charge) بازبینی و امضا می‌شود:
 
@@ -4535,7 +4543,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## جعبه‌ابزار ۲: فورم تفتیش کیفیت دیتای صحی (Monthly DQA Sheet)
+### جعبه‌ابزار ۲: فورم تفتیش کیفیت دیتای صحی (Monthly DQA Sheet)
 
 این فورم در پایان هر ماه جهت ممیزی تطابق کتاب‌های راجستر با فورم‌های ماهوار MIAR تکمیل می‌گردد:
 
@@ -4556,7 +4564,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## جعبه‌ابزار ۳: ماتریس ۱۰۰ امتیازی نظارت حمایتی تسهیلات (100-Point Supervisory Matrix)
+### جعبه‌ابزار ۳: ماتریس ۱۰۰ امتیازی نظارت حمایتی تسهیلات (100-Point Supervisory Matrix)
 
 | حوزه ارزیابی | شاخص‌های کلیدی | حداکثر نمره | نمره کسب‌شده |
 | :--- | :--- | :---: | :---: |
@@ -4571,7 +4579,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## جعبه‌ابزار ۴: فلوچارت پاسخ اضطراری به طغیان وبایی (AWD/Cholera Outbreak Flowchart)
+### جعبه‌ابزار ۴: فلوچارت پاسخ اضطراری به طغیان وبایی (AWD/Cholera Outbreak Flowchart)
 
 ```
 [ ورود موارد مشکوک اسهال حاد آبکی شدید ]
@@ -4593,7 +4601,7 @@ $$\mathbf{Variance\ (\%) = \frac{Planned - Actual}{Planned} \times 100}$$
 
 ---
 
-## جعبه‌ابزار ۵: فرهنگ جامع اختصارات و اصطلاحات صحت عامه افغانستان (100+ Health Acronyms)
+### جعبه‌ابزار ۵: فرهنگ جامع اختصارات و اصطلاحات صحت عامه افغانستان (100+ Health Acronyms)
 
 این دایرکتوری مرجع استاندارد تمام واژگان اختصاری به کار رفته در آزمون‌های استخدامی و راپورهای تخنیکی است:
 

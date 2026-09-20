@@ -1,9 +1,15 @@
 # -*- coding: utf-8 -*-
 """
 publish_master_epub.py
-Builds fully compliant, beautiful, and rich EPUB3 editions for:
-1. Book 1: Provincial Coordinator — 24-Hour Exam Master Guide
-2. Book 2: Health Management — 24-Hour Exam & Field Practice Master Guide
+Builds publication-quality, accessible, and elegant EPUB3 editions for:
+1. Book 1: Provincial Coordinator — Field Management & Exam Readiness
+2. Book 2: Health Management — Professional Learning & Field Practice
+
+Follows strict publication standards:
+- Elegant typography optimized for Afghan Dari & English long-form reading
+- Responsive, mobile-first design with dark mode support
+- Clean semantic XHTML, zero LaTeX/HTML leakage
+- Valid EPUB3 package, manifest, spine, NCX, and NAV
 """
 
 import os
@@ -16,39 +22,32 @@ from datetime import datetime
 CSS_STYLES = """@charset "utf-8";
 
 /* ==========================================================================
-   Master EPUB3 Professional Stylesheet
-   Dari / Pashto / English Bilingual Publication
-   Target: Daikundi Health Management & Provincial Coordinator Series
+   Master EPUB3 Professional Publication Stylesheet
+   Dari / Pashto / English Bilingual Typography
+   Focus: Readability, Restrained Elegance, Accessibility
    ========================================================================== */
 
 @namespace "http://www.w3.org/1999/xhtml";
 
 :root {
-  --primary-color: #0d47a1;
-  --primary-dark: #002171;
-  --secondary-color: #00796b;
-  --accent-gold: #b78103;
-  --bg-color: #fdfdfd;
-  --text-color: #1a1a1a;
-  --card-bg: #f8fafc;
-  --card-border: #cbd5e1;
-  --card-model: #f0fdf4;
-  --border-model: #15803d;
-  --card-tip: #eff6ff;
-  --border-tip: #1d4ed8;
-  --card-warn: #fef2f2;
-  --border-warn: #b91c1c;
+  --primary-color: #1e3a8a;
+  --secondary-color: #0f766e;
+  --text-main: #1f2937;
+  --text-muted: #4b5563;
+  --bg-main: #ffffff;
+  --bg-subtle: #f8fafc;
+  --border-light: #e2e8f0;
+  --border-strong: #94a3b8;
   --table-head-bg: #1e293b;
-  --table-border: #cbd5e1;
-  --table-alt-bg: #f8fafc;
+  --callout-border: #0284c7;
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Vazirmatn", "IRANSans", "Tahoma", "Arial", sans-serif;
   font-size: 1.05em;
   line-height: 1.85;
-  color: var(--text-color);
-  background-color: var(--bg-color);
+  color: var(--text-main);
+  background-color: var(--bg-main);
   direction: rtl;
   text-align: justify;
   margin: 0;
@@ -56,16 +55,16 @@ body {
   word-wrap: break-word;
 }
 
-/* Titles and Headings */
+/* Headings */
 h1.part-header {
-  font-size: 1.75em;
+  font-size: 1.8em;
   font-weight: 800;
   color: #0f172a;
-  border-bottom: 3px solid var(--primary-color);
-  padding-bottom: 10px;
-  margin-top: 1.4em;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 8px;
+  margin-top: 1.5em;
   margin-bottom: 0.8em;
-  line-height: 1.4;
+  line-height: 1.35;
   text-align: right;
   page-break-before: always;
 }
@@ -73,20 +72,20 @@ h1.part-header {
 h2.chapter-header {
   font-size: 1.4em;
   font-weight: 700;
-  color: #1e3a8a;
-  border-right: 5px solid var(--secondary-color);
+  color: var(--primary-color);
+  border-right: 4px solid var(--secondary-color);
   padding-right: 10px;
-  margin-top: 1.3em;
+  margin-top: 1.4em;
   margin-bottom: 0.6em;
   line-height: 1.4;
   text-align: right;
 }
 
 h3.section-header {
-  font-size: 1.2em;
+  font-size: 1.18em;
   font-weight: 700;
-  color: #0f766e;
-  margin-top: 1.1em;
+  color: var(--secondary-color);
+  margin-top: 1.2em;
   margin-bottom: 0.5em;
   text-align: right;
 }
@@ -95,28 +94,10 @@ h4.sub-header {
   font-size: 1.05em;
   font-weight: 600;
   color: #334155;
-  margin-top: 0.9em;
+  margin-top: 1em;
   margin-bottom: 0.4em;
   text-align: right;
 }
-
-/* Badges */
-.badge-case, .badge-interview, .badge-mock, .badge-q, .badge-model, .badge-tip, .badge-warn {
-  display: inline-block;
-  font-size: 0.8em;
-  font-weight: bold;
-  padding: 2px 7px;
-  border-radius: 4px;
-  margin-left: 6px;
-  vertical-align: middle;
-}
-.badge-case { background-color: #0d9488; color: #ffffff; }
-.badge-interview { background-color: #4f46e5; color: #ffffff; }
-.badge-mock { background-color: #b45309; color: #ffffff; }
-.badge-q { background-color: #2563eb; color: #ffffff; }
-.badge-model { background-color: #15803d; color: #ffffff; margin-bottom: 6px; }
-.badge-tip { background-color: #1d4ed8; color: #ffffff; margin-bottom: 6px; }
-.badge-warn { background-color: #b91c1c; color: #ffffff; margin-bottom: 6px; }
 
 /* Paragraphs & Text */
 p.para {
@@ -132,70 +113,69 @@ strong {
 
 code {
   font-family: Consolas, "Courier New", monospace;
-  font-size: 0.9em;
+  font-size: 0.88em;
   background-color: #f1f5f9;
   padding: 2px 5px;
-  border-radius: 4px;
+  border-radius: 3px;
   direction: ltr;
   display: inline-block;
 }
 
 /* Lists */
 ul.bullet-list, ol.numbered-list {
-  margin: 0.5em 0 1em 0;
+  margin: 0.6em 0 1.2em 0;
   padding-right: 24px;
   padding-left: 0;
 }
 
 li.bullet-item, li.numbered-item {
   margin-bottom: 0.5em;
-  line-height: 1.75;
+  line-height: 1.8;
 }
 
-/* Cards & Callouts */
+/* Cards & Text Callouts (Restrained & Elegant) */
 .quote-card {
-  background-color: #f8fafc;
-  border-right: 4px solid var(--primary-color);
-  padding: 12px 16px;
-  margin: 1em 0;
-  font-style: italic;
+  background-color: var(--bg-subtle);
+  border-right: 3px solid var(--primary-color);
+  padding: 10px 16px;
+  margin: 1.1em 0;
   color: #334155;
-  border-radius: 0 6px 6px 0;
+  border-radius: 0 4px 4px 0;
 }
 
 .model-answer-card {
-  background-color: var(--card-model);
-  border-right: 4px solid var(--border-model);
+  background-color: #f0fdf4;
+  border-right: 3px solid #16a34a;
   border-radius: 0 6px 6px 0;
   padding: 12px 16px;
-  margin: 1.1em 0;
+  margin: 1.2em 0;
   color: #14532d;
 }
 
 .exam-tip-card {
-  background-color: var(--card-tip);
-  border-right: 4px solid var(--border-tip);
+  background-color: #eff6ff;
+  border-right: 3px solid #2563eb;
   border-radius: 0 6px 6px 0;
   padding: 12px 16px;
-  margin: 1.1em 0;
+  margin: 1.2em 0;
   color: #1e3a8a;
 }
 
 .warning-card {
-  background-color: var(--card-warn);
-  border-right: 4px solid var(--border-warn);
+  background-color: #fef2f2;
+  border-right: 3px solid #dc2626;
   border-radius: 0 6px 6px 0;
   padding: 12px 16px;
-  margin: 1.1em 0;
+  margin: 1.2em 0;
   color: #7f1d1d;
 }
 
 .diagram-box {
   background-color: #0f172a;
   color: #f8fafc;
-  padding: 12px 14px;
+  padding: 12px 16px;
   border-radius: 6px;
-  margin: 1em 0;
+  margin: 1.2em 0;
   direction: ltr;
   text-align: left;
   overflow-x: auto;
@@ -218,9 +198,9 @@ li.bullet-item, li.numbered-item {
 }
 
 .math-card {
-  background: #f8fafc;
-  border: 1px solid #cbd5e1;
-  border-top: 3px solid #0284c7;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  border-top: 3px solid var(--secondary-color);
   border-radius: 6px;
   padding: 12px 16px;
   margin: 1.2em 0;
@@ -319,20 +299,20 @@ table.styled-table th {
 
 table.styled-table td {
   padding: 8px 10px;
-  border: 1px solid var(--table-border);
+  border: 1px solid var(--border-light);
   text-align: right;
   vertical-align: top;
   word-break: break-word;
 }
 
 table.styled-table tr:nth-child(even) {
-  background-color: var(--table-alt-bg);
+  background-color: var(--bg-subtle);
 }
 
 hr.chapter-divider {
   border: 0;
   height: 1px;
-  background: #cbd5e1;
+  background: var(--border-light);
   margin: 1.8em 0;
 }
 
@@ -363,7 +343,7 @@ hr.chapter-divider {
 .title-main {
   font-size: 2em;
   font-weight: 800;
-  color: var(--primary-dark);
+  color: #0f2b48;
   margin-bottom: 10px;
   line-height: 1.35;
 }
@@ -375,48 +355,51 @@ hr.chapter-divider {
   line-height: 1.4;
 }
 .title-meta-box {
-  background-color: #f1f5f9;
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-light);
   border-radius: 6px;
   padding: 14px 18px;
   display: inline-block;
   margin-top: 25px;
   text-align: right;
   font-size: 0.92em;
-  color: #475569;
+  color: var(--text-muted);
 }
 
-/* Night / Dark Mode Support */
+/* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: #121212;
-    --text-color: #e2e8f0;
-    --card-bg: #1e293b;
-    --card-border: #334155;
+    --bg-main: #121212;
+    --text-main: #e2e8f0;
+    --text-muted: #94a3b8;
+    --bg-subtle: #1e293b;
+    --border-light: #334155;
+    --border-strong: #64748b;
     --table-head-bg: #0f172a;
-    --table-border: #334155;
-    --table-alt-bg: #182234;
+    --primary-color: #60a5fa;
+    --secondary-color: #2dd4bf;
   }
   body {
     background-color: #121212;
     color: #e2e8f0;
   }
-  h1.part-header { color: #93c5fd; }
-  h2.chapter-header { color: #60a5fa; }
+  h1.part-header { color: #93c5fd; border-bottom-color: #3b82f6; }
+  h2.chapter-header { color: #60a5fa; border-right-color: #2dd4bf; }
   h3.section-header { color: #2dd4bf; }
   h4.sub-header { color: #cbd5e1; }
   strong { color: #f8fafc; }
   code { background-color: #1e293b; color: #38bdf8; }
-  .quote-card { background-color: #1e293b; color: #cbd5e1; }
+  .quote-card { background-color: #1e293b; color: #cbd5e1; border-right-color: #3b82f6; }
   .model-answer-card { background-color: #064e3b; color: #ecfdf5; border-right-color: #10b981; }
   .exam-tip-card { background-color: #1e3a5f; color: #dbeafe; border-right-color: #3b82f6; }
   .warning-card { background-color: #450a0a; color: #fee2e2; border-right-color: #ef4444; }
-  .math-card { background: #1e293b; border-color: #334155; }
+  .math-card { background: #1e293b; border-color: #334155; border-top-color: #0284c7; }
   .math-equation { color: #f8fafc; }
   .math-num { border-bottom-color: #94a3b8; }
   .math-left, .math-right { color: #f8fafc; }
   .flow-chain { background-color: #064e3b; border-color: #047857; }
   .flow-step { background-color: #065f46; color: #ecfdf5; border-color: #10b981; }
-  .title-meta-box { background-color: #1e293b; color: #94a3b8; }
+  .title-meta-box { background-color: #1e293b; border-color: #334155; color: #94a3b8; }
 }
 """
 
@@ -670,33 +653,23 @@ def convert_section_to_valid_xhtml(md_text, section_title):
         elif stripped.startswith('### '):
             close_lists()
             text = process_inline_markdown(stripped[4:].strip())
-            if 'قضیه' in text or 'Case' in text:
-                output.append(f'<h3 class="section-header case-header"><span class="badge-case">قضیه ساحوی</span> {text}</h3>')
-            elif 'سؤال مصاحبه' in text or 'Interview' in text:
-                output.append(f'<h3 class="section-header interview-header"><span class="badge-interview">مصاحبه تخنیکی</span> {text}</h3>')
-            elif 'آزمون آزمایشی' in text or 'Mock Exam' in text:
-                output.append(f'<h3 class="section-header mock-header"><span class="badge-mock">آزمون جامع</span> {text}</h3>')
-            else:
-                output.append(f'<h3 class="section-header">{text}</h3>')
+            output.append(f'<h3 class="section-header">{text}</h3>')
         elif stripped.startswith('#### '):
             close_lists()
             text = process_inline_markdown(stripped[5:].strip())
-            if 'سؤال Q' in text or 'Q' in text:
-                output.append(f'<h4 class="sub-header q-header"><span class="badge-q">پرسش آزمون</span> {text}</h4>')
-            else:
-                output.append(f'<h4 class="sub-header">{text}</h4>')
+            output.append(f'<h4 class="sub-header">{text}</h4>')
         # Lists
         elif stripped.startswith('* ') or stripped.startswith('- '):
             item_text = process_inline_markdown(stripped[2:].strip())
             if 'پاسخ مدل' in item_text or 'Model Answer' in item_text or 'کلید پاسخ' in item_text:
                 close_lists()
-                output.append(f'<div class="model-answer-card"><div class="badge-model">پاسخ مدل کاندیدا</div>{item_text}</div>')
+                output.append(f'<div class="model-answer-card">{item_text}</div>')
             elif 'نکته آزمون' in item_text or 'Exam Point' in item_text or 'نکته کلیدی' in item_text:
                 close_lists()
-                output.append(f'<div class="exam-tip-card"><div class="badge-tip">نکته کلیدی آزمون</div>{item_text}</div>')
+                output.append(f'<div class="exam-tip-card">{item_text}</div>')
             elif 'هشدار' in item_text or 'Warning' in item_text or 'خط قرمز' in item_text:
                 close_lists()
-                output.append(f'<div class="warning-card"><div class="badge-warn">هشدار و خط قرمز</div>{item_text}</div>')
+                output.append(f'<div class="warning-card">{item_text}</div>')
             else:
                 if in_ol:
                     output.append('</ol>')
@@ -707,17 +680,13 @@ def convert_section_to_valid_xhtml(md_text, section_title):
                 output.append(f'  <li class="bullet-item">{item_text}</li>')
         elif re.match(r'^\d+\.\s', stripped):
             item_text = process_inline_markdown(re.sub(r'^\d+\.\s*', '', stripped))
-            if 'Model Answer' in stripped or 'پاسخ مدل' in stripped:
-                close_lists()
-                output.append(f'<div class="model-answer-card"><div class="badge-model">پاسخ مدل کاندیدا</div>{item_text}</div>')
-            else:
-                if in_ul:
-                    output.append('</ul>')
-                    in_ul = False
-                if not in_ol:
-                    output.append('<ol class="numbered-list">')
-                    in_ol = True
-                output.append(f'  <li class="numbered-item">{item_text}</li>')
+            if in_ul:
+                output.append('</ul>')
+                in_ul = False
+            if not in_ol:
+                output.append('<ol class="numbered-list">')
+                in_ol = True
+            output.append(f'  <li class="numbered-item">{item_text}</li>')
         elif stripped.startswith('---'):
             close_lists()
             output.append('<hr class="chapter-divider"/>')
@@ -805,6 +774,7 @@ def build_epub(book_id, title, subtitle, author, cover_png, manuscript_path, out
 
     print(f"Total parts to compile: {len(chapters)}")
 
+    os.makedirs(os.path.dirname(output_epub_path), exist_ok=True)
     with zipfile.ZipFile(output_epub_path, 'w', zipfile.ZIP_DEFLATED) as zf:
         # 1. mimetype (MUST be first and uncompressed)
         zf.writestr("mimetype", "application/epub+zip", compress_type=zipfile.ZIP_STORED)
@@ -863,10 +833,10 @@ def build_epub(book_id, title, subtitle, author, cover_png, manuscript_path, out
     <hr class="chapter-divider"/>
     <div class="title-meta-box">
       <p><strong>مرجع تدوین:</strong> {html.escape(author)}</p>
-      <p><strong>حوزه عملیاتی:</strong> افغانستان — ولایت دایکندی (نیلی)</p>
+      <p><strong>حوزه عملیاتی:</strong> افغانستان — ولایت دایکندی</p>
       <p><strong>چارچوب‌های تخنیکی:</strong> MoPH / BPHS / EPHS / DHIS2 / WHO</p>
       <p><strong>تاریخ انتشار:</strong> {datetime.now().strftime('%Y-%m-%d')}</p>
-      <p><strong>فرمت کتاب:</strong> نگارش مسلکی و استاندارد EPUB3</p>
+      <p><strong>قالب:</strong> کتاب الکترونیک استاندارد (EPUB3 Publication)</p>
     </div>
   </div>
 </body>
@@ -973,7 +943,7 @@ def build_epub(book_id, title, subtitle, author, cover_png, manuscript_path, out
     <dc:creator>{html.escape(author)}</dc:creator>
     <dc:language>fa-AF</dc:language>
     <dc:date>{datetime.now().strftime('%Y-%m-%d')}</dc:date>
-    <dc:publisher>Shuhada Organization — Field Operations Daikundi</dc:publisher>
+    <dc:publisher>مؤسسه شهدا — عملیات ساحوی دایکندی</dc:publisher>
     <dc:description>{html.escape(subtitle)}</dc:description>
     <meta property="dcterms:modified">{datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')}</meta>
   </metadata>
@@ -991,8 +961,8 @@ def build_epub(book_id, title, subtitle, author, cover_png, manuscript_path, out
 if __name__ == "__main__":
     build_epub(
         book_id="shuhada-pc-daikundi-exam-2026-v1",
-        title="هماهنگ‌کننده ولایتی — شبیه‌ساز ۲۴ ساعته امتحان و مصاحبه مسلکی",
-        subtitle="راهنمای کاربردی، سناریوهای عملیاتی، فورمول‌ها و سیستم نظارت پروژه‌های صحی دایکندی",
+        title="هماهنگ‌کننده ولایتی — راهنمای جامع مدیریت ساحوی، رهبری عملیات و آمادگی آزمون",
+        subtitle="راهنمای کاربردی عملیات کلینیکی، نظارت حمایوی و شبیه‌ساز آزمون استخدامی",
         author="مؤسسه شهدا — بست هماهنگ‌کننده ولایتی دایکندی",
         cover_png="build/cover_book1.png",
         manuscript_path="manuscript/master.md",
@@ -1001,7 +971,7 @@ if __name__ == "__main__":
 
     build_epub(
         book_id="shuhada-hm-field-master-2026-v2",
-        title="مدیریت صحت — راهنمای جامع ۲۴ ساعته آزمون و پرکتیک ساحوی",
+        title="مدیریت صحت — راهنمای جامع یادگیری مسلکی و پرکتیک ساحوی",
         subtitle="مدیریت مراکز صحی، زنجیره تأمین ادویه، HMIS، منابع بشری و فورمول‌های اپیدمیولوژی",
         author="مؤسسه شهدا — مدیریت عملیات ساحوی صحت عامه",
         cover_png="build/cover_book2.png",
