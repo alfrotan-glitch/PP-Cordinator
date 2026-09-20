@@ -4,7 +4,7 @@ Builder for Part X (Chapters 22, 23 & 24) and Part XI (Chapters 25 & 26)
 """
 
 def get_part10_11_text():
-    return """
+    return r"""
 # PART X — COORDINATION & STAKEHOLDERS
 ## فصل بیست‌ودوم: هماهنگی واقعی در ساحه یعنی چه؟
 ### Internal & External Coordination Architecture

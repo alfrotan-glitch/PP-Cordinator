@@ -4,7 +4,7 @@ Builder for Part IV (Chapters 8, 9 & 10) and Part V (Chapters 11 & 12)
 """
 
 def get_part4_5_text():
-    return """
+    return r"""
 # PART IV — HEALTH SERVICES & CLINIC MANAGEMENT
 ## فصل هشتم: کلینیک را مانند یک Provincial Coordinator ببینید!
 ### Clinic as a Multi-Dimensional Living System

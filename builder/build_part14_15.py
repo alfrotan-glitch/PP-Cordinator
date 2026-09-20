@@ -5,7 +5,7 @@ Interview Mastery & Professional Ethics (Complete 20 Core Interview Questions)
 """
 
 def get_part14_15_text():
-    return """
+    return r"""
 # PART XIV — INTERVIEW MODE
 ## فصل سی‌وششم: اصول طلایی موفقیت در مصاحبه استخدامی
 ### How to Answer Interview Questions with the STAR Method

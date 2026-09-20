@@ -4,7 +4,7 @@ Builder for Appendices A through M
 """
 
 def get_appendices_text():
-    return """
+    return r"""
 # APPENDICES — ضمیمه‌ها و فورم‌های معیاری ساحوی
 ## ضمیمه الف: مخفف‌ها و اختصارات کلیدی (Appendix A: Key Acronyms)
 

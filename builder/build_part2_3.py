@@ -4,7 +4,7 @@ Builder for Part II (Chapters 3 & 4) and Part III (Chapters 5, 6 & 7)
 """
 
 def get_part2_3_text():
-    return """
+    return r"""
 # PART II — UNDERSTAND THE HEALTH SYSTEM
 ## فصل سوم: نظام صحی افغانستان در یک ساعت
 ### Afghanistan Health System Structure & Stakeholders

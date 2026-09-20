@@ -5,7 +5,7 @@ Excel/Word Skills & The 10 Integrated Master Cases
 """
 
 def get_part16_17_text():
-    return """
+    return r"""
 # PART XVI — EXCEL & OFFICE SKILLS
 ## فصل چهلم: مهارت‌های اکسل در ۳۰ دقیقه برای هماهنگ‌کننده ولایتی
 ### Practical Excel Formulas for Health & Budget Management

@@ -4,7 +4,7 @@ Builder for Part VIII (Chapters 17, 18 & 19) and Part IX (Chapters 20 & 21)
 """
 
 def get_part8_9_text():
-    return """
+    return r"""
 # PART VIII — HR & ADMINISTRATION
 ## فصل هفدهم: مدیریت منابع بشری (HR) برای هماهنگ‌کننده ولایتی
 ### Staff Welfare, Absenteeism, Disciplinary Action & PSEA

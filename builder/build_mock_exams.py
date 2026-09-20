@@ -4,7 +4,7 @@ Detailed Mock Exams Generator for Chapter 33, 34, 35
 """
 
 def get_mock_exams_text():
-    return """
+    return r"""
 ## فصل سی‌وسوم: آزمون آزمایشی ۱: سطح پایه (Mock Written Exam 1)
 ### Foundational Level Simulation — Time: 2 Hours — Total Marks: 100
 

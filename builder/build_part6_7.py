@@ -4,7 +4,7 @@ Builder for Part VI (Chapters 13 & 14) and Part VII (Chapters 15 & 16)
 """
 
 def get_part6_7_text():
-    return """
+    return r"""
 # PART VI — BUDGET & FINANCE
 ## فصل سیزدهم: بودجه: یاد بگیرید چگونه مثل یک هماهنگ‌کننده حساب کنید!
 ### Budget Calculations, Variance & Financial Integrity

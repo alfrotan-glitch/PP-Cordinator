@@ -4,7 +4,7 @@ Practice and Advanced Cases for Chapter 26
 """
 
 def get_ch26_cases_text():
-    return """
+    return r"""
 ---
 
 ### ۲۶.۸ پنج قضیه تمرینی بنیادین با چارچوب SAFE/R (5 Practice Cases)

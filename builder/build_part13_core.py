@@ -4,7 +4,7 @@ Builder for Part XIII (Chapters 30 & 31): 100 Things You Must Know & 50 Memory H
 """
 
 def get_part13_core_text():
-    return """
+    return r"""
 # PART XIII — EXAM MODE
 ## فصل سی‌ام: ۱۰۰ اصطلاح و مفهوم حیاتی که باید بدانید
 ### 100 Essential Concepts for Provincial Coordinator

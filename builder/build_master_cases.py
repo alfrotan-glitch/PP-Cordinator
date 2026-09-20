@@ -4,7 +4,7 @@ Full 10 Integrated Master Cases Generator (Chapters 42-51) with all 8 required c
 """
 
 def get_master_cases_text():
-    return """
+    return r"""
 # PART XVII: ده سناریوی ترکیبی جامع (۱۰ قضیه با حل کامل)
 ## 10 Integrated Master Cases — Real Daikundi Context
 

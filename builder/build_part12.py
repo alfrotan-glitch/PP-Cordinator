@@ -4,7 +4,7 @@ Builder for Part XII (Chapters 27, 28 & 29)
 """
 
 def get_part12_text():
-    return """
+    return r"""
 # PART XII — THE FULL PROVINCIAL COORDINATOR SIMULATION
 ## فصل بیست‌وهفتم: روز اول کاری شما: شبیه‌سازی ساعت‌به‌ساعت (از ۰۷:۴۲ تا ۱۶:۳۰)
 ### Full Simulation: Hour-by-Hour Decisions in Nilli, Daikundi

@@ -5,7 +5,7 @@ Final Revision System & The Final Night (Including Chapters 55 & 56)
 """
 
 def get_part18_19_text():
-    return """
+    return r"""
 # PART XVIII — FINAL REVISION SYSTEM
 ## فصل پنجاه‌ودوم: ۵۰ حقیقت بنیادین که باید پیش از امتحان حفظ باشید
 ### 50 Must-Know Facts for Rapid Revision

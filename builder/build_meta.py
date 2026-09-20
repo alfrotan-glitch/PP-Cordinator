@@ -2,7 +2,7 @@
 import os
 
 def get_front_matter():
-    return """---
+    return r"""---
 title: "MASTER BLUEPRINT — PROVINCIAL COORDINATOR: 24-HOUR EXAM MASTER GUIDE"
 subtitle: "Shuhada Organization — Provincial Coordinator, Daikundi | راهنمای جامع و شبیه‌ساز ۲۴ ساعته آمادگی امتحان و مصاحبه هماهنگ‌کننده ولایتی"
 author: "Prepared for Shuhada Organization Candidates — Daikundi Field Operations"
