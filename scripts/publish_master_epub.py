@@ -39,7 +39,7 @@ CSS_STYLES = """@charset "utf-8";
   --card-warn: #fef2f2;
   --border-warn: #b91c1c;
   --table-head-bg: #1e293b;
-  --table-border: #e2e8f0;
+  --table-border: #cbd5e1;
   --table-alt-bg: #f8fafc;
 }
 
@@ -52,18 +52,18 @@ body {
   direction: rtl;
   text-align: justify;
   margin: 0;
-  padding: 5% 6%;
+  padding: 4% 5%;
   word-wrap: break-word;
 }
 
 /* Titles and Headings */
 h1.part-header {
-  font-size: 1.85em;
+  font-size: 1.75em;
   font-weight: 800;
   color: #0f172a;
   border-bottom: 3px solid var(--primary-color);
-  padding-bottom: 12px;
-  margin-top: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 1.4em;
   margin-bottom: 0.8em;
   line-height: 1.4;
   text-align: right;
@@ -71,31 +71,31 @@ h1.part-header {
 }
 
 h2.chapter-header {
-  font-size: 1.45em;
+  font-size: 1.4em;
   font-weight: 700;
   color: #1e3a8a;
   border-right: 5px solid var(--secondary-color);
-  padding-right: 12px;
-  margin-top: 1.4em;
+  padding-right: 10px;
+  margin-top: 1.3em;
   margin-bottom: 0.6em;
   line-height: 1.4;
   text-align: right;
 }
 
 h3.section-header {
-  font-size: 1.25em;
+  font-size: 1.2em;
   font-weight: 700;
   color: #0f766e;
-  margin-top: 1.2em;
+  margin-top: 1.1em;
   margin-bottom: 0.5em;
   text-align: right;
 }
 
 h4.sub-header {
-  font-size: 1.1em;
+  font-size: 1.05em;
   font-weight: 600;
   color: #334155;
-  margin-top: 1em;
+  margin-top: 0.9em;
   margin-bottom: 0.4em;
   text-align: right;
 }
@@ -105,13 +105,13 @@ h4.sub-header {
   display: inline-block;
   font-size: 0.8em;
   font-weight: bold;
-  padding: 2px 8px;
+  padding: 2px 7px;
   border-radius: 4px;
-  margin-left: 8px;
+  margin-left: 6px;
   vertical-align: middle;
 }
 .badge-case { background-color: #0d9488; color: #ffffff; }
-.badge-interview { background-color: #6366f1; color: #ffffff; }
+.badge-interview { background-color: #4f46e5; color: #ffffff; }
 .badge-mock { background-color: #b45309; color: #ffffff; }
 .badge-q { background-color: #2563eb; color: #ffffff; }
 .badge-model { background-color: #15803d; color: #ffffff; margin-bottom: 6px; }
@@ -121,7 +121,7 @@ h4.sub-header {
 /* Paragraphs & Text */
 p.para {
   margin-top: 0;
-  margin-bottom: 1.1em;
+  margin-bottom: 1em;
   line-height: 1.85;
 }
 
@@ -142,13 +142,13 @@ code {
 
 /* Lists */
 ul.bullet-list, ol.numbered-list {
-  margin: 0.6em 0 1.2em 0;
-  padding-right: 28px;
+  margin: 0.5em 0 1em 0;
+  padding-right: 24px;
   padding-left: 0;
 }
 
 li.bullet-item, li.numbered-item {
-  margin-bottom: 0.6em;
+  margin-bottom: 0.5em;
   line-height: 1.75;
 }
 
@@ -156,8 +156,8 @@ li.bullet-item, li.numbered-item {
 .quote-card {
   background-color: #f8fafc;
   border-right: 4px solid var(--primary-color);
-  padding: 12px 18px;
-  margin: 1.2em 0;
+  padding: 12px 16px;
+  margin: 1em 0;
   font-style: italic;
   color: #334155;
   border-radius: 0 6px 6px 0;
@@ -166,36 +166,36 @@ li.bullet-item, li.numbered-item {
 .model-answer-card {
   background-color: var(--card-model);
   border-right: 4px solid var(--border-model);
-  border-radius: 0 8px 8px 0;
-  padding: 14px 18px;
-  margin: 1.2em 0;
+  border-radius: 0 6px 6px 0;
+  padding: 12px 16px;
+  margin: 1.1em 0;
   color: #14532d;
 }
 
 .exam-tip-card {
   background-color: var(--card-tip);
   border-right: 4px solid var(--border-tip);
-  border-radius: 0 8px 8px 0;
-  padding: 14px 18px;
-  margin: 1.2em 0;
+  border-radius: 0 6px 6px 0;
+  padding: 12px 16px;
+  margin: 1.1em 0;
   color: #1e3a8a;
 }
 
 .warning-card {
   background-color: var(--card-warn);
   border-right: 4px solid var(--border-warn);
-  border-radius: 0 8px 8px 0;
-  padding: 14px 18px;
-  margin: 1.2em 0;
+  border-radius: 0 6px 6px 0;
+  padding: 12px 16px;
+  margin: 1.1em 0;
   color: #7f1d1d;
 }
 
 .diagram-box {
   background-color: #0f172a;
   color: #f8fafc;
-  padding: 14px;
+  padding: 12px 14px;
   border-radius: 6px;
-  margin: 1.2em 0;
+  margin: 1em 0;
   direction: ltr;
   text-align: left;
   overflow-x: auto;
@@ -203,7 +203,7 @@ li.bullet-item, li.numbered-item {
 .diagram-box pre {
   margin: 0;
   font-family: Consolas, monospace;
-  font-size: 0.88em;
+  font-size: 0.85em;
   line-height: 1.5;
 }
 
@@ -214,18 +214,19 @@ li.bullet-item, li.numbered-item {
   color: #0369a1;
   direction: ltr;
   display: inline-block;
-  padding: 0 3px;
+  padding: 0 2px;
 }
 
 .math-card {
   background: #f8fafc;
   border: 1px solid #cbd5e1;
   border-top: 3px solid #0284c7;
-  border-radius: 8px;
-  padding: 14px 20px;
-  margin: 1.3em 0;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin: 1.2em 0;
   text-align: center;
   direction: ltr;
+  overflow-x: auto;
 }
 
 .math-equation {
@@ -233,7 +234,7 @@ li.bullet-item, li.numbered-item {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  font-size: 1.1em;
+  font-size: 1.05em;
   font-weight: 600;
   color: #0f172a;
 }
@@ -243,18 +244,18 @@ li.bullet-item, li.numbered-item {
   flex-direction: column;
   align-items: center;
   vertical-align: middle;
-  padding: 0 6px;
+  padding: 0 4px;
 }
 
 .math-num {
   border-bottom: 2px solid #334155;
-  padding-bottom: 3px;
+  padding-bottom: 2px;
   text-align: center;
   width: 100%;
 }
 
 .math-den {
-  padding-top: 3px;
+  padding-top: 2px;
   text-align: center;
   width: 100%;
 }
@@ -265,12 +266,12 @@ li.bullet-item, li.numbered-item {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 6px;
   background-color: #f0fdf4;
   border: 1px solid #bbf7d0;
-  border-radius: 8px;
-  padding: 12px 16px;
-  margin: 1.2em 0;
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin: 1.1em 0;
   direction: ltr;
 }
 
@@ -278,46 +279,50 @@ li.bullet-item, li.numbered-item {
   background-color: #ffffff;
   border: 1px solid #86efac;
   border-radius: 4px;
-  padding: 4px 10px;
+  padding: 3px 8px;
   font-weight: 600;
   color: #166534;
-  font-size: 0.9em;
+  font-size: 0.88em;
 }
 
 .flow-arrow {
   font-weight: bold;
   color: #15803d;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 /* Tables */
 .table-wrap {
   width: 100%;
   overflow-x: auto;
-  margin: 1.5em 0;
+  margin: 1.4em 0;
+  -webkit-overflow-scrolling: touch;
 }
 
 table.styled-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.95em;
+  font-size: 0.92em;
   direction: rtl;
+  margin: 0 auto;
 }
 
 table.styled-table th {
   background-color: var(--table-head-bg);
   color: #ffffff;
-  padding: 10px 12px;
+  padding: 8px 10px;
   text-align: right;
   border: 1px solid #334155;
   font-weight: 700;
+  word-break: normal;
 }
 
 table.styled-table td {
-  padding: 9px 12px;
+  padding: 8px 10px;
   border: 1px solid var(--table-border);
   text-align: right;
   vertical-align: top;
+  word-break: break-word;
 }
 
 table.styled-table tr:nth-child(even) {
@@ -328,7 +333,7 @@ hr.chapter-divider {
   border: 0;
   height: 1px;
   background: #cbd5e1;
-  margin: 2em 0;
+  margin: 1.8em 0;
 }
 
 /* Cover Image Page */
@@ -336,44 +341,47 @@ hr.chapter-divider {
   text-align: center;
   padding: 0;
   margin: 0;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
 }
 
 .cover-image {
   max-width: 100%;
   max-height: 100%;
+  height: auto;
   object-fit: contain;
 }
 
 /* Title Page */
 .title-page-wrap {
   text-align: center;
-  padding: 40px 20px;
+  padding: 30px 15px;
   direction: rtl;
 }
 .title-main {
-  font-size: 2.2em;
+  font-size: 2em;
   font-weight: 800;
   color: var(--primary-dark);
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  line-height: 1.35;
 }
 .title-sub {
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 600;
   color: #334155;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  line-height: 1.4;
 }
 .title-meta-box {
   background-color: #f1f5f9;
-  border-radius: 8px;
-  padding: 16px;
+  border-radius: 6px;
+  padding: 14px 18px;
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 25px;
   text-align: right;
-  font-size: 0.95em;
+  font-size: 0.92em;
   color: #475569;
 }
 
@@ -404,6 +412,8 @@ hr.chapter-divider {
   .warning-card { background-color: #450a0a; color: #fee2e2; border-right-color: #ef4444; }
   .math-card { background: #1e293b; border-color: #334155; }
   .math-equation { color: #f8fafc; }
+  .math-num { border-bottom-color: #94a3b8; }
+  .math-left, .math-right { color: #f8fafc; }
   .flow-chain { background-color: #064e3b; border-color: #047857; }
   .flow-step { background-color: #065f46; color: #ecfdf5; border-color: #10b981; }
   .title-meta-box { background-color: #1e293b; color: #94a3b8; }
@@ -517,6 +527,10 @@ def format_math_display(raw):
     return f'<div class="math-card"><div class="math-equation">{html.escape(clean)}</div></div>'
 
 def process_inline_markdown(line):
+    # 1. Protect <br> / <br/> before HTML escaping
+    line = re.sub(r'<br\s*/?>', '___BR_TOKEN___', line, flags=re.IGNORECASE)
+    
+    # 2. Extract math tokens ($$ first, then $)
     math_tokens = []
     def stash_math(m):
         raw = m.group(1)
@@ -525,12 +539,21 @@ def process_inline_markdown(line):
         math_tokens.append(token_html)
         return f"___MATH_TOKEN_{len(math_tokens)-1}___"
     
+    line = re.sub(r'\$\$(.*?)\$\$', stash_math, line)
     line = re.sub(r'\$(.*?)\$', stash_math, line)
+    
+    # 3. Escape HTML
     line = html.escape(line)
+    
+    # 4. Restore styling tokens
     line = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', line)
     line = re.sub(r'\*(.*?)\*', r'<em>\1</em>', line)
     line = re.sub(r'`(.*?)`', r'<code>\1</code>', line)
     
+    # 5. Restore <br/>
+    line = line.replace('___BR_TOKEN___', '<br/>')
+    
+    # 6. Restore math tokens
     for idx, token in enumerate(math_tokens):
         line = line.replace(f"___MATH_TOKEN_{idx}___", token)
         
@@ -741,6 +764,7 @@ def convert_section_to_valid_xhtml(md_text, section_title):
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="fa" xml:lang="fa" dir="rtl">
 <head>
   <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>{html.escape(section_title)}</title>
   <link rel="stylesheet" type="text/css" href="style/book.css"/>
 </head>
@@ -766,8 +790,6 @@ def build_epub(book_id, title, subtitle, author, cover_png, manuscript_path, out
     raw_parts = re.split(r'\n# ', full_content)
     
     chapters = []
-    
-    # First item
     first_block = raw_parts[0].strip()
     first_title = first_block.split('\n')[0].replace('#', '').strip()
     if not first_title:
@@ -812,6 +834,7 @@ def build_epub(book_id, title, subtitle, author, cover_png, manuscript_path, out
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="fa" xml:lang="fa" dir="rtl">
 <head>
   <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cover</title>
   <link rel="stylesheet" type="text/css" href="style/book.css"/>
 </head>
@@ -829,6 +852,7 @@ def build_epub(book_id, title, subtitle, author, cover_png, manuscript_path, out
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="fa" xml:lang="fa" dir="rtl">
 <head>
   <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>{html.escape(title)}</title>
   <link rel="stylesheet" type="text/css" href="style/book.css"/>
 </head>
@@ -838,11 +862,11 @@ def build_epub(book_id, title, subtitle, author, cover_png, manuscript_path, out
     <h2 class="title-sub">{html.escape(subtitle)}</h2>
     <hr class="chapter-divider"/>
     <div class="title-meta-box">
-      <p><strong>نویسنده / تدوین:</strong> {html.escape(author)}</p>
+      <p><strong>مرجع تدوین:</strong> {html.escape(author)}</p>
       <p><strong>حوزه عملیاتی:</strong> افغانستان — ولایت دایکندی (نیلی)</p>
-      <p><strong>استاندارد:</strong> MoPH / BPHS / EPHS / DHIS2 / WHO</p>
+      <p><strong>چارچوب‌های تخنیکی:</strong> MoPH / BPHS / EPHS / DHIS2 / WHO</p>
       <p><strong>تاریخ انتشار:</strong> {datetime.now().strftime('%Y-%m-%d')}</p>
-      <p><strong>نسخه:</strong> ویرایش مسلکی و انتشار نهایی (EPUB3 Master Edition)</p>
+      <p><strong>فرمت کتاب:</strong> نگارش مسلکی و استاندارد EPUB3</p>
     </div>
   </div>
 </body>
@@ -852,7 +876,6 @@ def build_epub(book_id, title, subtitle, author, cover_png, manuscript_path, out
         # 7. Convert and write each chapter XHTML
         for file_id, p_title, p_md in chapters:
             xhtml_content = convert_section_to_valid_xhtml(p_md, p_title)
-            # Verify well-formedness before saving
             try:
                 ET.fromstring(xhtml_content)
             except ET.ParseError as e:
@@ -873,6 +896,7 @@ def build_epub(book_id, title, subtitle, author, cover_png, manuscript_path, out
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="fa" xml:lang="fa" dir="rtl">
 <head>
   <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>فهرست مندرجات</title>
   <link rel="stylesheet" type="text/css" href="style/book.css"/>
 </head>
@@ -968,8 +992,8 @@ if __name__ == "__main__":
     build_epub(
         book_id="shuhada-pc-daikundi-exam-2026-v1",
         title="هماهنگ‌کننده ولایتی — شبیه‌ساز ۲۴ ساعته امتحان و مصاحبه مسلکی",
-        subtitle="راهنمای جامع، سناریوهای عملیاتی، فورمول‌ها و سیستم نظارت پروژه‌های صحی دایکندی",
-        author="مؤسسه شهدا — آمادگی بست هماهنگ‌کننده ولایتی دایکندی",
+        subtitle="راهنمای کاربردی، سناریوهای عملیاتی، فورمول‌ها و سیستم نظارت پروژه‌های صحی دایکندی",
+        author="مؤسسه شهدا — بست هماهنگ‌کننده ولایتی دایکندی",
         cover_png="build/cover_book1.png",
         manuscript_path="manuscript/master.md",
         output_epub_path="build/Provincial_Coordinator_24Hour_Exam_Master_Guide.epub"
@@ -978,8 +1002,8 @@ if __name__ == "__main__":
     build_epub(
         book_id="shuhada-hm-field-master-2026-v2",
         title="مدیریت صحت — راهنمای جامع ۲۴ ساعته آزمون و پرکتیک ساحوی",
-        subtitle="شبیه‌ساز تخصصی مدیریت مراکز صحی، زنجیره تأمین ادویه، HMIS، منابع بشری و فورمول‌های اپیدمیولوژی",
-        author="مؤسسه شهدا — دیپارتمنت صحت عامه و مدیریت عملیات ساحوی",
+        subtitle="مدیریت مراکز صحی، زنجیره تأمین ادویه، HMIS، منابع بشری و فورمول‌های اپیدمیولوژی",
+        author="مؤسسه شهدا — مدیریت عملیات ساحوی صحت عامه",
         cover_png="build/cover_book2.png",
         manuscript_path="manuscript/health_management_master.md",
         output_epub_path="build/Health_Management_Master_Guide.epub"

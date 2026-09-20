@@ -23,7 +23,9 @@ def markdown_to_html(md_path, html_path):
     in_front_matter = False
     
     def process_inline(text):
+        text = re.sub(r'<br\s*/?>', '___BR_TOKEN___', text, flags=re.IGNORECASE)
         text = html.escape(text)
+        text = text.replace('___BR_TOKEN___', '<br/>')
         text = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', text)
         text = re.sub(r'\*(.*?)\*', r'<em>\1</em>', text)
         text = re.sub(r'`(.*?)`', r'<code>\1</code>', text)
