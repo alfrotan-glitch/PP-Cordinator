@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1800" width="1200" height="1800">
+  <defs>
+    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#081A36"/>
+      <stop offset="50%" stop-color="#0F2C59"/>
+      <stop offset="100%" stop-color="#163E75"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B8860B"/>
+      <stop offset="50%" stop-color="#E5C158"/>
+      <stop offset="100%" stop-color="#C28B14"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E4D8C"/>
+      <stop offset="100%" stop-color="#0A1F3D"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1800" fill="url(#bgGrad1)"/>
+
+  <!-- Elegant Decorative Borders -->
+  <rect x="40" y="40" width="1120" height="1720" rx="16" fill="none" stroke="url(#goldGrad)" stroke-width="4" opacity="0.85"/>
+  <rect x="55" y="55" width="1090" height="1690" rx="12" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.25"/>
+
+  <!-- Corner Flourishes -->
+  <path d="M 60 120 L 120 60" stroke="url(#goldGrad)" stroke-width="3" fill="none"/>
+  <path d="M 1140 120 L 1080 60" stroke="url(#goldGrad)" stroke-width="3" fill="none"/>
+  <path d="M 60 1680 L 120 1740" stroke="url(#goldGrad)" stroke-width="3" fill="none"/>
+  <path d="M 1140 1680 L 1080 1740" stroke="url(#goldGrad)" stroke-width="3" fill="none"/>
+
+  <!-- Top Badge / Header -->
+  <rect x="300" y="100" width="600" height="60" rx="30" fill="#061326" stroke="url(#goldGrad)" stroke-width="2"/>
+  <text x="600" y="140" font-family="'Vazirmatn', Tahoma, sans-serif" font-size="24" font-weight="bold" fill="#E5C158" text-anchor="middle" direction="rtl">سازمان شهدا (Shuhada Organization) — ولایت دایکندی</text>
+
+  <!-- Main Dari Title -->
+  <text x="600" y="270" font-family="'Vazirmatn', Tahoma, sans-serif" font-size="46" font-weight="900" fill="#FFFFFF" text-anchor="middle" direction="rtl" filter="url(#shadow)">رهنمای جامع آزمون استخدامی و وظایف</text>
+  <text x="600" y="350" font-family="'Vazirmatn', Tahoma, sans-serif" font-size="56" font-weight="900" fill="#E5C158" text-anchor="middle" direction="rtl" filter="url(#shadow)">هماهنگ‌کننده ولایتی</text>
+
+  <!-- English Subtitle -->
+  <text x="600" y="430" font-family="'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="800" fill="#A8C7FA" text-anchor="middle" letter-spacing="4">PROVINCIAL COORDINATOR</text>
+  <text x="600" y="475" font-family="'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">24-HOUR EXAM &amp; FIELD PRACTICE MASTER GUIDE</text>
+
+  <!-- Gold Divider Bar -->
+  <line x1="250" y1="520" x2="950" y2="520" stroke="url(#goldGrad)" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Central Emblem / Crest Graphic -->
+  <g transform="translate(600, 830)" filter="url(#shadow)">
+    <!-- Outer Shield -->
+    <path d="M 0 -220 Q 180 -220 220 -100 Q 220 120 0 240 Q -220 120 -220 -100 Q -180 -220 0 -220 Z" fill="url(#shieldGrad)" stroke="url(#goldGrad)" stroke-width="6"/>
+    <!-- Inner Arch Pattern -->
+    <path d="M 0 -180 Q 140 -180 170 -80 Q 170 90 0 190 Q -170 90 -170 -80 Q -140 -180 0 -180 Z" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.3"/>
+    
+    <!-- Stylized Scales of Justice / Governance Star -->
+    <circle cx="0" cy="-20" r="70" fill="#081A36" stroke="url(#goldGrad)" stroke-width="4"/>
+    <!-- Emblem Compass / Star -->
+    <polygon points="0,-75 16,-30 65,-20 25,12 36,60 0,30 -36,60 -25,12 -65,-20 -16,-30" fill="url(#goldGrad)"/>
+    
+    <!-- Core Formula Ribbon below shield -->
+    <rect x="-240" y="270" width="480" height="55" rx="12" fill="#0A1F3D" stroke="url(#goldGrad)" stroke-width="2"/>
+    <text x="0" y="306" font-family="'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">UNDERSTAND → PRIORITIZE → COORDINATE</text>
+  </g>
+
+  <!-- Key Pillars Badges -->
+  <g transform="translate(600, 1340)">
+    <rect x="-420" y="0" width="840" height="150" rx="16" fill="#07162C" stroke="#1E4D8C" stroke-width="2"/>
+    <text x="0" y="40" font-family="'Vazirmatn', Tahoma, sans-serif" font-size="22" font-weight="bold" fill="#E5C158" text-anchor="middle" direction="rtl">ویژه داوطلبان پست‌های هماهنگ‌کننده ولایتی، مدیر پروژه و رهبری دفاتر ساحوی</text>
+    <text x="0" y="80" font-family="'Vazirmatn', Tahoma, sans-serif" font-size="18" fill="#D1D5DB" text-anchor="middle" direction="rtl">شامل ۶۲ فصل کاربردی | ۲۶ قضیه تفصیلی ساحوی | ۲۰۰ سوال امتحانی با پاسخ تشریحی</text>
+    <text x="0" y="118" font-family="'Vazirmatn', Tahoma, sans-serif" font-size="18" fill="#A8C7FA" text-anchor="middle" direction="rtl">سیستم‌های BPHS/EPHS • مدیریت مالی و تدارکات • اصول PSEA • دیتای HMIS</text>
+  </g>
+
+  <!-- Footer Edition & Author -->
+  <text x="600" y="1600" font-family="'Vazirmatn', Tahoma, sans-serif" font-size="20" font-weight="600" fill="#9CA3AF" text-anchor="middle" direction="rtl">چاپ اول مسلکی — سال ۱۴۰۵ / 2026</text>
+  <text x="600" y="1640" font-family="'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="500" fill="#6B7280" text-anchor="middle">OFFICIAL EXAM &amp; OPERATIONS SERIES • SHUHADA ORGANIZATION</text>
+</svg>
