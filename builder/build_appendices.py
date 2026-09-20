@@ -187,21 +187,43 @@ def get_appendices_text():
 
 ---
 
-## ضمیمه م: منابع و مراجع معتبر (Appendix M: Authoritative Sources & References)
+## ضمیمه م: منابع و مراجع معتبر و ماتریس درجه‌بندی استندردها (Appendix M: Authoritative Sources & Standards Matrix)
 
+### جدول ماتریس درجه‌بندی صلاحیت و استندردها (Standards & Authority Classification Matrix)
+
+| حوزه موضوعی | موضوع خاص | سطح طبقه‌بندی (Tier) | منبع / مرجع معتبر | نکته کلیدی برای هماهنگ‌کننده |
+| :--- | :--- | :--- | :--- | :--- |
+| **قوانین کار و اداری** | ساعات کار، رخصتی‌ها، اخطار، دوره آزمایشی | **National Standard** | قانون کار افغانستان (Labour Code) | نقض آن توسط سازمان ممنوع است؛ Coordinator نمی‌تواند خودسرانه کارمند را اخراج کند. |
+| **مالیات و عواید** | وضع مالیات بر معاشات و قراردادها | **National Standard** | قانون مالیات بر عایدات وزارت مالیه | کسر مالیات قانونی الزامی است و تابع توافقات شفاهی نیست. |
+| **سطوح عرضه خدمات** | تعریف و بسته خدمات HP, SHC, BHC, CHC, DH, PH | **MoPH Guidance** | پالیسی BPHS و EPHS وزارت صحت عامه | سطح BHC داکتر معالج ندارد (نرس و قابله اداره می‌کنند)؛ جراحی عاجل در CHC/DH است. |
+| **معافیت کتلوی** | جدول روتین واکسیناسیون، سنین و دوزها | **MoPH Guidance** | رهنمود ملی برنامه EPI افغانستان | واکسین‌های مایع (پنتا، PCV، IPV) نباید یخ بزنند؛ Shake Test الزامی است. |
+| **تغذیه اطفال** | معیارهای تشخیص SAM و MAM و مصرف RUTF | **MoPH Guidance** | رهنمود ملی مدیریت ادغام‌یافته سوءتغذیه (IMAM) | نوار MUAC سرخ (زیر ۱۱.۵ سانتی‌متر) SAM بدون عارضه است و نیازمند RUTF در خانه می‌باشد. |
+| **معلومات صحی** | شاخص‌ها، فارم MIAR و دیتابیس DHIS2 | **MoPH Guidance** | رهنمود HMIS وزارت صحت عامه | راجستر سند دست اول است؛ دیتای DHIS2 بدون راجستر سندیت ندارد. |
+| **پالیسی صیانت** | عدم تحمل مطلق آزار و استثمار جنسی (PSEA) | **Shuhada / Org Policy** | دستورالعمل رسمی صیانت سازمان شهدا / IASC | خط سرخ مطلق؛ راپوردهی ظرف ۲۴ ساعت؛ Coordinator صلاحیت تعلیق ندارد (ممانعت موقت از شیفت + ارجاع). |
+| **صلاحیت‌های مالی** | سقف پیش‌پرداخت، منظوری بودجه و Virement | **Shuhada / Org Policy** | لایحه تفویض اختیارات مالی (DoA) سازمان | تغییر کود بودجه بدون منظوری کابل ممنوع است. |
+| **تدارکات ادویه** | قانون ۳ استعلام، PO، بررسی کیفیت و GRN | **Shuhada / Org Policy** | پالیسی تدارکات سازمان شهدا / دونر | خرید مستقیم از بازار آزاد ممنوع است؛ سند GRN پس از بازرسی فزیکی امضا می‌شود. |
+| **تعدیل خطوط بودجه** | سقف مجاز انحراف بودجه و راپور واریانس | **Donor Requirement** | قرارداد رسمی گرانت با تمویل‌کننده | مصارف بدون سند مصوب (Disallowed) مسترد می‌گردد. |
+| **نظارت شخص ثالث** | بازرسی سرزده ناظرین مستقل (TPM) | **Donor Requirement** | تفاهمنامه نظارتی دونر | ارائه کتاب راجستر، لاگ‌بوک موترها و تاییدیه شورا به حیث شواهد عینی. |
+| **اکمالات زمستانی** | پیش‌خرید دوا و تیل قبل از انسداد کوتل قوناق | **Common Practice** | تجارب عملیاتی پروژه‌های دایکندی | انجام اکمالات تا قبل از ماه قوس جهت پیشگیری از Stock-out در زمستان. |
+| **امانت ادویه** | انتقال اضطراری دوا میان دو کلینیک (Loan) | **Common Practice** | عرف عملیاتی ولایتی با تایید PPHD | ثبت رسمی در سند تحویل‌دهی و تعهد بازگرداندن پس از رسیدن محموله کابل. |
+| **پاسخ به قضایا** | حل سیستماتیک سناریوهای بحران کلینیک | **Exam-Oriented Practice** | چارچوب پنج‌مرحله‌ای SAFE/R | Situation → Assess → Follow Policy → Engage → Record & Report. |
+| **پاسخ مصاحبه** | معرفی تجارب گذشته و حل چالش‌ها | **Exam-Oriented Practice** | مدل رفتاری STAR | Situation → Task → Action → Result (با ارقام ملموس). |
+| **حدود صلاحیت** | برخورد با تخلفات و رویدادهای غیرمترقبه | **Exam-Oriented Practice** | زنجیره ۵ مرحله‌ای مسئولیت Coordinator | Verify → Document → Apply Policy → Escalate → Follow Up. |
+
+---
+
+### منابع و مراجع مستند (Authoritative References):
 1. **وزارت صحت عامه افغانستان (MoPH):**
    * رهنمود ملی تطبیق بسته خدمات صحی اساسی (BPHS Guidelines, Revised Edition).
    * پالیسی ملی خدمات شفاخانه‌ای افغانستان (EPHS Framework).
    * رهنمود معیاری سیستم معلومات مدیریت صحی (HMIS Standard Procedures Manual & DHIS2 User Guide).
    * پروتوکول ملی برنامه معافیت کتلوی (National EPI Policy and Cold Chain Standards).
-2. **سازمان صحی جهان (WHO):**
-   * WHO Guidelines for Routine Immunization in Fragile Contexts (2024–2026).
+   * رهنمود ملی مدیریت ادغام‌یافته سوءتغذیه حاد (IMAM Afghanistan Guidelines).
+2. **سازمان صحی جهان (WHO) و یونیسف (UNICEF):**
+   * WHO Guidelines for Routine Immunization in Fragile Contexts.
    * WHO Standards for Cold Chain Equipment & Shake Test Protocols.
-   * Emergency Obstetric and Newborn Care Assessment Handbook.
-3. **صندوق کودکان سازمان ملل متحد (UNICEF):**
-   * Management of Severe Acute Malnutrition (SAM) Guidelines & Nutrition in Emergencies.
-   * Vaccine Logistics and Cold Chain Maintenance Manual.
-4. **سازمان شهدا (Shuhada Organization):**
+   * UNICEF Management of Severe Acute Malnutrition (SAM) Guidelines & RUTF Logistics.
+3. **سازمان شهدا (Shuhada Organization):**
    * اساسنامه و لایحه وظایف بست هماهنگ‌کننده ولایتی در ولایت دایکندی (Official Job Description).
    * پالیسی منابع بشری، طرزالعمل‌های تدارکات و امور مالی سازمان شهدا.
    * دستورالعمل رسمی صیانت و پیشگیری از استثمار و سوءاستفاده جنسی (SO PSEA Policy).
