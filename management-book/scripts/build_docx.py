@@ -9,12 +9,14 @@ shaded table per callout so the boxes survive editing.
 """
 from __future__ import annotations
 
+from datetime import datetime
 from pathlib import Path
 
 from docx import Document
+from docx.enum.section import WD_ORIENT, WD_SECTION
 from docx.enum.style import WD_STYLE_TYPE
 from docx.enum.table import WD_TABLE_ALIGNMENT
-from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_TAB_ALIGNMENT, WD_TAB_LEADER
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Cm, Pt, RGBColor
@@ -25,7 +27,7 @@ from mgmtgen import ROOT, inline_runs
 OUT = ROOT / 'output' / 'مدیریت_مبانی_و_مهارت‌ها.docx'
 COVER = ROOT / 'assets/cover.png'
 
-FONT = 'Vazirmatn'
+FONT = 'Vazir'   # the family actually shipped in assets/fonts (Vazir.ttf)
 FONT_FALLBACK = 'Tahoma'
 NAVY = RGBColor(0x1D, 0x33, 0x58)
 ACCENT = RGBColor(0x14, 0x58, 0x4F)
@@ -34,6 +36,13 @@ DANGER = RGBColor(0x9A, 0x3B, 0x2E)
 GOLD = RGBColor(0x7A, 0x60, 0x18)
 
 TITLE = 'مدیریت؛ مبانی و مهارت‌های اساسی مدیریت'
+DESCRIPTION = ('کتاب درسی مدیریت به زبان دری افغانستان: بیست فصل، سی کیس کاری، بستهٔ '
+               'ابزارهای عملی، کارگاه تمرین و واژه‌نامهٔ اصطلاحات. نسخهٔ حرفه‌ای دری.')
+KEYWORDS = ('مدیریت؛ رهبری؛ پلان‌گذاری؛ سازماندهی؛ کنترول؛ مدیریت منابع بشری؛ '
+            'تصمیم‌گیری؛ دری افغانستان')
+BUILD_DATE = '2026-09-20'
+LANG_TAG = 'fa-AF'
+LANDSCAPE_MIN_COLS = 7
 SUBTITLE = 'Management: The Essentials — Afghan Dari Professional Edition'
 PUBLISHER = 'نشر سرچشمه'
 STRAP = 'بیست فصل · سی کیس کاری · بستهٔ چهارده‌گانهٔ ابزارها · صد و پنجاه پرسش تمرینی · واژه‌نامهٔ کامل اصطلاحات'
@@ -169,6 +178,8 @@ def define_styles(doc):
     new('BK Table Cell', 9, False, None, 0, 2, align=WD_ALIGN_PARAGRAPH.RIGHT)
     new('BK Table Head', 9, True, NAVY, 0, 2, align=WD_ALIGN_PARAGRAPH.RIGHT)
     new('BK Caption', 8.5, False, GREY, 2, 8, italic=True)
+    new('BK Toc 1', 11, False, NAVY, 6, 2, align=WD_ALIGN_PARAGRAPH.RIGHT)
+    new('BK Toc 2', 10, False, GREY, 0, 1, align=WD_ALIGN_PARAGRAPH.RIGHT)
     new('BK Flow', 10.5, True, ACCENT, 6, 8, align=WD_ALIGN_PARAGRAPH.CENTER)
     new('BK Callout Title', 10.5, True, ACCENT, 0, 3, align=WD_ALIGN_PARAGRAPH.RIGHT,
         keep=True)
@@ -182,7 +193,7 @@ def define_styles(doc):
 
 def add_text(container, text, style='BK Body', bold=False, italic=False,
              align=WD_ALIGN_PARAGRAPH.JUSTIFY, size=None, colour=None,
-             space_before=None, space_after=None, indent=None):
+             space_before=None, space_after=None, indent=None):  # noqa: D401
     p = container.add_paragraph(style=style)
     rtl_para(p, align)
     if space_before is not None:
@@ -199,9 +210,36 @@ def add_text(container, text, style='BK Body', bold=False, italic=False,
             run.font.color.rgb = colour
         rtl_run(run, size)
     return p
+    return p
 
 
-def add_table(container, rows, style_head='BK Table Head', style_cell='BK Table Cell'):
+def portrait_section(doc, landscape_first=False):
+    """A4 portrait section with the book's margins."""
+    sect = doc.sections[-1]
+    sect.orientation = WD_ORIENT.PORTRAIT
+    sect.page_width, sect.page_height = Cm(21), Cm(29.7)
+    sect.top_margin = sect.bottom_margin = Cm(2.2)
+    sect.left_margin = sect.right_margin = Cm(2.3)
+    return sect
+
+
+def add_landscape_table(doc, rows):
+    """Wide tables get their own landscape page; no font or column shrinking."""
+    sect = doc.add_section(WD_SECTION.NEW_PAGE)
+    sect.orientation = WD_ORIENT.LANDSCAPE
+    sect.page_width, sect.page_height = Cm(29.7), Cm(21)
+    sect.top_margin = sect.bottom_margin = Cm(1.6)
+    sect.left_margin = sect.right_margin = Cm(1.5)
+    add_table(doc, rows, avail_cm=26.7)
+    back = doc.add_section(WD_SECTION.NEW_PAGE)
+    back.orientation = WD_ORIENT.PORTRAIT
+    back.page_width, back.page_height = Cm(21), Cm(29.7)
+    back.top_margin = back.bottom_margin = Cm(2.2)
+    back.left_margin = back.right_margin = Cm(2.3)
+
+
+def add_table(container, rows, style_head='BK Table Head', style_cell='BK Table Cell',
+              avail_cm=None):
     rows = [r for r in rows if r]
     if not rows:
         return
@@ -209,11 +247,22 @@ def add_table(container, rows, style_head='BK Table Head', style_cell='BK Table 
     table = container.add_table(rows=len(rows), cols=ncols)
     table.style = 'Table Grid'
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    table.autofit = False
     table_rtl(table)
+    tblPr = table._tbl.tblPr
+    width = OxmlElement('w:tblW')
+    width.set(qn('w:type'), 'pct')
+    width.set(qn('w:w'), '5000')
+    tblPr.append(width)
+    layout = OxmlElement('w:tblLayout')
+    layout.set(qn('w:type'), 'fixed')
+    tblPr.append(layout)
     # repeat the header row on every page
     trPr = table.rows[0]._tr.get_or_add_trPr()
     trPr.append(OxmlElement('w:tblHeader'))
     size = 8.0 if ncols >= 7 else (8.5 if ncols >= 5 else 9)
+    avail = Cm(avail_cm) if avail_cm else Cm(15.6)
+    col_w = int(avail / ncols)
     for ri, row in enumerate(rows):
         for ci in range(ncols):
             cell = table.cell(ri, ci)
@@ -232,8 +281,11 @@ def add_table(container, rows, style_head='BK Table Head', style_cell='BK Table 
             shade(cell._tc.get_or_add_tcPr(), 'E8EFEE' if ri == 0 else
                   ('FFFFFF' if ri % 2 else 'FAFAF8'))
             cell_borders(cell, 'DCDCD4')
+    for row in table.rows:
+        for cell in row.cells:
+            cell.width = col_w
     sp = container.add_paragraph()
-    sp.paragraph_format.space_after = Pt(6)
+    sp.paragraph_format.space_after = Pt(2)
 
 
 def add_callout(doc, block):
@@ -340,24 +392,94 @@ def title_page(doc):
     doc.add_page_break()
 
 
-def toc_page(doc):
+def add_bookmark(paragraph, name):
+    """Wrap a paragraph in a Word bookmark so PAGEREF can point at it."""
+    start = OxmlElement('w:bookmarkStart')
+    start.set(qn('w:id'), str(abs(hash(name)) % 100000))
+    start.set(qn('w:name'), name)
+    end = OxmlElement('w:bookmarkEnd')
+    end.set(qn('w:id'), start.get(qn('w:id')))
+    paragraph._p.insert(0, start)
+    paragraph._p.append(end)
+
+
+def toc_plan(blocks):
+    """Collect real TOC entries (parts, chapters, appendices + their sections)."""
+    plan, index = [], {}
+    for i, b in enumerate(blocks):
+        if b.kind == 'part':
+            plan.append({'i': i, 'level': 1, 'text': b.text, 'bookmark': f'_Toc9{len(plan) + 1:05d}'})
+        elif b.kind == 'h1':
+            plan.append({'i': i, 'level': 1, 'text': b.text, 'bookmark': f'_Toc9{len(plan) + 1:05d}'})
+        elif b.kind == 'h2':
+            plan.append({'i': i, 'level': 2, 'text': b.text, 'bookmark': f'_Toc9{len(plan) + 1:05d}'})
+    for e in plan:
+        index[e['i']] = e['bookmark']
+    return plan, index
+
+
+def toc_page(doc, plan):
     p = doc.add_paragraph(style='BK Chapter')
     rtl_para(p, WD_ALIGN_PARAGRAPH.RIGHT)
     r = p.add_run('فهرست مطالب')
     rtl_run(r)
-    para = doc.add_paragraph()
-    rtl_para(para, WD_ALIGN_PARAGRAPH.RIGHT)
-    fld = OxmlElement('w:fldSimple')
-    fld.set(qn('w:instr'), r'TOC \o "1-2" \h \z \u')
-    inner = OxmlElement('w:p')
-    run = OxmlElement('w:r')
-    t = OxmlElement('w:t')
-    t.text = 'فهرست مطالب این کتاب خودکار است؛ اگر خالی دیده شد، Ctrl+A و بعد F9 را بزنید.'
-    run.append(t)
-    inner.append(run)
-    fld.append(inner)
-    para._p.append(fld)
+    for e in plan:
+        style = 'BK Toc 1' if e['level'] == 1 else 'BK Toc 2'
+        para = doc.add_paragraph(style=style)
+        rtl_para(para, WD_ALIGN_PARAGRAPH.RIGHT)
+        para.paragraph_format.tab_stops.add_tab_stop(Cm(15.2), WD_TAB_ALIGNMENT.LEFT,
+                                                    WD_TAB_LEADER.DOTS)
+        run = para.add_run(e['text'])
+        rtl_run(run)
+        tab = para.add_run('\t')
+        rtl_run(tab)
+        fld = OxmlElement('w:fldSimple')
+        fld.set(qn('w:instr'), f' PAGEREF {e["bookmark"]} \\h ')
+        para._p.append(fld)
     doc.add_page_break()
+
+
+def core_properties(doc):
+    """Professional publication metadata. Publisher attribution, no invented author."""
+    cp = doc.core_properties
+    cp.title = TITLE
+    cp.subject = SUBTITLE
+    cp.author = PUBLISHER
+    cp.last_modified_by = PUBLISHER
+    cp.category = 'مدیریت'
+    cp.comments = DESCRIPTION
+    cp.keywords = KEYWORDS
+    cp.language = LANG_TAG
+    cp.revision = 1
+    cp.created = datetime(2026, 9, 20, 9, 0, 0)
+    cp.modified = datetime(2026, 9, 20, 9, 0, 0)
+
+
+def fix_app_properties(path):
+    """Remove the python-docx template's stale Word statistics; keep honest app info."""
+    import shutil
+    import zipfile
+    tmp = path.with_suffix('.docx.tmp')
+    with zipfile.ZipFile(path) as src, zipfile.ZipFile(tmp, 'w', zipfile.ZIP_DEFLATED) as dst:
+        for item in src.infolist():
+            data = src.read(item.filename)
+            if item.filename == 'docProps/app.xml':
+                xml = data.decode('utf-8')
+                cut = ('<Template>Normal.dotm</Template>', '<TotalTime>0</TotalTime>',
+                       '<Pages>1</Pages>', '<Words>0</Words>', '<Characters>0</Characters>',
+                       '<Lines>0</Lines>', '<Paragraphs>0</Paragraphs>',
+                       '<CharactersWithSpaces>0</CharactersWithSpaces>',
+                       '<AppVersion>14.0000</AppVersion>',
+                       '<Application>Microsoft Macintosh Word</Application>')
+                for c in cut:
+                    xml = xml.replace(c, '')
+                # no vendor claim and no builder name: the generation tool is not
+                # publication metadata a reader should see
+                xml = xml.replace('<Manager/>', '<Manager>' + PUBLISHER + '</Manager>')
+                xml = xml.replace('<Company/>', '<Company>' + PUBLISHER + '</Company>')
+                data = xml.encode('utf-8')
+            dst.writestr(item, data)
+    shutil.move(str(tmp), str(path))
 
 
 def header_footer(section):
@@ -397,19 +519,24 @@ def main():
     sect.left_margin = sect.right_margin = Cm(2.3)
     header_footer(sect)
     settings(doc)
+    core_properties(doc)
     title_page(doc)
-    toc_page(doc)
+    plan, bookmarks = toc_plan(blocks)
+    toc_page(doc, plan)
 
-    for b in blocks:
+    for bi, b in enumerate(blocks):
         if b.kind == 'part':
             doc.add_page_break()
-            add_text(doc, b.text, 'BK Part', align=WD_ALIGN_PARAGRAPH.CENTER)
+            p = add_text(doc, b.text, 'BK Part', align=WD_ALIGN_PARAGRAPH.CENTER)
+            add_bookmark(p, bookmarks[bi])
         elif b.kind == 'h1':
             if not b.text.startswith(('سرآغاز', 'دربارهٔ')):
                 doc.add_page_break()
-            add_text(doc, b.text, 'BK Chapter', align=WD_ALIGN_PARAGRAPH.RIGHT)
+            p = add_text(doc, b.text, 'BK Chapter', align=WD_ALIGN_PARAGRAPH.RIGHT)
+            add_bookmark(p, bookmarks[bi])
         elif b.kind == 'h2':
-            add_text(doc, b.text, 'BK Section', align=WD_ALIGN_PARAGRAPH.RIGHT)
+            p = add_text(doc, b.text, 'BK Section', align=WD_ALIGN_PARAGRAPH.RIGHT)
+            add_bookmark(p, bookmarks[bi])
         elif b.kind == 'h3':
             add_text(doc, b.text, 'BK Subsection', align=WD_ALIGN_PARAGRAPH.RIGHT)
         elif b.kind == 'h4':
@@ -434,12 +561,18 @@ def main():
         elif b.kind == 'flow':
             add_flow(doc, b.text)
         elif b.kind == 'table':
-            add_table(doc, b.items)
+            rows = [r for r in b.items if r]
+            ncols = max((len(r) for r in rows), default=0)
+            if ncols >= LANDSCAPE_MIN_COLS:
+                add_landscape_table(doc, b.items)
+            else:
+                add_table(doc, b.items)
         elif b.kind == 'callout':
             add_callout(doc, b)
 
     OUT.parent.mkdir(exist_ok=True)
     doc.save(OUT)
+    fix_app_properties(OUT)
     print(f'DOCX -> {OUT}')
     print(f'  paragraphs: {len(doc.paragraphs)} · tables: {len(doc.tables)} · '
           f'size: {OUT.stat().st_size / 1024:.0f} KB')

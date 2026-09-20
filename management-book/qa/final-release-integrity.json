@@ -1,0 +1,129 @@
+{
+ "p0": {
+  "qa_rc": 0,
+  "summary": "QA: 67 checks · 67 pass · 0 notes/fail · 0 blocking",
+  "blocking": "0"
+ },
+ "mcq": {
+  "keys_after": {
+   "الف": 24.0,
+   "ب": 24.0,
+   "ج": 24.0,
+   "د": 28.0
+  },
+  "keys_before": {
+   "الف": 12.7,
+   "ب": 72.0,
+   "ج": 14.7,
+   "د": 0.7
+  },
+  "gap_gt_5": 0,
+  "gap_max": 5,
+  "missing_choices": {},
+  "duplicate_stems": {},
+  "max_run": 2,
+  "numbering_continuous": true,
+  "correctness_preserved": {
+   "checked": 150,
+   "keyed_answer_text_unchanged_or_intentionally_reworded": 146,
+   "mismatches": [
+    {
+     "q": 25,
+     "baseline_key": "ج",
+     "new_key": "ج",
+     "baseline_key_text": "رفتار مسؤول در برابر مردم، کارمندان، محیط و پول عمومی",
+     "new_key_text": "رفتار مسئول در برابر مردم، کارمندان، محیط و پول عمومی"
+    },
+    {
+     "q": 102,
+     "baseline_key": "ب",
+     "new_key": "د",
+     "baseline_key_text": "رزرو وقت برای کار‌های مهم و پرهیز از گرفتار شدن در کار‌های فوری",
+     "new_key_text": "رزرو وقت برای کار‌های مهم و پرهیز از غرق شدن در کار‌های فوری"
+    },
+    {
+     "q": 134,
+     "baseline_key": "ب",
+     "new_key": "د",
+     "baseline_key_text": "مذاکره و پیشنهاد شاخصی که هم نیاز او و هم نتیجهٔ پروژه را نشان دهد",
+     "new_key_text": "مذاکره و پیشنهاد شاخصی که نیاز او و نتیجهٔ پروژه را نشان دهد"
+    },
+    {
+     "q": 135,
+     "baseline_key": "ب",
+     "new_key": "ج",
+     "baseline_key_text": "پیوستگی خدمت برای مردم و انتقال مسؤولانه کارکنان",
+     "new_key_text": "پیوستگی خدمت برای مردم و انتقال مسئولانه کارکنان"
+    }
+   ]
+  }
+ },
+ "language": {
+  "preferred": {
+   "دوسیه": 12,
+   "مرخصی مرضی": 5,
+   "سروی": 30,
+   "انکشاف شغلی": 2,
+   "تلیفون": 11,
+   "فورم": 48,
+   "راپور": 126,
+   "مسئول": 201
+  },
+  "avoided": {
+   "پرونده": 0,
+   "استعلاجی": 0,
+   "نظرسنجی": 0,
+   "توسعهٔ شغلی": 0,
+   "تیلفون": 0,
+   "فرم": 0,
+   "گزارش": 0,
+   "مسؤول": 0
+  },
+  "forbidden_forms_nonzero": {},
+  "build_traces": []
+ },
+ "spelling": {
+  "مسئول": 222,
+  "مسئولیت": 139,
+  "مسؤول": 0,
+  "مسوول": 0,
+  "مسئولیت‌ها": 17
+ },
+ "correspondence": {
+  "sample_count": 6,
+  "missing": {
+   "docx": [],
+   "epub": [],
+   "html": []
+  }
+ },
+ "files": {
+  "git_status": [
+   "?? management-book/"
+  ],
+  "file_count": 60,
+  "strays": [
+   "scripts/__pycache__/bookkit.cpython-311.pyc",
+   "scripts/__pycache__/mgmtgen.cpython-311.pyc"
+  ]
+ },
+ "fingerprints": {
+  "master.md": {
+   "bytes": 593175,
+   "sha256": "4f7b8796b65bdb6c"
+  },
+  "مدیریت_مبانی_و_مهارت‌ها.docx": {
+   "bytes": 3215104,
+   "sha256": "c031527148af4533"
+  },
+  "مدیریت_مبانی_و_مهارت‌ها.epub": {
+   "bytes": 716552,
+   "sha256": "ff3f5ef625ae9016"
+  },
+  "مدیریت_نسخهٔ_وب.html": {
+   "bytes": 1095543,
+   "sha256": "07cd5f328fa6bf3e"
+  },
+  "master_words": 64825
+ }
+}

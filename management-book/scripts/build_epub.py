@@ -41,7 +41,7 @@ PUBLISHER = 'نشر سرچشمه'
 IDENTIFIER = 'urn:uuid:' + str(uuid.uuid5(uuid.NAMESPACE_URL,
                                            'sarcheshma/management-essentials/da/1405'))
 DATE = '1405 / 2026'
-DATE_ISO = '2026-03-21'
+DATE_ISO = '2026-09-20'
 
 CALLOUT_TITLE = {
     'story': 'داستان', 'case': 'کیس کاری', 'decision': 'نقطهٔ تصمیم', 'tool': 'ابزار کار',
@@ -135,6 +135,22 @@ figure.cover { margin: 0; padding: 0; }
 .toc-page li.lvl1 { font-weight: bold; margin-top: 0.7em; }
 .toc-page li.lvl1.part { color: var(--accent); font-size: 1.02em; }
 .toc-page li.lvl2 { font-weight: normal; font-size: 0.9em; padding-right: 1.2em; }
+.toc-page li.lvl3 { font-weight: normal; font-size: 0.85em; color: var(--ink-soft, #3d4653);
+                    padding-right: 2.4em; }
+.partpage { text-align: center; padding-top: 18%; }
+.partpage .part-title { font-size: 1.85em; color: var(--accent); border: 0;
+                        margin: 0 0 0.4em; }
+.partpage .part-intro { color: var(--ink-soft, #3d4653); margin: 0 0 0.6em; }
+.partpage .part-contents { list-style: none; margin: 0.4em auto 0; padding: 0;
+                           text-align: center; max-width: 26em; }
+.partpage .part-contents li { margin: 0.35em 0; line-height: 1.5; }
+.partpage .part-contents a { text-decoration: none; color: var(--navy); }
+.mcq { margin: 0 0 1.1em; }
+.mcq p.q { font-weight: bold; margin: 0 0 0.3em; }
+.mcq .qnum { color: var(--accent); }
+.mcq ol.choices { list-style: none; margin: 0; padding: 0 1.1em 0 0; }
+.mcq ol.choices li { margin: 0.2em 0; line-height: 1.5; }
+.mcq .opt-letter { color: var(--ink-soft, #3d4653); font-weight: bold; }
 .toc-page a { text-decoration: none; color: inherit; }
 .colophon { font-size: 0.95em; }
 .licence { font-family: monospace; font-size: 0.72em; line-height: 1.5;
@@ -235,6 +251,9 @@ def render(blocks, ctx: Ctx, nested=False) -> str:
                             for i in b.items)
             out.append(f'<ul>{items}</ul>')
         elif b.kind == 'olist':
+            if len(b.items) == 1 and is_mcq_item(b.items[0]):
+                out.append(mcq_html(b.items[0], b.markers[0] if b.markers else ''))
+                continue
             items = ''
             for n, i in enumerate(b.items):
                 marker = b.markers[n] if n < len(b.markers) else str(n + 1)
@@ -272,9 +291,31 @@ def render(blocks, ctx: Ctx, nested=False) -> str:
             if etype:
                 attrs += f' epub:type="{etype}"'
             inner = render(b.items, ctx, nested=True)
-            out.append(f'<aside{attrs}><h4 class="callout-title">{inline(title)}</h4>'
+            out.append(f'<aside{attrs}><h3 class="callout-title">{inline(title)}</h3>'
                        f'{inner}</aside>')
     return '\n'.join(x for x in out if x)
+
+
+CHOICE_RE = re.compile(r'^(الف|ب|ج|د)\)\s?(.*)$')
+
+
+def is_mcq_item(item: str) -> bool:
+    """A workshop question: a stem, then four lettered choices on their own lines."""
+    lines = item.split('\n')
+    choices = [ln for ln in lines if CHOICE_RE.match(ln.strip())]
+    return len(choices) == 4 and len(lines) >= 5
+
+
+def mcq_html(item: str, marker: str) -> str:
+    """One question as a semantic block: stem + a list of four choices."""
+    lines = [ln.strip() for ln in item.split('\n')]
+    stem = lines[0]
+    choices = ''.join(
+        f'<li><span class="opt-letter">{esc(m.group(1))})</span> {inline(m.group(2))}</li>'
+        for m in (CHOICE_RE.match(ln) for ln in lines[1:]) if m)
+    num = f'<span class="qnum">{esc(marker)}.</span> ' if marker else ''
+    return (f'<div class="mcq" epub:type="question"><p class="q">{num}{inline(stem)}</p>'
+            f'<ol class="choices">{choices}</ol></div>')
 
 
 def doc_shell(title: str, body: str, extra_class: str = '', etype: str = '') -> str:
@@ -303,18 +344,48 @@ def title_page() -> str:
     return doc_shell('عنوان', body)
 
 
-def toc_page(entries) -> str:
-    items = []
+def part_body(title: str, chapters) -> str:
+    """A real part divider page: part title + the list of its chapters."""
+    rows = ''.join(
+        f'<li><a href="{c["href"]}">{esc(c["short"])}</a></li>' for c in chapters)
+    return (f'<h1 class="part-title">{esc(title)}</h1>'
+            f'<p class="part-intro">فصل‌های این بخش</p>'
+            f'<ol class="part-contents">{rows}</ol>')
+
+
+def toc_page(entries, extras=()) -> str:
+    """Three-level table of contents: part -> chapter -> section (all with links)."""
+    groups, current = [], None
     for e in entries:
         if e['kind'] == 'part':
-            items.append(f'<li class="lvl1 part">{esc(e["title"])}</li>')
-            continue
-        sub = ''
-        if e['sections']:
-            sub = '<ol>' + ''.join(
-                f'<li class="lvl2"><a href="{e["href"]}#{a}">{esc(t)}</a></li>'
-                for t, a in e['sections']) + '</ol>'
-        items.append(f'<li class="lvl1"><a href="{e["href"]}">{esc(e["title"])}</a>{sub}</li>')
+            current = {'part': e, 'chapters': []}
+            groups.append(current)
+        elif current is None or e['kind'] == 'appendix':
+            current = {'part': None, 'chapters': []}
+            groups.append(current)
+            current['chapters'].append(e)
+        else:
+            current['chapters'].append(e)
+
+    items = []
+    for g in groups:
+        chapters = []
+        for c in g['chapters']:
+            sub = ''
+            if c['sections']:
+                sub = '<ol>' + ''.join(
+                    f'<li class="lvl3"><a href="{c["href"]}#{a}">{esc(t)}</a></li>'
+                    for t, a in c['sections']) + '</ol>'
+            chapters.append(f'<li class="lvl2"><a href="{c["href"]}">{esc(c["title"])}</a>{sub}</li>')
+        inner = f'<ol>{"".join(chapters)}</ol>' if chapters else ''
+        if g['part'] is None:
+            items.append(''.join(chapters))
+        else:
+            p = g['part']
+            items.append(f'<li class="lvl1 part"><a href="{p["href"]}">{esc(p["title"])}</a>'
+                         f'{inner}</li>')
+    for e in extras:
+        items.append(f'<li class="lvl1"><a href="{e["href"]}">{esc(e["title"])}</a></li>')
     body = ('<section class="toc-page" epub:type="toc" role="doc-toc"><h1>فهرست مطالب</h1>'
             f'<nav epub:type="toc" id="toc"><ol>{"".join(items)}</ol></nav></section>')
     return doc_shell('فهرست مطالب', body)
@@ -423,6 +494,16 @@ def main() -> None:
 
     # ---- content documents
     docs = split_documents(blocks)
+
+    def chapter_list(pos):
+        out = []
+        for d in docs[pos + 1:]:
+            if d['kind'] in ('part', 'appendix'):
+                break
+            short = d['title']
+            out.append({'href': f'doc{docs.index(d):02d}.xhtml', 'short': short})
+        return out
+
     entries, items = [], []
     for i, doc in enumerate(docs):
         doc_id = f'doc{i:02d}'
@@ -430,7 +511,7 @@ def main() -> None:
             ctx = Ctx(doc_id)
             entries.append({'title': doc['title'], 'kind': 'part', 'href': f'{doc_id}.xhtml',
                             'sections': []})
-            body = render(doc['blocks'], ctx)
+            body = part_body(doc['title'], chapter_list(i)) + render(doc['blocks'], ctx)
             item = epub.EpubHtml(uid=doc_id, file_name=f'{doc_id}.xhtml',
                                  title=doc['title'], lang=LANG)
             item.content = doc_shell(doc['title'], body, 'partpage', 'part')
@@ -454,7 +535,9 @@ def main() -> None:
                              title='عنوان', lang=LANG)
     title_it.content = title_page()
     toc_it = epub.EpubHtml(uid='toc', file_name='toc.xhtml', title='فهرست مطالب', lang=LANG)
-    toc_it.content = toc_page(entries)
+    toc_it.content = toc_page(entries, extras=[
+        {'href': 'colophon.xhtml', 'title': 'دربارهٔ این نسخهٔ الکترونیکی'},
+        {'href': 'licence.xhtml', 'title': 'اجازه‌نامهٔ قلم‌ها'}])
     cover_it = epub.EpubHtml(uid='cover', file_name='cover.xhtml', title='جلد', lang=LANG)
     cover_it.content = cover_page()
     colo_it = epub.EpubHtml(uid='colophon', file_name='colophon.xhtml',
@@ -477,6 +560,8 @@ def main() -> None:
             current = (link(e), [])
             nav_parts.append(current)
             continue
+        if e['kind'] == 'appendix':
+            current = None
         chapter = link(e)
         children = tuple(epub.Link(f"{e['href']}#{a}", t, f"{e['href'].split('.')[0]}-{k}")
                          for k, (t, a) in enumerate(e['sections'], 1))
@@ -489,7 +574,9 @@ def main() -> None:
         return (x[0], tuple(x[1])) if isinstance(x, tuple) else x
 
     toc_tree = tuple(as_node(x) for x in nav_parts)
-    toc_tree = toc_tree + (epub.Link('colophon.xhtml', 'دربارهٔ این نسخهٔ الکترونیکی', 'colo'),)
+    toc_tree = toc_tree + (
+        epub.Link('colophon.xhtml', 'دربارهٔ این نسخهٔ الکترونیکی', 'colo'),
+        epub.Link('licence.xhtml', 'اجازه‌نامهٔ قلم‌ها', 'lic'))
     book.toc = toc_tree
 
     book.add_item(epub.EpubNav(title='فهرست مطالب'))
@@ -505,6 +592,15 @@ def main() -> None:
     ]
     book.spine = [cover_it, title_it, toc_it, *items, colo_it, (lic_it, 'no')]
 
+    # ebooklib rebuilds each document <head> from its own template, so a <link> written
+    # inside our content is dropped: the stylesheet has to be registered per document
+    # item (all documents sit next to style/main.css in the package root).
+    style_link = {'href': 'style/main.css', 'rel': 'stylesheet', 'type': 'text/css'}
+    for it in book.get_items():
+        if not isinstance(it, epub.EpubHtml):
+            continue
+        it.add_link(**style_link)
+
     OUT.parent.mkdir(exist_ok=True)
     epub.write_epub(str(OUT), book,
                     {'epub2_guide': False, 'epub3_landmark': True,
@@ -513,6 +609,7 @@ def main() -> None:
     print(f'EPUB -> {OUT}')
     print(f'  documents: {len(items) + 5} (content {len(items)}) · '
           f'sections in TOC: {sum(len(e["sections"]) for e in entries)} · '
+          f'parts: {sum(1 for e in entries if e["kind"] == "part")} · '
           f'size: {OUT.stat().st_size / 1024:.0f} KB')
 
 
@@ -529,6 +626,8 @@ def fix_package(path: Path) -> None:
                 s = data.decode('utf-8')
                 if 'page-progression-direction' not in s:
                     s = s.replace('<spine', '<spine page-progression-direction="rtl"', 1)
+                # the builder's name is a build trace, not publication metadata
+                s = re.sub(r'<meta\s+name="generator"[^>]*/>', '', s)
                 data = s.encode('utf-8')
             elif it.filename.endswith(('.xhtml', '.html')):
                 s = data.decode('utf-8')

@@ -149,29 +149,47 @@ def pick(size: float, ch: str, primary: FaceFont):
     return sym if sym.has(ch) else primary
 
 
+SPACES = ' \u00a0\t'
+
+
 def runs(text: str, base: str, primary: FaceFont):
-    """Visual left-to-right runs: [(font, text, harfbuzz_direction)]."""
+    """Visual left-to-right runs: [(font, text, direction, gap_spaces)].
+
+    Spaces at a run boundary are lifted out of the shaped text and returned as
+    explicit gap markers, so the gap between two visual runs is always drawn at
+    the font's real space advance (this is what the proof pages depend on).
+    """
     items = []
     for kind, chunk in segments(text):
         direction = 'ltr' if kind == 'lat' else ('rtl' if base == 'rtl' else 'ltr')
+        lead = len(chunk) - len(chunk.lstrip(SPACES))
+        trail = len(chunk) - len(chunk.rstrip(SPACES))
+        core = chunk.strip(SPACES)
+        if lead:
+            items.append((primary, '', direction, lead))
         cur_font, cur = None, ''
-        for ch in chunk:
+        for ch in core:
             f = pick(primary.size, ch, primary)
             if cur_font is not None and f is cur_font:
                 cur += ch
             else:
                 if cur:
-                    items.append((cur_font, cur, direction))
+                    items.append((cur_font, cur, direction, 0))
                 cur_font, cur = f, ch
         if cur:
-            items.append((cur_font, cur, direction))
+            items.append((cur_font, cur, direction, 0))
+        if trail:
+            items.append((primary, '', direction, trail))
     return list(reversed(items)) if base == 'rtl' else items
+
+def _run_width(f: FaceFont, chunk: str, direction: str) -> float:
+    return sum(adv for _, adv, _, _ in shape(chunk, f, direction)) * f.size / f.upem
 
 
 def measure(text: str, base: str, primary: FaceFont) -> float:
     total = 0.0
-    for f, chunk, direction in runs(text, base, primary):
-        total += sum(adv for _, adv, _, _ in shape(chunk, f, direction)) * f.size / f.upem
+    for f, chunk, direction, gap in runs(text, base, primary):
+        total += (f.space * gap) if gap else _run_width(f, chunk, direction)
     return total
 
 
@@ -185,7 +203,10 @@ def draw_line(img: Image.Image, x: float, baseline: float, text: str,
     pen = x if base == 'rtl' else x
     if base == 'rtl':
         pen = x - width
-    for f, chunk, direction in runs(text, base, primary):
+    for f, chunk, direction, gap in runs(text, base, primary):
+        if gap:
+            pen += (f.space + letter_space) * gap
+            continue
         for gid, adv, xo, yo in shape(chunk, f, direction):
             px_adv = adv * f.size / f.upem
             tile, left, top = f.tile(gid, colour)

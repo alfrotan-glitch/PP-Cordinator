@@ -199,11 +199,14 @@ def main():
     add('کارگاه', 'تمرین ارتباط', comm >= 20, f'{comm} تمرین', True)
     inter = section_items('## بخش هشتم — 20 پرسش مصاحبهٔ کاری', ['## بخش نهم'])
     add('کارگاه', 'پرسش مصاحبهٔ کاری', inter >= 20, f'{inter} پرسش', True)
-    mocks = len(re.findall(r'^\*\*امتحان آزمایشی', master, re.M))
-    add('کارگاه', 'امتحان‌های آزمایشی', mocks == 3, f'{mocks} امتحان', True)
-    keys = sum(1 for b in blocks if b.kind == 'table' and b.items
-               and b.items[0] and b.items[0][0] == 'پرسش')
-    add('کارگاه', 'جدول‌های کلید پاسخ', keys >= 6, f'{keys} کلید (هر 25 پرسش، یک جدول)', True)
+    mocks = len(re.findall(r'^\*\*طرح امتحان', master, re.M))
+    add('کارگاه', 'طرح‌های امتحان آزمایشی (بدون ادعای سؤال واقعی)', mocks == 3,
+        f'{mocks} طرح امتحان', True)
+    keys = sum(1 for b in blocks if b.kind == 'table' and len(b.items) >= 2
+               and b.items[0] and b.items[0][0] == 'پرسش'
+               and b.items[1] and b.items[1][0] == 'پاسخ')
+    add('کارگاه', 'جدول‌های کلید پاسخ', keys == 6,
+        f'{keys} کلید پاسخ (هر گروه ۲۵ پرسشی، یک جدول)', True)
     tools = len(re.findall(r'^## ابزار \d+ —', master, re.M))
     add('ابزارها', 'ابزارهای عملی مدیریت', tools == 14, f'{tools} ابزار', True)
     gi = master.find('پیوست 1 — واژه‌نامهٔ اصطلاحات')
@@ -323,8 +326,12 @@ def main():
         add('فرمت', 'DOCX از سبک‌های واقعی Word استفاده می‌کند', need <= styles,
             f'{len(styles)} سبک در سند', True)
         body_xml = d.element.body.xml
-        toc = 'TOC \\o' in body_xml
-        add('فرمت', 'DOCX فهرست خودکار دارد', toc, 'میدان TOC موجود', True)
+        bookmarks = body_xml.count('bookmarkStart')
+        pagerefs = body_xml.count('PAGEREF')
+        no_ctrl = 'Ctrl+A' not in body_xml
+        add('فرمت', 'DOCX فهرست مطالب واقعی و پُر دارد',
+            bookmarks >= 200 and pagerefs >= 200 and no_ctrl,
+            f'{bookmarks} نشان، {pagerefs} ارجاع صفحه، بدون دستور Ctrl+A', True)
         rtl = d.element.body.xml.count('w:bidi')
         add('فرمت', 'DOCX راست‌به‌چپ', rtl > 1000, f'{rtl} پاراگراف RTL', True)
         add('فرمت', 'DOCX جدول‌ها', len(d.tables) >= 150, f'{len(d.tables)} جدول', False)
@@ -332,7 +339,10 @@ def main():
     add('فرمت', 'EPUB ساخته شده', EPUB.exists(), EPUB.name, True)
     check_ok, check_detail = False, 'اجرا نشد'
     if EPUB.exists():
-        check_ok, check_detail = run_epubcheck(EPUB)
+        try:
+            check_ok, check_detail = run_epubcheck(EPUB)
+        except ModuleNotFoundError as exc:                # environment limitation
+            check_ok, check_detail = False, f'اجرا نشد — {exc.name} نصب نیست'
         add('فرمت', 'EPUBCheck', check_ok, check_detail, True)
         with zipfile.ZipFile(EPUB) as z:
             names = z.namelist()
@@ -381,10 +391,12 @@ def main():
         with zipfile.ZipFile(EPUB) as z:
             epub_text = ' '.join(z.read(n).decode('utf-8') for n in z.namelist()
                                  if n.endswith('.xhtml'))
+        epub_plain = re.sub(r'<[^>]+>', ' ', epub_text)
+        has_150 = '150.' in epub_plain
         add('فرمت', 'گزینه‌های پرسش‌ها در EPUB',
-            epub_text.count('الف)') >= src_options and 'value="150"' in epub_text,
+            epub_text.count('الف)') >= src_options and has_150,
             f'{epub_text.count("الف)")} از {src_options} گزینه · شمارهٔ 150: '
-            f'{"موجود" if chr(118) + "alue=" + chr(34) + "150" + chr(34) in epub_text else "نیست"}',
+            f'{"موجود" if has_150 else "نیست"}',
             True)
 
     add('فرمت', 'نسخهٔ وب ساخته شده', HTMLF.exists(), HTMLF.name, True)
@@ -395,10 +407,12 @@ def main():
             f'{HTMLF.stat().st_size / 1024:.0f} KB', True)
         add('فرمت', 'HTML ساختار معنایی', doc.count('<h1') >= 30 and doc.count('<table') >= 60,
             f'{doc.count("<h1")} عنوان سطح یک، {doc.count("<table")} جدول', False)
+        html_plain = re.sub(r'<[^>]+>', ' ', doc)
+        has_150 = '150.' in html_plain
         add('فرمت', 'گزینه‌ها و شمارهٔ پرسش‌ها در HTML',
-            doc.count('الف)') >= src_options and 'value="150"' in doc,
+            doc.count('الف)') >= src_options and has_150,
             f'{doc.count("الف)")} از {src_options} گزینه · شمارهٔ 150: '
-            f'{"موجود" if chr(118) + "alue=" + chr(34) + "150" + chr(34) in doc else "نیست"}', True)
+            f'{"موجود" if has_150 else "نیست"}', True)
 
     # ------------------------------------------------ reader-visible text ---
     BANNED = ['prompt', 'agent', 'github', 'repository', 'branch', 'commit', 'qa',

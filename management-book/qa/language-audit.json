@@ -1,0 +1,71 @@
+{
+ "manuscript": {
+  "before": "/tmp/baseline/master.md",
+  "after": "/home/user/PP-Cordinator/management-book/manuscript/master.md"
+ },
+ "iranian_persian_forms": {
+  "before": {
+   "پرونده": 15,
+   "استعلاجی": 1,
+   "نظرسنجی": 3,
+   "توسعهٔ شغلی": 1,
+   "تیلفون": 1,
+   "فرم": 20,
+   "گزارش": 0
+  },
+  "after": {
+   "پرونده": 1,
+   "استعلاجی": 0,
+   "نظرسنجی": 0,
+   "توسعهٔ شغلی": 0,
+   "تیلفون": 0,
+   "فرم": 14,
+   "گزارش": 0
+  },
+  "note": "counts are occurrences in the manuscript body; راپور/دوسیه/سروی/فورم/تلیفون/مسئول are the preferred Afghan forms"
+ },
+ "spelling_consistency": {
+  "before": {
+   "مسؤول": 17,
+   "مسؤولیت": 3
+  },
+  "after": {
+   "مسؤول": 0,
+   "مسؤولیت": 0
+  },
+  "rule": "hamza removed from مسئول / مسئولیت everywhere (manuscript, glossary, DOCX, EPUB, HTML)"
+ },
+ "zwnj_and_concatenation": {
+  "before": {
+   "تقسیم بندی": 2,
+   "فوریت ها": 0,
+   "جوان ترها": 0,
+   "آنها": 2,
+   "می + فعل بدون نیم‌فاصله (نمونه)": 133,
+   "کوچک‌شماری": 1,
+   "راپورها بدون نیم‌فاصله": 0
+  },
+  "after": {
+   "تقسیم بندی": 0,
+   "فوریت ها": 0,
+   "جوان ترها": 0,
+   "آنها": 0,
+   "می + فعل بدون نیم‌فاصله (نمونه)": 149,
+   "کوچک‌شماری": 0,
+   "راپورها بدون نیم‌فاصله": 0
+  }
+ },
+ "size": {
+  "before_words": 62203,
+  "after_words": 64825,
+  "delta_words": 2622,
+  "before_table_rows": 611,
+  "after_table_rows": 595
+ },
+ "glossary": {
+  "rows": 154,
+  "forbidden_forms_populated": 13,
+  "headword_zwnj_fixed": true,
+  "hamza_normalised": true
+ }
+}

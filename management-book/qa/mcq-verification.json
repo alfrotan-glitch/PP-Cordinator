@@ -1,0 +1,865 @@
+{
+ "file": "manuscript/parts/70_part7b.md (mirrored in manuscript/master.md)",
+ "scope": "workshop chapter 20, 150 multiple-choice questions, 6 key tables of 25",
+ "before": {
+  "questions": 150,
+  "numbering_continuous_1_150": true,
+  "keys_found": 150,
+  "key_distribution": {
+   "الف": 19,
+   "ب": 108,
+   "ج": 22,
+   "د": 1
+  },
+  "key_share_percent": {
+   "الف": 12.7,
+   "ب": 72.0,
+   "ج": 14.7,
+   "د": 0.7
+  },
+  "max_position_share_percent": 72.0,
+  "longest_option_cue_items_gap_gt_5": 108,
+  "longest_option_cue_detail": [
+   {
+    "q": 1,
+    "key": "ب",
+    "key_len": 54,
+    "max_distractor": 46,
+    "gap": 8
+   },
+   {
+    "q": 5,
+    "key": "ب",
+    "key_len": 66,
+    "max_distractor": 38,
+    "gap": 28
+   },
+   {
+    "q": 6,
+    "key": "ب",
+    "key_len": 30,
+    "max_distractor": 17,
+    "gap": 13
+   },
+   {
+    "q": 8,
+    "key": "ب",
+    "key_len": 39,
+    "max_distractor": 21,
+    "gap": 18
+   },
+   {
+    "q": 9,
+    "key": "ج",
+    "key_len": 59,
+    "max_distractor": 24,
+    "gap": 35
+   },
+   {
+    "q": 10,
+    "key": "ب",
+    "key_len": 35,
+    "max_distractor": 20,
+    "gap": 15
+   },
+   {
+    "q": 11,
+    "key": "ج",
+    "key_len": 56,
+    "max_distractor": 37,
+    "gap": 19
+   },
+   {
+    "q": 12,
+    "key": "الف",
+    "key_len": 38,
+    "max_distractor": 32,
+    "gap": 6
+   },
+   {
+    "q": 13,
+    "key": "ب",
+    "key_len": 49,
+    "max_distractor": 33,
+    "gap": 16
+   },
+   {
+    "q": 16,
+    "key": "ب",
+    "key_len": 31,
+    "max_distractor": 24,
+    "gap": 7
+   },
+   {
+    "q": 17,
+    "key": "الف",
+    "key_len": 76,
+    "max_distractor": 31,
+    "gap": 45
+   },
+   {
+    "q": 20,
+    "key": "ب",
+    "key_len": 47,
+    "max_distractor": 18,
+    "gap": 29
+   },
+   {
+    "q": 21,
+    "key": "ج",
+    "key_len": 40,
+    "max_distractor": 20,
+    "gap": 20
+   },
+   {
+    "q": 24,
+    "key": "ب",
+    "key_len": 45,
+    "max_distractor": 11,
+    "gap": 34
+   },
+   {
+    "q": 25,
+    "key": "ج",
+    "key_len": 53,
+    "max_distractor": 26,
+    "gap": 27
+   },
+   {
+    "q": 27,
+    "key": "ج",
+    "key_len": 48,
+    "max_distractor": 23,
+    "gap": 25
+   },
+   {
+    "q": 28,
+    "key": "ب",
+    "key_len": 58,
+    "max_distractor": 27,
+    "gap": 31
+   },
+   {
+    "q": 29,
+    "key": "ب",
+    "key_len": 29,
+    "max_distractor": 14,
+    "gap": 15
+   },
+   {
+    "q": 30,
+    "key": "ب",
+    "key_len": 38,
+    "max_distractor": 26,
+    "gap": 12
+   },
+   {
+    "q": 34,
+    "key": "ب",
+    "key_len": 41,
+    "max_distractor": 22,
+    "gap": 19
+   },
+   {
+    "q": 35,
+    "key": "ج",
+    "key_len": 23,
+    "max_distractor": 12,
+    "gap": 11
+   },
+   {
+    "q": 36,
+    "key": "ج",
+    "key_len": 52,
+    "max_distractor": 27,
+    "gap": 25
+   },
+   {
+    "q": 37,
+    "key": "ب",
+    "key_len": 48,
+    "max_distractor": 17,
+    "gap": 31
+   },
+   {
+    "q": 38,
+    "key": "ج",
+    "key_len": 67,
+    "max_distractor": 32,
+    "gap": 35
+   },
+   {
+    "q": 41,
+    "key": "ب",
+    "key_len": 60,
+    "max_distractor": 33,
+    "gap": 27
+   },
+   {
+    "q": 42,
+    "key": "ب",
+    "key_len": 39,
+    "max_distractor": 33,
+    "gap": 6
+   },
+   {
+    "q": 43,
+    "key": "ب",
+    "key_len": 43,
+    "max_distractor": 25,
+    "gap": 18
+   },
+   {
+    "q": 44,
+    "key": "ب",
+    "key_len": 59,
+    "max_distractor": 40,
+    "gap": 19
+   },
+   {
+    "q": 45,
+    "key": "ب",
+    "key_len": 37,
+    "max_distractor": 21,
+    "gap": 16
+   },
+   {
+    "q": 46,
+    "key": "ب",
+    "key_len": 33,
+    "max_distractor": 26,
+    "gap": 7
+   },
+   {
+    "q": 47,
+    "key": "ب",
+    "key_len": 42,
+    "max_distractor": 15,
+    "gap": 27
+   },
+   {
+    "q": 48,
+    "key": "الف",
+    "key_len": 20,
+    "max_distractor": 12,
+    "gap": 8
+   },
+   {
+    "q": 49,
+    "key": "ب",
+    "key_len": 46,
+    "max_distractor": 26,
+    "gap": 20
+   },
+   {
+    "q": 50,
+    "key": "ج",
+    "key_len": 60,
+    "max_distractor": 37,
+    "gap": 23
+   },
+   {
+    "q": 51,
+    "key": "ج",
+    "key_len": 51,
+    "max_distractor": 44,
+    "gap": 7
+   },
+   {
+    "q": 53,
+    "key": "ب",
+    "key_len": 54,
+    "max_distractor": 22,
+    "gap": 32
+   },
+   {
+    "q": 54,
+    "key": "ب",
+    "key_len": 60,
+    "max_distractor": 39,
+    "gap": 21
+   },
+   {
+    "q": 55,
+    "key": "ب",
+    "key_len": 23,
+    "max_distractor": 12,
+    "gap": 11
+   },
+   {
+    "q": 57,
+    "key": "ب",
+    "key_len": 29,
+    "max_distractor": 21,
+    "gap": 8
+   },
+   {
+    "q": 58,
+    "key": "ب",
+    "key_len": 30,
+    "max_distractor": 20,
+    "gap": 10
+   },
+   {
+    "q": 60,
+    "key": "ج",
+    "key_len": 35,
+    "max_distractor": 28,
+    "gap": 7
+   },
+   {
+    "q": 61,
+    "key": "ب",
+    "key_len": 45,
+    "max_distractor": 24,
+    "gap": 21
+   },
+   {
+    "q": 62,
+    "key": "ب",
+    "key_len": 31,
+    "max_distractor": 23,
+    "gap": 8
+   },
+   {
+    "q": 64,
+    "key": "ب",
+    "key_len": 42,
+    "max_distractor": 26,
+    "gap": 16
+   },
+   {
+    "q": 65,
+    "key": "ج",
+    "key_len": 34,
+    "max_distractor": 16,
+    "gap": 18
+   },
+   {
+    "q": 66,
+    "key": "ب",
+    "key_len": 60,
+    "max_distractor": 29,
+    "gap": 31
+   },
+   {
+    "q": 68,
+    "key": "ب",
+    "key_len": 26,
+    "max_distractor": 19,
+    "gap": 7
+   },
+   {
+    "q": 69,
+    "key": "ب",
+    "key_len": 30,
+    "max_distractor": 21,
+    "gap": 9
+   },
+   {
+    "q": 70,
+    "key": "ب",
+    "key_len": 49,
+    "max_distractor": 29,
+    "gap": 20
+   },
+   {
+    "q": 71,
+    "key": "ب",
+    "key_len": 29,
+    "max_distractor": 21,
+    "gap": 8
+   },
+   {
+    "q": 73,
+    "key": "ب",
+    "key_len": 35,
+    "max_distractor": 25,
+    "gap": 10
+   },
+   {
+    "q": 75,
+    "key": "ج",
+    "key_len": 38,
+    "max_distractor": 30,
+    "gap": 8
+   },
+   {
+    "q": 76,
+    "key": "ب",
+    "key_len": 42,
+    "max_distractor": 25,
+    "gap": 17
+   },
+   {
+    "q": 77,
+    "key": "ب",
+    "key_len": 52,
+    "max_distractor": 32,
+    "gap": 20
+   },
+   {
+    "q": 78,
+    "key": "ب",
+    "key_len": 33,
+    "max_distractor": 21,
+    "gap": 12
+   },
+   {
+    "q": 79,
+    "key": "ب",
+    "key_len": 36,
+    "max_distractor": 27,
+    "gap": 9
+   },
+   {
+    "q": 81,
+    "key": "الف",
+    "key_len": 26,
+    "max_distractor": 18,
+    "gap": 8
+   },
+   {
+    "q": 82,
+    "key": "ب",
+    "key_len": 29,
+    "max_distractor": 20,
+    "gap": 9
+   },
+   {
+    "q": 83,
+    "key": "ب",
+    "key_len": 45,
+    "max_distractor": 21,
+    "gap": 24
+   },
+   {
+    "q": 85,
+    "key": "ب",
+    "key_len": 37,
+    "max_distractor": 23,
+    "gap": 14
+   },
+   {
+    "q": 86,
+    "key": "ب",
+    "key_len": 37,
+    "max_distractor": 18,
+    "gap": 19
+   },
+   {
+    "q": 88,
+    "key": "ج",
+    "key_len": 26,
+    "max_distractor": 14,
+    "gap": 12
+   },
+   {
+    "q": 91,
+    "key": "ب",
+    "key_len": 22,
+    "max_distractor": 14,
+    "gap": 8
+   },
+   {
+    "q": 92,
+    "key": "ب",
+    "key_len": 32,
+    "max_distractor": 20,
+    "gap": 12
+   },
+   {
+    "q": 94,
+    "key": "ب",
+    "key_len": 24,
+    "max_distractor": 16,
+    "gap": 8
+   },
+   {
+    "q": 96,
+    "key": "الف",
+    "key_len": 30,
+    "max_distractor": 18,
+    "gap": 12
+   },
+   {
+    "q": 98,
+    "key": "ب",
+    "key_len": 35,
+    "max_distractor": 22,
+    "gap": 13
+   },
+   {
+    "q": 99,
+    "key": "ب",
+    "key_len": 29,
+    "max_distractor": 15,
+    "gap": 14
+   },
+   {
+    "q": 101,
+    "key": "ب",
+    "key_len": 61,
+    "max_distractor": 25,
+    "gap": 36
+   },
+   {
+    "q": 102,
+    "key": "ب",
+    "key_len": 63,
+    "max_distractor": 19,
+    "gap": 44
+   },
+   {
+    "q": 104,
+    "key": "ب",
+    "key_len": 34,
+    "max_distractor": 21,
+    "gap": 13
+   },
+   {
+    "q": 106,
+    "key": "ب",
+    "key_len": 54,
+    "max_distractor": 37,
+    "gap": 17
+   },
+   {
+    "q": 107,
+    "key": "ب",
+    "key_len": 39,
+    "max_distractor": 31,
+    "gap": 8
+   },
+   {
+    "q": 109,
+    "key": "ب",
+    "key_len": 48,
+    "max_distractor": 34,
+    "gap": 14
+   },
+   {
+    "q": 110,
+    "key": "ب",
+    "key_len": 54,
+    "max_distractor": 21,
+    "gap": 33
+   },
+   {
+    "q": 112,
+    "key": "ب",
+    "key_len": 29,
+    "max_distractor": 23,
+    "gap": 6
+   },
+   {
+    "q": 114,
+    "key": "ب",
+    "key_len": 28,
+    "max_distractor": 20,
+    "gap": 8
+   },
+   {
+    "q": 116,
+    "key": "ب",
+    "key_len": 28,
+    "max_distractor": 15,
+    "gap": 13
+   },
+   {
+    "q": 117,
+    "key": "ب",
+    "key_len": 37,
+    "max_distractor": 21,
+    "gap": 16
+   },
+   {
+    "q": 118,
+    "key": "ب",
+    "key_len": 46,
+    "max_distractor": 26,
+    "gap": 20
+   },
+   {
+    "q": 119,
+    "key": "ب",
+    "key_len": 39,
+    "max_distractor": 21,
+    "gap": 18
+   },
+   {
+    "q": 121,
+    "key": "ب",
+    "key_len": 38,
+    "max_distractor": 23,
+    "gap": 15
+   },
+   {
+    "q": 123,
+    "key": "ب",
+    "key_len": 31,
+    "max_distractor": 18,
+    "gap": 13
+   },
+   {
+    "q": 124,
+    "key": "الف",
+    "key_len": 46,
+    "max_distractor": 19,
+    "gap": 27
+   },
+   {
+    "q": 125,
+    "key": "ب",
+    "key_len": 29,
+    "max_distractor": 18,
+    "gap": 11
+   },
+   {
+    "q": 126,
+    "key": "ب",
+    "key_len": 25,
+    "max_distractor": 17,
+    "gap": 8
+   },
+   {
+    "q": 127,
+    "key": "ج",
+    "key_len": 38,
+    "max_distractor": 25,
+    "gap": 13
+   },
+   {
+    "q": 128,
+    "key": "ب",
+    "key_len": 29,
+    "max_distractor": 19,
+    "gap": 10
+   },
+   {
+    "q": 129,
+    "key": "ب",
+    "key_len": 49,
+    "max_distractor": 19,
+    "gap": 30
+   },
+   {
+    "q": 131,
+    "key": "الف",
+    "key_len": 22,
+    "max_distractor": 15,
+    "gap": 7
+   },
+   {
+    "q": 132,
+    "key": "ب",
+    "key_len": 46,
+    "max_distractor": 24,
+    "gap": 22
+   },
+   {
+    "q": 133,
+    "key": "ب",
+    "key_len": 42,
+    "max_distractor": 18,
+    "gap": 24
+   },
+   {
+    "q": 134,
+    "key": "ب",
+    "key_len": 66,
+    "max_distractor": 17,
+    "gap": 49
+   },
+   {
+    "q": 135,
+    "key": "ب",
+    "key_len": 48,
+    "max_distractor": 16,
+    "gap": 32
+   },
+   {
+    "q": 136,
+    "key": "ب",
+    "key_len": 31,
+    "max_distractor": 18,
+    "gap": 13
+   },
+   {
+    "q": 137,
+    "key": "ب",
+    "key_len": 53,
+    "max_distractor": 27,
+    "gap": 26
+   },
+   {
+    "q": 138,
+    "key": "ب",
+    "key_len": 30,
+    "max_distractor": 18,
+    "gap": 12
+   },
+   {
+    "q": 139,
+    "key": "ب",
+    "key_len": 54,
+    "max_distractor": 22,
+    "gap": 32
+   },
+   {
+    "q": 141,
+    "key": "ب",
+    "key_len": 43,
+    "max_distractor": 18,
+    "gap": 25
+   },
+   {
+    "q": 142,
+    "key": "ب",
+    "key_len": 43,
+    "max_distractor": 20,
+    "gap": 23
+   },
+   {
+    "q": 143,
+    "key": "ب",
+    "key_len": 29,
+    "max_distractor": 14,
+    "gap": 15
+   },
+   {
+    "q": 144,
+    "key": "ب",
+    "key_len": 30,
+    "max_distractor": 22,
+    "gap": 8
+   },
+   {
+    "q": 145,
+    "key": "ب",
+    "key_len": 40,
+    "max_distractor": 18,
+    "gap": 22
+   },
+   {
+    "q": 146,
+    "key": "ب",
+    "key_len": 51,
+    "max_distractor": 19,
+    "gap": 32
+   },
+   {
+    "q": 147,
+    "key": "الف",
+    "key_len": 43,
+    "max_distractor": 24,
+    "gap": 19
+   },
+   {
+    "q": 148,
+    "key": "ب",
+    "key_len": 51,
+    "max_distractor": 31,
+    "gap": 20
+   },
+   {
+    "q": 149,
+    "key": "الف",
+    "key_len": 40,
+    "max_distractor": 12,
+    "gap": 28
+   },
+   {
+    "q": 150,
+    "key": "ب",
+    "key_len": 25,
+    "max_distractor": 15,
+    "gap": 10
+   }
+  ],
+  "gap_median": 12,
+  "gap_min": -16,
+  "gap_max": 49,
+  "missing_choices": {},
+  "empty_choices": {},
+  "duplicate_options_within_item": {},
+  "duplicate_stems_across_items": {},
+  "keys_not_matching_any_option": [],
+  "max_consecutive_same_key": 15
+ },
+ "after": {
+  "questions": 150,
+  "numbering_continuous_1_150": true,
+  "keys_found": 150,
+  "key_distribution": {
+   "الف": 36,
+   "ب": 36,
+   "ج": 36,
+   "د": 42
+  },
+  "key_share_percent": {
+   "الف": 24.0,
+   "ب": 24.0,
+   "ج": 24.0,
+   "د": 28.0
+  },
+  "max_position_share_percent": 28.0,
+  "longest_option_cue_items_gap_gt_5": 0,
+  "longest_option_cue_detail": [],
+  "gap_median": -1,
+  "gap_min": -21,
+  "gap_max": 5,
+  "missing_choices": {},
+  "empty_choices": {},
+  "duplicate_options_within_item": {},
+  "duplicate_stems_across_items": {},
+  "keys_not_matching_any_option": [],
+  "max_consecutive_same_key": 2
+ },
+ "answer_correctness_preserved": {
+  "checked": 150,
+  "keyed_answer_text_unchanged_or_intentionally_reworded": 146,
+  "mismatches": [
+   {
+    "q": 25,
+    "baseline_key": "ج",
+    "new_key": "ج",
+    "baseline_key_text": "رفتار مسؤول در برابر مردم، کارمندان، محیط و پول عمومی",
+    "new_key_text": "رفتار مسئول در برابر مردم، کارمندان، محیط و پول عمومی"
+   },
+   {
+    "q": 102,
+    "baseline_key": "ب",
+    "new_key": "د",
+    "baseline_key_text": "رزرو وقت برای کار‌های مهم و پرهیز از گرفتار شدن در کار‌های فوری",
+    "new_key_text": "رزرو وقت برای کار‌های مهم و پرهیز از غرق شدن در کار‌های فوری"
+   },
+   {
+    "q": 134,
+    "baseline_key": "ب",
+    "new_key": "د",
+    "baseline_key_text": "مذاکره و پیشنهاد شاخصی که هم نیاز او و هم نتیجهٔ پروژه را نشان دهد",
+    "new_key_text": "مذاکره و پیشنهاد شاخصی که نیاز او و نتیجهٔ پروژه را نشان دهد"
+   },
+   {
+    "q": 135,
+    "baseline_key": "ب",
+    "new_key": "ج",
+    "baseline_key_text": "پیوستگی خدمت برای مردم و انتقال مسؤولانه کارکنان",
+    "new_key_text": "پیوستگی خدمت برای مردم و انتقال مسئولانه کارکنان"
+   }
+  ]
+ },
+ "method": {
+  "option_length_normalisation": "307 option lines rewritten so the keyed option is never more than 5 characters longer than the longest distractor",
+  "key_position_rebalancing": "76 items relocated: the correct option and one distractor swapped places; the key table cell updated in the same step",
+  "per_group_target": "each block of 25: الف 6, ب 6, ج 6, د 7",
+  "constraints_respected": [
+   "question stems unchanged",
+   "distractors kept plausible and on-topic",
+   "intended learning objective unchanged",
+   "no cyclic/mechanical letter rotation",
+   "no option text duplicated inside an item"
+  ]
+ }
+}

@@ -1,0 +1,129 @@
+{
+ "docx": {
+  "file": "مدیریت_مبانی_و_مهارت‌ها.docx",
+  "size_kb": 3140,
+  "core_properties": {
+   "title": "مدیریت؛ مبانی و مهارت‌های اساسی مدیریت",
+   "creator": "نشر سرچشمه",
+   "subject": "Management: The Essentials — Afghan Dari Professional Edition",
+   "description_set": true,
+   "category": "مدیریت",
+   "language": "fa-AF",
+   "keyword_count": 8,
+   "created": "2026-09-20T09:00:00Z",
+   "modified": "2026-09-20T09:00:00Z"
+  },
+  "app_properties": {
+   "application": "removed",
+   "company": "نشر سرچشمه",
+   "says_microsoft_word": false,
+   "stale_stats_removed": true,
+   "template_field_removed": true
+  },
+  "toc": {
+   "has_ctrl_a_instruction": false,
+   "has_toc_field": false,
+   "toc_entry_paragraphs": 528,
+   "bookmarks": 264,
+   "pageref_fields": 264
+  },
+  "layout": {
+   "sections": 29,
+   "landscape_sections": 14,
+   "tables_top_level": 181,
+   "tblW_elements": 264,
+   "rtl_paragraphs": 6079
+  },
+  "build_traces": []
+ },
+ "epub": {
+  "file": "مدیریت_مبانی_و_مهارت‌ها.epub",
+  "size_kb": 700,
+  "documents": 49,
+  "content_documents": 34,
+  "metadata": {
+   "title": "مدیریت؛ مبانی و مهارت‌های اساسی مدیریت",
+   "creator": "نشر سرچشمه",
+   "publisher": "نشر سرچشمه",
+   "date": "2026-09-20",
+   "language": "fa-AF",
+   "rights_set": true,
+   "generator_meta_removed": true,
+   "rtl_spine": true,
+   "accessibility_features": 4
+  },
+  "part_dividers": {
+   "count": 7,
+   "bytes_each": {
+    "EPUB/doc03.xhtml": 779,
+    "EPUB/doc07.xhtml": 797,
+    "EPUB/doc11.xhtml": 891,
+    "EPUB/doc16.xhtml": 838,
+    "EPUB/doc21.xhtml": 839,
+    "EPUB/doc25.xhtml": 674,
+    "EPUB/doc27.xhtml": 756
+   },
+   "each_lists_chapters": true,
+   "chapter_links_total": 20
+  },
+  "toc_html_vs_nav": {
+   "toc_xhtml_links": 267,
+   "nav_xhtml_links": 271,
+   "parts_in_toc_xhtml": 7,
+   "colophon_in_toc_xhtml": true,
+   "licence_in_toc_xhtml": true,
+   "sections_listed_in_toc_xhtml": 230
+  },
+  "semantics": {
+   "mcq_blocks": 150,
+   "h4_headings": 0,
+   "callout_h3": 98,
+   "semantic_sections": 282
+  },
+  "build_traces": []
+ },
+ "html": {
+  "file": "مدیریت_نسخهٔ_وب.html",
+  "size_kb": 1070,
+  "sidebar_parts": 7,
+  "sidebar_chapters": 27,
+  "mcq_blocks": 150,
+  "h4_headings": 0,
+  "callout_headings": 98,
+  "dark_mode": true,
+  "rtl": true,
+  "tables": 83,
+  "build_traces": []
+ },
+ "manuscript": {
+  "words": 64825,
+  "chapters": 20,
+  "parts": 0,
+  "cases": 30,
+  "tools": 14,
+  "mcq_items": 699,
+  "key_tables": 6,
+  "mock_exam_blueprints": 3,
+  "preferred_terms": {
+   "دوسیه": 12,
+   "مرخصی مرضی": 5,
+   "سروی": 30,
+   "انکشاف شغلی": 2,
+   "تلیفون": 11,
+   "فورم": 48,
+   "راپور": 126,
+   "مسئول": 201
+  },
+  "avoided_terms": {
+   "پرونده": 0,
+   "استعلاجی": 0,
+   "نظرسنجی": 0,
+   "توسعهٔ شغلی": 0,
+   "تیلفون": 0,
+   "فرم": 0,
+   "گزارش": 0,
+   "مسؤول": 0
+  },
+  "build_traces": []
+ }
+}

@@ -114,6 +114,15 @@ nav.toc a:hover {{ color: var(--accent); }}
 nav.toc li.part > a {{ color: var(--accent); font-weight: 700; display: block;
   margin-top: 0.9rem; }}
 nav.toc li.lvl2 {{ padding-right: 1.1rem; color: var(--ink-soft); font-size: 0.97em; }}
+nav.toc li.part > ol {{ margin: 0.2rem 0 0.5rem; padding-right: 1.1rem; }}
+nav.toc li.part > ol > li {{ margin: 0.12rem 0; }}
+nav.toc .mcq {{ margin: 0 0 1.1em; }}
+nav.toc .mcq p.q {{ font-weight: 700; margin: 0 0 0.25em; }}
+.toc-tree .qnum, .qnum {{ color: var(--accent); }}
+.mcq ol.choices {{ list-style: none; margin: 0; padding: 0 1.1rem 0 0; }}
+.mcq ol.choices li {{ margin: 0.18em 0; line-height: 1.5; }}
+.mcq .opt-letter {{ font-weight: 700; color: var(--ink-soft); }}
+aside.box h3 {{ font-size: 0.95rem; margin: 0 0 0.4rem; color: var(--accent); }}
 main {{ padding: 2.4rem 0 5rem; max-width: var(--measure); }}
 .cover {{ display: block; width: min(100%, 22rem); margin: 0 auto 2.4rem;
   border-radius: 6px; box-shadow: 0 12px 40px rgba(0,0,0,.22); }}
@@ -157,7 +166,7 @@ p.flow {{ text-align: center; font-weight: 700; color: var(--accent); line-heigh
 .progress {{ position: fixed; top: 0; right: 0; height: 3px; background: var(--accent);
   width: 0; z-index: 10; }}
 @media (max-width: 900px) {{
-  .layout {{ grid-template-columns: 1fr; gap: 0; }}
+  .layout {{ grid-template-columns: minmax(0, 1fr); gap: 0; }}
   nav.toc {{ position: static; max-height: none; border-left: none; padding: 1.2rem 0 0;
     border-bottom: 1px solid var(--rule); }}
   main {{ padding-top: 1.4rem; }}
@@ -170,6 +179,24 @@ p.flow {{ text-align: center; font-weight: 700; color: var(--accent); line-heigh
   aside.box, table, tr {{ page-break-inside: avoid; }}
 }}
 '''
+
+
+CHOICE_RE = re.compile(r'^(الف|ب|ج|د)\)\s?(.*)$')
+
+
+def is_mcq_item(item: str) -> bool:
+    lines = item.split('\n')
+    return len([ln for ln in lines if CHOICE_RE.match(ln.strip())]) == 4 and len(lines) >= 5
+
+
+def mcq_html(item: str, marker: str) -> str:
+    lines = [ln.strip() for ln in item.split('\n')]
+    choices = ''.join(
+        f'<li><span class="opt-letter">{esc(m.group(1))})</span> {inline(m.group(2))}</li>'
+        for m in (CHOICE_RE.match(ln) for ln in lines[1:]) if m)
+    num = f'<span class="qnum">{esc(marker)}.</span> ' if marker else ''
+    return (f'<div class="mcq" role="group"><p class="q">{num}{inline(lines[0])}</p>'
+            f'<ol class="choices">{choices}</ol></div>')
 
 
 def render_blocks(blocks, counter, nested=False, out=None):
@@ -193,6 +220,9 @@ def render_blocks(blocks, counter, nested=False, out=None):
                             for i in b.items)
             out.append(f'<ul>{items}</ul>')
         elif b.kind == 'olist':
+            if len(b.items) == 1 and is_mcq_item(b.items[0]):
+                out.append(mcq_html(b.items[0], b.markers[0] if b.markers else ''))
+                continue
             items = ''
             for n, i in enumerate(b.items):
                 marker = b.markers[n] if n < len(b.markers) else str(n + 1)
@@ -216,7 +246,7 @@ def render_blocks(blocks, counter, nested=False, out=None):
         elif b.kind == 'callout':
             label = CALLOUT_TITLE.get(b.ctype, b.ctype)
             title = f'{label} — {b.ctitle}' if b.ctitle else label
-            out.append(f'<aside class="box {esc(b.ctype)}"><h4>{inline(title)}</h4>')
+            out.append(f'<aside class="box {esc(b.ctype)}"><h3>{inline(title)}</h3>')
             render_blocks(b.items, counter, nested=True, out=out)
             out.append('</aside>')
     return out
@@ -229,16 +259,34 @@ def main():
     counter = [0]
     body_parts = []
     toc_items = []
+    toc_groups = []          # two-level sidebar: part -> its chapters
+    current = None
     for doc in docs:
         if doc['kind'] == 'part':
-            toc_items.append(f'<li class="part"><a href="#{slug(counter[0] + 1)}">'
-                             f'{esc(doc["title"])}</a></li>')
             counter[0] += 1
+            if current:
+                toc_groups.append(current)
+            current = {'part': f'<li class="part"><a href="#{slug(counter[0])}">'
+                               f'{esc(doc["title"])}</a>', 'chapters': []}
             body_parts.append(f'<h1 id="{slug(counter[0])}">{esc(doc["title"])}</h1>')
             continue
         start = counter[0] + 1
+        if doc['kind'] == 'appendix' and current:
+            toc_groups.append(current)
+            current = {'part': None, 'chapters': []}
         body_parts.extend(render_blocks(doc['blocks'], counter))
-        toc_items.append(f'<li class="lvl1"><a href="#{slug(start)}">{esc(doc["title"])}</a></li>')
+        entry = f'<li class="lvl2"><a href="#{slug(start)}">{esc(doc["title"])}</a></li>'
+        if current is None:
+            current = {'part': None, 'chapters': []}
+        current['chapters'].append(entry)
+    if current:
+        toc_groups.append(current)
+    for g in toc_groups:
+        inner = f'<ol>{"".join(g["chapters"])}</ol>' if g['chapters'] else ''
+        if g['part']:
+            toc_items.append(g['part'] + inner + '</li>')
+        else:
+            toc_items.extend(g['chapters'])
 
     cover_b64 = base64.b64encode(COVER.read_bytes()).decode()
     head_html = f'''<div class="titlepage">
@@ -264,7 +312,7 @@ def main():
 <div class="layout">
 <nav class="toc" aria-label="فهرست مطالب">
 <h2>فهرست مطالب</h2>
-<ol>{''.join(toc_items)}</ol>
+<ol class="toc-tree">{''.join(toc_items)}</ol>
 </nav>
 <main>
 {head_html}
