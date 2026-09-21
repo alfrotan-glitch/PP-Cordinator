@@ -796,6 +796,103 @@ T("کندروسارکوم", "Chondrosarcoma", "", AFG,
   "Transliteration; malignant tumour of cartilage.", "Ch07",
   "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
 
+# ======================================================== CH8 — BONE =========
+# Terms introduced by Chapter 8. استخوان is already established (Ch5, Ch7).
+
+T("استئوبلاست", "Osteoblast", "", AFG,
+  "Established international transliteration; the bone-forming cell.", "Ch07; Ch08",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("استئوسیت", "Osteocyte", "", AFG,
+  "Transliteration; the mature bone cell in its lacuna.", "Ch08",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("استئوکلاست", "Osteoclast", "", AFG,
+  "Transliteration; the multinucleated bone-resorbing cell of the monocyte/macrophage lineage.",
+  "Ch08", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("استئوپروژنیتور", "Osteoprogenitor cell", "", AFG,
+  "Transliteration; the precursor cell of the osteoblast lineage, found in the periosteum, "
+  "endosteum and bone marrow.", "Ch08", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("استئوئید", "Osteoid", "", AFG,
+  "Transliteration; the unmineralised organic bone matrix secreted by osteoblasts.", "Ch08",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("لاملا", "Lamella", "", AFG,
+  "Transliteration; a layer of bone matrix. Compact bone is built of lamellae.", "Ch08",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("اوستئون", "Osteon (Haversian system)", "Haversian system", AFG,
+  "Transliteration. The structural unit of compact bone: a central canal with its concentric "
+  "lamellae. «دستگاه هاورس» is not used; the transliteration اوستئون is.", "Ch08",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("کانال هاورس", "Haversian canal", "", AFG,
+  "Composed of the established transliteration کانال + the eponym Havers. The canal carries the "
+  "vessels and nerves at the centre of each osteon.", "Ch08",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("کانال Volkmann", "Volkmann canal", "", AFG,
+  "Eponym retained. These canals run transversely and connect Haversian canals to each other and "
+  "to the marrow cavity.", "Ch08", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("کانالیکولوس", "Canaliculus", "", AFG,
+  "Transliteration; the narrow channel housing an osteocyte process. Plural کانالیکول‌ها.", "Ch08",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("پریوست", "Periosteum", "", AFG,
+  "Transliteration. The outer fibrous covering of bone; absent on articular surfaces.",
+  "Ch08", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("اندوست", "Endosteum", "", AFG,
+  "Transliteration. The inner lining of the marrow cavity and osteonal canals.", "Ch08",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("استخوان متراکم", "Compact bone", "", AFG,
+  "Canonical استخوان + متراکم (already used in Ch5 for dense tissue).",
+  "Ch08", "AFGHAN STANDARD", "MEDIUM")
+
+T("استخوان اسفنجی", "Spongy bone", "", AFG,
+  "Canonical استخوان + the ordinary Dari word اسفنجی. Also called Cancellous bone.",
+  "Ch08", "AFGHAN STANDARD", "MEDIUM")
+
+T("استخوان‌سازی اندوکندراﻝ", "Endochondral ossification", "", AFG,
+  "Assembled from the canonical استخوان‌سازی + the established transliteration اندوکندراﻝ.",
+  "Ch08", "AFGHAN STANDARD", "MEDIUM")
+
+T("استخوان‌سازی داخل‌غشایی", "Intramembranous ossification", "", AFG,
+  "Assembled from canonical استخوان‌سازی + داخل + غشایی. The literal compound "
+  "«اینتراممبرانوس» is NOT used.", "Ch08", "AFGHAN STANDARD", "MEDIUM")
+
+T("صفحهٔ اپی‌فیز", "Epiphyseal plate", "", AFG,
+  "Composed of the established transliteration اپی‌فیز + صفحه. The growth plate of a long bone.",
+  "Ch08", "AFGHAN STANDARD", "MEDIUM")
+
+T("مغز استخوان", "Bone marrow", "", AFG2,
+  "Ordinary Dari compound, already used in Ch5 («مغز استخوان»).", "Ch05; Ch08",
+  "AFGHAN STANDARD", "MEDIUM")
+
+T("هادروکسی‌اپاتیت", "Hydroxyapatite", "",
+  AFG, "Transliteration; the calcium phosphate mineral of bone matrix.", "Ch08",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("اوستئوپتروز", "Osteopetrosis", "", AFG,
+  "Transliteration; the disease of failed osteoclast resorption.", "Ch08",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("اوستئوپوروز", "Osteoporosis", "", AFG,
+  "Transliteration; the common disease of reduced bone mass and microarchitectural deterioration.",
+  "Ch08", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("راشیتیسم", "Rickets", "", AFG,
+  "Transliteration; defective mineralisation of growing bone due to vitamin D deficiency.",
+  "Ch08", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("استئومالاسی", "Osteomalacia", "", AFG,
+  "Transliteration; defective mineralisation in adults.", "Ch08",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
 OVERRIDES = {
     "رنگ‌آمیزی":        ("", "", "", None),
     "مطبق":            ("", "", "", None),
