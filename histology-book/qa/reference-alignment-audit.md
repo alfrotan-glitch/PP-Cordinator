@@ -28,6 +28,7 @@ before declaring any part of the book release-ready.
 | **Ch 8 — Bone** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
 | **Ch 9 — Blood & Hemopoiesis** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
 | **Ch 10 — Muscle Tissue** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
+| **Ch 11 — Nervous Tissue** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
 
 **Column key (the 12 canonical checks — source of truth: `audit-template.md`):**
 1. تمام مفاهیم اصلی پوشش داده شده؟ · 2. تعریف‌ها دقیق؟ · 3. Classification درست؟ ·

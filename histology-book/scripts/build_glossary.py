@@ -1121,6 +1121,139 @@ T("مایوپاتی", "Myopathy", "", AFG, "Transliteration.", "Ch10",
 T("رگور مورتیس", "Rigor mortis", "", AFG, "Transliteration.", "Ch10",
   "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
 
+# ====================================================== CH11 — NERVOUS ======
+T("نیوروگلیا", "Neuroglia (glial cells)", "", AFG,
+  "Transliteration; the non-excitable supporting cells of nervous tissue.", "Ch11",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("آکسون", "Axon", "", AFG,
+  "Transliteration; the single long process that conducts impulses away from the cell body.", "Ch11",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("دندریت", "Dendrite", "", AFG,
+  "Transliteration; the branched processes that receive impulses.", "Ch11",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("میلین", "Myelin", "", AFG,
+  "Transliteration; the lipid-rich insulating sheath around axons.", "Ch11",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("غلافِ میلین", "Myelin sheath", "", AFG,
+  "Composed of the canonical غلاف + the established transliteration میلین.", "Ch11",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("حجرهٔ شوان", "Schwann cell", "", AFG,
+  "Composed of canonical حجرهٔ + the established name شوان. Myelin-forming cell of the peripheral "
+  "nervous system.", "Ch11", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("الیگودندروسیت", "Oligodendrocyte", "", AFG,
+  "Transliteration; the myelin-forming cell of the central nervous system.", "Ch11",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("آستروسیت", "Astrocyte", "", AFG,
+  "Transliteration; the largest and most numerous glial cell; forms the blood-brain barrier "
+  "framework and a repair scar.", "Ch11", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("میکروگلیا", "Microglia", "", AFG,
+  "Transliteration; the small phagocytic glial cell of monocytic origin.", "Ch11",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("اپندیم", "Ependyma", "", AFG,
+  "Transliteration; the ciliated epithelial lining of the brain ventricles and central canal.",
+  "Ch11", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("گرهٔ رانویه", "Node of Ranvier", "", AFG,
+  "Composed of canonical گرهٔ + the established name رانویه. The unmyelinated gap between two "
+  "myelinating cells where saltatory conduction occurs.", "Ch11",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("سیناپس", "Synapse", "", AFG,
+  "Transliteration; the junction between two neurons or a neuron and an effector cell.", "Ch11",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("سیناپسِ کیمیاوی", "Chemical synapse", "", AFG,
+  "Composed of the canonical سیناپس + the canonical adjective کیمیاوی (the established Afghan form for chemical).", "Ch11",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("نوروترانسمیتر", "Neurotransmitter", "", AFG,
+  "Transliteration; the chemical messenger released at a chemical synapse.", "Ch11",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("جسمِ نیسل", "Nissl body", "", AFG,
+  "Composed of the ordinary word جسم + the established name نیسل. Stacks of rough ER in the "
+  "neuronal perikaryon.", "Ch11", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("نوروفیلامنت", "Neurofilament", "", AFG,
+  "Transliteration; the intermediate filament of neurons.", "Ch11",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("مادهٔ خاکستری", "Gray matter", "", AFG2,
+  "Composed of canonical مادهٔ + the ordinary word خاکستری (already used in Ch4). Neuronal cell "
+  "bodies, dendrites and synapses.", "Ch11", "AFGHAN STANDARD", "MEDIUM")
+
+T("مادهٔ سفید", "White matter", "", AFG2,
+  "Composed of canonical مادهٔ + the ordinary word سفید. Myelinated axons and glial cells.",
+  "Ch11", "AFGHAN STANDARD", "MEDIUM")
+
+T("نخاع", "Spinal cord", "", AFG2,
+  "Ordinary Dari word for the spinal cord.", "Ch11", "AFGHAN STANDARD", "MEDIUM")
+
+T("الیافِ عصبی", "Nerve fibres", "", AFG2,
+  "Composed of الیاف (already used in Ch1) + the ordinary adjective عصبی.", "Ch11",
+  "AFGHAN STANDARD", "MEDIUM")
+
+T("عصبِ محیطی", "Peripheral nerve", "", AFG2,
+  "Composed of the ordinary words عصب + محیطی (already canonical in Ch4). A bundle of nerve "
+  "fibres with its connective tissue sheaths.", "Ch11", "AFGHAN STANDARD", "MEDIUM")
+
+T("اندونوریوم", "Endoneurium", "", AFG,
+  "Transliteration; the connective tissue sheath around each individual nerve fibre.", "Ch11",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("پرینوریوم", "Perineurium", "", AFG,
+  "Transliteration; the connective tissue sheath around each nerve fascicle.", "Ch11",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("اپینوریوم", "Epineurium", "", AFG,
+  "Transliteration; the connective tissue sheath around the whole nerve.", "Ch11",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("حاجزِ خون-مغز", "Blood-brain barrier", "", AFG2,
+  "Composed of established Dari terms: حاجز (a barrier, as in the haemostatic barrier sense) + "
+  "the ordinary words خون and مغز.", "Ch11", "AFGHAN STANDARD", "MEDIUM")
+
+T("شبکهٔ کوروئید", "Choroid plexus", "", AFG2,
+  "Composed of canonical شبکهٔ + the established transliteration کوروئید. The ependymal-plus-"
+  "capillary structure that secretes cerebrospinal fluid.", "Ch11",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("مایعِ دماغی-نخاعی", "Cerebrospinal fluid (CSF)", "", AFG2,
+  "Composed of established Dari terms; مایع (as in مایعِ خارج‌حجروی) + دماغی-نخاعی. The fluid of "
+  "the ventricles and subarachnoid space.", "Ch11", "AFGHAN STANDARD", "MEDIUM", abbr="CSF")
+
+T("غلافِ معدومِ میلین", "Unmyelinated", "", AFG2,
+  "Descriptive Dari phrase: a fibre without a myelin sheath.", "Ch11",
+  "AFGHAN STANDARD", "MEDIUM")
+
+T("عصبِ‌زخمِ محیطی", "Peripheral nerve injury", "", AFG2,
+  "Descriptive Dari phrase used in the clinical section.", "Ch11", "AFGHAN STANDARD", "MEDIUM")
+
+T("دژنراسیون والرین", "Wallerian degeneration", "", AFG,
+  "Transliteration; degeneration of the distal axon segment after nerve injury.", "Ch11",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("مرضِ مالتیپل اسکلروزیس", "Multiple sclerosis", "", AFG2,
+  "Composed of the established Dari مرض + the international term, which is what clinical practice "
+  "uses. Autoimmune demyelination of the central nervous system.", "Ch11",
+  "ENGLISH RETAINED", "MEDIUM", abbr="MS")
+
+T("پارکینسون", "Parkinson disease", "", AFG,
+  "Transliteration; degeneration of dopaminergic neurons of the substantia nigra.", "Ch11",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("الصاقِ عصبی", "Nervous tissue repair", "", AFG2,
+  "Descriptive Dari phrase for the regeneration section.", "Ch11", "AFGHAN STANDARD", "LOW")
+
 OVERRIDES = {
     "رنگ‌آمیزی":        ("", "", "", None),
     "مطبق":            ("", "", "", None),
