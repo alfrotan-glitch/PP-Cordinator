@@ -486,6 +486,43 @@ python3 scripts/selftest_terminology.py   -> SELFTEST: ALL PASS
 
 **Terminology Gate: FINAL AND CLOSED. Chapter 6 (Adipose Tissue) unblocked.**
 
+---
+
+## Session 7 — Chapter 6 (Adipose Tissue) written under the locked policy
+
+**File:** `chapters/06-adipose-tissue.md` — 914 lines, 5 topics, each with all 13 mandated sections,
+plus the chapter self-assessment and the 12-point reference alignment audit.
+
+| Topic | Content |
+|---|---|
+| 6.1 | نسج شحمی: تعریف، منشأ و طبقه‌بندی — definition, mesenchyme origin, white/brown/beige |
+| 6.2 | نسج شحمی سفید (Unilocular) — structure, signet-ring, frozen-section stains, lipoma |
+| 6.3 | نسج شحمی قهوه‌ای (Multilocular) — UCP1/ترموجنین, sympathetic control, neonatal thermogenesis |
+| 6.4 | تنظیمِ میتابولیک و وظیفهٔ اندوکراین — LPL/HSL/ATGL, leptin, adiponectin, insulin |
+| 6.5 | منشأ، توزیع و پیوندِ بالینی — lipoblast, lipoma/liposarcoma/hibernoma, fat embolism |
+
+### Terminology — new terms registered BEFORE first use
+
+20 new glossary rows, all under the locked policy: none constructed, none translated word by word.
+The only phrase assembled from Afghan forms is **نسج شحمی** (canonical نسج + canonical شحمی), recorded
+MEDIUM with an explicit note that the assembled phrase was not found verbatim in a document.
+**Unilocular / Multilocular are retained in English** precisely because a Dari equivalent would have
+had to be constructed. 14 new `[VERIFY AGAINST JUNQUEIRA 17e]` markers were added (book total 39).
+
+### Scanner as the pre-introduction check — it worked
+
+The draft was scanned before acceptance and **9 pre-lock forms were caught and corrected**: بافت/بافت‌های ×2,
+سلولی ×3, بیماری, پوست, and one garbled differential bullet. This is the first chapter written with the
+locked system in place, and the check did its job — nothing was waved through.
+
+### State
+
+`qa_scan.py` → **RESULT: 0 findings** · `selftest_terminology.py` → **ALL PASS** ·
+glossary 228 entries · per-chapter matrix in `qa/reference-alignment-audit.md` now has a Ch 6 row
+(✅ draft, ⚠️ on check 11 only, like every other chapter).
+
+**Next chapter: Chapter 7 — Cartilage.**
+
 ## Open issues (not yet resolved)
 
 See `qa/reference-alignment-audit.md` §3 — 20 items flagged `[VERIFY AGAINST JUNQUEIRA 17e]`

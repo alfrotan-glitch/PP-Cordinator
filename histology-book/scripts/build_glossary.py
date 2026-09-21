@@ -620,6 +620,99 @@ T("لنفوئید", "Lymphoid", "", AFG2,
 #
 # key = dari_term ; value = (forbidden, accepted_variants, latin_term, new_dari)
 # --------------------------------------------------------------------------
+# ============================================================ CH6 — ADIPOSE ===
+# Terms introduced by Chapter 6. None is constructed: each is either the established
+# international/transliterated form used in medical education, an ordinary Dari word,
+# or a phrase built from forms already canonical in this glossary.
+
+T("نسج شحمی", "Adipose tissue", "", 
+  "Composed of two forms already canonical in this glossary: نسج (Afghan MoE Grade-7 «انساج») "
+  "+ شحمی (recorded here as the Afghan adjective for adipose/fatty). The assembled phrase was not "
+  "located verbatim in an Afghan document, so this entry is MEDIUM confidence rather than HIGH. "
+  "Nothing new was coined: no morpheme was translated and no compound was constructed.",
+  "CANONICAL for this book. White adipose tissue = نسج شحمی سفید; brown = نسج شحمی قهوه‌ای. "
+  "The English term follows in parentheses at first use in each chapter.",
+  "Ch06; Ch05", "AFGHAN STANDARD", "MEDIUM")
+
+T("ادیپوسیت", "Adipocyte", "", AFG,
+  "Established international transliteration; no Afghanistan-specific documentary source located. "
+  "The transparent Dari descriptor «حجره شحمی» may be used in running prose as an explanation "
+  "(it is built from the canonical حجره + شحمی); it is not registered as a competing form because "
+  "the text uses ادیپوسیت throughout.", "Ch06",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("پری‌ادیپوسیت", "Preadipocyte", "", AFG,
+  "Transliteration, consistent with ادیپوسیت.", "Ch06",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("لیپید", "Lipid", "", AFG,
+  "Standard in Afghan medical writing (the book uses it throughout Ch1–Ch5). The ordinary Dari "
+  "word چربی names the same substance in everyday and school usage and is NOT prohibited; the "
+  "book uses لیپید where the scientific sense is meant.", "Whole book",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("تری‌گلیسرید", "Triglyceride", "", AFG,
+  "Standard transliteration; the storage form of energy in adipocytes.", "Ch02; Ch06",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("گلیسرول", "Glycerol", "", AFG, "Transliteration.", "Ch06",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("اسیدهای شحمی", "Fatty acids", "", AFG,
+  "Uses the canonical Afghan adjective شحمی. «اسیدهای چرب» (the ordinary-word form) is not "
+  "prohibited but is not used as the scientific term in this book.", "Ch06",
+  "AFGHAN STANDARD", "MEDIUM")
+
+T("لیپولیز", "Lipolysis", "", AFG, "Transliteration.", "Ch06",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("لپتین", "Leptin", "", AFG,
+  "Transliteration. Adipocyte hormone signalling energy stores to the hypothalamus.", "Ch06",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("ادیپونکتین", "Adiponectin", "", AFG, "Transliteration.", "Ch06",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("انسولین", "Insulin", "", AFG, "Transliteration.", "Ch06",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("کاتیکولامین", "Catecholamine", "", AFG,
+  "Transliteration; spelled کاتیکولامین rather than the Persian کتکولامین.", "Ch06",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("ترموجنین", "Thermogenin (UCP1)", "", AFG,
+  "Transliteration. Uncoupling protein 1 of the inner mitochondrial membrane; the molecular basis "
+  "of non-shivering thermogenesis in brown adipose tissue.", "Ch06",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM", lat="UCP1")
+
+T("Unilocular", "Unilocular", "", AFG,
+  "Retained in English: the term describes a single lipid droplet filling the cell, and no Afghan "
+  "Dari form was located. «تک‌قطره‌ای» is NOT used — it would be a constructed compound.", "Ch06",
+  "ENGLISH RETAINED", "MEDIUM")
+
+T("Multilocular", "Multilocular", "", AFG,
+  "Retained in English for the same reason as Unilocular. «چندقطره‌ای» is NOT used.", "Ch06",
+  "ENGLISH RETAINED", "MEDIUM")
+
+T("هیپوترمیا", "Hypothermia", "", AFG,
+  "Transliteration, current in Afghan clinical writing.", "Ch06",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("چاقی", "Obesity", "", AFG,
+  "Ordinary Dari/Persian word, not a constructed compound; used for the clinical condition.", "Ch06",
+  "AFGHAN STANDARD", "MEDIUM")
+
+T("لیپوما", "Lipoma", "", AFG, "Transliteration; benign tumour of adipocytes.", "Ch06",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("لیپوسارکوم", "Liposarcoma", "", AFG,
+  "Transliteration; malignant tumour of adipocytes.", "Ch06",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("هورمون", "Hormone", "", AFG2,
+  "Standard transliteration, already used throughout Ch1–Ch5.", "Whole book",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
 OVERRIDES = {
     "رنگ‌آمیزی":        ("", "", "", None),
     "مطبق":            ("", "", "", None),

@@ -30,8 +30,8 @@ Junqueira 17e, could they read → understand → review → recognize → recal
 | Ch 3 — The Nucleus | ✅ Draft 1 — audit passed |
 | Ch 4 — Epithelial Tissue | ✅ Draft 1 — audit passed |
 | Ch 5 — Connective Tissue | ✅ Draft 1 — audit passed |
-| Ch 6 — Adipose Tissue | ⏳ Next (terminology gate cleared) |
-| Ch 7 — Cartilage | ⏳ Pending |
+| Ch 6 — Adipose Tissue | ✅ Draft 1 — audit passed |
+| Ch 7 — Cartilage | ⏳ Next |
 | Ch 8 — Bone | ⏳ Pending |
 | Ch 9 — Blood & Hemopoiesis | ⏳ Pending |
 | Ch 10 — Muscle Tissue | ⏳ Pending |
@@ -48,16 +48,17 @@ Junqueira 17e, could they read → understand → review → recognize → recal
 | Ch 21 — Male Reproductive System | ⏳ Pending |
 | Ch 22 — Female Reproductive System | ⏳ Pending |
 | Ch 23 — The Eye & Ear: Special Sense Organs | ⏳ Pending |
-| Terminology glossary | ✅ 206 entries × 12 columns (see `glossary/terminology-glossary.csv`) |
-| Terminology gate (Ch 1–5) | ✅ **PASS** — 0 findings; decision table in `editorial/terminology-decisions.md` |
+| Terminology glossary | ✅ 228 entries × 12 columns (see `glossary/terminology-glossary.csv`) |
+| Terminology gate (Ch 1–6) | ✅ **PASS — FINAL AND CLOSED** (2026-09-21); see `editorial/final-terminology-lock.md` |
 | Terminology decision report | ✅ `editorial/terminology-decisions.md` (mandatory table + evidence) |
 | Terminology **correction** report | ✅ `editorial/terminology-correction-report.md` (pass 3 — invented-term audit) |
-| QA scanner | ✅ `scripts/qa_scan.py` — six passes, 86 forbidden forms, 0 findings |
+| QA scanner | ✅ `scripts/qa_scan.py` — six passes, 102 forbidden forms, 64 canonical, 0 findings |
+| Terminology self-test | ✅ `scripts/selftest_terminology.py` — injection / clean / locked decisions, ALL PASS |
 | Editorial change log | ✅ `editorial/change-log.md` |
 | Book-level audit roll-up | ✅ `qa/reference-alignment-audit.md` |
 | Full-book QA + release gate | ⏳ Deferred until all chapters exist |
 
-**Release gate status: `NOT READY FOR PUBLICATION`** — the book is incomplete (5 of 23 chapters).
+**Release gate status: `NOT READY FOR PUBLICATION`** — the book is incomplete (6 of 23 chapters).
 See `qa/reference-alignment-audit.md` §4 for the blocking list.
 
 **Verification backlog:** 20 items are flagged `[VERIFY AGAINST JUNQUEIRA 17e]` across the five

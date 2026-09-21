@@ -23,6 +23,7 @@ before declaring any part of the book release-ready.
 | **Ch 3 — The Nucleus** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
 | **Ch 4 — Epithelial Tissue** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
 | **Ch 5 — Connective Tissue** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
+| **Ch 6 — Adipose Tissue** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
 
 **Column key (the 12 canonical checks — source of truth: `audit-template.md`):**
 1. تمام مفاهیم اصلی پوشش داده شده؟ · 2. تعریف‌ها دقیق؟ · 3. Classification درست؟ ·
@@ -90,7 +91,14 @@ before the book is used as an exam source.
 
 ---
 
-## 3b. Terminology gate (Chapters 1–5) — PASSED
+## 3b. Terminology gate (Chapters 1–6) — PASSED AND CLOSED
+
+The gate was locked on 2026-09-21 (`editorial/final-terminology-lock.md`). Chapter 6 was written under
+the locked policy: its new terms (نسج شحمی، ادیپوسیت، پری‌ادیپوسیت، لیپید، تری‌گلیسرید، لیپولیز،
+لپتین، ادیپونکتین، ترموجنین، Unilocular، Multilocular and others) were registered in
+`build_glossary.py` **before** first use, and the scanner caught and forced correction of 9 pre-lock
+forms in the draft before it was accepted.
+
 
 Full report and the mandatory decision table: **`editorial/terminology-decisions.md`**.
 Machine-readable source of truth: `glossary/terminology-glossary.csv` (206 entries × 12 columns).
