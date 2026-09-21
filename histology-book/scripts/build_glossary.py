@@ -1673,6 +1673,62 @@ for _d, _e, _lat, _ab, _forb, _n, _dec, _c in [
 ]:
     T(_d, _e, _forb, AFG, _n, "Ch15", _dec, _c, lat=_lat, abbr=_ab)
 
+# ================================ CH16 — LIVER, BILE, PANCREAS ==============
+for _d, _e, _lat, _ab, _forb, _n, _dec, _c in [
+ ("هپاتوسیت", "Hepatocyte", "", "", "",
+  "Transliteration; the parenchymal cell of the liver, arranged in plates and performing most liver "
+  "functions.", "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("صفافِ کبد", "Hepatic plate", "lamina hepatis", "", "",
+  "Descriptive Dari phrase; the one-cell-thick plates of hepatocytes.", "AFGHAN STANDARD", "MEDIUM"),
+ ("صفرا", "Bile", "bilis", "", "",
+  "Established Dari word; the adjective is صفراوی.", "AFGHAN STANDARD", "MEDIUM"),
+ ("کانالیکولوسِ صفراوی", "Bile canaliculus", "", "", "",
+  "Composed of the transliteration کانالیکولوس (already used in Ch8 for bone) + صفراوی; the "
+  "channels between adjacent hepatocytes.", "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("شبکهٔ صفراوی", "Biliary tree", "ductus biliferi", "", "",
+  "Composed of the canonical شبکهٔ + صفراوی; the duct system from canaliculi to the main duct.",
+  "AFGHAN STANDARD", "MEDIUM"),
+ ("وریدِ بابِ کبد", "Hepatic portal vein", "vena portae hepatis", "", "",
+  "Composed of the canonical ورید + باب; the vein bringing nutrient-rich blood from the gut.",
+  "AFGHAN STANDARD", "MEDIUM"),
+ ("منطقهٔ باب", "Portal area", "trias portalis", "", "",
+  "Descriptive Dari phrase; the connective tissue area containing the portal triad.",
+  "AFGHAN STANDARD", "MEDIUM"),
+ ("حجراتِ کوپفر", "Kupffer cells", "macrophagocytus stellatus", "", "",
+  "Composed of canonical حجرات + the eponym; the resident macrophages of the hepatic sinusoids.",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("حجراتِ ایتو", "Hepatic stellate (Ito) cells", "cellulae perisinusoidales", "", "",
+  "Composed of canonical حجرات + the eponym; the vitamin-A storing, fibrosis-producing cells.",
+  "COMMON AFGHAN TRANSLITERATION", "LOW"),
+ ("کیسهٔ صفرا", "Gallbladder", "vesica biliaris", "", "",
+  "Composed of the ordinary word کیسه + صفرا.", "AFGHAN STANDARD", "MEDIUM"),
+ ("سیروزِ کبد", "Cirrhosis", "", "", "",
+  "Composed of the established transliteration سیروز + the canonical کبد; the end-stage fibrotic liver disease. (کبد is the primary form; جگر is an accepted Afghan variant and is not used in this chapter.)",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("یرقان", "Jaundice", "icterus", "", "",
+  "Established Dari word for jaundice; the everyday synonym زردی is explanatory only.",
+  "AFGHAN STANDARD", "MEDIUM"),
+ ("هپاتیت", "Hepatitis", "", "", "",
+  "Transliteration; inflammation of the liver.", "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("جزیرهٔ لانگرهانس", "Islet of Langerhans", "insulae pancreaticae", "", "",
+  "Composed of the ordinary word جزیره + the eponym; the endocrine part of the pancreas.",
+  "AFGHAN STANDARD", "MEDIUM"),
+ ("حجراتِ آسینارِ پانکراس", "Pancreatic acinar cells", "", "", "",
+  "Composed of canonical حجرات + the transliteration آسینار (the same root as آسینِ غددِ لعابی, "
+  "Ch14).", "AFGHAN STANDARD", "MEDIUM"),
+ ("انسولین", "Insulin", "", "", "",
+  "Transliteration; the hormone of the beta cells.", "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("گلوکاگون", "Glucagon", "", "", "",
+  "Transliteration; the hormone of the alpha cells.", "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("پانکریاتیت", "Pancreatitis", "", "", "",
+  "Transliteration; inflammation of the pancreas, characterized histologically by autodigestion.",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("سنگِ صفرا", "Gallstone", "cholelithiasis", "", "",
+  "Descriptive Dari phrase; cholesterol or pigment stones in the gallbladder.",
+  "AFGHAN STANDARD", "MEDIUM"),
+]:
+    T(_d, _e, _forb, AFG, _n, "Ch16", _dec, _c, lat=_lat, abbr=_ab)
+
 OVERRIDES = {
     "رنگ‌آمیزی":        ("", "", "", None),
     "مطبق":            ("", "", "", None),
