@@ -287,7 +287,7 @@ deep) connected by arteriovenous anastomoses important in thermoregulation.
 
 **دری:** **فیبروبلاست** (سازندهٔ کولاجن و الاستین) · **ادیپوسیت** (در هایپودرم) · **ماست‌سل**
 (هیستامین، در واکنش‌های آلرژیک) · **ماکروفاژ** · **حجراتِ دندریتیکِ** درم · **حجراتِ عضلهٔ صافِ**
-موی‌رگ‌ها و عضلهٔ **راست‌کنندهٔ** مو · **حجراتِ عضلانی-اپیتلیالیِ** غدواتِ عرقیه و شحمی.
+موی‌رگ‌ها و عضلهٔ **راست‌کنندهٔ** مو · **حجراتِ میواپی‌تلیالِ** غدواتِ عرقیه و شحمی.
 **English:** Fibroblasts, adipocytes, mast cells, macrophages, dermal dendritic cells, vascular and
 arrector pili smooth muscle, and the myoepithelial cells of sweat and sebaceous glands.
 
