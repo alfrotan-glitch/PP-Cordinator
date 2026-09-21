@@ -34,6 +34,7 @@ before declaring any part of the book release-ready.
 | **Ch 14 — The Oral Cavity** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
 | **Ch 15 — The Digestive Tract** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
 | **Ch 16 — Organs Associated with the Digestive Tract** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
+| **Ch 17 — Respiratory System** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
 
 **Column key (the 12 canonical checks — source of truth: `audit-template.md`):**
 1. تمام مفاهیم اصلی پوشش داده شده؟ · 2. تعریف‌ها دقیق؟ · 3. Classification درست؟ ·

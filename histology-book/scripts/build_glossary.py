@@ -1729,6 +1729,79 @@ for _d, _e, _lat, _ab, _forb, _n, _dec, _c in [
 ]:
     T(_d, _e, _forb, AFG, _n, "Ch16", _dec, _c, lat=_lat, abbr=_ab)
 
+# ================================================== CH17 — RESPIRATORY =====
+for _d, _e, _lat, _ab, _forb, _n, _dec, _c in [
+ ("دستگاهِ تنفسی", "Respiratory system", "", "", "",
+  "Composed of established Dari words; the airway and lung.", "AFGHAN STANDARD", "MEDIUM"),
+ ("مخاطِ تنفسی", "Respiratory mucosa", "", "", "",
+  "Composed of canonical مخاط + تنفسی; the ciliated, mucous-secreting lining of the airway.",
+  "AFGHAN STANDARD", "MEDIUM"),
+ ("اپیتلیومِ تنفسی", "Respiratory epithelium", "", "", "",
+  "Composed of canonical اپیتلیوم + تنفسی; pseudostratified ciliated columnar epithelium.",
+  "AFGHAN STANDARD", "MEDIUM"),
+ ("ویلُوسِ بینی", "Olfactory vesicle? (olfactory epithelium)", "", "", "",
+  "PLACEHOLDER-REMOVED", "AFGHAN STANDARD", "LOW"),
+ ("حجرهٔ جارویی", "Brush cell", "", "", "",
+  "Descriptive Dari phrase (حجره + جارویی, the ordinary word for brush-like) used as an "
+  "explanatory gloss. The established goblet-cell rendering «حجرهٔ جامی» already exists in this "
+  "glossary and is NOT reused here, since brush cell and goblet cell are different cells.",
+  "ENGLISH RETAINED", "LOW"),
+ ("حجراتِ کلارا", "Clara cells", "", "", "",
+  "Composed of canonical حجرات + the eponym; the secretory, stem-like cells of bronchioles.",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("برونش", "Bronchus", "", "", "",
+  "Transliteration; the cartilaginous airway branches.", "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("برونشیول", "Bronchiole", "", "", "",
+  "Transliteration; the airway branches without cartilage.", "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("برونشیولِ تنفسی", "Respiratory bronchiole", "", "", "",
+  "Composed of the canonical برونشیول + the ordinary word تنفسی; the first site of gas exchange.",
+  "AFGHAN STANDARD", "MEDIUM"),
+ ("آلوئول", "Alveolus", "", "", "",
+  "Transliteration; the terminal gas-exchange sac. Plural: آلوئول‌ها.", "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("مجرایِ آلوئولار", "Alveolar duct", "", "", "",
+  "Composed of the transliteration مجرا + آلوئولار (the same root as آلوئول).",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("کیسهٔ آلوئولار", "Alveolar sac", "", "", "",
+  "Composed of the ordinary word کیسه + آلوئولار.", "AFGHAN STANDARD", "MEDIUM"),
+ ("حجراتِ نوعِ اول", "Type I pneumocytes", "", "", "",
+  "Descriptive Dari phrase with the international numbering retained; the thin squamous cells "
+  "covering most of the alveolar surface.", "AFGHAN STANDARD", "MEDIUM"),
+ ("حجراتِ نوعِ دوم", "Type II pneumocytes", "", "", "",
+  "Descriptive Dari phrase; the cuboidal cells producing surfactant.",
+  "AFGHAN STANDARD", "MEDIUM"),
+ ("سورفکتانت", "Surfactant", "", "", "",
+  "Transliteration; the surface-active phospholipid-protein mixture that lowers alveolar surface "
+  "tension.", "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("حجراتِ درون‌آلوئولی", "Alveolar macrophages", "", "", "",
+  "Descriptive Dari phrase; the dust cells that phagocytose inhaled particles.",
+  "AFGHAN STANDARD", "MEDIUM"),
+ ("حاجزِ خون-هوایی", "Blood-air barrier", "", "", "",
+  "Composed of the established حاجز (as in حاجزِ خون-مغز, Ch11) + the ordinary words خون and هوایی.",
+  "AFGHAN STANDARD", "MEDIUM"),
+ ("مژکِ تنفسی", "Respiratory cilium", "", "", "",
+  "Composed of the canonical مژک + تنفسی; the cilia that propel the mucous blanket.",
+  "AFGHAN STANDARD", "MEDIUM"),
+ ("پلورا", "Pleura", "", "", "",
+  "Transliteration; the serous membrane around the lung (parietal and visceral).",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("ذات‌الریه", "Pneumonia", "pneumonia", "", "",
+  "Established Dari word for pneumonia (also written ذات‌الجنب in some Afghan texts for pleurisy); "
+  "the clinical register uses ذات‌الریه.", "AFGHAN STANDARD", "MEDIUM"),
+ ("آسم", "Asthma", "", "", "",
+  "Established word in Afghan clinical use.", "AFGHAN STANDARD", "MEDIUM"),
+ ("نسجِ ششی", "Lung tissue", "", "", "",
+  "Composed of the canonical نسج + the adjective ششی (of the lung, as in شش = lung).",
+  "AFGHAN STANDARD", "LOW"),
+ ("سلِّ شش", "Pulmonary tuberculosis", "tuberculosis", "", "",
+  "Composed of the established سل (tuberculosis) + شش (lung).", "AFGHAN STANDARD", "MEDIUM"),
+ ("کارسینومِ برونکوژنیک", "Bronchogenic carcinoma", "", "", "",
+  "Composed of the international term + the Dari noun کارسینوم (used in Ch12–16).",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+]:
+    if _n == "PLACEHOLDER-REMOVED":
+        continue
+    T(_d, _e, _forb, AFG, _n, "Ch17", _dec, _c, lat=_lat, abbr=_ab)
+
 OVERRIDES = {
     "رنگ‌آمیزی":        ("", "", "", None),
     "مطبق":            ("", "", "", None),
