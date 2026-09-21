@@ -1,5 +1,11 @@
 # Targeted Junction Terminology Evidence Check
 
+> **SUPERSEDED IN PART — see `editorial/final-terminology-lock.md`.** The owner fixed the junction decisions on 2026-09-21: the **international terms are canonical**
+> (Tight junction / Zonula occludens, Adherens junction / Zonula adherens, Gap junction);
+> «مضبوط اتصال» is retained as a permitted Afghan Dari gloss; and the two Dari calques this
+> report flagged are now non-canonical and machine-enforced as prohibited. The evidence gathered
+> here is unchanged and still accurate; only the decisions drawn from it have been made.
+
 **Scope:** exactly three terms — tight junction, adherens junction, gap junction. **No other
 terminology was changed.**
 **Actions taken:** one glossary evidence upgrade (tight junction), two `[VERIFY TERMINOLOGY]` flags

@@ -419,6 +419,73 @@ Scientific content unchanged.
 
 **Chapter 6 remains blocked** — 2 of 3 terms flagged, decisions owed.
 
+---
+
+## Session 6 — Final terminology lock: gate CLOSED, Chapter 6 unblocked
+
+Report: `editorial/final-terminology-lock.md`. Scope = the owner's final decisions only; no other
+terminology decision reopened, no scientific content changed.
+
+### Decisions applied
+
+| Item | Final state | Evidence |
+|---|---|---|
+| Tight junction | canonical **Tight junction / Zonula occludens**; «مضبوط اتصال» permitted as an Afghan Dari gloss, not the scientific term | wasiweb.com, «حجروي اتصال، د اتصال ډولونه» (Kandahar Faculty of Medicine student) |
+| Adherens junction | canonical **Adherens junction / Zonula adherens**; no Dari equivalent invented; former calque non-canonical + enforced | TolAfghan «هستولوژي Histology — دوهمه برخه»; wasiweb «adherence junction» |
+| Gap junction | canonical **Gap junction**; no Dari equivalent invented; former calque non-canonical + enforced | wasiweb «ګپ جنکشن Gap junction»; ps.wikipedia «Gapjunction» |
+| Carbohydrate | canonical **کاربوهایدریت**; `[VERIFY TERMINOLOGY]` removed | TolAfghan, «فزیولوژی حجره» — «… سایر لیپیدها ۴ فیصد و کاربوهایدریت‌ها ۳ فیصد» |
+| Organelle | **ارگانل** canonical (Afghan MoE Grade-7 textbook); **اندامک** = ACCEPTED AFGHAN VARIANT, no longer prohibited | TolAfghan — «به اجزای درون حجره اندامک گفته می‌شود» |
+| Policy | README §4.2 rewritten: 5-level decision hierarchy, three absolute prohibitions, locked examples table, and "used in Iran ≠ prohibited" | owner directive, 2026-09-21 |
+
+### Changes
+
+- **Chapters:** 11 Latin *Carbohydrate* phrases → کاربوهایدریت (Ch1 ×4, Ch2 ×5, Ch5 ×2) + the
+  front-matter PAS row and the flag note.
+- **Ch4 §4.3 note** rewritten — international junctions canonical, no invented equivalents.
+- **`00-front-matter.md`:** `[VERIFY TERMINOLOGY]` now describes exactly **one** term (آنتی‌ژن).
+- **`build_glossary.py`:** carbohydrate row re-anchored to a named document; artificial blacklist
+  entries for the two settled forms removed; organelle variant registered; junction rows re-keyed to
+  the international terms; KUMS constant added; evidence-source constants hoisted above first use.
+- **`qa_scan.py`:** per-form Iranian vs non-canonical classification (79 / 23) instead of one
+  row-level keyword.
+- **`scripts/selftest_terminology.py`:** NEW permanent self-test — injection (102 forbidden forms),
+  clean (208 canonical forms), and the locked decisions.
+- **KUMS evidence gap CLOSED:** 5 rows now cite the KUMS bulletin examined this session.
+
+### Corrections to earlier reports
+
+- «کاربوهایدریت appears in no Afghan source» — **withdrawn**; the form is attested and canonical.
+- «اندامک is the Iranian form» — **revised**; it is an accepted Afghan variant, and ارگانل is canonical
+  on institutional precedence.
+- Supersession banners added to `terminology-correction-report.md`, `final-terminology-evidence-gate.md`,
+  `junction-terminology-check.md`, `terminology-decisions.md`.
+
+### Defects found by the new self-test and fixed
+
+1. One form was listed as both prohibited and acceptable (an earlier override contradicting a later
+   blacklist). The later decision stands; the contradiction was removed.
+2. Constructed forms were being *reported* as Iranian-Persian violations. Classification is now
+   per form. No term's status changed.
+
+### Flagged for the owner (evidence raised, decision not taken)
+
+1. KUMS uses the book's clinical register; search snippets from other KUMS news items also show the
+   Persian patient word. Not examined → not evidence → nothing changed.
+2. پوهنحی (MoHE) vs پوهنځی (KUMS) — two official Afghan spellings, one chapter uses the latter.
+3. A registered accepted variant may not share a file with its canonical form.
+
+### Verification
+
+```
+python3 scripts/qa_scan.py                -> RESULT: 0 findings, exit 0
+python3 scripts/selftest_terminology.py   -> SELFTEST: ALL PASS
+```
+
+208 glossary entries · 102 forbidden · 64 canonical · 39 accepted variants · 43 English-retained ·
+1 unresolved (آنتی‌ژن) · `[VERIFY TERMINOLOGY]` 2 · `[VERIFY AGAINST JUNQUEIRA 17e]` 25.
+
+**Terminology Gate: FINAL AND CLOSED. Chapter 6 (Adipose Tissue) unblocked.**
+
 ## Open issues (not yet resolved)
 
 See `qa/reference-alignment-audit.md` §3 — 20 items flagged `[VERIFY AGAINST JUNQUEIRA 17e]`

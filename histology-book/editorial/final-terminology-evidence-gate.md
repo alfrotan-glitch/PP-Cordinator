@@ -1,5 +1,12 @@
 # Final Terminology Evidence Gate — Report
 
+> **SUPERSEDED IN PART — see `editorial/final-terminology-lock.md`.** Three of this report's conclusions were revised by the owner and by later evidence:
+> (1) the junction terms are settled as international, per the targeted check in
+> `editorial/junction-terminology-check.md`; (2) **Carbohydrate is canonical as کاربوهایدریت** —
+> the claim that no Afghan source uses that form was wrong (TolAfghan, «فزیولوژی حجره»);
+> (3) **اندامک is an accepted Afghan variant**, not a prohibited form, and (4) the KUMS evidence
+> gap is closed — 5 entries now cite a KUMS document.
+
 **Gate:** the mandatory check before Chapter 6.
 **Policy locked:** `README.md` §4.2 (canonical rule, source hierarchy, no-construction rule, no-overclaim rule).
 **Result: PASS — scanner 0 findings, exit 0.**

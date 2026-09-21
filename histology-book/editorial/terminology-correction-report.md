@@ -1,5 +1,11 @@
 # Terminology Correction Report — Pass 3
 
+> **SUPERSEDED IN PART — see `editorial/final-terminology-lock.md`.** The finding in §1 that the Afghan transliteration of *Carbohydrate* was a morpheme-by-morpheme
+> construction **is withdrawn**: the form is attested in TolAfghan, «فزیولوژی حجره»
+> («… و سایر لیپیدها ۴ فیصد و کاربوهایدریت‌ها ۳ فیصد») and is now the canonical Afghan-Dari
+> term. The same report's treatment of اندامک as an Iranian form is likewise revised — it is an
+> accepted Afghan variant, and ارگانل is canonical on institutional precedence.
+
 **Trigger:** corrective directive — *"NEVER invent, construct, or literal-translate a medical/scientific
 term from English."*
 **Scope:** all 207 glossary entries + all five completed chapters + front matter + README.

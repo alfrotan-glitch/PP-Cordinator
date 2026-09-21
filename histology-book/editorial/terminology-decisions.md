@@ -1,5 +1,9 @@
 # Terminology Decision Report — Afghan Medical Terminology Standard
 
+> **SUPERSEDED IN PART (second revision) — see `editorial/final-terminology-lock.md`.** This is the
+> historical record. Carbohydrate is canonical as کاربوهایدریت, اندامک is an accepted Afghan
+> variant, and the junctions are canonical as Tight junction / Adherens junction / Gap junction.
+
 > **⚠ SUPERSEDED IN PART by `editorial/terminology-correction-report.md` (pass 3).**
 > The corrective directive of 2026-09-21 established that a term must **never** be constructed by
 > translating English morphemes. Two entries in this report violated that rule (کیمیا تداوی,

@@ -92,7 +92,7 @@ H&E colors rather than just registering them.
 | **Basophilia** (آبی/بنفش) | ساختارهای اسیدی (DNA، RNA، GAGها) با رنگ قاعدی هماتوکسیلین | هسته، RER فراوان، غضروف ماتریکس |
 | **Acidophilia / Eosinophilia** (صورتی/قرمز) | ساختارهای قاعدی/پروتئینی با رنگ اسیدی ایوزین | سیتوپلاسم، مایتوکندریا، رشته‌های کولاجن |
 | **Metachromasia** | یک رنگ، رنگ متفاوتی می‌سازد | تولوئیدین‌بلو در گرانول‌های ماست‌سل |
-| **PAS-positive** (ماجنتا) | Carbohydrates و گلیکوپروتئین‌ها | غشای پایه، موسین گابلت‌سل |
+| **PAS-positive** (ماجنتا) | کاربوهایدریت‌ها (Carbohydrates) و گلیکوپروتئین‌ها | غشای پایه، موسین گابلت‌سل |
 
 ---
 
@@ -136,14 +136,16 @@ H&E colors rather than just registering them.
 **English:** Any point marked `[VERIFY AGAINST JUNQUEIRA 17e]` is an honest uncertainty, not a guess
 presented as fact. Check these against the reference before relying on them in an exam.
 
-**دری:** علامت جداگانهٔ `[VERIFY TERMINOLOGY]` به اصطلاح‌ها مربوط است، نه به محتوای علمی. هر اصطلاحی
-که شکل افغانی آن با اطمینان کامل قابل اثبات نبود، با این علامت مشخص شده و شکل انگلیسی‌اش در متن
-نگه داشته شده است. در این نسخه دو اصطلاح چنین وضعیتی دارند: **آنتی‌ژن** و **Carbohydrate**.
+**دری:** علامت جداگانهٔ `[VERIFY TERMINOLOGY]` به اصطلاح‌ها مربوط است، نه به محتوای علمی. در این
+ویرایش فقط **یک** اصطلاح چنین وضعیتی دارد: **آنتی‌ژن** (هر دو شکل آنتی‌ژن و آنتی‌نژ/آنتی‌نژن در منابع
+افغانی دیده می‌شود). سایر اصطلاح‌ها نهایی شده‌اند: کاربوهایدریت شکل معیاری Carbohydrate است (در یک
+منبع طبی افغانی مستند است)، و برای اتصالات نام‌های بین‌المللی **Tight junction (Zonula occludens)**،
+**Adherens junction (Zonula adherens)** و **Gap junction** معیاری‌اند.
 
 **English:** `[VERIFY TERMINOLOGY]` is a *terminology* flag, kept strictly separate from the
-scientific-verification flag above. It marks a term whose Afghan form could not be established with
-confidence; the English form is retained in the text instead of inventing a Dari equivalent. Two
-terms currently carry this flag: **آنتی‌ژن** (both آنتی‌ژن and آنتی‌نژ/آنتی‌نژن appear in Afghan
-sources), **Carbohydrate**, and the Dari equivalents of **adherens junction** and **gap junction**.
-In each case the book keeps the established English/international form rather than supplying a
-translation. The glossary records the exact source examined for every term.
+scientific-verification flag above. After the final terminology gate, exactly **one** term still
+carries it: **آنتی‌ژن** (both آنتی‌ژن and آنتی‌نژ/آنتی‌نژن appear in Afghan sources). The others are
+settled: کاربوهایدریت is the canonical form of *Carbohydrate* (attested in an Afghan medical
+source), and the junction terms are canonical in their international form — **Tight junction
+(Zonula occludens)**, **Adherens junction (Zonula adherens)**, **Gap junction**. The glossary
+records the exact document examined for every term.

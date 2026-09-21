@@ -198,10 +198,39 @@ is **not** idempotent — it has already been run and must not be re-run.
 > English term or the established international transliteration and mark it `[VERIFY TERMINOLOGY]`
 > where appropriate.**
 
-**No constructed terminology.** Never create a medical term by translating English morphemes or by
-combining Dari words. *Chemotherapy → کیموتراپی / Chemotherapy* — never a compound built from
-"chemistry" + "treatment". Likewise the book does not carry an invented Dari equivalent for
-*Carbohydrate* merely because the English word can be translated semantically.
+**The locked decision hierarchy.** Take the first level that exists:
+
+1. Established official Afghan medical terminology (ministry documents, official curricula and
+   textbooks).
+2. Established terminology used by Afghan medical universities and medical education.
+3. Established Afghan transliteration of international medical terminology.
+4. International English terminology, when that is the terminology actually used in medical
+   education.
+5. English or the international transliteration retained, when no reliable Afghan equivalent is
+   established.
+
+**Absolute prohibitions**
+
+- **NEVER invent a medical term.**
+- **NEVER build a Dari/Persian medical compound by translating English word by word.**
+- **NEVER replace an established international medical term merely because a Dari translation is
+  linguistically possible.**
+
+**Locked examples.** The glossary is the enforced list; these are the reference cases.
+
+| Concept | Canonical in this book | Rejected |
+|---|---|---|
+| Chemotherapy | کیموتراپی / Chemotherapy | a compound built from the Dari words for *chemistry* + *treatment* |
+| Carbohydrate | کاربوهایدریت / Carbohydrate | the Persian transliteration of the same word, and «قندها» (a general biological expression, not the medical term) |
+| Tight junction | Tight junction / Zonula occludens | — the Afghan explanatory form «مضبوط اتصال» is allowed as a Dari gloss, but it is not the scientific term |
+| Adherens junction | Adherens junction / Zonula adherens | the Dari calque (the glossary row records the exact prohibited spelling); no replacement Dari term is invented |
+| Gap junction | Gap junction | the Dari calque (the glossary row records the exact prohibited spelling); no replacement Dari term is invented |
+| Organelle | ارگانل / Organelle | — the alternative Afghan form is registered in the glossary as an **accepted variant**, not as a prohibited form |
+
+**A term used in Iran is not thereby prohibited.** The test is whether the term is established and
+appropriate in *Afghan* medical usage. Iranian sources, generic Persian dictionaries and general
+Persian websites remain inadmissible as *evidence*; they are not, on their own, grounds for
+blacklisting a form.
 
 **Source hierarchy** — evidence for a term, in this order:
 

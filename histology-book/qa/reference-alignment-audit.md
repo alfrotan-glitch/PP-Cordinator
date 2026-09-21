@@ -101,9 +101,9 @@ Machine-readable source of truth: `glossary/terminology-glossary.csv` (206 entri
 | Unexplained terminology inconsistency | **0** — 56 canonical replacements, 35 accepted variants |
 | Terminology decided against Afghan sources (not assumed) | ✅ Research recorded in `editorial/terminology-decisions.md` §2–§3 |
 | English terms needlessly Dari-ised | **0** — 42 English-retained entries, all Latin anatomical/stain names kept |
-| Invented Dari equivalents | **0** after pass 3. Before pass 3 an audit found 2 (کیمیا تداوی، کاربوهایدریت) plus 2 missed Iranian forms (اندامک، نورون) — 77 corrections, see `editorial/terminology-correction-report.md` |
+| Invented Dari equivalents | **0**. The one form previously classed as a morpheme-by-morpheme construction (the Afghan transliteration of *Carbohydrate*) is **withdrawn from that class**: it is attested in an Afghan source and is now canonical. Remaining constructed forms (the one built from «chemistry» + «treatment», and the ریز‑ compounds) are 0 occurrences in the text and enforced.
 | Every canonical decision has a named Afghan source | ⚠️ **Partial, honestly labelled** — see `editorial/final-terminology-evidence-gate.md`: 54 entries anchored to a named Afghan document, 149 declared as transliterations with no Afghan document located, 4 declared owner-mandated decisions, 1 unresolved. No entry claims an Afghan institution without identifying a document |
-| KUMS (Kabul University of Medical Sciences) evidence tier | ⚠️ **0 entries** — KUMS syllabi are not retrievable; stated as a gap rather than claimed |
+| KUMS (Kabul University of Medical Sciences) evidence tier | ✅ **5 entries** — a KUMS news bulletin (kums.edu.af, «دیپارتمنت فزیوتراپی در شفاخانه تدریسی علی آباد پوهنتون علوم طبی کابل…») was read and corroborates مریض، تداوی، داکتر، محصل، شفاخانه. The earlier "not retrievable" note applied to KUMS *syllabi*; the institutional site itself is readable. |
 | Terms flagged `[VERIFY TERMINOLOGY]` | 1 (آنتی‌ژن) — deliberately unresolved, not guessed |
 | Scanner command | `python3 scripts/qa_scan.py` → **RESULT: 0 findings**, exit 0 |
 
@@ -125,11 +125,14 @@ NOT READY FOR PUBLICATION
 five existing chapters, so they are sound as far as they go — but a partial book cannot be declared
 publication-ready.
 
-**Terminology status (post junction check):**
-- 1 of 3 junction terms passes the evidence gate — tight junction (`اتصال مضبوط`, attested in Afghan
-  medical-faculty material).
-- 2 are flagged `[VERIFY TERMINOLOGY]` and need an author decision — adherens junction and gap junction.
-- Full record: `editorial/junction-terminology-check.md`.
+**Terminology status — LOCKED AND CLOSED (2026-09-21):**
+- Junctions are canonical in their international form: **Tight junction / Zonula occludens**,
+  **Adherens junction / Zonula adherens**, **Gap junction**. «مضبوط اتصال» is a permitted Afghan Dari
+  gloss; the two Dari calques are non-canonical and enforced as prohibited.
+- **Carbohydrate → کاربوهایدریت** is canonical (attested: TolAfghan, «فزیولوژی حجره»).
+- **Organelle → ارگانل** canonical; **اندامک** recorded as an accepted Afghan variant.
+- Scanner 0 findings; self-test ALL PASS; unresolved terminology is exactly one term (آنتی‌ژن).
+- Full record: `editorial/final-terminology-lock.md`.
 
 **Blocking issues:**
 1. 18 chapters not yet written (Ch 6–23).

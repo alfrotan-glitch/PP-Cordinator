@@ -302,18 +302,21 @@ collagen, laminin, perlecan, and nidogen.
 Specialized membrane structures that adhere epithelial cells to one another, seal the intercellular
 space, and provide direct communication between cytoplasms.
 
-> **یادداشت اصطلاح‌شناسی — Terminology note.** در این بخش نام‌های بین‌المللی اتصالات
-> (Tight junction، Zonula adherens، Gap junction) به کار می‌رود، چون همین نام‌ها در منابع
-> طبی افغانی نیز به کار می‌روند. برای tight junction شکل دری **اتصال مضبوط** در منابع
-> افغانی مستند است. برای adherens junction و gap junction هیچ شکل دریِ مستندِ افغانی
-> یافت نشد؛ بنابراین این دو با `[VERIFY TERMINOLOGY]` علامت‌گذاری شده‌اند و کتاب نام
-> بین‌المللی را نگه می‌دارد — ترجمهٔ ساختگی اضافه نمی‌شود.
+> **یادداشت اصطلاح‌شناسی — Terminology note.** اصطلاح‌های معیاری این بخش نام‌های بین‌المللی
+> اند، چون خودِ منابع طبی افغانی همین نام‌ها را به کار می‌برند: **Tight junction / Zonula
+> occludens**، **Adherens junction / Zonula adherens** و **Gap junction**. برای tight
+> junction شکل دریِ **اتصال مضبوط** در منابع افغانی (یادداشت یک محصل پوهنځی طب کندهار)
+> مستند است و به‌عنوان توضیح دری جایز است، اما اصطلاح علمی همان نام بین‌المللی است. برای
+> adherens و gap junction هیچ معادل دریِ مستندِ افغانی یافت نشد؛ بنابراین هیچ معادل تازه‌ای
+> ساخته نمی‌شود و نام بین‌المللی به کار می‌رود.
 >
-> **English:** The international names are used here because Afghan medical sources use them.
-> The Dari form **اتصال مضبوط** for tight junction is attested in Afghan medical-faculty
-> material. For adherens junction and gap junction no attested Afghan Dari form was found, so
-> those two carry `[VERIFY TERMINOLOGY]` and the book keeps the international name rather than
-> inventing a Dari equivalent.
+> **English:** The canonical terms here are the international ones, because Afghan medical
+> sources themselves use them: **Tight junction / Zonula occludens**, **Adherens junction /
+> Zonula adherens**, **Gap junction**. For tight junction the Dari form **اتصال مضبوط** is
+> attested in Afghan material (a Kandahar Faculty of Medicine student's teaching note) and is
+> allowed as a Dari gloss, but the scientific term is the international one. For adherens and
+> gap junction no attested Afghan Dari equivalent exists, so none is invented and the
+> international name is used.
 
 ## 2. Classification | طبقه‌بندی
 

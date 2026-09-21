@@ -116,11 +116,20 @@ def load_glossary():
             if dec == "VERIFY FURTHER" or row.get("confidence", "").strip() == "UNRESOLVED":
                 if canon not in unresolved:
                     unresolved.append(canon)
+            # A form is either an Iranian-Persian violation or a non-canonical /
+            # constructed form. The bare row marker covers a whole row (a calque
+            # entry); the bracketed tag marks individual forms inside a row that
+            # also carries genuine Iranian forms, and is stripped before the
+            # row-level test so it cannot flip the whole row.
+            tagged = set()
+            for grp in re.findall(r"\[NON-CANONICAL:([^\]]*)\]", notes):
+                tagged.update(x.strip() for x in grp.split(";") if x.strip())
+            row_notes = re.sub(r"\[NON-CANONICAL:[^\]]*\]", "", notes)
+            row_noncanon = "NON-CANONICAL" in row_notes
             for f in filter(None, (x.strip()
                                    for x in row.get("forbidden_forms", "").split(";"))):
-                # an Iranian-Persian violation vs an Afghan non-canonical variant
-                kind = "NONCANON" if "NON-CANONICAL" in notes else "IRANIAN"
-                forbidden[f] = (canon, row["english_term"], kind, notes)
+                kind = "NONCANON" if (row_noncanon or f in tagged) else "IRANIAN"
+                forbidden[f] = (canon, row["english_term"], kind, row_notes)
             for v in filter(None, (x.strip()
                                    for x in row.get("accepted_variants", "").split(";"))):
                 variants[v] = canon

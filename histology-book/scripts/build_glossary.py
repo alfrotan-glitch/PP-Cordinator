@@ -53,6 +53,19 @@ def T(dari, eng, forb="", src="", notes="", first="",
 AFG = "Afghan medical education usage (MOHE curriculum / Afghan medical-university teaching material)"
 MAND = "Project canonical decision (Terminology Gate) — Afghan usage confirmed by sources"
 
+# Named Afghan documents used as evidence below (defined here so every row can
+# cite them by name and there is one place to correct a citation).
+ME7  = "Afghan MoE textbook, Biology Grade 7 (moe.gov.af, Kabul, 1398 h.s.)"
+ME12 = "Afghan MoE textbook, Science Grade 12 (moe.gov.af)"
+TOL  = "TolAfghan (tolafghan.com), «فزیولوژی حجره» — Afghan cell-physiology text"
+MOPH = "Afghan MoPH official recruitment register (moph.gov.af)"
+AFD  = "Afghan doctors' clinical writing, afghan-doctors.com"
+AV   = "AfghanVet (afghanvet.blogspot.com), Afghan biology text"
+KUMS = ("Kabul University of Medical Sciences — kums.edu.af news bulletin "
+        "«دیپارتمنت فزیوتراپی در شفاخانه تدریسی علی آباد پوهنتون علوم طبی کابل طی محفلی "
+        "افتتاح شد» (۱۴۰۱/۹/۳۰)")
+S5   = "Afghan faculty histology text: خاتم النبیین University, «هستولوژی تئوری ۲» (muslimuniversity.edu.af)"
+
 # ============================================================ CORE / CH1 ===
 T("حجره", "Cell", "سلول;یاخته", MAND,
   "CANONICAL. Afghan Dari uses حجره for Cell; plural حجرات. Confirmed by MOHE Biology curriculum "
@@ -200,7 +213,10 @@ T("سیتواسکلتون", "Cytoskeleton", "اسکلت حجروی", AFG,
 T("میکروتوبول", "Microtubule", "ریزلوله", AFG,
   "Afghan exam form is میکروتوبول. Do NOT list it as forbidden — it is not an Iranian form.",
   "Ch02")
-T("میکروفیلامنت", "Microfilament", "ریزرشته", AFG, "Afghan exam form.", "Ch02")
+T("میکروفیلامنت", "Microfilament", "ریزرشته", AFG,
+  "Afghan exam form is میکروفیلامنت. The Dari compound ریزرشته is a literal morpheme "
+  "translation of micro- + filament and carries no cited Afghan document, so it is prohibited "
+  "(the pass-2 note that treated it as acceptable was a contradiction and was removed).", "Ch02")
 T("فیلامنت میانی", "Intermediate filament", "", AFG, "", "Ch02")
 T("مژک", "Cilium", "", AFG,
   "Both مژک and سیلیا/سلیا are attested in Afghan teaching material (the خاتم النبیین text uses "
@@ -212,9 +228,19 @@ T("میکروویلی", "Microvillus", "ریزپرز;مایکروویلای", MA
 T("استروئید", "Steroid", "استرویید", AFG,
   "Afghan histology and biology texts write استروئید. استرویید is the Iranian transliteration.",
   "Ch02")
-T("کاربوهایدریت", "Carbohydrate", "کربوهیدرات", AFG,
-  "Afghan transliteration pattern (کاربن, کاربوهایدریت). کربوهیدرات is the Iranian form.",
-  "Ch02", conf="MEDIUM")
+T("کاربوهایدریت", "Carbohydrate",
+  "کربوهیدرات;کربوهیدرات‌ها;کربوهیدرات‌های;کربوهیدراتی;کربوهیدراتیِ;کاربوهیدرات",
+  TOL + " — «… و سایر لیپیدها ۴ فیصد و کاربوهایدریت‌ها ۳ فیصد»",
+  "CANONICAL Afghan-Dari form (owner decision, 2026-09-21). Attested in an Afghan cell-physiology "
+  "text: TolAfghan, «فزیولوژی حجره», «… سایر لیپیدها ۴ فیصد و کاربوهایدریت‌ها ۳ فیصد». This is the "
+  "established Afghan transliteration pattern (cf. کاربن), NOT a morpheme-by-morpheme construction. "
+  "English «Carbohydrate» may follow in parentheses at first use where that helps the reader. The "
+  "Persian/Iranian transliteration is NOT used in this book (owner decision). «قندها» (sugars) is a "
+  "general biological expression used in Afghan school books and is NOT the medical term for "
+  "Carbohydrate. Plural کاربوهایدریت‌ها · adjective کاربوهایدریتی. Every form in this row's "
+  "forbidden list is NON-CANONICAL by owner decision — prohibited for this book, not "
+  "automatically because Iran uses it.",
+  "Ch1 (PAS); Ch2 (glycocalyx); Ch5 (GAG)", dec="COMMON AFGHAN TRANSLITERATION", conf="HIGH")
 T("فسفوریلیشن", "Phosphorylation", "فسفریلاسیون;فسفوریلاسیون", AFG,
   "Afghan texts write «فسفوریلیشن اکسیداتیو» (TolAfghan, خاتم النبیین).", "Ch02", conf="MEDIUM")
 T("اگزوسایتوز", "Exocytosis", "", AFG, "", "Ch02", dec="COMMON AFGHAN TRANSLITERATION")
@@ -307,49 +333,44 @@ T("دسموزوم", "Desmosome", "پل حجروی", AFG, "", "Ch04",
   dec="COMMON AFGHAN TRANSLITERATION")
 T("همی‌دسموزوم", "Hemidesmosome", "", AFG, "", "Ch04",
   dec="COMMON AFGHAN TRANSLITERATION")
-# ---- targeted junction evidence check (final gate, 2026-09-21) -----------
-# EVIDENCE PASSES. The book's Dari form is attested in an Afghan medical-faculty
-# source, and it is NOT the Iranian form (Iranian writes اتصالات محکم / اتصال تنگ
-# / پیوند سخت for this junction).
-T("اتصال مضبوط", "Tight junction", "zonula occludens",
-  "wasiweb.com, «حجروي اتصال، د اتصال ډولونه» — byline «قاسم خان همت کندهار طب "
-  "پوهنځۍ محصل» (a Kandahar Faculty of Medicine student): «①مضبوط اتصال【Tight "
-  "junction】»، «د مضبوط اتصال وظایف»، «د مضبوط اتصال ناروغۍ». The same page places it "
-  "«په(Epithelial) انساجو په سطحي برخه کښې».",
-  "Evidence passes. Afghan medical-faculty material writes مضبوط اتصال / اتصال مضبوط and "
-  "pairs it directly with 【Tight junction】. Distinct from the Iranian forms (اتصالات محکم، "
-  "اتصال تنگ، پیوند سخت). Single-source basis, so confidence is MEDIUM not HIGH. The Latin "
-  "zonula occludens is kept alongside for exam recognition.",
-  "Ch04", dec="AFGHAN STANDARD", conf="MEDIUM")
+# ---- FINAL junction decision (locked by the owner, 2026-09-21) -------------
+# CANONICAL = the established international terminology, which is what Afghan
+# medical sources actually use. The Afghan Dari explanatory form is recorded but
+# is NOT the primary scientific term, and no Dari equivalent is invented for the
+# junctions where Afghan sources name only the international term.
+WASIWEB = ("wasiweb.com, «حجروي اتصال، د اتصال ډولونه» — byline «قاسم خان همت کندهار طب "
+           "پوهنځۍ محصل» (Kandahar Faculty of Medicine student)")
 
-# EVIDENCE INSUFFICIENT. No Afghan Dari form for this junction could be located.
-# Afghan sources use the international/Latin name, and the book's Dari form
-# coincides with Iranian usage. Per policy: retain and flag, do not invent.
-T("اتصال چسبنده", "Adherens junction", "zonula adherens",
-  "No Afghan Dari form located. Afghan sources use the international name: TolAfghan "
-  "(tolafghan.com), «هستولوژي Histology — دوهمه برخه»: «b- Zonula Adherence = Intermediate "
-  "Juntion»; wasiweb.com «حجروي اړیکې او ډولونه یې»: «adherence junction».",
-  "EVIDENCE INSUFFICIENT — RETAINED AND FLAGGED, not changed. Two findings: (1) no Afghan "
-  "source using a Dari term for this junction was located — Afghan sources write Zonula "
-  "adherens / Intermediate junction / adherence junction; (2) the retained Dari form "
-  "corresponds to the Iranian wording اتصالات چسبنده. Under the policy the term is kept "
-  "and marked [VERIFY TERMINOLOGY] instead of being replaced by an invented form or "
-  "silently inverted. The book's chapter text already uses Zonula adherens / Adherens "
-  "junction, so no text change is required. Decision owed by the author.",
-  "Ch04", dec="VERIFY FURTHER", conf="UNRESOLVED")
+T("Tight junction", "Zonula occludens", "", WASIWEB + " — «①مضبوط اتصال【Tight junction】»، "
+  "«د مضبوط اتصال وظایف»",
+  "CANONICAL: **Tight junction / Zonula occludens**. The international term is the primary "
+  "scientific term (owner decision, locked). The Afghan explanatory form «مضبوط اتصال» is "
+  "attested in Afghan medical-faculty material — wasiweb.com, «حجروي اتصال، د اتصال ډولونه» "
+  "(byline: a Kandahar Faculty of Medicine student): «①مضبوط اتصال【Tight junction】» — and MAY be "
+  "used as a Dari gloss, but it is NOT the primary scientific term. It is not the Iranian wording "
+  "(Iranian sources write اتصالات محکم / اتصال تنگ).",
+  "Ch04", dec="ENGLISH RETAINED", conf="HIGH", lat="Zonula occludens")
 
-T("اتصال شکافی", "Gap junction", "connexon",
-  "No Afghan Dari form located. Afghan sources use the transliteration or a Pashto "
-  "descriptor: wasiweb.com «حجروي اتصال، د اتصال ډولونه»: «③ګپ جنکشن Gap Junction»; "
-  "wasiweb.com «حجروي اړیکې او ډولونه یې»: «درز junction یا gap junction»; ps.wikipedia "
-  "«بشروي نسجونه»: «٤-Gapjunction».",
-  "EVIDENCE INSUFFICIENT — RETAINED AND FLAGGED, not changed. Afghan sources use the "
-  "transliteration gap junction / ګپ جنکشن or the Pashto descriptor درز junction; no "
-  "Afghan source using اتصال شکافی was located, and the nearest Persian form (اتصال "
-  "شکافدار) is Iranian. Per policy the term is kept and marked [VERIFY TERMINOLOGY] rather "
-  "than inverted. The book's chapter text already uses Gap junction / Nexus, so no text "
-  "change is required. Decision owed by the author.",
-  "Ch04", dec="VERIFY FURTHER", conf="UNRESOLVED")
+T("Adherens junction", "Zonula adherens", "اتصال چسبنده;اتصالات چسبنده",
+  "TolAfghan, «هستولوژي Histology — دوهمه برخه» (tolafghan.com/articles/19376) — "
+  "«b- Zonula Adherence = Intermediate Juntion»; " + WASIWEB,
+  "CANONICAL: **Adherens junction / Zonula adherens**. International term, canonical by owner "
+  "decision. NON-CANONICAL Dari calque recorded so it can never be reused as the scientific term: "
+  "no Afghan source using a Dari equivalent was located — Afghan sources name this junction only "
+  "internationally (TolAfghan: «Zonula Adherence = Intermediate Juntion»; wasiweb: «adherence "
+  "junction»). No replacement Dari term is invented.",
+  "Ch04", dec="ENGLISH RETAINED", conf="HIGH", lat="Zonula adherens")
+
+T("Gap junction", "Gap junction", "اتصال شکافی;اتصال شکاف‌دار",
+  WASIWEB + " — «③ګپ جنکشن Gap Junction»؛ «درز junction یا gap junction»؛ "
+  "ps.wikipedia «بشروي نسجونه» — «٤-Gapjunction»",
+  "CANONICAL: **Gap junction**. International term, canonical by owner decision. NON-CANONICAL "
+  "Dari calque recorded so it can never be reused as the scientific term: no Afghan source using a "
+  "Dari equivalent was located — Afghan sources use the transliteration (wasiweb: «ګپ جنکشن Gap "
+  "Junction», «درز junction یا gap junction»; ps.wikipedia: «Gapjunction»). No replacement Dari "
+  "term is invented.",
+  "Ch04", dec="ENGLISH RETAINED", conf="HIGH", lat="Connexon")
+
 T("کادهرین", "Cadherin", "", AFG, "", "Ch04", dec="ENGLISH RETAINED")
 T("اینتگرین", "Integrin", "", AFG, "", "Ch04", dec="ENGLISH RETAINED")
 T("کلودین", "Claudin", "", AFG, "", "Ch04", dec="ENGLISH RETAINED")
@@ -602,7 +623,7 @@ T("لنفوئید", "Lymphoid", "", AFG2,
 OVERRIDES = {
     "رنگ‌آمیزی":        ("", "", "", None),
     "مطبق":            ("", "", "", None),
-    "میکروفیلامنت":    ("", "ریزرشته", "", None),
+    "میکروفیلامنت":    ("", "", "", None),   # blacklist comes from INVENTED_CONSTRUCTIONS
     "اندوتلیوم":       ("", "آندوتلیوم", "", "آندوتلیوم"),
     "غشای حجروی":       ("غشای سلولی", "غشای پلاسمایی", "", None),
     "پلاسمالما":        ("", "", "plasmalemma", None),
@@ -618,9 +639,6 @@ OVERRIDES = {
     "لامینای پایه":     ("", "", "", None),   # غشای پایه is a DIFFERENT structure (basement membrane)
     "یوروتلیوم":        ("", "اپیتلیوم انتقالی;اپیتلیوم مثانه", "", None),
     "دسموزوم":          ("", "پل حجروی", "", None),
-    "اتصال مضبوط":      ("", "", "zonula occludens", None),
-    "اتصال چسبنده":     ("", "", "zonula adherens", None),
-    "اتصال شکافی":      ("", "", "connexon", None),
     "گابلت":            ("", "حجرهٔ جامی", "", None),
     "اندوتلیوم":        ("", "آندوتلیوم", "", None),
     "ماست‌سل":          ("", "ماست سیت", "", None),
@@ -655,13 +673,6 @@ OVERRIDES = {
 #
 # Where NO Afghan document could be located, the entry says so explicitly and is
 # labelled honestly instead of asserting an Afghan standard.
-ME7  = "Afghan MoE textbook, Biology Grade 7 (moe.gov.af, Kabul, 1398 h.s.)"
-ME12 = "Afghan MoE textbook, Science Grade 12 (moe.gov.af)"
-TOL  = "TolAfghan (tolafghan.com), «فزیولوژی حجره» — Afghan cell-physiology text"
-MOPH = "Afghan MoPH official recruitment register (moph.gov.af)"
-AFD  = "Afghan doctors' clinical writing, afghan-doctors.com"
-AV   = "AfghanVet (afghanvet.blogspot.com), Afghan biology text"
-S5   = "Afghan faculty histology text: خاتم النبیین University, «هستولوژی تئوری ۲» (muslimuniversity.edu.af)"
 
 # key = dari_term ; value = (source_authority_with_quote, decision, confidence)
 EVIDENCE_OVERRIDES = {
@@ -743,15 +754,10 @@ INVENTED_CONSTRUCTIONS = {
     "کیمیا تداوی":       "کیموتراپی (AFD)",
     "کیمیا‌تداوی":       "کیموتراپی (AFD)",
     "کیمیا درمانی":      "کیموتراپی (AFD)",
-    "کاربوهایدریت":      "کربوهیدرات (no Afghan source; see terminology-decisions.md §14)",
-    "کاربوهایدریت‌ها":   "کربوهیدرات",
-    "کاربوهایدریتی":     "کربوهیدراتی",
     # NOTE: چندلایه is deliberately NOT listed. It is an attested Afghan
     # descriptive phrase (S5 «چند طبقه») used in this book as a parenthetical
     # Dari gloss for «مطبق» and «شبه‌مطبق». Forbidding it would flag a legitimate
     # gloss — the exact over-matching failure recorded in README §4.2.
-    "اندامک":            "ارگانل (ME7)",
-    "اندامک‌ها":         "ارگانل‌ها (ME7)",
     "نورون":             "نیورون (ME12)",
     "نورون‌ها":          "نیورون‌ها (ME12)",
     "میتوکندریایی":      "مایتوکندریایی (TOL)",
@@ -764,10 +770,7 @@ INVENTED_CONSTRUCTIONS = {
 # Rows withdrawn by pass 3. A term can appear in the build list more than once
 # (pass 1 added the invented form, pass 3 added the restored one); a withdrawn row
 # is dropped at write time so the two can never contradict each other.
-DROP_ROWS = {
-    "کاربوهایدریت",   # invented in pass 1, withdrawn in pass 3
-    "کربوهیدرات",     # superseded: no Afghan source; term now English-retained
-}
+DROP_ROWS = set()   # no withdrawn rows remain; both Carbohydrate spellings are settled
 
 # Applicability note attached to entries whose evidence is a transliteration
 # convention rather than a located Afghan document.
@@ -775,34 +778,23 @@ NO_DOC_FOUND = ("Established English-derived transliteration retained as the ter
                 "readers recognise; no Afghanistan-specific documentary source located in "
                 "this audit (see editorial/terminology-decisions.md §14)")
 
-# Withdrawal of an invented form. کاربوهایدریت was constructed by
-# transliterating "carbo-hydrate" morpheme by morpheme; NO Afghan source uses
-# it. The invented form is withdrawn and the standard transliteration restored,
-# but because no Afghan document could be located for EITHER spelling, the term
-# stays flagged rather than being asserted as an Afghan standard.
-T("Carbohydrate", "Carbohydrate",
-  "کربوهیدرات;کربوهیدرات‌ها;کربوهیدرات‌های;کربوهیدراتی;کربوهیدراتیِ;"
-  "کاربوهایدریت;کاربوهایدریت‌ها;کاربوهایدریتی",
-  "No reliable Afghan source located for any Dari form of this term",
-  "NON-CANONICAL forms, not Iranian ones. Policy (README section 4.2, final Terminology "
-  "Evidence Gate): where no reliable Afghan medical terminology can be established, the book "
-  "retains the English term and flags it rather than inventing or borrowing a translation. "
-  "کربوهیدرات is a standard Persian transliteration, but no Afghan institutional document "
-  "using it was located; Afghan MoE biology books write «قندها» (sugars), which is a general "
-  "biological expression and is NOT adopted as the canonical medical term for Carbohydrate. "
-  "«کاربوهایدریت» was previously constructed by translating the English morphemes carbo- + "
-  "hydrate and is forbidden outright.",
-  "Ch1 (PAS); Ch2 (glycocalyx); Ch5 (GAG)", "ENGLISH RETAINED", "UNRESOLVED")
+# NOTE — superseded reasoning, retained for the audit trail: an earlier pass
+# classed the Afghan transliteration of Carbohydrate as a morpheme-by-morpheme
+# construction and then as an unresolved English-retained term. Both judgements
+# were wrong. The form IS attested in an Afghan source (TolAfghan, «فزیولوژی
+# حجره»), so it is canonical; see the کاربوهایدریت row above. The Persian
+# transliteration remains non-canonical for this book by owner decision.
 
 # ---- pass 3: terms recovered from official Afghan sources ----------------
-T("ارگانل", "Organelle", "اندامک;اندامک‌ها;اندامک‌های;اندامک‌هایی;اندامکِ;اندامکی",
+T("ارگانل", "Organelle", "",
   ME7 + " — «در سایتوپالزم ساختمان‌های کوچکی موجود است که به‌نام اعضاچه یا ارگانل "
         "(Organelle) حجره یاد شده»",
-  "Recovered in pass 3. اندامک was the Iranian form used by the first draft; the official "
-  "Afghan school textbook that introduces the concept names it ارگانل (with the Dari "
-  "descriptor اعضاچه). ارگانل is therefore the form an Afghan student meets first, and "
-  "اندامک is now forbidden.",
-  "Ch1; Ch2; Ch3; Ch5", "AFGHAN STANDARD", "HIGH")
+  "CANONICAL (owner decision, locked): ارگانل, because the official Afghan MoE Grade-7 biology "
+  "textbook introduces the concept with that form (with the Dari descriptor اعضاچه). اندامک is ALSO "
+  "in Afghan use — TolAfghan, «فزیولوژی حجره» (tolafghan.com/posts/30498): «به اجزای درون حجره "
+  "اندامک گفته می‌شود» — so it is recorded as ACCEPTED AFGHAN VARIANT and is deliberately NOT on "
+  "the prohibited list. ارگانل remains the book's canonical form and the one used in the text.",
+  "Ch1; Ch2; Ch3; Ch5", acc="اندامک;اندامک‌ها;اندامک‌های;اندامکی;اندامکِ")
 
 T("نیورون", "Neuron", "نورون;نورون‌ها;نورون‌های;نورونی",
   ME12 + " — «نیورون دوم سیناپسی را بیشتر تحریک کنند»، «نیورون هاي حرکي را تخریب ميکند»",
@@ -907,6 +899,28 @@ SOURCE_FIX["شبکه آندوپلاسمی"] = (
           "در سطح داخلی یا غشای شبکه اندوپلاسمی»",
     "AFGHAN STANDARD", "HIGH")
 
+
+# ---- KUMS corroboration (document read 2026-09-21) -------------------------
+# The bulletin uses the book's clinical register throughout: «دیپارتمنت فزیوتراپی
+# در شفاخانه تدریسی علی آباد پوهنتون علوم طبی کابل»، «داکتران و استادان»،
+# «مریضان که نیاز دارند»، «پوهنځی علوم متمم صحی»، «محصلینی»، «بخش‌های وقایوی و
+# تداوی آن». It supplies tier-3 independent support for forms already anchored to
+# MoE/MoPH, and it closes the "KUMS = 0 entries" gap recorded in the gate report.
+for _term, _quote in (
+        ("مریض",   "«… مصدر خدمت به مریضان که نیاز دارند شده باشیم»"),
+        ("تداوی",  "«… روی بخش‌های وقایوی و تداوی آن صحبت کرده»"),
+        ("داکتر",  "«… شماری از داکتران و استادان امروز … افتتاح شد»"),
+        ("پوهنځی", "«بخش فزیوتراپی در چوکات پوهنځی علوم متمم صحی …»"),
+        ("شفاخانه", "«… در شفاخانه تدریسی علی آباد پوهنتون علوم طبی کابل»"),
+        ("محصل",   "«… محصلینی‌که به این دیپارتمنت … معرفی شدند»"),
+):
+    _prev = SOURCE_FIX.get(_term)
+    _base = _prev[0] if _prev else None
+    _dec = _prev[1] if _prev else "AFGHAN STANDARD"
+    _conf = _prev[2] if _prev else "HIGH"
+    SOURCE_FIX[_term] = ((_base + " ; corroborated by " + KUMS + " — " + _quote)
+                         if _base else (KUMS + " — " + _quote), _dec, _conf)
+
 # ---------------------------------------------------------------- write -----
 def main():
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
@@ -946,6 +960,14 @@ def main():
                 if target.startswith(row["dari_term"]) and form not in forb:
                     forb.append(form)
             row["forbidden_forms"] = ";".join(forb)
+            # A form is prohibited here because it was CONSTRUCTED (or adopted from
+            # Iran only alongside an Afghan form), never merely because Iran uses it.
+            # Tag those forms so the scanner reports them as non-canonical rather
+            # than as Iranian-Persian violations.
+            constructed = sorted(f for f in forb if f in INVENTED_CONSTRUCTIONS)
+            if constructed:
+                row["usage_notes"] = (row["usage_notes"].rstrip()
+                                      + " [NON-CANONICAL: " + ";".join(constructed) + "]").strip()
             w.writerow(row)
     print(f"wrote {len(R)} entries -> {OUT}")
 
