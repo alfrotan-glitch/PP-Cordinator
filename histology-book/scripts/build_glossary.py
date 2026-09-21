@@ -1254,6 +1254,120 @@ T("پارکینسون", "Parkinson disease", "", AFG,
 T("الصاقِ عصبی", "Nervous tissue repair", "", AFG2,
   "Descriptive Dari phrase for the regeneration section.", "Ch11", "AFGHAN STANDARD", "LOW")
 
+# ============================================ CH12 — CARDIOVASCULAR ==========
+T("قلب", "Heart", "", AFG2,
+  "Ordinary Dari word. The muscular pump of the circulatory system.", "Ch12",
+  "AFGHAN STANDARD", "MEDIUM")
+
+T("اندوکارد", "Endocardium", "", AFG,
+  "Transliteration; the innermost layer of the heart wall, continuous with the endothelium of the "
+  "great vessels.", "Ch12", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("میوکارد", "Myocardium", "", AFG,
+  "Transliteration; the thick middle layer of cardiac muscle of the heart wall.", "Ch12",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("اپی‌کارد", "Epicardium", "", AFG,
+  "Transliteration; the outer layer of the heart wall, which is the visceral layer of the "
+  "pericardium.", "Ch12", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("پریکارد", "Pericardium", "", AFG,
+  "Transliteration; the serous sac surrounding the heart, with a parietal and a visceral layer.",
+  "Ch12", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("اندوتلیوم", "Endothelium", "", AFG,
+  "Transliteration; the simple squamous epithelium lining the heart and all vessels.", "Ch12",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("کاپیلار", "Capillary", "", AFG,
+  "Transliteration retained alongside the established Dari compound موی‌رگ. Ch1-Ch11 use موی‌رگ "
+  "as the primary form; both are listed so the reader meets the term in either shape.", "Ch12",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM", lat="capillary")
+
+T("آئورت", "Aorta", "", AFG,
+  "Transliteration; the largest elastic artery.", "Ch12",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("لایهٔ درونی", "Tunica intima", "", AFG2,
+  "Descriptive Dari layer name; the Latin term is retained beside it. The innermost vessel layer.",
+  "Ch12", "AFGHAN STANDARD", "MEDIUM")
+
+T("لایهٔ میانی", "Tunica media", "", AFG2,
+  "Descriptive Dari layer name; the Latin term is retained beside it. The smooth muscle layer.",
+  "Ch12", "AFGHAN STANDARD", "MEDIUM")
+
+T("لایهٔ بیرونی", "Tunica adventitia", "", AFG2,
+  "Descriptive Dari layer name; the Latin term is retained beside it. The outer connective tissue "
+  "layer.", "Ch12", "AFGHAN STANDARD", "MEDIUM", lat="tunica adventitia")
+
+T("دریچه", "Valve", "", AFG2,
+  "Ordinary Dari word for a valve, including the cardiac valves.", "Ch12",
+  "AFGHAN STANDARD", "MEDIUM")
+
+T("پری‌سیت", "Pericyte", "", AFG,
+  "Transliteration; the contractile cell of the capillary wall sharing a basal lamina with the "
+  "endothelium.", "Ch12", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("آترواسکلروزیس", "Atherosclerosis", "", AFG,
+  "Transliteration; the commonest form of arteriosclerosis, with intimal lipid plaques.", "Ch12",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("فشارِ خونِ بلند", "Hypertension", "", AFG2,
+  "Descriptive Dari phrase built from established terms (فشار, خون, بلند); the clinical register "
+  "in Afghanistan also says 'فشارِ بلند'.", "Ch12", "AFGHAN STANDARD", "MEDIUM")
+
+T("ساینوسویید", "Sinusoid", "", AFG,
+  "Transliteration; the wide, discontinuous, fenestrated capillary of liver, spleen and bone "
+  "marrow.", "Ch12", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("آنستوموز", "Anastomosis", "", AFG,
+  "Transliteration; a communication between two vessels.", "Ch12",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("موی‌رگچهٔ پس‌مویِرگی", "Postcapillary venule", "", AFG2,
+  "Composed of the canonical named parts: موی‌رگچه (diminutive) + پس (post) + مویِرگی. The site "
+  "where leukocytes leave the blood.", "Ch12", "AFGHAN STANDARD", "MEDIUM")
+
+T("شبکهٔ موی‌رگی", "Capillary bed", "microcirculation", AFG2,
+  "Composed of canonical شبکهٔ + موی‌رگی. The exchange network between an arteriole and a venule.",
+  "Ch12", "AFGHAN STANDARD", "MEDIUM")
+
+T("لایهٔ زیرِ اندوتلیالی", "Subendothelial layer", "", AFG2,
+  "Composed of the canonical لایهٔ + the established adjective زیرِ اندوتلیالی; the loose "
+  "connective tissue of the intima.", "Ch12", "AFGHAN STANDARD", "MEDIUM")
+
+T("دریچه‌های نیم‌هلالی", "Semilunar valves", "", AFG2,
+  "Composed of canonical دریچه + the ordinary word نیم‌هلالی; the aortic and pulmonary valves.",
+  "Ch12", "AFGHAN STANDARD", "MEDIUM")
+
+T("دستگاهِ هدایتِ قلب", "Cardiac conduction system", "", AFG2,
+  "Composed of established Dari terms; the nodal and Purkinje fibre network of the heart.",
+  "Ch12", "AFGHAN STANDARD", "MEDIUM")
+
+T("شریانِ مرکزی", "Central artery", "", AFG2,
+  "Composed of canonical شریان + the ordinary word مرکزی; the artery of the splenic white pulp "
+  "and of the red pulp trabeculae.", "Ch12", "AFGHAN STANDARD", "MEDIUM")
+
+T("وریدِ صافانی", "Splenic vein", "", AFG2,
+  "Composed of canonical ورید + the established adjective صافانی (splenic).", "Ch12",
+  "AFGHAN STANDARD", "LOW")
+
+T("سکتهٔ قلبی", "Myocardial infarction", "heart attack", AFG2,
+  "Descriptive Dari phrase in everyday clinical use for myocardial infarction; the term "
+  "انفارکتوس is also current.", "Ch12", "AFGHAN STANDARD", "MEDIUM")
+
+T("تومورِ عروقی", "Vascular tumour", "", AFG2,
+  "Composed of the established transliteration تومور + the ordinary adjective عروقی (vascular).",
+  "Ch12", "AFGHAN STANDARD", "LOW")
+
+T("همانژیوم", "Hemangioma", "", AFG,
+  "Transliteration; the common benign vascular tumour.", "Ch12",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("وارِیس", "Varicose vein", "varicose veins", AFG,
+  "Transliteration in clinical use for dilated, incompetent superficial veins.", "Ch12",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
 OVERRIDES = {
     "رنگ‌آمیزی":        ("", "", "", None),
     "مطبق":            ("", "", "", None),

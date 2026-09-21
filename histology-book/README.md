@@ -36,8 +36,8 @@ Junqueira 17e, could they read → understand → review → recognize → recal
 | Ch 9 — Blood & Hemopoiesis | ✅ Draft 1 — audit passed |
 | Ch 10 — Muscle Tissue | ✅ Draft 1 — audit passed |
 | Ch 11 — Nervous Tissue | ✅ Draft 1 — audit passed |
-| Ch 12 — Circulatory System | ⏳ Next |
-| Ch 13 — Immune System & Lymphoid Organs | ⏳ Pending |
+| Ch 12 — Cardiovascular System | ✅ Draft 1 — audit passed |
+| Ch 13 — Immune System & Lymphoid Organs | ⏳ Next |
 | Ch 14 — The Oral Cavity | ⏳ Pending |
 | Ch 15 — The Digestive Tract | ⏳ Pending |
 | Ch 16 — Organs Associated with the Digestive Tract | ⏳ Pending |
@@ -48,7 +48,7 @@ Junqueira 17e, could they read → understand → review → recognize → recal
 | Ch 21 — Male Reproductive System | ⏳ Pending |
 | Ch 22 — Female Reproductive System | ⏳ Pending |
 | Ch 23 — The Eye & Ear: Special Sense Organs | ⏳ Pending |
-| Terminology glossary | ✅ 361 entries × 12 columns (see `glossary/terminology-glossary.csv`) |
+| Terminology glossary | ✅ 389 entries × 12 columns (see `glossary/terminology-glossary.csv`) |
 | Terminology gate (Ch 1–6) | ✅ **PASS — FINAL AND CLOSED** (2026-09-21); see `editorial/final-terminology-lock.md` |
 | Terminology decision report | ✅ `editorial/terminology-decisions.md` (mandatory table + evidence) |
 | Terminology **correction** report | ✅ `editorial/terminology-correction-report.md` (pass 3 — invented-term audit) |
@@ -58,7 +58,7 @@ Junqueira 17e, could they read → understand → review → recognize → recal
 | Book-level audit roll-up | ✅ `qa/reference-alignment-audit.md` |
 | Full-book QA + release gate | ⏳ Deferred until all chapters exist |
 
-**Release gate status: `NOT READY FOR PUBLICATION`** — the book is incomplete (11 of 23 chapters).
+**Release gate status: `NOT READY FOR PUBLICATION`** — the book is incomplete (12 of 23 chapters).
 See `qa/reference-alignment-audit.md` §4 for the blocking list.
 
 **Verification backlog:** 20 items are flagged `[VERIFY AGAINST JUNQUEIRA 17e]` across the five
