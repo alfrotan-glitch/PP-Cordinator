@@ -329,6 +329,48 @@ clinical claim was altered. Line counts are unchanged (146 / 975 / 1441 / 1086 /
 - Zero occurrences of اندامک، نورون، کاربوهایدریت، کیمیا تداوی، میتوکندریایی anywhere.
 - Re-injection self-test: 11/11 as above.
 
+---
+
+## Session 4 — Final Terminology Evidence Gate
+
+**Purpose:** lock the terminology policy before Chapter 6 and verify the 208 glossary entries.
+**Report:** `editorial/final-terminology-evidence-gate.md`. **Result: PASS.**
+
+### Policy (not a rewrite — this session made three corrections only)
+
+| # | Change | Detail |
+|---|---|---|
+| 1 | **Canonical rule locked** in `README.md` §4.2 | "Use the established medical terminology actually used in Afghanistan…" + source hierarchy (MoPH → MoHE → KUMS → official curricula → recognised Afghan medical universities → credible Afghan medical educational sources) + the ban on constructing a term from English morphemes + the ban on overclaiming a source + the duty to preserve legitimate international terminology |
+| 2 | **Carbohydrate → ENGLISH RETAINED** | The invented form is withdrawn and the transliteration is **not** adopted either. Neither could be anchored to an Afghan source, so per policy the English term is retained and flagged `[VERIFY TERMINOLOGY]`. «قندها» was **not** adopted — it is a general biological expression for sugars, not a medical terminology standard |
+| 3 | **Source-honesty correction** | 31 entries carried labels that named no document ("Afghan medical education usage", "Project canonical decision — Afghan usage confirmed by sources"). Each now either names an actual Afghan document with a verbatim quote, or declares itself an owner-mandated decision that is explicitly **not** an evidence claim, or states that no Afghanistan-specific source was located |
+
+### Verification
+
+| Check | Result |
+|---|---|
+| Entries naming an Afghan institution that fail to identify a document | **0** |
+| Generic labels such as "Afghan medical education usage" remaining | **0** |
+| Iranian sources / Persian dictionaries cited as evidence | **0** |
+| Iranian-Persian forms in the book (33-form candidate list) | **0**, with one documented permission: چندلایه ×1, a parenthetical Dari gloss of شبه‌مطبق |
+| Constructed terms (morpheme-by-morpheme) remaining | **0** |
+| Compositional Dari forms not independently attested | **30 — listed in full in the gate report §5, reported for the author's decision, not changed** |
+| KUMS-anchored entries | **0 — stated as a gap, not claimed** |
+| Scanner | **0 findings**, exit 0 |
+
+### Structural
+
+| Location | Change |
+|---|---|
+| `README.md` §4.2 | Rewritten as the binding policy; the self-triggering example removed (the README is itself scanned) |
+| `scripts/qa_scan.py` | "unresolved terminology" is now keyed on **confidence**, so an English-retained but unverified term stays visible |
+| `scripts/build_glossary.py` | `SOURCE_FIX` map (31 entries) + precise document identifiers in every source string |
+| `00-front-matter.md` | `[VERIFY TERMINOLOGY]` note now lists آنتی‌ژن and Carbohydrate |
+| Chapters 1, 2, 5 | `Carbohydrate` substituted for the Dari forms (12 occurrences) |
+
+### Scientific correction
+
+None. Line counts unchanged (146 / 975 / 1441 / 1086 / 1079 / 1152).
+
 ## Open issues (not yet resolved)
 
 See `qa/reference-alignment-audit.md` §3 — 20 items flagged `[VERIFY AGAINST JUNQUEIRA 17e]`

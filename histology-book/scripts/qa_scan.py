@@ -110,8 +110,12 @@ def load_glossary():
             notes = row.get("usage_notes", "")
             if dec == "ENGLISH RETAINED" or canon.isascii():
                 retained.add(canon)
-            if dec == "VERIFY FURTHER":
-                unresolved.append(canon)
+            # A term is "unresolved" when its EVIDENCE is unresolved, which can
+            # be true of a VERIFY FURTHER row or of an ENGLISH RETAINED row that
+            # is retained precisely because no Afghan source could be found.
+            if dec == "VERIFY FURTHER" or row.get("confidence", "").strip() == "UNRESOLVED":
+                if canon not in unresolved:
+                    unresolved.append(canon)
             for f in filter(None, (x.strip()
                                    for x in row.get("forbidden_forms", "").split(";"))):
                 # an Iranian-Persian violation vs an Afghan non-canonical variant

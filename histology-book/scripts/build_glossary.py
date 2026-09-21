@@ -121,7 +121,7 @@ T("وقایه", "Prevention", "پیشگیری", MAND, "Afghan: «قابل اجت
 T("اسلاید", "Slide", "لام;لام میکروسکوپی", MAND,
   "English retained and used as the Afghan technical word.", "Ch01",
   dec="ENGLISH RETAINED")
-T("رنگ‌آمیزی", "Staining", "رنگ‌آمیزی (فاصله‌دار)", "AfghanVet biology text («بعد از رنگ‌آمیزی در زیر مایکروسکوپ»).",
+T("رنگ‌آمیزی", "Staining", "رنگ‌آمیزی (فاصله‌دار)", "AfghanVet, Afghan biology text (afghanvet.blogspot.com) — «بعد از رنگ‌آمیزی در زیر مایکروسکوپ»",
   "Written with ZWNJ. Not an Iranian-specific form.", "Ch01")
 T("مایکروسکوپ", "Microscope", "میکروسکوپ", MAND,
   "Afghan sources write مایکروسکوپ (AfghanVet, khateb texts).", "Ch01")
@@ -160,7 +160,7 @@ T("غشای حجروی", "Cell membrane", "غشای سلولی;غشای پلاس
   "English/Latin term where the exam needs it.", "Ch02")
 T("پلاسمالما", "Plasma membrane", "plasmalemma", AFG,
   "English/Latin term retained for exam recognition.", "Ch02", dec="ENGLISH RETAINED")
-T("مالیکول", "Molecule", "مولکول", "MOHE official book title «معافیت حجروی و مالیکولی»; TolAfghan biology text.",
+T("مالیکول", "Molecule", "مولکول", "Afghan MoHE official book list — «معافیت حجروی و مالیکولی» (Kabul 1400); TolAfghan (tolafghan.com) biology text.",
   "Afghan transliteration is مالیکول/مالیکولی. مولکول is the Iranian form.", "Ch02")
 T("ایون", "Ion", "یون", "Afghan biology texts («آیون کلسیم»، «ایون کلسیم»).",
   "Afghan transliteration ایون. یون is the Iranian form. Note: the substring یون also occurs inside "
@@ -620,13 +620,13 @@ OVERRIDES = {
 #
 # Where NO Afghan document could be located, the entry says so explicitly and is
 # labelled honestly instead of asserting an Afghan standard.
-ME7  = "Afghan MoE Biology Grade 7 (moe.gov.af, Kabul 1398)"
-ME12 = "Afghan MoE Science Grade 12 (moe.gov.af)"
-TOL  = "TolAfghan, فزیولوژی حجره (Afghan cell-physiology text)"
-MOPH = "Afghan MoPH official register"
-AFD  = "Afghan doctors' clinical writing (afghan-doctors.com)"
-AV   = "AfghanVet, Afghan biology text"
-S5   = "Afghan faculty histology text (خاتم النبیین University)"
+ME7  = "Afghan MoE textbook, Biology Grade 7 (moe.gov.af, Kabul, 1398 h.s.)"
+ME12 = "Afghan MoE textbook, Science Grade 12 (moe.gov.af)"
+TOL  = "TolAfghan (tolafghan.com), «فزیولوژی حجره» — Afghan cell-physiology text"
+MOPH = "Afghan MoPH official recruitment register (moph.gov.af)"
+AFD  = "Afghan doctors' clinical writing, afghan-doctors.com"
+AV   = "AfghanVet (afghanvet.blogspot.com), Afghan biology text"
+S5   = "Afghan faculty histology text: خاتم النبیین University, «هستولوژی تئوری ۲» (muslimuniversity.edu.af)"
 
 # key = dari_term ; value = (source_authority_with_quote, decision, confidence)
 EVIDENCE_OVERRIDES = {
@@ -731,6 +731,7 @@ INVENTED_CONSTRUCTIONS = {
 # is dropped at write time so the two can never contradict each other.
 DROP_ROWS = {
     "کاربوهایدریت",   # invented in pass 1, withdrawn in pass 3
+    "کربوهیدرات",     # superseded: no Afghan source; term now English-retained
 }
 
 # Applicability note attached to entries whose evidence is a transliteration
@@ -744,18 +745,19 @@ NO_DOC_FOUND = ("Established English-derived transliteration retained as the ter
 # it. The invented form is withdrawn and the standard transliteration restored,
 # but because no Afghan document could be located for EITHER spelling, the term
 # stays flagged rather than being asserted as an Afghan standard.
-T("کربوهیدرات", "Carbohydrate", "کاربوهایدریت;کاربوهایدریت‌ها;کاربوهایدریتی",
-  "No Afghan source located for either spelling",
-  "INVENTED FORM WITHDRAWN in pass 3. کاربوهایدریت was created by translating the English "
-  "morphemes carbo- + hydrate; it appears in no Afghan source and is now forbidden. "
-  "The standard transliteration کربوهیدرات is restored. Afghan MoE textbooks write "
-  "«قندها» or «پولی‌میری های طبیعی، قندها، پروتین ها» rather than a single term for "
-  "carbohydrate, so no established Afghan medical term could be identified. Per the "
-  "directive, when no reliable Afghan terminology can be established the book does not "
-  "invent one — it uses the established transliteration and flags it. NOTE: «قندها» (= sugars) is "
-  "a related but DIFFERENT concept and is deliberately NOT registered as an accepted variant; "
-  "registering a gloss would produce a meaningless inconsistency flag (README §4.2).",
-  "Ch1 (PAS); Ch2 (glycocalyx); Ch5 (GAG)", "VERIFY FURTHER", "UNRESOLVED")
+T("Carbohydrate", "Carbohydrate",
+  "کربوهیدرات;کربوهیدرات‌ها;کربوهیدرات‌های;کربوهیدراتی;کربوهیدراتیِ;"
+  "کاربوهایدریت;کاربوهایدریت‌ها;کاربوهایدریتی",
+  "No reliable Afghan source located for any Dari form of this term",
+  "NON-CANONICAL forms, not Iranian ones. Policy (README section 4.2, final Terminology "
+  "Evidence Gate): where no reliable Afghan medical terminology can be established, the book "
+  "retains the English term and flags it rather than inventing or borrowing a translation. "
+  "کربوهیدرات is a standard Persian transliteration, but no Afghan institutional document "
+  "using it was located; Afghan MoE biology books write «قندها» (sugars), which is a general "
+  "biological expression and is NOT adopted as the canonical medical term for Carbohydrate. "
+  "«کاربوهایدریت» was previously constructed by translating the English morphemes carbo- + "
+  "hydrate and is forbidden outright.",
+  "Ch1 (PAS); Ch2 (glycocalyx); Ch5 (GAG)", "ENGLISH RETAINED", "UNRESOLVED")
 
 # ---- pass 3: terms recovered from official Afghan sources ----------------
 T("ارگانل", "Organelle", "اندامک;اندامک‌ها;اندامک‌های;اندامک‌هایی;اندامکِ;اندامکی",
@@ -774,6 +776,101 @@ T("نیورون", "Neuron", "نورون;نورون‌ها;نورون‌های;ن
   "Afghan transliteration pattern of a prosthetic vowel (cf. ایون, انزایم, استروئید). "
   "نورون is now forbidden.",
   "Ch2; Ch3", "AFGHAN STANDARD", "HIGH")
+
+# ==========================================================================
+# SOURCE-HONESTY CORRECTION (final Terminology Evidence Gate)
+# ==========================================================================
+# The directive: "Never label an entry as supported by an Afghan institution
+# unless an actual identifiable Afghan document/source was examined. A generic
+# label such as 'Afghan medical education usage' is NOT evidence."
+#
+# 31 entries carried a label that named no document. Each is resolved here in
+# one of three honest ways:
+#   (a) a NAMED Afghan document that was actually fetched and read
+#   (b) an OWNER-MANDATED project decision, declared as such and NOT attributed
+#       to any Afghan institution
+#   (c) an explicit statement that no Afghanistan-specific source was located
+OWNER = ("Owner-mandated canonical decision (project Terminology Gate directive, 2026-09-21). "
+         "This is NOT an evidence claim and is NOT attributed to any Afghan institution.")
+NODOC = ("Established English-derived transliteration retained as the term Afghan readers "
+         "recognise; no Afghanistan-specific documentary source located in this audit.")
+ME7_  = "Afghan MoE Biology Grade 7 (moe.gov.af, Kabul 1398)"
+ME12_ = "Afghan MoE Science Grade 12 (moe.gov.af)"
+S5_   = "Afghan faculty histology text: خاتم النبیین University, «هستولوژی تئوری ۲» (muslimuniversity.edu.af)"
+TOL_  = "TolAfghan (tolafghan.com), «فزیولوژی حجره» — Afghan cell-physiology text"
+
+SOURCE_FIX = {
+    # ---- owner-mandated: the user's own canonical list ---------------------
+    "مسطح":       (OWNER, "AFGHAN STANDARD", "MEDIUM"),
+    "اپیتلیوم":   (OWNER, "AFGHAN STANDARD", "MEDIUM"),
+    "شریانچه":    (OWNER, "AFGHAN STANDARD", "MEDIUM"),
+    "وریدچه":     (OWNER, "AFGHAN STANDARD", "MEDIUM"),
+
+    # ---- now anchored to a document actually read --------------------------
+    "مایکروسکوپ نوری": (ME7_ + " — «مایکروسکوپ مرکب نوری»، «مایکروسکوپ نوری و اجزای آن»",
+                        "AFGHAN STANDARD", "HIGH"),
+    "مایکروسکوپ الکترونی": (ME7_ + " — «مایکروسکوپ الکتروني: … قوۀ بزرگ نمایی بیشتر از 250000»",
+                            "AFGHAN STANDARD", "HIGH"),
+    "مریضی":      (ME7_ + " — «چرا مریض میشوید و به داکتر مراجعه میکنید؟»؛ «امراض مختلف»",
+                   "AFGHAN STANDARD", "HIGH"),
+    "امراض":      (ME7_ + " — «در مورد امراض مختلف؛ مانند: انفلونزا، ایدز»", "AFGHAN STANDARD", "HIGH"),
+    "وقایه":      (ME12_ + " — «وقايه: تطبيق واکسين مربوطه از تولد الي سن پنج سالگي»",
+                   "AFGHAN STANDARD", "HIGH"),
+    "انساج":      (ME7_ + " — «سطوح تنظیم در موجودات زنده، انساج، انساج نباتی»",
+                   "AFGHAN STANDARD", "HIGH"),
+    "لایزوزوم":   (S5_ + " — writes لایزوزوم/لیزوزم", "AFGHAN STANDARD", "MEDIUM"),
+    "رایبوزوم":   (TOL_ + " — «رایبوزوم»/«ریبوزوم» in the RER discussion; AfghanVet likewise",
+                   "AFGHAN STANDARD", "MEDIUM"),
+    "ریه":        ("Afghan hospital clinical text (mehrabanhospital.af) — «کیست ها و تومورهای ریه»، "
+                   "«بذل پریکارد قلب و ریه»؛ a second Afghan hospital department list uses «شش»",
+                   "AFGHAN STANDARD", "MEDIUM"),
+    "پانکراس":    ("Afghan hospital clinical text (mehrabanhospital.af) — «مری، معده، روده کوچک، "
+                   "روده بزرگ، کبد، لوزالمعده»", "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+    "عفونت":      ("Afghan clinical directory entry, Kabul infectious-disease practice (findglocal AF) — "
+                   "«تداوی امراض مختلفه انتانی (عفونت، مکروبی)»؛ MoE Grade 8 uses «انتانی»",
+                   "AFGHAN STANDARD", "MEDIUM"),
+
+    # ---- no Afghanistan-specific source located ----------------------------
+    "غشا":        (NODOC + " Orthographic variant only (غشا / غشاء); the book uses غشا "
+                           "consistently (302x, غشاء 0x).", "AFGHAN STANDARD", "MEDIUM"),
+    "آلرژی":      (NODOC + " Kept deliberately: Afghan clinical text uses «حساسیت» for allergy, but "
+                           "in this book حساسیت already means hypersensitivity («حساسیت فوری»), a "
+                           "different concept, so substituting would collide.",
+                   "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+    "لنفوئید":    (NODOC + " Related Afghan form لنفاوی is attested (" + S5_ + " «ندول لنفاوی»); the "
+                           "-oid adjective itself is a direct transliteration.",
+                   "AFGHAN STANDARD", "MEDIUM"),
+    "ایون":       (NODOC, "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+    "اسلاید":     (NODOC + " " + ME7_ + " uses «سالید» for a microscope slide; اسلاید is the "
+                           "established laboratory form.", "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+    "یوروتلیوم":  (NODOC, "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+    "میکروویلی":  (NODOC, "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+    "لامینای پایه": (NODOC, "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+    "نسج اپیتلیال": (NODOC + " " + S5_ + " uses «اپیتلیوم» unattached.", "AFGHAN STANDARD", "MEDIUM"),
+    "بین‌حجروی":  (NODOC, "AFGHAN STANDARD", "MEDIUM"),
+    "خارج‌حجروی": (NODOC, "AFGHAN STANDARD", "MEDIUM"),
+    "درون‌حجروی": (NODOC, "AFGHAN STANDARD", "MEDIUM"),
+
+    # ---- course/discipline names ------------------------------------------
+    "اناتومی":    ("Afghan MoHE Biology curriculum, «بیولوژی نوی نصاب» (logu.edu.af) and Afghan medical-curriculum "
+                   "course lists (kateb.edu.af) — «اناتومی»", "AFGHAN STANDARD", "HIGH"),
+    "فزیولوژی":   (TOL_ + "; Afghan medical-curriculum course lists (kateb.edu.af) — «فزیولوژی»",
+                   "AFGHAN STANDARD", "HIGH"),
+    "طب":         ("Afghan MoPH register (moph.gov.af) and Afghan medical-curriculum titles (kateb.edu.af, طب معالجوی) — «طب»",
+                   "AFGHAN STANDARD", "HIGH"),
+    "شفاخانه":    ("Afghan MoPH official recruitment register (moph.gov.af) — «شف دیپارتمنت پتالوژی ولابراتوار»، «شفاخانه»",
+                   "AFGHAN STANDARD", "HIGH"),
+    "محصل":       ("Afghan MoHE curriculum document (logu.edu.af) — «محصلان می توانند …»",
+                   "AFGHAN STANDARD", "HIGH"),
+    "پوهنحی":     ("Afghan MoHE academic-post announcement (mohe.gov.af) — «بست هستوپتالوژی پوهنحی طب»",
+                   "AFGHAN STANDARD", "HIGH"),
+}
+
+# ---- final gate: one more term anchored to a document actually read ------
+SOURCE_FIX["شبکه آندوپلاسمی"] = (
+    TOL + " — «اعمال شبکه آندوپلاسمی(عمومی): دخالت در میتابولیسم قندها، انزایم گلوکز ۶-فسفاتاز "
+          "در سطح داخلی یا غشای شبکه اندوپلاسمی»",
+    "AFGHAN STANDARD", "HIGH")
 
 # ---------------------------------------------------------------- write -----
 def main():
@@ -798,6 +895,9 @@ def main():
             ev = EVIDENCE_OVERRIDES.get(row["dari_term"])
             if ev:
                 row["source_authority"], row["decision"], row["confidence"] = ev
+            sf = SOURCE_FIX.get(row["dari_term"])
+            if sf:
+                row["source_authority"], row["decision"], row["confidence"] = sf
             elif row["source_authority"].strip().startswith("Afghan medical education usage"):
                 row["source_authority"] = NO_DOC_FOUND
                 if row["decision"] == "AFGHAN STANDARD":

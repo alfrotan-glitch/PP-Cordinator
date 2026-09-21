@@ -102,7 +102,8 @@ Machine-readable source of truth: `glossary/terminology-glossary.csv` (206 entri
 | Terminology decided against Afghan sources (not assumed) | ✅ Research recorded in `editorial/terminology-decisions.md` §2–§3 |
 | English terms needlessly Dari-ised | **0** — 42 English-retained entries, all Latin anatomical/stain names kept |
 | Invented Dari equivalents | **0** after pass 3. Before pass 3 an audit found 2 (کیمیا تداوی، کاربوهایدریت) plus 2 missed Iranian forms (اندامک، نورون) — 77 corrections, see `editorial/terminology-correction-report.md` |
-| Every canonical decision has a named Afghan source | ⚠️ **Partial** — 42 entries anchored to a named Afghan document; 139 are labelled honestly as transliterations with no Afghanistan-specific source located |
+| Every canonical decision has a named Afghan source | ⚠️ **Partial, honestly labelled** — see `editorial/final-terminology-evidence-gate.md`: 54 entries anchored to a named Afghan document, 149 declared as transliterations with no Afghan document located, 4 declared owner-mandated decisions, 1 unresolved. No entry claims an Afghan institution without identifying a document |
+| KUMS (Kabul University of Medical Sciences) evidence tier | ⚠️ **0 entries** — KUMS syllabi are not retrievable; stated as a gap rather than claimed |
 | Terms flagged `[VERIFY TERMINOLOGY]` | 1 (آنتی‌ژن) — deliberately unresolved, not guessed |
 | Scanner command | `python3 scripts/qa_scan.py` → **RESULT: 0 findings**, exit 0 |
 

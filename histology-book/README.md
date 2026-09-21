@@ -188,28 +188,54 @@ python3 scripts/qa_scan.py                       # must report 0 findings
 Every decision must be recorded in `editorial/terminology-decisions.md`. `apply_terminology.py`
 is **not** idempotent — it has already been run and must not be re-run.
 
-### 4.2 Terminology rule for new chapters
+### 4.2 Canonical terminology policy (binding)
 
-- Add a term to `build_glossary.py` **before** using it. The scanner enforces whatever is in the
-  `forbidden_forms` column, so adding a row is what makes a rule real.
-- `forbidden_forms` is only for a **genuinely prohibited or non-canonical** form. Never put an
-  Afghan transliteration variant there (`ماست‌سل`, `باکتریا`, `مژک`), and never put a **Dari gloss
-  given in parentheses** there (`ریزرشتهها`, `چندلایه`) — the scanner would flag a legitimate gloss.
-- `accepted_variants` is for a genuinely competing Afghan form. A form placed there is allowed,
-  but the file may not then mix it with the canonical form.
-- When there is no reliable Afghan standard, keep the **English** term and add a short Dari
-  explanation. Never invent a Dari equivalent.
-- **NEVER construct a term by translating English morphemes.** Two recorded failures already exist
-  (an invented "carbohydrate" and an invented "chemotherapy"); both are in `forbidden_forms` and both
-  are described — without writing the banned strings here — in
-  `editorial/terminology-correction-report.md` §1. A term that merely *sounds* like good Dari is not
-  evidence of anything.
-  *Note for editors: because this README is itself scanned, a banned literal must never be quoted in
-  it — that would make the scanner flag its own documentation. Describe such a form; do not spell it.*
-- A term enters the glossary only with a **named Afghan document** in `source_authority`, quoted
-  verbatim. "Afghan medical education usage" is not a source.
-- Evidence hierarchy: **MoPH → MoHE → KUMS / medical faculties → official Afghan curricula and
-  textbooks → established Afghan professional usage.**
+> **Use the established medical terminology actually used in Afghanistan.**
+> **If an established Afghan Dari term exists, use it.**
+> **If Afghan medical education uses an English-derived/transliterated term, retain that established
+> form.**
+> **If no reliable Afghan terminology can be established, DO NOT invent a translation. Retain the
+> English term or the established international transliteration and mark it `[VERIFY TERMINOLOGY]`
+> where appropriate.**
+
+**No constructed terminology.** Never create a medical term by translating English morphemes or by
+combining Dari words. *Chemotherapy → کیموتراپی / Chemotherapy* — never a compound built from
+"chemistry" + "treatment". Likewise the book does not carry an invented Dari equivalent for
+*Carbohydrate* merely because the English word can be translated semantically.
+
+**Source hierarchy** — evidence for a term, in this order:
+
+1. Afghan Ministry of Public Health
+2. Afghan Ministry of Higher Education
+3. Kabul University of Medical Sciences (پوهنتون علوم طبی کابل)
+4. Official Afghan medical curricula and textbooks
+5. Other recognised Afghan medical universities
+6. Other credible Afghan medical educational sources
+
+Iranian sources, generic Persian dictionaries and general Persian websites are **not** evidence of
+Afghan terminology.
+
+**Never overclaim a source.** An entry may name an Afghan institution only when an actual, identifiable
+document was examined, and the entry must identify it. A generic label such as *"Afghan medical
+education usage"* is not evidence and must not appear in `source_authority`.
+
+**Preserve legitimate international terminology.** Do not replace an established medical term merely
+because a Dari translation is possible. The goal is **established Afghan medical terminology +
+scientific precision + terminology familiar to Afghan medical students** — not maximum Dari translation.
+
+**Mechanics for a new chapter**
+
+- Add the term to `build_glossary.py` **before** using it. The scanner enforces whatever is in
+  `forbidden_forms`, so adding a row is what makes a rule real.
+- `forbidden_forms` is only for a **genuinely prohibited or non-canonical** form. Never put an Afghan
+  transliteration variant there, and never put a **Dari gloss given in parentheses** there — the
+  scanner would then flag a legitimate gloss. Two specific traps of each kind are recorded, with
+  examples, in `editorial/terminology-correction-report.md` §1 and §6.
+- `accepted_variants` is for a genuinely competing Afghan form. A form placed there is allowed, but the
+  file may not then mix it with the canonical form.
+- Put `NON-CANONICAL` in `usage_notes` when a forbidden form is merely non-canonical rather than
+  Iranian, so the scanner tags it `[NONCANON]` instead of `[IRANIAN]`.
+- *Editors: this README is itself scanned. Never quote a banned literal here — describe it instead.*
 
 ## 5. Production note
 
