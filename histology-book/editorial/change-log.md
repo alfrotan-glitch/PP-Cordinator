@@ -624,7 +624,7 @@ whole-book consistency sweep; report with a final table. Book frozen at 23 chapt
 
 **Gates after the pass:** `qa_scan.py` → **0 findings** · `selftest_terminology.py` → **ALL PASS** ·
 structural audit → 23 chapters · 108 topics · 108 × 13 sections · 23 × 12-row audits · **0 markers** ·
-0 problems · `git ls-remote` == local HEAD (see §SHA below).
+0 problems · `git ls-remote` == local HEAD. **Verification-pass commit: `7d5400b`** (plus the follow-up commit that records this SHA).
 
 **Release gate:** `READY FOR PUBLICATION — scientific gate`, with exports (DOCX/PDF/EPUB) deferred by
 the owner's decision.
