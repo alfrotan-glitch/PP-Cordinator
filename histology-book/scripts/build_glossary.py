@@ -1473,6 +1473,116 @@ T("لوسمی", "Leukemia", "", AFG,
   "Transliteration; already registered in Ch9; repeated here because Chapter 13 introduces the "
   "marrow as a lymphoid organ.", "Ch13", "COMMON AFGHAN TRANSLITERATION", "LOW")
 
+# ================================================= CH14 — ORAL CAVITY =======
+T("حفرهٔ دهن", "Oral cavity", "", AFG2,
+  "Composed of the ordinary Dari words حفرهٔ + دهن. The mouth and its contents.", "Ch14",
+  "AFGHAN STANDARD", "MEDIUM", lat="oral cavity")
+
+T("مخاطِ دهن", "Oral mucosa", "", AFG2,
+  "Composed of مخاط (already canonical in Ch4 as mucosa) + دهن. The lining of the oral cavity.",
+  "Ch14", "AFGHAN STANDARD", "MEDIUM")
+
+T("مخاطِ پوشاننده", "Lining mucosa", "", AFG2,
+  "Descriptive Dari phrase for the non-keratinized protective lining of most of the oral cavity.",
+  "Ch14", "AFGHAN STANDARD", "MEDIUM")
+
+T("مخاطِ جویده‌شونده", "Masticatory mucosa", "", AFG2,
+  "Descriptive Dari phrase for the keratinized mucosa of the gums and hard palate, exposed to "
+  "chewing forces.", "Ch14", "AFGHAN STANDARD", "MEDIUM")
+
+T("مخاطِ مخصوص", "Specialized mucosa", "", AFG2,
+  "Descriptive Dari phrase for the mucosa of the dorsum of the tongue carrying taste buds.", "Ch14",
+  "AFGHAN STANDARD", "MEDIUM")
+
+T("زبان", "Tongue", "", AFG2,
+  "Ordinary Dari word; a muscular organ covered by specialized mucosa.", "Ch14",
+  "AFGHAN STANDARD", "MEDIUM")
+
+T("پاپیلا", "Papilla", "", AFG,
+  "Transliteration; the projections of the lingual epithelium. Plural: پاپیل‌ها (papillae).", "Ch14",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("پرزِ چشایی", "Taste bud", "", AFG2,
+  "Composed of the ordinary word پرز in the sense of a small cluster + the established adjective "
+  "چشایی (of taste).", "Ch14", "AFGHAN STANDARD", "MEDIUM", lat="taste bud")
+
+T("دندان", "Tooth", "", AFG2,
+  "Ordinary Dari word.", "Ch14", "AFGHAN STANDARD", "MEDIUM")
+
+T("مینا", "Enamel", "", AFG,
+  "Transliteration of the international dental term retained; the Dari literature also writes مینا. "
+  "The hardest, most highly mineralized tissue of the body.", "Ch14",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM", lat="enamel")
+
+T("دنتین", "Dentin", "dentine", AFG,
+  "Transliteration; the mineralized tissue forming the bulk of the tooth and surrounding the pulp.",
+  "Ch14", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("سیمانِ دندان", "Cementum", "", AFG2,
+  "Composed of the established transliteration سیمان + the ordinary word دندان; the bone-like "
+  "covering of the root.", "Ch14", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("مغزِ دندان", "Dental pulp", "", AFG2,
+  "Descriptive Dari phrase built from the ordinary words مغز + دندان; the soft tissue core of the "
+  "tooth.", "Ch14", "AFGHAN STANDARD", "MEDIUM")
+
+T("دنتینوژنیک", "Odontogenic", "odontogenic", AFG,
+  "Transliteration used for cells that form dentin and enamel.", "Ch14",
+  "COMMON AFGHAN TRANSLITERATION", "LOW")
+
+T("غددِ لعابی", "Salivary glands", "", AFG2,
+  "Composed of غدد (already canonical in Ch4) + the established adjective لعابی from لعاب (saliva).",
+  "Ch14", "AFGHAN STANDARD", "MEDIUM")
+
+T("لعاب", "Saliva", "", AFG2,
+  "Established Dari word for saliva; the adjective is لعابی.", "Ch14",
+  "AFGHAN STANDARD", "MEDIUM")
+
+T("غدهٔ بناگوشی", "Parotid gland", "", AFG2,
+  "Descriptive Dari phrase for the gland beside the ear (بناگوش). The largest salivary gland and "
+  "the one that becomes inflamed in mumps.", "Ch14", "AFGHAN STANDARD", "MEDIUM")
+
+T("غدهٔ زیرِ فکِ تحتانی", "Submandibular gland", "", AFG2,
+  "Descriptive Dari phrase composed of established parts.", "Ch14", "AFGHAN STANDARD", "MEDIUM")
+
+T("غدهٔ زیرِ زبان", "Sublingual gland", "", AFG2,
+  "Descriptive Dari phrase composed of established parts.", "Ch14", "AFGHAN STANDARD", "MEDIUM")
+
+T("لابول", "Lobule", "", AFG,
+  "Transliteration; the structural unit of a salivary gland.", "Ch14",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("دورهٔ توبول", "Duct", "", AFG2,
+  "Descriptive Dari phrase; the ducts of salivary glands (intercalated, striated, interlobular).",
+  "Ch14", "AFGHAN STANDARD", "MEDIUM")
+
+T("حجرهٔ موکوسی", "Mucous cell", "", AFG2,
+  "Composed of canonical حجرهٔ + the transliteration موکوسی; pale, mucin-secreting acinar cells.",
+  "Ch14", "AFGHAN STANDARD", "MEDIUM")
+
+T("حجرهٔ سیروزی", "Serous cell", "", AFG2,
+  "Composed of canonical حجرهٔ + the transliteration سیروزی; dark, protein-rich secreting acinar "
+  "cells.", "Ch14", "AFGHAN STANDARD", "MEDIUM")
+
+T("پوسیدگیِ دندان", "Dental caries", "tooth decay", AFG2,
+  "Descriptive Dari phrase built from established words; the commonest disease of teeth.", "Ch14",
+  "AFGHAN STANDARD", "MEDIUM")
+
+T("شورهٔ دندان", "Dental plaque", "", AFG2,
+  "Descriptive Dari phrase; the bacterial film on teeth. The bare English word plaque is not restricted, since it also denotes the amyloid and atherosclerotic plaques discussed in Chapters 11 and 12.", "Ch14", "AFGHAN STANDARD", "MEDIUM", lat="dental plaque")
+
+T("مرضِ پریودنتال", "Periodontal disease", "gum disease", AFG2,
+  "Composed of the established مرض + the transliteration پریودنتال.", "Ch14",
+  "AFGHAN STANDARD", "MEDIUM")
+
+T("اوریون", "Mumps", "epidemic parotitis", AFG2,
+  "Established Dari word for epidemic parotitis with parotid swelling.", "Ch14",
+  "AFGHAN STANDARD", "MEDIUM")
+
+T("سرطانِ دهان", "Oral cancer", "", AFG2,
+  "Composed of the established words سرطان + دهان (ordinary Dari form of mouth used in the "
+  "clinical register).", "Ch14", "AFGHAN STANDARD", "MEDIUM")
+
 OVERRIDES = {
     "رنگ‌آمیزی":        ("", "", "", None),
     "مطبق":            ("", "", "", None),
