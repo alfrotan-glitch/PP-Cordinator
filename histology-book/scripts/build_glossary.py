@@ -601,6 +601,180 @@ OVERRIDES = {
     "باکتری":           ("", "باکتریا", "", None),
 }
 
+# ==========================================================================
+# EVIDENCE-ANCHORED CORRECTION (pass 3)
+# ==========================================================================
+# The directive: every canonical decision must rest on an ACTUAL Afghan source,
+# and the five decision labels must be assigned from evidence, not linguistic
+# judgement. Every entry below was re-checked against a named Afghan document.
+#
+#   ME7  = Afghan MoE, Biology Grade 7, Kabul 1398 (moe.gov.af) — the official
+#          school textbook that first teaches cell, tissue and microscope.
+#   ME12 = Afghan MoE, Science Grade 12 (moe.gov.af) — nervous system, skin,
+#          eye, senses.
+#   TOL  = TolAfghan, «فزیولوژی حجره» — Afghan cell-physiology text.
+#   MOPH = Afghan MoPH job register / Afghanistan health-sector documents.
+#   AFD  = Afghan doctors' clinical writing (afghan-doctors.com).
+#   AV   = AfghanVet, Afghan biology text.
+#   S5   = Afghan faculty histology text, خاتم النبیین University.
+#
+# Where NO Afghan document could be located, the entry says so explicitly and is
+# labelled honestly instead of asserting an Afghan standard.
+ME7  = "Afghan MoE Biology Grade 7 (moe.gov.af, Kabul 1398)"
+ME12 = "Afghan MoE Science Grade 12 (moe.gov.af)"
+TOL  = "TolAfghan, فزیولوژی حجره (Afghan cell-physiology text)"
+MOPH = "Afghan MoPH official register"
+AFD  = "Afghan doctors' clinical writing (afghan-doctors.com)"
+AV   = "AfghanVet, Afghan biology text"
+S5   = "Afghan faculty histology text (خاتم النبیین University)"
+
+# key = dari_term ; value = (source_authority_with_quote, decision, confidence)
+EVIDENCE_OVERRIDES = {
+    "حجره":       (ME7 + " — «حجره را کوچکترین واحد ساختمانی و وظیفوی تعریف کرد»؛ "
+                        "«مایکروسکوپ … برای اولین بار حجرات کارک را … زیر مایکروسکوپ مشاهده نمود»",
+                   "AFGHAN STANDARD", "HIGH"),
+    "حجرات":      (ME7 + " — «انواع مختلف حجرات»، «مقایسه حجرات حیوانی و نباتی»",
+                   "AFGHAN STANDARD", "HIGH"),
+    "حجروی":      (ME7 + " — «غشای حجروی»، «تنظیم حجروي»، «نظریۀ حجروی»",
+                   "AFGHAN STANDARD", "HIGH"),
+    "نسج":        (ME7 + " — «انساج، انساج نباتی / انساج حیوانی»؛ S5 «نسج منضم»",
+                   "AFGHAN STANDARD", "HIGH"),
+    "انساج":      (ME7 + " — «سطوح تنظیم در موجودات زنده، انساج، انساج نباتی»",
+                   "AFGHAN STANDARD", "HIGH"),
+    "نسج منضم":   (S5 + " — «نسج منضم» (Afghan connective-tissue teaching); ME7 «انساج»",
+                   "AFGHAN STANDARD", "HIGH"),
+    "مایکروسکوپ": (ME7 + " — ch.1 «مایکروسکوپ و انواع آن»؛ «مایکروسکوپ مرکب نوری»",
+                   "AFGHAN STANDARD", "HIGH"),
+    "ارگانل":     (ME7 + " — «ساختمان‌های کوچکی … به‌نام اعضاچه یا ارگانل (Organelle) حجره "
+                         "یاد شده»", "AFGHAN STANDARD", "HIGH"),
+    "مایتوکندریا": (TOL + " — «مایتوکاندریا (Mitochondria): در حجره، نوعی دستگاه انتقال انرژی»",
+                   "AFGHAN STANDARD", "HIGH"),
+    "انزایم":     (TOL + " — «انزایم گلوکز ۶ – فسفاتاز در سطح داخلی … شبکه اندوپلاسمی»",
+                   "AFGHAN STANDARD", "HIGH"),
+    "کیمیاوی":    (ME12 + " — «پیام‌رسان‌های کیمیاوی»، «مواد کیمیاوي»",
+                   "AFGHAN STANDARD", "HIGH"),
+    "فسفوریلیشن": (TOL + " — «انرژی کیمیاوی موجود در مواد غذایی با عمل فسفوریلیشن اکسیداتیو، "
+                         "به صورت پیوندهای پرانرژی فسفات (ATP) ذخیره شود»",
+                   "AFGHAN STANDARD", "HIGH"),
+    "میتابولیسم": (TOL + " — «دخالت در میتابولیسم قندها»", "AFGHAN STANDARD", "HIGH"),
+    "سایتوپلازم": (ME7 + " — «سایتوپالزم درخارج هسته قرار دارد و قسمت زیاد حجره را تشکیل می‌دهد»",
+                   "AFGHAN STANDARD", "HIGH"),
+    "غشای حجروی": (ME7 + " — «غشای حجروی: به‌نام غشای پالزمایی هم یاد میشود»",
+                   "AFGHAN STANDARD", "HIGH"),
+    "پروتئین":    (TOL + " — «پیش‌رشته‌ها از دو نوع پروتئین کروی مشابه … تشکیل شده‌اند»؛ "
+                         "ME7/ME12 use the simplified spelling «پروتین»",
+                   "AFGHAN STANDARD", "HIGH"),
+    "استوانه‌ای": (ME7 + " — «بیضوی، مدور، مکعبی، استوانه یی و تعدادی هم مسطح»؛ "
+                         "ME12 «حجرات مخروطی و استوانه یی»",
+                   "AFGHAN STANDARD", "HIGH"),
+    "نیورون":     (ME12 + " — «نیورون دوم سیناپسی را بیشتر تحریک کنند»، «نیورون های حرکي»",
+                   "AFGHAN STANDARD", "HIGH"),
+    "جلد":        (ME12 + " — ch.1 «جلد»، «ساختمان جلد بدن»", "AFGHAN STANDARD", "HIGH"),
+    "غدوات":      (ME12 + " — «غدوات داخل مجرا، مادة موم مانندی ترشح میکنند»",
+                   "AFGHAN STANDARD", "MEDIUM"),
+    "موی‌رگ":     (ME12 + " — «موی رگهای جای پیوند … جریان خون آن ها با رگهای بزرگ در ارتباط»",
+                   "AFGHAN STANDARD", "HIGH"),
+    "مریض":       (ME12 + " — «مریض»، «مریضی»", "AFGHAN STANDARD", "HIGH"),
+    "داکتر":      (ME12 + " — «فرد مریض باید تحت مراقبت داکتر بوده»", "AFGHAN STANDARD", "HIGH"),
+    "تداوی":      (AFD + " — «رادیو تراپی (تداوی اشعوی)»، «تداوی دوایی»، «کیموتراپی»",
+                   "AFGHAN STANDARD", "HIGH"),
+    "کیموتراپی":  (AFD + " — «شیوه‌های مختلف تداوی … تداوی دوایی، تداوی اشعوی، کیموتراپی و جراحی»",
+                   "COMMON AFGHAN TRANSLITERATION", "HIGH"),
+    "دوا":        (MOPH + " — «خدمات به شمول دوا غذا رایگان»، «دواخانه»، «دواسازی»؛ "
+                          "«اداره ملی ادویه و غذا» (dpmea.gov.af) «محصولات دوایی»",
+                   "AFGHAN STANDARD", "MEDIUM"),
+    "کلیه":       (MOPH + " — «امراض کلیه، از جمله عدم کفایه کلیه (گرده)»",
+                   "AFGHAN STANDARD", "MEDIUM"),
+    "کبد":        (MOPH + " — «لوبول کبد» (Afghan histology text S5)",
+                   "AFGHAN STANDARD", "MEDIUM"),
+    "پتالوژی":    (MOPH + " — «پتالوژی اناتومیک (هستولوژی/هستوپتالوژی، سایتولوژی)»",
+                   "AFGHAN STANDARD", "HIGH"),
+    "هستولوژی":   (MOPH + " — «هستولوژی/هستوپتالوژی»", "AFGHAN STANDARD", "HIGH"),
+    "سایتولوژی":  (MOPH + " — «سایتولوژی»", "AFGHAN STANDARD", "HIGH"),
+    "هستوپتالوژی": (MOPH + " — «هستوپتالوژی»", "AFGHAN STANDARD", "HIGH"),
+    "هسته‌چه":    (S5 + " — «هسته چه» (Afghan histology text)", "AFGHAN STANDARD", "MEDIUM"),
+    "کرویاتِ سرخ": (S5 + " — «کرویات سفید خون» (Afghan histology text)",
+                   "AFGHAN STANDARD", "MEDIUM"),
+    "شریان":      (S5 + " — «قلب، شریان، ورید، موی رگها» (Afghan histology text)",
+                   "AFGHAN STANDARD", "MEDIUM"),
+    "ورید":       (S5 + " — «قلب، شریان، ورید، موی رگها»", "AFGHAN STANDARD", "MEDIUM"),
+    "اوعیهٔ دموی": (S5 + " — «عروق خونی / موی رگها» (Afghan histology text)",
+                   "AFGHAN STANDARD", "MEDIUM"),
+}
+
+# Forms that must NEVER reappear: constructed by translating English morphemes,
+# or named in the corrective directive as forbidden. All are now enforced.
+INVENTED_CONSTRUCTIONS = {
+    "کیمیا تداوی":       "کیموتراپی (AFD)",
+    "کیمیا‌تداوی":       "کیموتراپی (AFD)",
+    "کیمیا درمانی":      "کیموتراپی (AFD)",
+    "کاربوهایدریت":      "کربوهیدرات (no Afghan source; see terminology-decisions.md §14)",
+    "کاربوهایدریت‌ها":   "کربوهیدرات",
+    "کاربوهایدریتی":     "کربوهیدراتی",
+    # NOTE: چندلایه is deliberately NOT listed. It is an attested Afghan
+    # descriptive phrase (S5 «چند طبقه») used in this book as a parenthetical
+    # Dari gloss for «مطبق» and «شبه‌مطبق». Forbidding it would flag a legitimate
+    # gloss — the exact over-matching failure recorded in README §4.2.
+    "اندامک":            "ارگانل (ME7)",
+    "اندامک‌ها":         "ارگانل‌ها (ME7)",
+    "نورون":             "نیورون (ME12)",
+    "نورون‌ها":          "نیورون‌ها (ME12)",
+    "میتوکندریایی":      "مایتوکندریایی (TOL)",
+    "ریزرشته":           "میکروفیلامنت",
+    "ریزپرز":            "میکروویلی",
+    "ریزلوله":           "میکروتوبول",
+    "منشوری":            "استوانه‌ای (ME7)",
+}
+
+# Rows withdrawn by pass 3. A term can appear in the build list more than once
+# (pass 1 added the invented form, pass 3 added the restored one); a withdrawn row
+# is dropped at write time so the two can never contradict each other.
+DROP_ROWS = {
+    "کاربوهایدریت",   # invented in pass 1, withdrawn in pass 3
+}
+
+# Applicability note attached to entries whose evidence is a transliteration
+# convention rather than a located Afghan document.
+NO_DOC_FOUND = ("Established English-derived transliteration retained as the term Afghan "
+                "readers recognise; no Afghanistan-specific documentary source located in "
+                "this audit (see editorial/terminology-decisions.md §14)")
+
+# Withdrawal of an invented form. کاربوهایدریت was constructed by
+# transliterating "carbo-hydrate" morpheme by morpheme; NO Afghan source uses
+# it. The invented form is withdrawn and the standard transliteration restored,
+# but because no Afghan document could be located for EITHER spelling, the term
+# stays flagged rather than being asserted as an Afghan standard.
+T("کربوهیدرات", "Carbohydrate", "کاربوهایدریت;کاربوهایدریت‌ها;کاربوهایدریتی",
+  "No Afghan source located for either spelling",
+  "INVENTED FORM WITHDRAWN in pass 3. کاربوهایدریت was created by translating the English "
+  "morphemes carbo- + hydrate; it appears in no Afghan source and is now forbidden. "
+  "The standard transliteration کربوهیدرات is restored. Afghan MoE textbooks write "
+  "«قندها» or «پولی‌میری های طبیعی، قندها، پروتین ها» rather than a single term for "
+  "carbohydrate, so no established Afghan medical term could be identified. Per the "
+  "directive, when no reliable Afghan terminology can be established the book does not "
+  "invent one — it uses the established transliteration and flags it. NOTE: «قندها» (= sugars) is "
+  "a related but DIFFERENT concept and is deliberately NOT registered as an accepted variant; "
+  "registering a gloss would produce a meaningless inconsistency flag (README §4.2).",
+  "Ch1 (PAS); Ch2 (glycocalyx); Ch5 (GAG)", "VERIFY FURTHER", "UNRESOLVED")
+
+# ---- pass 3: terms recovered from official Afghan sources ----------------
+T("ارگانل", "Organelle", "اندامک;اندامک‌ها;اندامک‌های;اندامک‌هایی;اندامکِ;اندامکی",
+  ME7 + " — «در سایتوپالزم ساختمان‌های کوچکی موجود است که به‌نام اعضاچه یا ارگانل "
+        "(Organelle) حجره یاد شده»",
+  "Recovered in pass 3. اندامک was the Iranian form used by the first draft; the official "
+  "Afghan school textbook that introduces the concept names it ارگانل (with the Dari "
+  "descriptor اعضاچه). ارگانل is therefore the form an Afghan student meets first, and "
+  "اندامک is now forbidden.",
+  "Ch1; Ch2; Ch3; Ch5", "AFGHAN STANDARD", "HIGH")
+
+T("نیورون", "Neuron", "نورون;نورون‌ها;نورون‌های;نورونی",
+  ME12 + " — «نیورون دوم سیناپسی را بیشتر تحریک کنند»، «نیورون هاي حرکي را تخریب ميکند»",
+  "Recovered in pass 3. نورون was the Iranian form used by the first draft; the official "
+  "Afghan Grade-12 science textbook writes نیورون consistently. This also matches the "
+  "Afghan transliteration pattern of a prosthetic vowel (cf. ایون, انزایم, استروئید). "
+  "نورون is now forbidden.",
+  "Ch2; Ch3", "AFGHAN STANDARD", "HIGH")
+
 # ---------------------------------------------------------------- write -----
 def main():
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
@@ -608,6 +782,8 @@ def main():
         w = csv.DictWriter(fh, fieldnames=COLS)
         w.writeheader()
         for row in R:
+            if row["dari_term"] in DROP_ROWS:
+                continue
             ov = OVERRIDES.get(row["dari_term"])
             if ov:
                 forb, acc, lat, newdari = ov
@@ -618,6 +794,23 @@ def main():
                 if newdari:
                     row["dari_term"] = newdari
                     row["preferred_form"] = f"{newdari} ({row['english_term']})"
+            # --- pass 3: evidence anchoring + invented-form blacklist ---
+            ev = EVIDENCE_OVERRIDES.get(row["dari_term"])
+            if ev:
+                row["source_authority"], row["decision"], row["confidence"] = ev
+            elif row["source_authority"].strip().startswith("Afghan medical education usage"):
+                row["source_authority"] = NO_DOC_FOUND
+                if row["decision"] == "AFGHAN STANDARD":
+                    row["confidence"] = "MEDIUM"
+            extra = sorted({v for k, v in INVENTED_CONSTRUCTIONS.items()
+                            if k.startswith(row["dari_term"]) or row["dari_term"] in k})
+            if row["dari_term"] in INVENTED_CONSTRUCTIONS:
+                pass
+            forb = [f for f in row["forbidden_forms"].split(";") if f.strip()]
+            for form, target in INVENTED_CONSTRUCTIONS.items():
+                if target.startswith(row["dari_term"]) and form not in forb:
+                    forb.append(form)
+            row["forbidden_forms"] = ";".join(forb)
             w.writerow(row)
     print(f"wrote {len(R)} entries -> {OUT}")
 

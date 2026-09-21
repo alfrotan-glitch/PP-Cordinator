@@ -92,7 +92,7 @@ H&E colors rather than just registering them.
 | **Basophilia** (آبی/بنفش) | ساختارهای اسیدی (DNA، RNA، GAGها) با رنگ قاعدی هماتوکسیلین | هسته، RER فراوان، غضروف ماتریکس |
 | **Acidophilia / Eosinophilia** (صورتی/قرمز) | ساختارهای قاعدی/پروتئینی با رنگ اسیدی ایوزین | سیتوپلاسم، مایتوکندریا، رشته‌های کولاجن |
 | **Metachromasia** | یک رنگ، رنگ متفاوتی می‌سازد | تولوئیدین‌بلو در گرانول‌های ماست‌سل |
-| **PAS-positive** (ماجنتا) | کاربوهایدریت‌ها و گلیکوپروتئین‌ها | غشای پایه، موسین گابلت‌سل |
+| **PAS-positive** (ماجنتا) | کربوهیدرات‌ها و گلیکوپروتئین‌ها | غشای پایه، موسین گابلت‌سل |
 
 ---
 
@@ -142,5 +142,7 @@ presented as fact. Check these against the reference before relying on them in a
 
 **English:** `[VERIFY TERMINOLOGY]` is a *terminology* flag, kept strictly separate from the
 scientific-verification flag above. It marks a term whose Afghan form could not be established with
-confidence; the English form is retained in the text instead of inventing a Dari equivalent. One term
-currently carries this flag: **آنتی‌ژن** (both آنتی‌ژن and آنتی‌نژ/آنتی‌نژن appear in Afghan sources).
+confidence; the English form is retained in the text instead of inventing a Dari equivalent. Two
+terms currently carry this flag: **آنتی‌ژن** (both آنتی‌ژن and آنتی‌نژ/آنتی‌نژن appear in Afghan
+sources) and **کربوهیدرات** (Afghan textbooks write «قندها» rather than a single term, so no
+established Afghan medical term could be identified).

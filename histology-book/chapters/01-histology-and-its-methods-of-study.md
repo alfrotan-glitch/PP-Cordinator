@@ -81,7 +81,7 @@ and disease.
 
 ## 7. Histological Appearance | نمای هستولوژیک
 - در LM با بزرگ‌نمایی کم (Low power) ابتدا «نقشه» عضو را می‌بینید؛ با بزرگ‌نمایی زیاد (High power) جزئیات حجروی.
-- در TEM (Transmission Electron Microscopy) جزئیات غشایی و اندامک‌ها دیده می‌شود.
+- در TEM (Transmission Electron Microscopy) جزئیات غشایی و ارگانل‌ها دیده می‌شود.
 
 ## 8. Identification | تشخیص
 - ابتدا تشخیص دهید کدام‌یک از چهار نسج اصلی غالب است.
@@ -303,7 +303,7 @@ autolysis and putrefaction.
 - **Zenker's fluid:** حاوی mercuric chloride است و جزئیات هسته‌ای عالی می‌دهد، اما سمی است و نیاز به برداشتن رسوب جیوه دارد.
 
 ## 4. Cells | حجرات
-- هدف در سطح حجروی: حفظ **هسته و کروماتین**، حفظ **مرز حجروی**، و حفظ **اندامک‌ها** (برای EM).
+- هدف در سطح حجروی: حفظ **هسته و کروماتین**، حفظ **مرز حجروی**، و حفظ **ارگانل‌ها** (برای EM).
 - تثبیت خوب باعث می‌شود هسته تیره و ساختمان‌دار بماند، نه متورم و محو.
 
 ## 5. Function | وظیفه
@@ -493,7 +493,7 @@ distinguished microscopically. The routine stain is **hematoxylin and eosin (H&E
 
 | رنگ / روش | چه چیزی را نشان می‌دهد | نکته |
 |---|---|---|
-| **PAS** (Periodic acid–Schiff) | کاربوهایدریت‌ها و گلیکوپروتئین‌ها | رنگ **ماجنتا**؛ غشای پایه، موسین، گلیکوژن |
+| **PAS** (Periodic acid–Schiff) | کربوهیدرات‌ها و گلیکوپروتئین‌ها | رنگ **ماجنتا**؛ غشای پایه، موسین، گلیکوژن |
 | **Masson trichrome** | کولاجن | کولاجن آبی یا سبز؛ عضله قرمز |
 | **Silver impregnation** | رشته‌های شبکه‌ای (Reticular fibers) و بعضی ساختارها | رشته‌ها سیاه؛ argyrophilic |
 | **Toluidine blue** | متاکرومازی (Metachromasia) | گرانول‌های ماست‌سل ارغوانی/قرمز؛ همچنین رنگ نیمه‌نازک برای EM |
@@ -548,7 +548,7 @@ distinguished microscopically. The routine stain is **hematoxylin and eosin (H&E
 ## 9. Comparison | مقایسه
 | ویژگی | PAS | Masson trichrome | Silver | Oil Red O |
 |---|---|---|---|---|
-| هدف اصلی | کاربوهایدریت/گلیکوپروتئین | کولاجن | Reticular fibers | لیپید |
+| هدف اصلی | کربوهیدرات/گلیکوپروتئین | کولاجن | Reticular fibers | لیپید |
 | رنگ مثبت | ماجنتا | آبی/سبز | سیاه | قرمز |
 | نیاز به frozen | ❌ | ❌ | ❌ | ✅ |
 
@@ -562,7 +562,7 @@ distinguished microscopically. The routine stain is **hematoxylin and eosin (H&E
 ⭐ **Basophilic = آبی/بنفش = ساختار اسیدی = DNA/RNA/GAG.**
 ⭐ **Acidophilic/Eosinophilic = صورتی = پروتئین = سیتوپلاسم/کولاجن.**
 ⭐ سیتوپلاسم basophilic یعنی RER زیاد یعنی ساخت پروتئین زیاد.
-⭐ PAS ماجنتا = کاربوهایدریت و غشای پایه.
+⭐ PAS ماجنتا = کربوهیدرات و غشای پایه.
 ⭐ Masson trichrome = کولاجن را آبی/سبز می‌کند.
 ⭐ Silver impregnation = رشته‌های reticular را سیاه می‌کند (Argyrophilic).
 ⭐ رنگ‌های چربی (Oil Red O, Sudan black) نیاز به frozen section دارند.
@@ -635,7 +635,7 @@ defining quality is **resolution**, not magnification.
 
 ## 4. Cells | حجرات
 - در LM حجره به‌صورت یک واحد با هسته و سیتوپلاسم دیده می‌شود؛ مرز حجروی در بسیاری از انساج با LM قابل تشخیص نیست.
-- در TEM اندامک‌ها (مایتوکندریا با cristae، RER، Golgi، junctionها) دیده می‌شوند.
+- در TEM ارگانل‌ها (مایتوکندریا با cristae، RER، Golgi، junctionها) دیده می‌شوند.
 - در SEM سطح حجره (میکروویلی، مژک) به‌صورت سه‌بعدی دیده می‌شود.
 
 ## 5. Function | وظیفه
@@ -913,7 +913,7 @@ Any structure or appearance produced by tissue processing that is not present in
 | ضخامت‌ها | Paraffin 5–8 µm؛ Plastic 0.5–1 µm؛ TEM 60–90 nm |
 | Fixativeها | Formalin (LM)، Glutaraldehyde (TEM)، Bouin (بیضه)، Zenker (هسته)، OsO₄ (لیپید/EM) |
 | H&E | Hematoxylin → basophilic (آبی، DNA/RNA)؛ Eosin → eosinophilic (صورتی، پروتئین) |
-| PAS | کاربوهایدریت/غشای پایه، ماجنتا |
+| PAS | کربوهیدرات/غشای پایه، ماجنتا |
 | Masson trichrome | کولاجن آبی/سبز |
 | Silver | رشته‌های reticular سیاه |
 | قدرت تفکیک | LM ~0.2 µm؛ TEM ~0.2 nm؛ SEM ~10 nm |

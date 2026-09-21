@@ -51,6 +51,7 @@ Junqueira 17e, could they read → understand → review → recognize → recal
 | Terminology glossary | ✅ 206 entries × 12 columns (see `glossary/terminology-glossary.csv`) |
 | Terminology gate (Ch 1–5) | ✅ **PASS** — 0 findings; decision table in `editorial/terminology-decisions.md` |
 | Terminology decision report | ✅ `editorial/terminology-decisions.md` (mandatory table + evidence) |
+| Terminology **correction** report | ✅ `editorial/terminology-correction-report.md` (pass 3 — invented-term audit) |
 | QA scanner | ✅ `scripts/qa_scan.py` — six passes, 86 forbidden forms, 0 findings |
 | Editorial change log | ✅ `editorial/change-log.md` |
 | Book-level audit roll-up | ✅ `qa/reference-alignment-audit.md` |
@@ -198,6 +199,17 @@ is **not** idempotent — it has already been run and must not be re-run.
   but the file may not then mix it with the canonical form.
 - When there is no reliable Afghan standard, keep the **English** term and add a short Dari
   explanation. Never invent a Dari equivalent.
+- **NEVER construct a term by translating English morphemes.** Two recorded failures already exist
+  (an invented "carbohydrate" and an invented "chemotherapy"); both are in `forbidden_forms` and both
+  are described — without writing the banned strings here — in
+  `editorial/terminology-correction-report.md` §1. A term that merely *sounds* like good Dari is not
+  evidence of anything.
+  *Note for editors: because this README is itself scanned, a banned literal must never be quoted in
+  it — that would make the scanner flag its own documentation. Describe such a form; do not spell it.*
+- A term enters the glossary only with a **named Afghan document** in `source_authority`, quoted
+  verbatim. "Afghan medical education usage" is not a source.
+- Evidence hierarchy: **MoPH → MoHE → KUMS / medical faculties → official Afghan curricula and
+  textbooks → established Afghan professional usage.**
 
 ## 5. Production note
 

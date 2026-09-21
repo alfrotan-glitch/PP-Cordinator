@@ -101,7 +101,8 @@ Machine-readable source of truth: `glossary/terminology-glossary.csv` (206 entri
 | Unexplained terminology inconsistency | **0** — 56 canonical replacements, 35 accepted variants |
 | Terminology decided against Afghan sources (not assumed) | ✅ Research recorded in `editorial/terminology-decisions.md` §2–§3 |
 | English terms needlessly Dari-ised | **0** — 42 English-retained entries, all Latin anatomical/stain names kept |
-| Invented Dari equivalents | **0** — 1 term left English rather than guessed |
+| Invented Dari equivalents | **0** after pass 3. Before pass 3 an audit found 2 (کیمیا تداوی، کاربوهایدریت) plus 2 missed Iranian forms (اندامک، نورون) — 77 corrections, see `editorial/terminology-correction-report.md` |
+| Every canonical decision has a named Afghan source | ⚠️ **Partial** — 42 entries anchored to a named Afghan document; 139 are labelled honestly as transliterations with no Afghanistan-specific source located |
 | Terms flagged `[VERIFY TERMINOLOGY]` | 1 (آنتی‌ژن) — deliberately unresolved, not guessed |
 | Scanner command | `python3 scripts/qa_scan.py` → **RESULT: 0 findings**, exit 0 |
 

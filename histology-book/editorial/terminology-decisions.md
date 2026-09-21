@@ -1,5 +1,11 @@
 # Terminology Decision Report — Afghan Medical Terminology Standard
 
+> **⚠ SUPERSEDED IN PART by `editorial/terminology-correction-report.md` (pass 3).**
+> The corrective directive of 2026-09-21 established that a term must **never** be constructed by
+> translating English morphemes. Two entries in this report violated that rule (کیمیا تداوی,
+> کاربوهایدریت) and two Iranian forms (اندامک، نورون) had been missed. Read this document for the
+> sources; read the correction report for the binding decisions.
+
 **Book:** Bilingual (Afghan Dari + English) high-yield histology textbook
 **Reference standard:** Junqueira's Basic Histology: Text and Atlas, 17th ed. (Mescher)
 **Audit scope:** Chapters 1–5 + front matter + README (6,025 lines)

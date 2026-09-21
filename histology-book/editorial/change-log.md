@@ -263,6 +263,72 @@ book keeps the English-recognisable spelling.
 
 ---
 
+---
+
+## Session 3 — Corrective terminology audit (directive of 2026-09-21)
+
+**Directive:** *never invent, construct, or literal-translate a medical/scientific term from English;*
+for every term establish what Afghan medical professionals actually use, in the order
+MoPH → MoHE → KUMS → other Afghan medical faculties → official Afghan curricula/textbooks → established
+Afghan professional usage.
+**Verdict:** the directive found a real methodology error. **4 term families were wrong and 77 in-text
+corrections followed.** Full report: `editorial/terminology-correction-report.md`.
+
+### Terminological — invented / constructed forms removed
+
+| Term | Was | Now | Evidence |
+|---|---|---|---|
+| Chemotherapy | **کیمیا تداوی** — constructed by applying a correct شیمی→کیمیا rule to the compound شیمی‌درمانی | **کیموتراپی** | Afghan doctors' clinical writing: «تداوی دوایی، تداوی اشعوی، **کیموتراپی** و جراحی» |
+| Carbohydrate | **کاربوهایدریت** — transliterated morpheme by morpheme (carbo- + hydrate); appears in **no** Afghan source | **کربوهیدرات** (standard transliteration restored) and flagged `[VERIFY TERMINOLOGY]` | Afghan textbooks write «قندها»; no single Afghan term for "carbohydrate" could be established, so no term was invented |
+
+### Terminological — Iranian forms that had been missed (36 + 21 occurrences)
+
+| Term | Was | Now | Evidence |
+|---|---|---|---|
+| Organelle | **اندامک** ×36 | **ارگانل** ×36 | Afghan MoE Biology Grade 7: «ساختمان‌های کوچکی … به‌نام اعضاچه یا **ارگانل** (Organelle) حجره یاد شده» |
+| Neuron | **نورون** ×21 | **نیورون** ×21 | Afghan MoE Science Grade 12: «**نیورون** دوم سیناپسی را بیشتر تحریک کنند» |
+| Mitochondrial | **میتوکندریایی** ×8 | **مایتوکندریایی** ×8 | TolAfghan: «**مایتوکاندریا** (Mitochondria)» — aligning with the book's attested canonical form |
+
+**Corrections total 77.** No invented term was substituted for any other term: each correction moved
+*toward* established Afghan usage or toward the established transliteration.
+
+### Terminological — verified and deliberately left alone
+
+پروتئین (TolAfghan: «دو نوع **پروتئین** کروی»), سیتوپلاسم, کلیه/کبد/ریه/پانکراس, باکتری, اسلاید,
+لایه/طبقه, جلد, موی‌رگ, غدوات, استوانه‌ای, نیورون. Per the directive, a term that is already the
+established medical term used in Afghanistan was **not** replaced merely because another Dari form is
+theoretically possible.
+
+### Evidence anchoring — the structural fix
+
+| Change | Effect |
+|---|---|
+| `source_authority` now names an actual Afghan document, quoted verbatim | 42 entries anchored (was 12) |
+| The generic label *"Afghan medical education usage (MOHE curriculum…)"* is no longer treated as evidence | 139 entries honestly re-labelled: transliteration retained, **no Afghanistan-specific documentary source located** |
+| New `INVENTED_CONSTRUCTIONS` blacklist in `build_glossary.py` | 101 forbidden forms now enforced (was 86) |
+| `DROP_ROWS` | the superseded pass-1 row for the invented carbohydrate term can never contradict the restored one |
+| Scanner self-test by re-injection | 11/11 — every corrected form is caught; the legitimate gloss چندلایه is correctly **not** caught |
+
+### Structural
+
+| Location | Change |
+|---|---|
+| `README.md` §4.2 | Rewritten: the evidence hierarchy, the ban on morpheme construction, the rule that a term enters the glossary only with a named Afghan document, and a note that the README must never quote a banned literal (it is itself scanned) |
+| `editorial/terminology-decisions.md` | Marked superseded-in-part; points to the correction report |
+| `qa/reference-alignment-audit.md` | §3b updated with the correction outcome |
+| `00-front-matter.md` | `[VERIFY TERMINOLOGY]` note now lists **two** terms (آنتی‌ژن, کربوهیدرات) |
+
+### Scientific correction
+
+None. As in passes 1–2 this is a terminology operation: no definition, classification, mechanism or
+clinical claim was altered. Line counts are unchanged (146 / 975 / 1441 / 1086 / 1079 / 1152).
+
+### Verification record
+
+- `python3 scripts/qa_scan.py` → **RESULT: 0 findings**, exit 0 (101 forbidden forms, 207 entries).
+- Zero occurrences of اندامک، نورون، کاربوهایدریت، کیمیا تداوی، میتوکندریایی anywhere.
+- Re-injection self-test: 11/11 as above.
+
 ## Open issues (not yet resolved)
 
 See `qa/reference-alignment-audit.md` §3 — 20 items flagged `[VERIFY AGAINST JUNQUEIRA 17e]`
