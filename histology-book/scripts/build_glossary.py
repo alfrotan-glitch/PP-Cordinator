@@ -713,6 +713,89 @@ T("هورمون", "Hormone", "", AFG2,
   "Standard transliteration, already used throughout Ch1–Ch5.", "Whole book",
   "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
 
+# ==================================================== CH7 — CARTILAGE ========
+# Terms introduced by Chapter 7. غضروف and استخوان were already in use in Ch5.
+# Nothing constructed: each is the established international/transliterated form
+# used in medical education, an ordinary Dari word, or a phrase from forms already
+# canonical here (غضروف + الیافی / هایالین / الاستیک).
+
+T("غضروف", "Cartilage", "", AFG2,
+  "Already used throughout Ch5 («انساجِ همبند تخصص‌یافته: غضروف، استخوان…»). Registered here as "
+  "the chapter term. Ordinary Dari word, not a construction.",
+  "Ch05; Ch07", "AFGHAN STANDARD", "HIGH")
+
+T("کندروبلاست", "Chondroblast", "", AFG,
+  "Established international transliteration; the immature cartilage-forming cell.", "Ch07",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("کندروسیت", "Chondrocyte", "", AFG,
+  "Established international transliteration; the mature cartilage cell in its lacuna.", "Ch07",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("کندروژنیک", "Chondrogenic", "", AFG,
+  "Transliteration; describes the chondrogenic layer of the perichondrium and the "
+  "chondrogenic cells from which cartilage arises.", "Ch07",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("پریکندریوم", "Perichondrium", "", AFG,
+  "Transliteration. Retained rather than translating to a Dari compound. "
+  "Not present on fibrocartilage or on articular surfaces.", "Ch07",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("لاکونا", "Lacuna", "", AFG,
+  "Transliteration; the space in the matrix that houses a chondrocyte.", "Ch07",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("غضروف هایالین", "Hyaline cartilage", "", AFG,
+  "Assembled from the canonical غضروف + the established transliteration هایالین. "
+  "The most common cartilage type. «شیشه‌ای» is the calque form and is NOT used.",
+  "Ch07", "AFGHAN STANDARD", "MEDIUM")
+
+T("غضروف الاستیک", "Elastic cartilage", "", AFG,
+  "Canonical غضروف + established transliteration الاستیک.", "Ch07",
+  "AFGHAN STANDARD", "MEDIUM")
+
+T("غضروف الیافی", "Fibrocartilage", "", AFG,
+  "Canonical غضروف + الیافی (the book's term for fibrous, from الیاف). The literal "
+  "compound «فیبروکندریوم» is NOT used.", "Ch07", "AFGHAN STANDARD", "MEDIUM")
+
+T("کندرویتین سلفات", "Chondroitin sulfate", "", AFG,
+  "Transliteration; the main glycosaminoglycan of cartilage matrix.", "Ch07",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("کراتان سلفات", "Keratan sulfate", "", AFG, "Transliteration.", "Ch07",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("آگرکان", "Aggrecan", "", AFG,
+  "Transliteration; the large aggregating proteoglycan of cartilage matrix.", "Ch07",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("کندروکلسین", "Chondrocalcin", "", AFG,
+  "Transliteration; a calcium-binding protein of cartilage matrix.", "Ch07",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("پریکندریوم کندروژنیک", "Chondrogenic layer", "", AFG,
+  "Composed of the canonical پریکندریوم + کندروژنیک.", "Ch07",
+  "AFGHAN STANDARD", "MEDIUM")
+
+T("Isogenous group", "Isogenous group", "", AFG,
+  "RETAINED IN ENGLISH. This is the standard term for a cluster of chondrocytes derived "
+  "from one cell. A Dari equivalent («گروه هم‌منشأ») would be constructed, so it is not used. "
+  "May be introduced once with a short Dari explanation.", "Ch07",
+  "ENGLISH RETAINED", "MEDIUM")
+
+T("استئوآرتریت", "Osteoarthritis", "", AFG,
+  "Transliteration; the clinical condition of cartilage degeneration.", "Ch07",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("آکندروپلازی", "Achondroplasia", "", AFG,
+  "Transliteration; the classic disorder of endochondral ossification.", "Ch07; Ch08",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("کندروسارکوم", "Chondrosarcoma", "", AFG,
+  "Transliteration; malignant tumour of cartilage.", "Ch07",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
 OVERRIDES = {
     "رنگ‌آمیزی":        ("", "", "", None),
     "مطبق":            ("", "", "", None),
