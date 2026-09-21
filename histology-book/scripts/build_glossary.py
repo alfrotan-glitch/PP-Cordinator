@@ -893,6 +893,104 @@ T("استئومالاسی", "Osteomalacia", "", AFG,
   "Transliteration; defective mineralisation in adults.", "Ch08",
   "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
 
+# ================================================ CH9 — BLOOD / MARROW =======
+# Terms introduced by Chapter 9.
+
+T("خون", "Blood", "", AFG2,
+  "Ordinary Dari word; the tissue is a specialized connective tissue with a fluid matrix "
+  "(پلاسما) and formed elements.", "Ch09", "AFGHAN STANDARD", "MEDIUM")
+
+T("پلاسما", "Plasma", "", AFG,
+  "Transliteration. The fluid matrix of blood: water, پروتئین‌ها, electrolytes.", "Ch09",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("سیرم", "Serum", "", AFG,
+  "Transliteration; plasma without its clotting factors.", "Ch09",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("اریتروسیت", "Erythrocyte (RBC)", "", AFG,
+  "Transliteration. The book keeps the international form; the descriptive Dari phrase "
+  "«گویچهٔ سرخ» is the Iranian form and is NOT used. «کرویات سفید» (Afghan faculty histology "
+  "text) is used only as an explanatory gloss.", "Ch09",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM", abbr="RBC")
+
+T("لکوسیت", "Leukocyte (WBC)", "", AFG,
+  "Transliteration. «گویچهٔ سفید» is the Iranian form and is NOT used; «کرویات سفید خون» is "
+  "recorded in the Afghan faculty histology text and may serve as an explanatory gloss.",
+  "Ch09", "COMMON AFGHAN TRANSLITERATION", "MEDIUM", abbr="WBC")
+
+T("ترومبوسیت", "Platelet (thrombocyte)", "", AFG,
+  "Transliteration. Cell fragments of megakaryocyte cytoplasm, not whole cells.", "Ch09",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("هموگلوبین", "Hemoglobin", "", AFG,
+  "Transliteration; the oxygen-carrying protein of erythrocytes. The abbreviation Hb is "
+  "part of the term (HbA, HbF), not a separate forbidden form.", "Ch09",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM", abbr="Hb")
+
+T("هماتوکریت", "Hematocrit", "", AFG,
+  "Transliteration; the packed cell volume of blood.", "Ch09",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM", abbr="Hct")
+
+T("نوتروفیل", "Neutrophil", "", AFG, "Transliteration.", "Ch09",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("ائوزینوفیل", "Eosinophil", "", AFG,
+  "Transliteration. «اسیدوفیل» is not used.", "Ch09",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("بازوفیل", "Basophil", "", AFG, "Transliteration.", "Ch09",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("لنفوسیت", "Lymphocyte", "", AFG, "Transliteration.", "Ch09",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("مونوسیت", "Monocyte", "", AFG, "Transliteration.", "Ch09",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("مگاکاریوسیت", "Megakaryocyte", "", AFG,
+  "Transliteration; the giant polyploid marrow cell that sheds platelets.", "Ch09",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("هماتوپویزیس", "Hemopoiesis", "", AFG,
+  "Transliteration. The book uses هماتوپویزیس (or خون‌سازی as the plain Dari gloss).", "Ch09",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("خون‌سازی", "Hemopoiesis (Dari gloss)", "", AFG2,
+  "Ordinary Dari gloss used alongside the transliteration هماتوپویزیس; already used in Ch5.",
+  "Ch05; Ch09", "AFGHAN STANDARD", "MEDIUM")
+
+T("اریتروپویزین", "Erythropoietin", "", AFG,
+  "Transliteration; the kidney-derived hormone driving erythrocyte production.", "Ch09",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM", abbr="EPO")
+
+T("هموستاز", "Hemostasis", "", AFG,
+  "Transliteration; the arrest of bleeding.", "Ch09",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("فیبرین", "Fibrin", "", AFG,
+  "Transliteration; the polymerised product of fibrinogen that forms the clot.", "Ch09",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("فیبرینوژن", "Fibrinogen", "", AFG, "Transliteration.", "Ch09",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("رتیکولوسیت", "Reticulocyte", "", AFG,
+  "Transliteration; the immature erythrocyte that still contains residual ribosomes.",
+  "Ch09", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("آنمی", "Anemia", "", AFG, "Transliteration.", "Ch09",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("لوسمی", "Leukemia", "", AFG, "Transliteration.", "Ch09",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("ترومبوسیتوپنی", "Thrombocytopenia", "", AFG, "Transliteration.", "Ch09",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("هموفیلی", "Hemophilia", "", AFG, "Transliteration.", "Ch09",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
 OVERRIDES = {
     "رنگ‌آمیزی":        ("", "", "", None),
     "مطبق":            ("", "", "", None),
