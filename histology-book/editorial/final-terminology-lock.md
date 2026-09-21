@@ -106,7 +106,7 @@ now 0 except the intended parenthetical first-use.
 **Glossary at the time of this lock:** 228 entries · 102 forbidden forms · 64 canonical
 replacements · 39 accepted variants · 45 English-retained · 1 unresolved (آنتی‌ژن) ·
 `[VERIFY TERMINOLOGY]` markers: 2 (both in the front-matter explanation, describing that single term).
-*(Book-end counts, 23/23 chapters: **691 rows** · 115 forbidden forms · 77 canonical replacements ·
+*(Book-end counts, 23/23 chapters: **691 rows** — **690 after the verification pass**, see `final-terminology-status.md` §7 · 115 forbidden forms · 77 canonical replacements ·
 41 accepted variants · 23 English-retained rows · same single unresolved term —
 see `editorial/final-terminology-status.md` §1.)*
 
@@ -115,7 +115,7 @@ mandated sections present in every topic, all structural checks pass.
 
 **Self-test:** `SELFTEST: ALL PASS` — all 102 forbidden forms detected on injection; all 228 canonical
 forms clean; no form is simultaneously canonical and prohibited; the locked decisions all hold.
-*(Re-run at book end against 115 forbidden forms and 691 canonical rows: still **ALL PASS**.)*
+*(Re-run at book end, and again after the verification pass, against 115 forbidden forms and 690 canonical rows: still **ALL PASS**.)*
 
 ---
 

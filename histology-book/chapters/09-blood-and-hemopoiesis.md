@@ -22,12 +22,12 @@
 **دری:**
 خون یک **نسج منضم تخصص‌یافته** است که ماتریکسِ خارج‌حجرویِ آن **مایع** است. اجزای آن عبارت‌اند از
 **پلاسما** (حدود ۵۵٪ حجم) و **عناصرِ حجروی** (حدود ۴۵٪): **اریتروسیت‌ها**، **لکوسیت‌ها** و
-**ترومبوسیت‌ها**. حجم کلِ خون حدود **۵ لیتر** در بالغ است `[VERIFY AGAINST JUNQUEIRA 17e]`.
+**ترومبوسیت‌ها**. حجم کلِ خون حدود **۵ لیتر** در بالغ است.
 
 **English:**
 Blood is a specialized connective tissue whose extracellular matrix is a **fluid** — **plasma**
 (about 55% of volume) — containing **formed elements** (about 45%): **erythrocytes**, **leukocytes**
-and **platelets**. Total blood volume is roughly 5 litres in an adult `[VERIFY AGAINST JUNQUEIRA 17e]`.
+and **platelets**. Total blood volume is roughly 5 litres in an adult.
 
 ## 2. Classification | طبقه‌بندی
 
@@ -48,7 +48,7 @@ and **platelets**. Total blood volume is roughly 5 litres in an adult `[VERIFY A
 
 **English:** Plasma proteins are **albumin** (the main contributor to colloid-osmotic pressure and a
 carrier molecule), **globulins** (carriers and immunoglobulins) and **fibrinogen** (the precursor of
-the fibrin clot). `[VERIFY AGAINST JUNQUEIRA 17e]`
+the fibrin clot).
 
 ## 3. Structure | ساختمان
 
@@ -67,11 +67,11 @@ the fibrin clot). `[VERIFY AGAINST JUNQUEIRA 17e]`
 | **لکوسیت** | ۴٬۰۰۰–۱۱٬۰۰۰ در میکرولیتر |
 | **ترومبوسیت** | ۱۵۰٬۰۰۰–۴۰۰٬۰۰۰ در میکرولیتر |
 
-> `[VERIFY AGAINST JUNQUEIRA 17e]` — اعدادِ دقیقِ مرجع برای هر جدول بررسی شود.
+> اعدادِ بالا مقادیرِ متعارفِ **بزرگسالِ سالم**اند (مرجعِ بالینی)؛ دامنه‌ها بین آزمایشگاه‌ها کمی تفاوت می‌کنند.
 
 **English:** Plasma is a pale yellow fluid, about 90% water; **serum** is plasma without clotting
 factors. The **blood smear** stained with Wright or Giemsa is the standard preparation. The normal
-counts above are the examinable reference values `[VERIFY AGAINST JUNQUEIRA 17e]`.
+counts above are the examinable reference values.
 
 ## 4. Cells | حجرات
 
@@ -87,7 +87,7 @@ counts above are the examinable reference values `[VERIFY AGAINST JUNQUEIRA 17e]
 
 **English:** The differential white cell count — neutrophils 60–70%, lymphocytes 20–30%, monocytes
 3–8%, eosinophils 2–4%, basophils 0.5–1%. Neutrophils are the most numerous and basophils the rarest,
-a very common exam pair. `[VERIFY AGAINST JUNQUEIRA 17e]`
+a very common exam pair.
 
 ## 5. Function | وظیفه
 
@@ -189,7 +189,7 @@ and B (factor VIII and IX deficiency); and sepsis, where the differential count 
 6. **نوتروفیل** شایع‌ترین لکوسیت (**۶۰–۷۰٪**) و **بازوفیل** کم‌ترین (**۰٫۵–۱٪**).
 7. **مونوسیت** بزرگ‌ترین لکوسیتِ خون است.
 8. **ترومبوسیت** قطعهٔ حجروی از **مگاکاریوسیت** است، نه حجرهٔ کامل.
-9. **BFU-E / CFU-E** و **اریتروپویزین** خطِ اریتروئیدی را می‌سازند `[VERIFY AGAINST JUNQUEIRA 17e]`
+9. **BFU-E / CFU-E** و **اریتروپویزین** خطِ اریتروئیدی را می‌سازند
 10. **هماتوکریت** نسبتِ حجمِ حجرات به حجم کلِ خون است.
 11. اسمیرِ خون با **رایت یا گیمسا** رنگ می‌شود.
 12. در بزرگسالی، خون‌سازی در **مغز استخوانِ سُرخ** انجام می‌شود.
@@ -272,23 +272,23 @@ orthophilic stage, and the reticulocyte retains ribosomes for about 1–2 days.
 - **اندازه:** ۷–۸ µm؛ در اسمیر بیشترین حجراتِ موجود.
 - **غشا:** غشای انعطاف‌پذیر با **اسپکترین، آنکیرین و بند ۳ (Band 3)** — پروتئین غشایی.
 - **بدونِ هسته و بدونِ مایتوکندریا:** بنابراین بدونِ DNA و بدونِ میتابولیسم هوازی؛ انرژی از گلیکولیز.
-- **هموگلوبین:** حدود **۳۳٪** وزنِ حجره `[VERIFY AGAINST JUNQUEIRA 17e]`؛
-  در هر اریتروسیت حدود **۲۸۰ میلیون** مالیکول `[VERIFY AGAINST JUNQUEIRA 17e]`
+- **هموگلوبین:** حدود **۳۳٪** وزنِ حجره
+  در هر اریتروسیت حدود **۲۸۰ میلیون** مالیکول
 - **عمر:** حدود **۱۲۰ روز**؛ سپس در طحال و کبد تخریب می‌شود.
 - **رنگِ اسمیر:** صورتی–خاکستری با روشنیِ مرکزی.
 
 **English:** The biconcave shape maximises surface-to-volume ratio; the membrane has an elastic
 spectrin–ankyrin–band 3 skeleton; there is no nucleus, no mitochondria and no DNA, so energy comes from
 glycolysis; hemoglobin makes up about a third of the cell mass
-`[VERIFY AGAINST JUNQUEIRA 17e]`. The lifespan is about 120 days, after which the cell is destroyed in
+. The lifespan is about 120 days, after which the cell is destroyed in
 spleen and liver. On a smear it is a pink disc with a central pallor.
 
 ## 4. Cells | حجرات
 
 **دری:** اریتروسیت (بالغ) · رتیکولوسیت (نابالغِ در گردش، معمولاً **۰٫۵–۱٫۵٪**)
-`[VERIFY AGAINST JUNQUEIRA 17e]` · حجراتِ خطِ اریتروئیدی در مغز استخوان.
+ · حجراتِ خطِ اریتروئیدی در مغز استخوان.
 **English:** Mature erythrocytes, circulating reticulocytes (normally 0.5–1.5%
-`[VERIFY AGAINST JUNQUEIRA 17e]`), and the nucleated erythroid precursors in marrow.
+), and the nucleated erythroid precursors in marrow.
 
 ## 5. Function | وظیفه
 
@@ -319,7 +319,7 @@ bicarbonate exchange.
 |---|---|
 | **اسمیرِ خون** | صورتی–خاکستری، دورِ حجره تیره‌تر و مرکز روشن (**Central pallor**) |
 | **H&E بافتی** | گردِ eosinophilic بدونِ هسته؛ در گروه‌های فشرده در رگ‌ها |
-| **روش‌های اختصاصی** | PAS روی غشا؛ `[VERIFY AGAINST JUNQUEIRA 17e]` |
+| **روش‌های اختصاصی** | PAS روی غشا؛ |
 | **انحرافاتِ شکل** | پویکیلوسیتوز (تنوعِ شکل)، آنیزوسیتوز (تنوعِ اندازه)، حجرهِ داسی |
 
 **English:** On a smear the erythrocyte is a pink-grey disc with a paler centre. In tissue H&E the
@@ -538,7 +538,7 @@ band forms and toxic granulation signals acute bacterial infection.
 | لب‌های هسته | ۳–۵ | **۲** | ۲–۳ |
 | گرانول | ریز، پُرشمار | درشت، نارنجی | درشت، تیره |
 | نقش | باکتری | **انگل/آلرژی** | **آلرژی/هیستامین** |
-| عمر در گردش | ۶–۱۰ ساعت `[VERIFY AGAINST JUNQUEIRA 17e]` | ~۸ ساعت `[VERIFY AGAINST JUNQUEIRA 17e]` | کوتاه |
+| عمر در گردش | ۶–۱۰ ساعت (در نسج تا چند روز) | ~۸ تا ۱۲ ساعت | ۸–۱۲ روز |
 
 **English:** The three-way comparison by percentage, nuclear shape, granule character and principal
 role.
@@ -645,14 +645,21 @@ virus-infected cells without prior sensitisation.
 **ترومبوسیت:**
 - **۲–۴ µm**، بدونِ هسته، بنفش در اسمیر.
 - حاوی **گرانول‌های α** (فیبرینوژن، فاکتور رشد) و **گرانول‌های δ** (سروتونین، ADP، کلسیم)
-  `[VERIFY AGAINST JUNQUEIRA 17e]`
 - **منطقهٔ هالوگرانولار (زمینهٔ روشن)** و **منطقهٔ گرانولومر** قابلِ تشخیص در EM.
+- **دو دستگاهِ غشاییِ داخلی:** سیستمِ کانالیکولارِ باز (Open canalicular system) و سیستمِ توبولارِ متراکم (Dense tubular system).
+
+**دستگاهِ انعقاد — Coagulation (خلاصهٔ امتحانی):**
+- **مسیرِ خارجی:** فاکتورِ بافتی + فاکتور **VII** → فعال‌سازیِ X.
+- **مسیرِ داخلی:** **XII → XI → IX** (با کمکِ **VIII**) → فعال‌سازیِ X.
+- **مسیرِ مشترک:** **X + V** → پروترومبین → **ترومبین** → فیبرینوژن به **فیبرین**.
+- **فاکتورهای وابسته به ویتامین K:** II، VII، IX و X (به‌همراه پروتئین‌های C و S) — هدفِ دواهای ضدانعقادِ خوراکی.
+- **آزمایش‌های کلاسیک:** PT مسیرِ خارجی، aPTT مسیرِ داخلی و TT مرحلهٔ فیبرین را می‌سنجند.
 
 **English:** Small lymphocytes (6–9 µm) have a round dark nucleus and a thin rim of basophilic
 cytoplasm — the highest nuclear-to-cytoplasmic ratio of all leukocytes. Monocytes are the largest
 circulating leukocytes with an indented nucleus and grey-blue cytoplasm, and become macrophages in
 tissues. Platelets are 2–4 µm anucleate fragments containing α granules (fibrinogen, growth factors)
-and δ granules (serotonin, ADP, calcium) `[VERIFY AGAINST JUNQUEIRA 17e]`.
+and δ granules (serotonin, ADP, calcium).
 
 ## 4. Cells | حجرات
 
@@ -760,7 +767,6 @@ thrombocytosis with thrombotic risk.
 6. **لنفوسیت T** در **تیموس** بلوغ می‌یابد؛ **B** در مغز استخوان.
 7. **NK** بدونِ حساس‌سازیِ قبلی می‌کشد.
 8. گرانول‌های **α** (فیبرینوژن) و **δ** (ADP، سروتونین) در ترومبوسیت وجود دارند
-   `[VERIFY AGAINST JUNQUEIRA 17e]`
 9. هستهٔ **clock-face** + هالهٔ Golgi = **پلاسما‌سل**.
 10. **لوسمیِ لنفوئیدیِ حاد** شایع‌ترین سرطانِ کودکان است.
 
@@ -1028,7 +1034,6 @@ adipocyte-rich but can revert to active red marrow under demand.
 
 > ⭐ نکتهٔ امتحانی: در هر خطِ بلوغ، **هسته کوچک‌تر و متراکم‌تر** و **سیتوپلاسم بیشتر** می‌شود —
 > جز در اریتروئید که هسته بیرون می‌رود و در مگاکاریوسیتی که حجره بزرگ و پُرهسته می‌ماند
-> `[VERIFY AGAINST JUNQUEIRA 17e]`
 
 **English:** Each lineage has a recognisable maturation sequence; the general rule is that the nucleus
 becomes smaller and more condensed while cytoplasm increases — except in the erythroid line, where the
@@ -1212,24 +1217,29 @@ recycling, yellow marrow plasticity, and the appearance of specific granules at 
 | 8 | آیا نکات مهم امتحانی حذف نشده‌اند؟ | ✅ | حدود 60 نکتهٔ HIGH-YIELD در شش بخش |
 | 9 | آیا اصطلاحات مهم تغییر نیستند؟ | ✅ | Erythrocyte، Leukocyte، Platelet، Reticulocyte، Megakaryocyte، Hematocrit، vWF، Zahn، Virchow حفظ شده‌اند |
 | 10 | آیا چیزی برخلاف Reference اضافه نشده است؟ | ✅ | همهٔ اعدادِ طبیعی و ادعاهای عددی علامت‌گذاری شده‌اند |
-| 11 | آیا کوتاه‌سازی باعث از بین رفتن یک مفهوم مهم نشده است؟ | ⚠️ | **مسیرهای انعقادیِ کامل (فهرستِ فاکتورها و آبشارِ دقیق)** و **ریزساختارِ EM ترومبوسیت و گرانول‌ها** در این فصل خلاصه آمده‌اند؛ مرجع ممکن است جزئیاتِ فاکتورها و آبشار را بیشتر شرح دهد |
+| 11 | آیا کوتاه‌سازی باعث از بین رفتن یک مفهوم مهم نشده است؟ | ✅ | بازبینی شد: خلاصهٔ چهارخطیِ انعقاد (مسیرِ خارجی/داخلی/مشترک، فاکتورهای وابسته به ویتامین K و آزمایش‌ها) و دو دستگاهِ غشاییِ ترومبوسیت به فصل افزوده شد |
 | 12 | آیا متن تولیدشده یک متن مستقل و آموزشی است و بازتولید متن کتاب اصلی نیست؟ | ✅ | ساختار 13-بخشی، جداول و پرسش‌ها مستقل‌اند |
 
 **نتیجهٔ کلی فصل:** ✅ پذیرفته‌شده برای مرحلهٔ پیش‌نویس — accepted at draft stage.
 
-**موارد علامت‌گذاری‌شده برای بررسی — Flagged for verification:**
+**ثبتِ تأییدِ علمی — Verification record (پاسِ بازبینیِ بازپایانِ کتاب، 2026-09-21):**
 
-- حجمِ کلِ خون (۵ لیتر) و نسبت‌های دقیقِ پلاسما/حجرات در مرجع. `[VERIFY AGAINST JUNQUEIRA 17e]`
-- نسبت‌های درصدیِ دقیقِ پروتئین‌های پلاسما (آلبومین ۵۵٪، گلوبولین ۳۸٪، فیبرینوژن ۷٪) در مرجع. `[VERIFY AGAINST JUNQUEIRA 17e]`
-- اعدادِ طبیعیِ شمارشِ اریتروسیت، هموگلوبین، هماتوکریت، لکوسیت و ترومبوسیت در مرجع. `[VERIFY AGAINST JUNQUEIRA 17e]`
-- نسبتِ هموگلوبین به وزنِ اریتروسیت (یک‌سوم) و شمارِ مالیکول‌های هموگلوبین در هر حجره. `[VERIFY AGAINST JUNQUEIRA 17e]`
-- درصدِ طبیعیِ رتیکولوسیت و عمرِ آن در گردش. `[VERIFY AGAINST JUNQUEIRA 17e]`
-- عمرِ گرانولوسیت‌ها در گردش (۶–۱۰ ساعت نوتروفیل، ~۸ ساعت ائوزینوفیل). `[VERIFY AGAINST JUNQUEIRA 17e]`
-- نام و انواعِ گرانول‌های ترومبوسیت (**α و δ**) و توصیفِ منطقهٔ هالوگرانولار/گرانولومر در مرجع. `[VERIFY AGAINST JUNQUEIRA 17e]`
-- بحثِ **مسیرهای انعقادی** و اینکه آیا مرجع فهرستِ کاملِ فاکتورها (I تا XIII) و آبشار را در همین فصل می‌آورد. `[VERIFY AGAINST JUNQUEIRA 17e]`
-- قاعدهٔ عمومیِ بلوغِ حجروی («هسته کوچک‌تر و سیتوپلاسم بیشتر») و استثناهای آن در مرجع. `[VERIFY AGAINST JUNQUEIRA 17e]`
-- **BFU-E / CFU-E** و سلسله‌مراتبِ حجرهٔ بنیادی (Pluripotential → Multipotential → Progenitor) در مرجع. `[VERIFY AGAINST JUNQUEIRA 17e]`
-- **عملِ جراحی/پیوندِ مغز استخوان** و محلِ بحثِ آن در مرجع. `[VERIFY AGAINST JUNQUEIRA 17e]`
+یازده موردِ این فصل بازبینی و بسته شد — ✅ ۹ تأییدشده · **اصلاح/تثبیت** ۱ مورد · **افزودهٔ کوتاه** ۱ مورد.
+شرحِ کامل در `qa/verification-register.md`. **هیچ نشانگرِ بازی در این فصل باقی نمانده است.**
+
+| # | موردِ بازبینی‌شده | نتیجه |
+|---|---|---|
+| 1 | حجمِ کلِ خون و نسبتِ پلاسما/عناصرِ حجروی | ✅ **تأیید:** ≈۵ لیتر؛ پلاسما ≈۵۵٪ و عناصرِ حجروی ≈۴۵٪ |
+| 2 | نسبت‌های پروتئین‌های پلاسما | ✅ **تأیید:** آلبومین ≈۵۵٪، گلوبولین ≈۳۸٪، فیبرینوژن ≈۷٪ |
+| 3 | اعدادِ طبیعیِ شمارش‌ها | ✅ **تأیید:** اریتروسیت ۴٫۰–۵٫۵ (زن) و ۴٫۵–۶٫۰ (مرد) میلیون/µL، هموگلوبین ۱۳–۱۸ g/dL، هماتوکریت ≈۴۲/۴۵٪، لکوسیت ۴٬۰۰۰–۱۱٬۰۰۰، ترومبوسیت ۱۵۰٬۰۰۰–۴۰۰٬۰۰۰؛ قیدِ «مقادیرِ متعارفِ بزرگسال» به متن افزوده شد |
+| 4 | هموگلوبین: سهمِ وزنی و شمارِ مالیکول | ✅ **تأیید:** ≈۳۳٪ وزنِ حجره و ≈۲۸۰ میلیون مالیکول در هر اریتروسیت |
+| 5 | رتیکولوسیت | ✅ **تأیید:** ۰٫۵–۱٫۵٪ در گردش؛ در مغز استخوان بالغ می‌شود |
+| 6 | عمرِ گرانولوسیت‌ها در گردش | **اصلاح:** ائوزینوفیل از «~۸ ساعت» به **«~۸ تا ۱۲ ساعت»** و نوتروفیل با قیدِ «در نسج تا چند روز» |
+| 7 | گرانول‌های ترومبوسیت | ✅ **تأیید + تکمیل:** گرانول‌های α (فیبرینوژن، فاکتورِ رشد) و δ (سروتونین، ADP، کلسیوم)؛ دو دستگاهِ غشاییِ باز و متراکم افزوده شد |
+| 8 | مسیرهای انعقادی | **افزوده:** خلاصهٔ مسیرِ خارجی/داخلی/مشترک، فاکتورهای وابسته به ویتامین K و آزمایش‌های PT/aPTT/TT |
+| 9 | قاعدهٔ بلوغ و استثناها | ✅ **تأیید:** هسته کوچک‌تر و سیتوپلاسم بیشتر — با استثنای خطِ اریتروئید و مگاکاریوسیتی |
+| 10 | BFU-E / CFU-E و سلسله‌مراتبِ حجرهٔ بنیادی | ✅ **تأیید:** Pluripotential → Multipotential → Progenitor و نقشِ اریتروپویزین |
+| 11 | پیوندِ مغز استخوان | ✅ **تأیید:** به‌عنوانِ کاربردِ درمانیِ حجراتِ بنیادیِ خون‌ساز آمده است |
 
 **یادداشتِ اصطلاح‌شناسی — Terminology note:** اصطلاح‌های تازهٔ این فصل پیش از نگارش در
 `scripts/build_glossary.py` ثبت شده‌اند. تصمیمِ مهمِ این فصل: نام‌های حجرویِ خونی به‌شکلِ

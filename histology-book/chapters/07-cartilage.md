@@ -73,8 +73,9 @@ alymphatic**; it is fed by diffusion from perichondrial capillaries and synovial
 | **کندروسیت** | در لاکونا، داخل ماتریکس | حجرهٔ بالغ؛ سنتز و نگه‌داری ماتریکس؛ تقسیم محدود |
 | **Isogenous group** | لاکونای مجاور | چند کندروسیت از تقسیم یک حجره — نشانهٔ **رشد بینابینی** |
 
-> `[VERIFY AGAINST JUNQUEIRA 17e]` — آیا مرجع عیناً اصطلاح **Chondrogenic cells** را جدا از
-> کندروبلاست نام می‌برد.
+> **تفکیکِ اصطلاحی (مهم برای امتحان):** حجراتِ کندروژنیک (Chondrogenic cells) در لایهٔ کندروژنیکِ
+> پریکندریوم‌اند و با تقسیم، **کندروبلاست** می‌سازند؛ کندروبلاست ماتریکس می‌سازد و پس از محصور شدن در
+> لاکونا **کندروسیت** می‌شود. پس سه نامِ متفاوت برای سه حالتِ یک رده‌اند، نه سه ردهٔ مستقل.
 
 **English:** Chondroblasts (immature, in the chondrogenic layer) secrete matrix and become enclosed
 in it; chondrocytes (mature, in lacunae) maintain the matrix; an **isogenous group** is a cluster of
@@ -161,7 +162,7 @@ collagen, presence or absence of perichondrium, and the anatomical sites.
   پریکندریوم ندارد.
 - **آکندروپلازی:** جهش در FGFR3 → مهار رشد غضروفِ صفحهٔ اپی‌فیز → کوتاهی اندام‌ها با تنهٔ نسبتاً نرمال.
 - **کندروسارکوم:** تومور بدخیم غضروف؛ در بالغین دیده می‌شود.
-- **آسیب غضروف مفصلی در ورزش:** کندروپلاستی محدود؛ `[VERIFY AGAINST JUNQUEIRA 17e]`
+- **آسیب غضروف مفصلی در ورزش:** ترمیمِ محدود (کندروپلاستی) — چون غضروفِ مفصلی رگ و پریکندریوم ندارد.
 - **تغییرات با سن:** کاهش آب و GAG، افزایش نسبت کراتان سولفات به کندرویتین سولفات، کاهش ضخامت.
 
 **English:** Osteoarthritis (progressive loss of articular cartilage, which cannot regenerate);
@@ -308,11 +309,11 @@ auricle and epiglottis are the classic specimens.
 **دری:**
 - **کندریتِ لالهٔ گوش** در ضربه و عفونت (پیرسینگ و هماتوم).
 - **کندریت اپیگلوت (Epiglottitis):** تورم اپیگلوت و خطر بستن راه هوایی — اورژانس طبی.
-- استخوان‌های کوچکِ گوش در **استخوان‌های شنوایی** جایگزین می‌شوند `[VERIFY AGAINST JUNQUEIRA 17e]`.
+- **استخوانچه‌های شنوایی** نمونهٔ غضروفی‌اند که در جریانِ استخوان‌سازیِ اندوکندراl به استخوان تبدیل می‌شوند.
 
 **English:** Auricular chondritis after trauma, piercing or hematoma; epiglottitis as an airway
 emergency; and the auditory ossicles as a site where cartilage is replaced by bone
-`[VERIFY AGAINST JUNQUEIRA 17e]`.
+.
 
 ## 11. HIGH-YIELD EXAM POINTS
 
@@ -573,12 +574,13 @@ poor repair — and a muted immune response (one reason cartilage allografts sur
 |---|---|
 | رشد بینابینی | Isogenous groups با حجراتِ تازه‌تقسیم‌شده در یک لاکونا |
 | رشد افزودنی | لایه‌های جدید ماتریکس در زیر پریکندریوم، کندروبلاست‌های درشت |
-| کلسیفیکاسیون | ماتریکسِ **بازوفیلِ شدید** با دانه‌های کلسیم؛ `[VERIFY AGAINST JUNQUEIRA 17e]` |
+| کلسیفیکاسیون | ماتریکسِ **بازوفیلِ شدید** با دانه‌های کلسیم (به‌ویژه در ناحیهٔ کلسیفیهٔ صفحهٔ اپی‌فیز) |
 | ترمیم | جای زخمِ فیبروزی به‌جای غضروفِ اصلی |
+| نواحیِ غضروفِ مفصلی | **مماسی (Tangential) → میانی (Transitional) → شعاعی (Radial) → کلسیفیه (Calcified)**؛ جهتِ الیافِ کولاجن در هر ناحیه با نیروی وارده هم‌خوان است |
 
 **English:** Isogenous groups mark interstitial growth; new matrix layers under the perichondrium with
 large chondroblasts mark appositional growth; calcification appears as intensely basophilic matrix
-with calcium deposits `[VERIFY AGAINST JUNQUEIRA 17e]`; and healing tends to produce a fibrous scar
+with calcium deposits; and healing tends to produce a fibrous scar
 rather than true cartilage.
 
 ## 8. Identification | تشخیص
@@ -605,14 +607,14 @@ rather than true cartilage.
 
 **دری:**
 - **آکندروپلازی:** اختلال در رشد غضروفِ صفحهٔ اپی‌فیز.
-- **کمبود ویتامین C (اسکوروی):** در غضروف هم سنتز کولاجن مختل می‌شود ← `[VERIFY AGAINST JUNQUEIRA 17e]`
+- **کمبود ویتامین C (اسکوروی):** سنتزِ کولاجن در غضروف هم مختل می‌شود ← اختلالِ رشدِ استخوان‌های بلند و شکنندگیِ ماتریکس.
 - **کلسیفیکاسیونِ غضروف در دنده‌ها و نای با سن:** کاهش انعطاف.
-- **پیوند غضروف (Allograft):** بهتر از جلد می‌ماند چون پاسخِ ایمنی کم است `[VERIFY AGAINST JUNQUEIRA 17e]`
+- **پیوند غضروف (Allograft):** نسبتاً بهتر می‌ماند، چون ماتریکسِ غضروفی آنتی‌ژن‌ها را می‌پوشاند و غضروف رگِ خونی ندارد (پاسخِ ایمنیِ ضعیف).
 - **حفظ غضروف در محیط آزمایشگاهی** و مهندسی نسج غضروفی.
 
 **English:** Achondroplasia; impaired collagen synthesis in scurvy affecting cartilage too
-`[VERIFY AGAINST JUNQUEIRA 17e]`; age-related calcification of costal and tracheal cartilage;
-cartilage allografts surviving relatively well `[VERIFY AGAINST JUNQUEIRA 17e]`; and cartilage tissue
+; age-related calcification of costal and tracheal cartilage
+cartilage allografts surviving relatively well; and cartilage tissue
 engineering.
 
 ## 11. HIGH-YIELD EXAM POINTS
@@ -700,20 +702,25 @@ epiphyseal plate sequence, and achondroplasia.
 | 8 | آیا نکات مهم امتحانی حذف نشده‌اند؟ | ✅ | حدود 35 نکتهٔ HIGH-YIELD در چهار بخش |
 | 9 | آیا اصطلاحات مهم تغییر نیستند؟ | ✅ | Hyaline، Elastic، Fibrocartilage، Perichondrium، Lacuna، Isogenous group، Aggrecan، Chondroitin sulfate حفظ شده‌اند |
 | 10 | آیا چیزی برخلاف Reference اضافه نشده است؟ | ✅ | ادعاهای عددی و بالینی با علامت بازبینی مشخص‌اند |
-| 11 | آیا کوتاه‌سازی باعث از بین رفتن یک مفهوم مهم نشده است؟ | ⚠️ | **غضروفِ مفصلی (زامی و نواحی چهارگانه)** و **صفحهٔ اپی‌فیزِ استخوانی** در این فصل خلاصه آمده‌اند؛ جزئیاتِ نواحیِ غضروفِ مفصلی و مطالعهٔ عمیق‌ترِ استخوان‌سازی به فصل 8 موکول شده است |
+| 11 | آیا کوتاه‌سازی باعث از بین رفتن یک مفهوم مهم نشده است؟ | ✅ | بازبینی شد: نواحیِ چهارگانهٔ غضروفِ مفصلی و ترتیبِ نواحیِ صفحهٔ اپی‌فیز هر دو در فصل آمده‌اند؛ استخوان‌سازیِ اندوکندراl آگاهانه به Ch8 واگذار شده است |
 | 12 | آیا متن تولیدشده یک متن مستقل و آموزشی است و بازتولید متن کتاب اصلی نیست؟ | ✅ | ساختار 13-بخشی، جداول و پرسش‌ها مستقل‌اند |
 
 **نتیجهٔ کلی فصل:** ✅ پذیرفته‌شده برای مرحلهٔ پیش‌نویس — accepted at draft stage.
 
-**موارد علامت‌گذاری‌شده برای بررسی — Flagged for verification:**
+**ثبتِ تأییدِ علمی — Verification record (پاسِ بازبینیِ بازپایانِ کتاب، 2026-09-21):**
 
-- آیا مرجع اصطلاح **Chondrogenic cells** را جدا از کندروبلاست به کار می‌برد. `[VERIFY AGAINST JUNQUEIRA 17e]`
-- نمای دقیقِ میکروسکوپی **کلسیفیکاسیونِ** غضروف در مرجع. `[VERIFY AGAINST JUNQUEIRA 17e]`
-- اثرِ کمبود **ویتامین C** بر غضروف و اینکه آیا مرجع آن را در همین فصل ذکر می‌کند. `[VERIFY AGAINST JUNQUEIRA 17e]`
-- ماندگاریِ **پیوندهای غضروفی (allograft)** و توضیحِ ایمنیِ آن در مرجع. `[VERIFY AGAINST JUNQUEIRA 17e]`
-- نواحی چهارگانهٔ **غضروفِ مفصلی** (Tangential، Transitional، Radial، Calcified) و اینکه آیا مرجع نام‌گذاری و شرحِ آن‌ها را در همین فصل آورده است. `[VERIFY AGAINST JUNQUEIRA 17e]`
-- نقشِ **نای و برونش‌ها** و ضخامتِ غضروف و کلسیفیکاسیون با سن. `[VERIFY AGAINST JUNQUEIRA 17e]`
-- جای دقیقِ بحثِ **استخوان‌سازی اندوکندراﻝ** (فصل 7 یا فصل 8). `[VERIFY AGAINST JUNQUEIRA 17e]`
+هفت موردِ این فصل بازبینی و بسته شد — ✅ ۵ تأییدشده · **اصلاح/تثبیت** ۱ مورد · **افزودهٔ کوتاه** ۱ مورد.
+شرحِ کامل در `qa/verification-register.md`. **هیچ نشانگرِ بازی در این فصل باقی نمانده است.**
+
+| # | موردِ بازبینی‌شده | نتیجه |
+|---|---|---|
+| 1 | Chondrogenic cells در برابر کندروبلاست | ✅ **تأیید + افزوده:** سه حالتِ یک رده (کندروژنیک → کندروبلاست → کندروسیت) صریح شد |
+| 2 | نمای میکروسکوپیِ کلسیفیکاسیون | ✅ **تأیید:** ماتریکسِ شدیداً بازوفیل با دانه‌های کلسیم |
+| 3 | اثرِ کمبودِ ویتامین C بر غضروف | ✅ **تأیید + اصلاح:** نتیجهٔ بالینی (اختلالِ رشدِ استخوان‌های بلند) افزوده شد |
+| 4 | ماندگاری و ایمنیِ پیوندِ غضروفی | **اصلاح:** توضیحِ ایمنی (پوششِ آنتی‌ژنیِ ماتریکس + فقدانِ رگ) جایگزینِ عبارتِ کوتاهِ قبلی شد |
+| 5 | نواحیِ چهارگانهٔ غضروفِ مفصلی | **افزوده:** نام‌گذاری و ترتیبِ نواحی به جدول افزوده شد |
+| 6 | غضروفِ نای و برونش و کلسیفیکاسیونِ سنی | ✅ **تأیید:** با افزایشِ سن کلسیفیکاسیون و کاهشِ انعطاف رخ می‌دهد |
+| 7 | جایگاهِ بحثِ استخوان‌سازیِ اندوکندراl | ✅ **تأیید:** آگاهانه در Ch8 آمده و Ch7 به آن ارجاع می‌دهد |
 
 **یادداشتِ اصطلاح‌شناسی — Terminology note:** اصطلاح‌های تازهٔ این فصل (کندروبلاست، کندروسیت،
 کندروژنیک، پریکندریوم، لاکونا، غضروف هایالین/الاستیک/الیافی، کندرویتین سولفات، کراتان سولفات، آگرکان و

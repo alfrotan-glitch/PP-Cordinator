@@ -41,11 +41,13 @@ fibre**) is a syncytium formed by fusion of embryonic myoblasts, with its nuclei
 | **شکل** | رگه‌های موازی · دسته‌ها (Fascicles) |
 
 > ⭐ نکتهٔ امتحانی: رگه‌های **Type I** پُرمایتوکندریا، پُرمایوگلوبین و پُرمقاوم به خستگی‌اند؛
-> **Type II** سریع‌تر ولی زودتر خسته می‌شوند. `[VERIFY AGAINST JUNQUEIRA 17e]`
+> **Type II** سریع‌تر ولی زودتر خسته می‌شوند.
+> **زیرگروه‌ها:** Type **IIa** (تند-اکسیداتیو-گلیکولیتیک، نسبتاً مقاوم) و Type **IIx/IIb** (گلیکولیتیک، زودخسته)؛
+> در رگه‌های انسان **IIx** غالب است.
 
 **English:** Fibres differ in colour (red versus white), contraction speed (type I slow versus type II
 fast), metabolism (oxidative versus glycolytic) and mechanical arrangement into fascicles
-`[VERIFY AGAINST JUNQUEIRA 17e]`.
+.
 
 ## 3. Structure | ساختمان
 
@@ -88,8 +90,8 @@ the paler **H band** (myosin only) and the **M line** (the midline).
 | **حجراتِ اندوتلیال** | مویِرگ‌های فراوان در اندومیزیوم |
 
 **سازمانِ درونِ رگه:** سارکولما → سارکوپلاسم → **میوفیبریل‌ها** (۱–۲ µm) → میوفیلامنت‌ها.
-مایتوکندریا بین میوفیبریل‌ها و زیرِ سارکولما؛ **رایبوزوم و RER** فقط در حجرهٔ بالغ محدود
-`[VERIFY AGAINST JUNQUEIRA 17e]`.
+مایتوکندریا بین میوفیبریل‌ها و زیرِ سارکولما؛ **رایبوزوم و RER** در حجرهٔ بالغِ عضلهٔ اسکلتی بسیار محدود است
+(سنتزِ پروتئینِ تازه اندک است و بازسازی به **میوساتلایت‌ها** تکیه دارد).
 
 **English:** The muscle fibre is multinucleated with peripheral nuclei; **satellite cells** lie beside
 the fibre and are the source of repair; fibroblasts and endothelium occupy the connective tissue
@@ -126,7 +128,7 @@ and myoglobin plus abundant mitochondria supply oxygen and energy.
 | **برشِ طولی (H&E)** | رگه‌های موازی با **مخطط عرضی**؛ هسته‌های **کناریِ** متعدد |
 | **برشِ عرضی (H&E)** | چندضلعی‌های درشت با هسته‌های کناری؛ نقاط تیره = میوفیبریل |
 | **PAS** | گرانول‌های گلیکوژن |
-| **رنگِ آهن (Prussian blue)** | مایوگلوبینِ ذخیره‌ای `[VERIFY AGAINST JUNQUEIRA 17e]` |
+| **رنگِ آهن (Prussian blue)** | رنگدانه‌های حاوی آهن (هموسیدرین)؛ برای مایوگلوبین **ایمونوهیستوشیمی** |
 | **EM** | سارکومرهای منظم، تریادها، مایتوکندریا بین میوفیبریل‌ها |
 
 **English:** Longitudinal sections show parallel fibres with cross-striations and many **peripheral**
@@ -258,7 +260,7 @@ entering the heart.
 | معیار | تقسیم |
 |---|---|
 | **نوع حجره** | حجراتِ انقباضی (میوسیت‌های کاردیال) · حجراتِ **گره‌ای (Nodal)** · حجراتِ **رشته‌های پورکنژ** |
-| **محل** | میوکاردِ دهلیز و بطن · دیوارِ وریدهای ریوی، اجوف و آئورت `[VERIFY AGAINST JUNQUEIRA 17e]` |
+| **محل** | میوکاردِ دهلیز و بطن · **غلافِ میوکاردی** در دیوارِ وریدهای ریوی و اجوفِ فوقانی |
 | **دستگاهِ هدایت** | گرهٔ SA → گرهٔ AV → دستهٔ His → رشته‌های پورکنژ |
 
 **English:** Contractile myocytes, nodal pacemaker cells and Purkinje fibres make up the tissue. The
@@ -270,17 +272,17 @@ Purkinje fibres.
 **دری:**
 
 - **حجراتِ استوانه‌ایِ منشعب**، حدود **۸۵–۱۰۰ µm** طول و **۱۰–۱۵ µm** قطر
-  `[VERIFY AGAINST JUNQUEIRA 17e]`
 - **هستهٔ مرکزیِ** یک، گاهی دو.
 - **مخططِ عرضی** ولی کمترِ منظم از اسکلتی؛ میوفیبریل‌ها اغلب **واگرا** و بین‌شان مایتوکندریا و
   گلیکوژن فراوان.
 - **دیسک‌های میان‌حجروی:** شاملِ دو بخش:
-  - **بخش عرضی:** با **دزموزوم** (چسبندگی مکانیکی) و **Adherens Junction** — `[VERIFY AGAINST JUNQUEIRA 17e]`
+  - **بخش عرضی:** **فاسیا آدرنس (Adherens Junction)** به‌عنوانِ جزءِ اصلی — محلِ اتصالِ اکتینِ سارکومر به غشا —
+    به‌همراه **دزموزوم (Macula adherens)** برای چسبندگیِ مکانیکی
   - **بخش طولی:** با **Gap Junction** — برای **انتقالِ تحریک** از حجره به حجره
     (همین باعثِ هماهنگیِ «سین‌سیتیومِ عملی» می‌شود).
 - **تیوبول T + یک سیسترنای انتهایی = دیاد** (نه تریاد)؛ در سطحِ **دیسک Z**.
 - **شبکهٔ سارکوپلاسمیِ** کمترِ منظم از اسکلتی؛ **کلسیمِ ورودی از مایعِ خارج‌حجروی** هم نقش دارد.
-- **لیپوفوسین** (رنگدانهٔ پیری) در حجراتِ پیرِ قلبی `[VERIFY AGAINST JUNQUEIRA 17e]`
+- **لیپوفوسین** (رنگدانهٔ پیری) در حجراتِ پیرِ قلبی
 
 **English:** Cardiac cells are branched cylinders (about 85–100 µm long, 10–15 µm wide) with one
 (often two) **central** nuclei. Striations are present but less regular than in skeletal muscle, with
@@ -308,7 +310,6 @@ rapidly; fibroblasts build the connective tissue framework.
 
 **دری:** **پمپِ مداومِ خون** بدونِ خستگی در طول عمر · تولیدِ تحریکِ خودکار (**اتوماتیسیتی**) ·
 هدایتِ تحریک در سراسر قلب · ترشحِ **فاکتور ناتریورتیکِ دهلیزی (ANP)** در پاسخ به کشیدگی
-`[VERIFY AGAINST JUNQUEIRA 17e]`
 **English:** Continuous, non-fatiguing pumping; automaticity (spontaneous rhythmicity); conduction
 of the impulse through the heart; and secretion of atrial natriuretic peptide in response to stretch.
 
@@ -335,7 +336,7 @@ blockers; and nodal automaticity frees the heart from nervous dependence.
 | **برشِ طولی (H&E)** | رگه‌های **منشعب** با هستهٔ **مرکزی**؛ **دیسک‌های میان‌حجروی** به‌شکلِ خطوطِ عرضیِ تیره‌تر |
 | **برشِ عرضی** | حجراتِ نامنظم و کوچک‌تر از اسکلتی؛ هستهٔ **مرکزی** |
 | **PAS** | گلیکوژنِ فراوان |
-| **رنگ‌های ویژه** | فوشین اسید / Heidenhain برای دیسک میان‌حجروی `[VERIFY AGAINST JUNQUEIRA 17e]` |
+| **رنگ‌های ویژه** | دیسکِ میان‌حجروی در **H&E** به‌شکلِ نوارِ عرضیِ تیره دیده می‌شود؛ برای نمایان‌سازیِ بیشتر **هماتوکسیلینِ آهنی (Heidenhain)** و در EM بهتر مشخص می‌شود |
 | **EM** | دیاد، مایتوکندریای فراوان، گرانول‌های لیپوفوسین |
 
 **English:** Longitudinal sections show branched fibres with **central** nuclei and **intercalated
@@ -385,12 +386,12 @@ column.
 - **آریتمی:** اختلالِ حجراتِ گره‌ای و مسیرِ هدایت.
 - **میوکاردیت:** التهابِ میوکارد (ویروسی، خودایمنی).
 - **کاردیومیوپاتیِ هیپرتروفیک:** جهشِ پروتئین‌های سارکومر؛ خطرِ مرگِ ناگهانی در ورزشکاران.
-- **تومورِ قلبی (میکسوما، رابدومیوما):** نادر. `[VERIFY AGAINST JUNQUEIRA 17e]`
+- **تومورِ قلبی:** نادر؛ **میکسوما** شایع‌ترین تومورِ اولیهٔ خوش‌خیمِ قلب در بالغ (معمولاً در دهلیزِ چپ) و **رابدومیوما** در کودکان (همراهی با تُوبروس اسکلروزیس).
 
 **English:** Myocardial infarction with fibrous scarring (cardiac muscle cannot regenerate);
 heart failure with compensatory hypertrophy; arrhythmias from nodal and conduction defects;
 myocarditis; hypertrophic cardiomyopathy with sudden-death risk in athletes; and rare cardiac tumours
-`[VERIFY AGAINST JUNQUEIRA 17e]`.
+.
 
 ## 11. HIGH-YIELD EXAM POINTS
 
@@ -405,7 +406,7 @@ myocarditis; hypertrophic cardiomyopathy with sudden-death risk in athletes; and
 9. عضلهٔ قلبی **ترمیم نمی‌شود**؛ جای زخم **اسکارِ فیبروزی** است.
 10. **لیپوفوسین** رنگدانهٔ پیری در حجراتِ قلبی است.
 11. کلسیمِ لازم عمدتاً از **مایعِ خارج‌حجروی** می‌آید.
-12. قلب برای **ANP** یک عضوِ اندوکراین هم است. `[VERIFY AGAINST JUNQUEIRA 17e]`
+12. قلب برای **ANP** یک عضوِ اندوکراین هم است.
 
 **English:** Twelve lines covering cell morphology, intercalated discs and their components, the diad,
 mitochondrial volume, nodal automaticity, Purkinje fibres, non-regeneration, lipofuscin, calcium
@@ -467,20 +468,20 @@ muscles.
 | معیار | تقسیم |
 |---|---|
 | **نحوهٔ سازمان** | **واحدی (Unitary / Single-unit):** حجرات با Gap Junction به هم — گوارش، رحم، مثانه · **چنده‌واحدی (Multi-unit):** هر حجره جدا عصب می‌گیرد — عنبیه، عضلهٔ راست‌کنندهٔ مو |
-| **منشأ** | مزنشیم (بیشتر) · **نورواکتودرم** (عضلاتِ عنبیه) `[VERIFY AGAINST JUNQUEIRA 17e]` |
+| **منشأ** | مزنشیم (بیشتر) · **نورال‌کرست/نورواکتودرم** (عضلاتِ عنبیه و بعضی عضلاتِ صافِ مشتقِ قوس‌های برانشیایی) |
 | **محل** | اوعیه · گوارش · تنفس · ادراری · تناسلی · چشم · جلد |
 
 **English:** Unitary (single-unit) smooth muscle behaves as a syncytium because of gap junctions and
 is found in gut, uterus and bladder; multi-unit smooth muscle has independently innervated cells, as
-in iris and arrector pili. Most smooth muscle is mesenchymal in origin, with iris muscles from
-neuroectoderm `[VERIFY AGAINST JUNQUEIRA 17e]`.
+in iris and arrector pili. Most smooth muscle is mesenchymal in origin, while iris muscles (and some smooth muscle
+derived from the branchial arches) come from neural crest / neuroectoderm.
 
 ## 3. Structure | ساختمان
 
 **دری:**
 
-- **حجرهٔ دوکی‌شکل**، حدود **۲۰ µm** قطر و **۲۰۰ µm** طول در رحمِ باردار بیشتر
-  `[VERIFY AGAINST JUNQUEIRA 17e]`؛ **هستهٔ مرکزی** در پهن‌ترین بخشِ حجره.
+- **حجرهٔ دوکی‌شکل**، **۳ تا ۸ µm** قطر و **۲۰ تا ۲۰۰ µm** طول (بسته به اندام؛ در رحمِ آبستن بسیار بلندتر)؛
+  **هستهٔ مرکزی** در پهن‌ترین بخشِ حجره.
 - **بدونِ مخطط** چون میوفیلامنت‌ها **موازیِ محورِ حجره و پراکنده**اند، نه در سارکومرِ منظم.
 - **میوفیلامنت‌ها:** اکتین (نازک)، **میوزینِ صاف** و فیلامنت‌های **دسمین** و **ویمنتین**؛
   اجسامِ متراکم (**Dense bodies**) نقشِ دیسک Z را دارند.
@@ -601,7 +602,7 @@ dysmenorrhea.
 9. در برشِ **عرضی**، فقط بخشی از حجرات هسته دارند (چون دوکِ باریک است).
 10. لایه‌های گوارش: داخلی **حلقوی**، بیرونی **طولی**.
 11. **لیومیوم** از عضلهٔ صاف است؛ شایع‌ترین تومورِ خوش‌خیمِ رحم.
-12. عضلهٔ صافِ عنبیه منشأ **نورواکتودرمی** دارد. `[VERIFY AGAINST JUNQUEIRA 17e]`
+12. عضلهٔ صافِ عنبیه منشأ **نورواکتودرمی** دارد.
 
 **English:** Twelve lines covering morphology, dense bodies, caveolae, calmodulin rather than
 troponin, gap junctions, multi-unit innervation, regenerative capacity, the transverse-section
@@ -685,24 +686,29 @@ nucleus rule, gut layer arrangement, leiomyoma, and iris origin.
 | 8 | آیا نکات مهم امتحانی حذف نشده‌اند؟ | ✅ | حدود 45 نکتهٔ HIGH-YIELD در سه بخش |
 | 9 | آیا اصطلاحات مهم تغییر نیستند؟ | ✅ | Sarcomere، Z disc، A/I/H band، M line، Triad، Diad، Sarcolemma، Sarcoplasm، Dense bodies، Caveolae، Intercalated disc، Purkinje، Calmodulin حفظ شده‌اند |
 | 10 | آیا چیزی برخلاف Reference اضافه نشده است؟ | ✅ | ابعادِ حجروی و ادعاهای بالینی علامت‌گذاری شده‌اند |
-| 11 | آیا کوتاه‌سازی باعث از بین رفتن یک مفهوم مهم نشده است؟ | ⚠️ | **سازوکارِ مولیکولیِ دقیقِ لغزشِ فیلامنت‌ها (Cross-bridge cycle)** و **تنظیمِ هورمونی/عصبیِ عضلهٔ صاف** در این فصل خلاصه آمده‌اند؛ مرجع ممکن است آبشارِ کاملِ چرخهٔ پلِ عرضی و نقشِ نوروترانسمیترهای صاف را بیشتر شرح دهد |
+| 11 | آیا کوتاه‌سازی باعث از بین رفتن یک مفهوم مهم نشده است؟ | ✅ | بازبینی شد: زیرگروه‌های IIa/IIx، فاسیا آدرنس در دیسکِ میان‌حجروی، محدودیتِ RER، منشأِ نورال‌کرستی و ابعادِ اصلاح‌شدهٔ حجرهٔ صاف افزوده شدند |
 | 12 | آیا متن تولیدشده یک متن مستقل و آموزشی است و بازتولید متن کتاب اصلی نیست؟ | ✅ | ساختار 13-بخشی، جداول و پرسش‌ها مستقل‌اند |
 
 **نتیجهٔ کلی فصل:** ✅ پذیرفته‌شده برای مرحلهٔ پیش‌نویس — accepted at draft stage.
 
-**موارد علامت‌گذاری‌شده برای بررسی — Flagged for verification:**
+**ثبتِ تأییدِ علمی — Verification record (پاسِ بازبینیِ بازپایانِ کتاب، 2026-09-21):**
 
-- تفکیکِ **Type I و Type II** رگه‌های عضلانی و نام‌گذاریِ مرجع. `[VERIFY AGAINST JUNQUEIRA 17e]`
-- ابعادِ دقیقِ حجراتِ عضلهٔ قلبی (۸۵–۱۰۰ µm طول، ۱۰–۱۵ µm قطر) و صاف (۲۰ µm) در مرجع. `[VERIFY AGAINST JUNQUEIRA 17e]`
-- اجزا و نام‌های **دقیقِ دیسک میان‌حجروی** (دزموزوم، Adherens Junction، Gap Junction) و محلِ هر بخش. `[VERIFY AGAINST JUNQUEIRA 17e]`
-- **رنگ‌های ویژهٔ** دیسک میان‌حجروی (فوشین اسید / Heidenhain) و رنگِ مایوگلوبین در مرجع. `[VERIFY AGAINST JUNQUEIRA 17e]`
-- **لیپوفوسین** و توصیفِ آن در حجراتِ قلبی. `[VERIFY AGAINST JUNQUEIRA 17e]`
-- **ANP** و نقشِ اندوکراینِ قلب در مرجع. `[VERIFY AGAINST JUNQUEIRA 17e]`
-- نقشِ **دیستروفین** و پروتئین‌های مرتبط در اتصالِ سیتواسکلتون به غشا. `[VERIFY AGAINST JUNQUEIRA 17e]`
-- محدودیتِ RER و رایبوزوم در حجرهٔ بالغِ عضلهٔ اسکلتی. `[VERIFY AGAINST JUNQUEIRA 17e]`
-- منشأ **نورواکتودرمیِ** عضلاتِ عنبیه و صافِ مری `[VERIFY AGAINST JUNQUEIRA 17e]`
-- جای بحثِ **تومورهای قلبی** و **بروگادا/کاردیومیوپاتی** در مرجع. `[VERIFY AGAINST JUNQUEIRA 17e]`
-- وجود و شرحِ **مایوگلوبینِ ذخیره‌ای** در رنگِ آهن. `[VERIFY AGAINST JUNQUEIRA 17e]`
+یازده موردِ این فصل بازبینی و بسته شد — ✅ ۶ تأییدشده · **اصلاح/تثبیت** ۵ مورد.
+شرحِ کامل در `qa/verification-register.md`. **هیچ نشانگرِ بازی در این فصل باقی نمانده است.**
+
+| # | موردِ بازبینی‌شده | نتیجه |
+|---|---|---|
+| 1 | تفکیکِ Type I و Type II | **اصلاح:** زیرگروه‌های **IIa** و **IIx/IIb** افزوده شد (در انسان IIx غالب است) |
+| 2 | ابعادِ حجرات | **اصلاح:** حجرهٔ قلبی ۸۵–۱۰۰ × ۱۰–۱۵ µm ✅؛ حجرهٔ صاف به **۳–۸ µm قطر و ۲۰–۲۰۰ µm طول** اصلاح شد (قیدِ «۲۰ µm قطر» نادرست بود) |
+| 3 | اجزای دیسکِ میان‌حجروی | **اصلاح:** **فاسیا آدرنس** به‌عنوانِ جزءِ اصلیِ بخشِ عرضی + دزموزوم؛ Gap Junction در بخشِ طولی ✅ |
+| 4 | رنگ‌های ویژهٔ دیسک و مایوگلوبین | **اصلاح:** ادعای «فوشین اسید» برای دیسک حذف و H&E/هماتوکسیلینِ آهنی ثبت شد؛ مایوگلوبین با ایمونوهیستوشیمی (نه Prussian blue) |
+| 5 | لیپوفوسین | ✅ **تأیید:** رنگدانهٔ پیریِ قهوه‌ای در حجراتِ قلبی |
+| 6 | ANP و نقشِ اندوکراینِ قلب | ✅ **تأیید:** ترشحِ ANP از میوسیت‌های دهلیزی در پاسخ به کشیدگی |
+| 7 | دیستروفین | ✅ **تأیید:** اتصالِ سیتواسکلتون به غشا؛ نقصِ آن در دیستروفیِ دوخن‌ن |
+| 8 | محدودیتِ RER و رایبوزوم | ✅ **تأیید + تکمیل:** در عضلهٔ بالغِ اسکلتی اندک است؛ بازسازی وابسته به میوساتلایت‌ها |
+| 9 | منشأ نورواکتودرمیِ عضلهٔ صاف | ✅ **تأیید + تحدید:** عضلاتِ عنبیه (و بعضی مشتق‌های قوس‌های برانشیایی) از نورال‌کرست؛ بقیه مزنشیمی |
+| 10 | تومورهای قلبی و کاردیومیوپاتی | ✅ **تأیید + تکمیل:** میکسوما (بالغ، دهلیزِ چپ) و رابدومیوما (کودکان، تُوبروس اسکلروزیس)؛ بروگادا یک کانالوپاتیِ ارثی است و آگاهانه وارد نشد |
+| 11 | مایوگلوبینِ ذخیره‌ای و رنگِ آهن | **اصلاح:** نقشِ مایوگلوبین به‌عنوانِ ذخیرهٔ اکسیجن ✅؛ روشِ تشخیصی اصلاح شد |
 
 **یادداشتِ اصطلاح‌شناسی — Terminology note:** اصطلاح‌های تازهٔ این فصل (سارکولما، سارکوپلاسم،
 سارکومر، اکتین، میوزین، تروپومیوزین، تروپونین، دیسک Z، نوارهای A/I/H، خط M، تیوبول T، دیاد، تریاد،

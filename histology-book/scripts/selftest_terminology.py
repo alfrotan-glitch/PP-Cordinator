@@ -93,9 +93,11 @@ def main():
     # The retained-English registry must carry the three junction terms.
     for t in ("Tight junction", "Adherens junction", "Gap junction"):
         check(t in retained, f"English-retained registry carries «{t}»")
-    # Only genuinely unresolved evidence may remain flagged.
-    check(unresolved == ["آنتی‌ژن"],
-          f"unresolved terminology is exactly [آنتی‌ژن] — got {unresolved}")
+    # After the final verification pass (2026-09-21) nothing is unresolved:
+    # آنتی‌ژن was settled as the established English-derived transliteration
+    # (AFGHAN STANDARD / MEDIUM) and every LOW-confidence row was resolved.
+    check(unresolved == [],
+          f"no terminology is unresolved after the verification pass — got {unresolved}")
 
     print()
     if FAILURES:

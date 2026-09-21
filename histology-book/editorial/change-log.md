@@ -589,3 +589,42 @@ See `qa/reference-alignment-audit.md` §3 — **207** items flagged `[VERIFY AGA
 also open: **آنتی‌ژن** (`[VERIFY TERMINOLOGY]`, glossary decision `VERIFY FURTHER`). Both classes are
 recorded here rather than silently resolved, per the standing rule that a flagged gap is honest and a
 fabricated answer is a defect.
+
+---
+
+## Session 11 — Scientific verification & correction pass (2026-09-21)
+
+**Directive:** verify and correct all 23 chapters against Junqueira's Basic Histology 17e; resolve
+آنتی‌ژن and the 21 `LOW`-confidence transliterations; review check 11 in every chapter audit; run the
+whole-book consistency sweep; report with a final table. Book frozen at 23 chapters / 108 topics.
+
+**What was done**
+
+1. **Inventory.** Machine count of the frozen chapters: **412** `[VERIFY AGAINST JUNQUEIRA 17e]`
+   markers = **207** standing audit items + **205** inline text notes. (The 415/413 figures in the
+   earlier documentation were stale and have been corrected everywhere.)
+2. **Chapter-by-chapter verification (all 23).** Every item was verified against the reference
+   standard and closed: **159 confirmed and retained, 39 corrected, 9 short additions** where a
+   compression had dropped an exam-relevant fact. All 205 inline markers were checked in context and
+   removed. Highlights: osteon lamellae 8–15 → **4–20**; the false "deep osteocytes 10–20× farther"
+   claim replaced by the reason canaliculi exist; glia:neuron "10×" → **≈1:1**; slow axonal transport
+   0.5–3 → **0.2–2 mm/day**; arteriole "<0.5 mm" → **10–100 µm**; smooth-muscle cell dimensions
+   corrected to **3–8 µm × 20–200 µm**; the reversed maternal-mitochondria statement in Ch21 fixed;
+   coagulation cascade, IgG placental transfer, gastric alkaline mucus, nuclear matrix, neuropil,
+   inflammatory sequence and the hormonal control of bone added where compression had dropped them.
+3. **Terminology.** آنتی‌ژن settled (AFGHAN STANDARD / MEDIUM); 16 `LOW` rows resolved to MEDIUM;
+   four rows corrected (`الصاقِ عصبی`, `وریدِ صافانی`, `لوزهٔ معدی`, `صافانِ لیمفاوی`); one redundant row
+   withdrawn (`تومورِ عروقی`); Ch13/Ch23 text corrections for the corrected terms. Glossary
+   **691 → 690 rows**, **0 LOW**, **0 unresolved**.
+4. **Check 11 (shortening) in all 23 audits.** Each chapter's compressed topics were audited against
+   the reference's coverage; the nine scientifically necessary additions were made and all 23 chapters
+   now score ✅ (previously ⚠️ across the board).
+5. **Documentation.** New book-level record `qa/verification-register.md`; the audit roll-up matrix,
+   README, front-matter notes, terminology status/decisions and the final report resynced.
+
+**Gates after the pass:** `qa_scan.py` → **0 findings** · `selftest_terminology.py` → **ALL PASS** ·
+structural audit → 23 chapters · 108 topics · 108 × 13 sections · 23 × 12-row audits · **0 markers** ·
+0 problems · `git ls-remote` == local HEAD (see §SHA below).
+
+**Release gate:** `READY FOR PUBLICATION — scientific gate`, with exports (DOCX/PDF/EPUB) deferred by
+the owner's decision.

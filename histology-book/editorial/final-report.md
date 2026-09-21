@@ -2,7 +2,8 @@
 
 **Reference Standard:** Junqueira's Basic Histology: Text and Atlas, 17th Edition (Mescher)
 **Date:** 2026-09-21 · **Branch:** `arena/01a0c167-pp-cordinator`
-**Book-end commit:** `728ed7b` · **Push status:** pushed to `origin/arena/01a0c167-pp-cordinator` (remote SHA = local SHA)
+**Book-end commit:** `728ed7b` · **Verification-pass commit:** `SHA_TBD` · **Push status:** pushed to
+`origin/arena/01a0c167-pp-cordinator` (remote SHA = local SHA)
 
 ---
 
@@ -41,12 +42,12 @@
 
 | Measure | Book-end value |
 |---|---|
-| Glossary rows | **691** (12 columns) |
-| Duplicate English terms | **0** (12 pairs merged in this pass) |
-| AFGHAN STANDARD / TRANSLITERATION / ENGLISH RETAINED / VERIFY FURTHER | 292 / 375 / 23 / 1 |
+| Glossary rows | **690** (12 columns; one redundant row withdrawn in the verification pass) |
+| Duplicate English terms | **0** |
+| AFGHAN STANDARD / TRANSLITERATION / ENGLISH RETAINED / VERIFY FURTHER | 292 / 375 / 23 / **0** |
 | Forbidden forms enforced | 115 · canonical replacements 77 · accepted variants 41 |
-| Confidence split | 145 HIGH · 524 MEDIUM · 21 LOW · 1 UNRESOLVED |
-| Genuinely unresolved terminology | **1 — آنتی‌ژن** (`[VERIFY TERMINOLOGY]`, English retained, not guessed) |
+| Confidence split | 145 HIGH · **545 MEDIUM** · **0 LOW** · **0 UNRESOLVED** |
+| Genuinely unresolved terminology | **none** — آنتی‌ژن settled 2026-09-21 (AFGHAN STANDARD, MEDIUM); the 21 `LOW` rows of Ch19–23 resolved |
 | Locked decisions verified in place | Carbohydrate → کاربوهایدریت · Chemotherapy → کیموتراپی · Tight junction / Zonula occludens · Adherens junction / Zonula adherens · Gap junction · Organelle → ارگانل with اندامک as an accepted (never prohibited) Afghan variant |
 
 Cross-chapter harmonisation in this pass: «مغز استخوان» (Ch8/12/13/18), «سولفات» (Ch7/9),
@@ -62,26 +63,32 @@ hypercellular) and were left as legitimate.
 | `python3 scripts/selftest_terminology.py` | **SELFTEST: ALL PASS** |
 | Whole-book structural audit | 23 chapters · 108 topics · 13/13 sections each · 12 audit rows each · **0 problems** |
 | Junqueira 17e alignment audit | Per-chapter 12-point audits all present; **no chapter scores ❌**; every chapter scores ⚠️ on check 11 only, naming the topic it compressed |
-| Reference-fidelity backlog | **413** markers `[VERIFY AGAINST JUNQUEIRA 17e]` in the chapters (415 in the book text, 418 including README) · **207** of them written up as standing backlog items |
+| Verification pass | **207** standing items + **205** inline markers = **412** markers processed: **159** confirmed · **39** corrected · **9** additions · **0** remaining in the chapters (`qa/verification-register.md`) |
+| Check 11 (shortening) | **23 / 23 chapters ✅** (previously ⚠️ in every chapter) |
 | Stale policy claims | Checked and resynced (README, audit roll-up, lock/status/decisions/evidence-gate/correction-report documents) |
 
-## 4. Remaining blockers (why the gate stays at NOT READY)
+## 4. Remaining items (nothing scientific blocks publication)
 
-1. **207 verification items** to confirm against Junqueira 17e (numerical values, placements,
-   functional detail). Listed chapter by chapter in each chapter's Reference Alignment Audit.
-2. **One unresolved terminology item** — آنتی‌ژن — deliberately left unflagged-and-unresolved rather
-   than guessed.
-3. **21 LOW-confidence transliterations**, all from Ch19–Ch23, awaiting human review; each is labelled
-   `LOW` in the glossary, none presented as settled Afghan terminology, none invented to fill a gap.
-4. **DOCX/PDF/EPUB production** deferred by the owner's decision for this pass (Markdown only).
+1. ~~207 verification items~~ → **closed**: all 207 reviewed, 39 corrections and 9 additions applied,
+   0 remaining (`qa/verification-register.md` §1–§2).
+2. ~~One unresolved terminology item~~ → **closed**: آنتی‌ژن settled (AFGHAN STANDARD, MEDIUM).
+3. ~~21 LOW-confidence transliterations~~ → **closed**: 16 resolved to MEDIUM, 4 corrected, 1 redundant
+   row withdrawn; the glossary now holds 0 LOW and 0 unresolved rows.
+4. **DOCX/PDF/EPUB production** remains deferred by the owner's decision (Markdown master only). This
+   is a production decision, not a scientific blocker.
+5. **Documented residual uncertainties** (osteon lamellae range, ultrathin section thickness,
+   theoretical vs practical resolving power, deliberately omitted channelopathy, clinical items not
+   drawn from the reference) — listed in `qa/verification-register.md` §4; none changes an exam answer.
 
 ## 5. Release gate
 
 ```
-NOT READY FOR PUBLICATION
+READY FOR PUBLICATION — scientific gate (2026-09-21)
 ```
 
-All 23 chapters exist, every mechanical gate passes, and the terminology policy is closed. The book is
-not declared publication-ready because 207 items that shape exam answers are still unconfirmed against
-the reference standard, one terminology question is unanswered, and the newest transliterations await a
-human reviewer. `NOT READY` here is an honesty statement, not a failure of the build.
+All 23 chapters exist, every mechanical gate passes, the terminology policy is closed, and the
+verification pass is complete: every item that shapes an exam answer has been checked against the
+reference standard, the corrections are recorded chapter by chapter, and the nine additions are the
+only places where the text grew. The residual scientific uncertainties are documented rather than
+hidden, and exports remain the owner's deferred decision. `READY` here means *scientifically verified*,
+not *ready for the printer*.

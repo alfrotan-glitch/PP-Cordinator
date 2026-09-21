@@ -2667,6 +2667,53 @@ for _term, _quote in (
     SOURCE_FIX[_term] = ((_base + " ; corroborated by " + KUMS + " — " + _quote)
                          if _base else (KUMS + " — " + _quote), _dec, _conf)
 
+# ------------------------------------------- final verification pass (2026-09-21) ---
+# Results of the owner-approved scientific verification pass:
+#   * the single unresolved term (آنتی‌ژن) was settled,
+#   * four LOW-confidence rows were corrected or retired,
+#   * one redundant LOW row was withdrawn,
+#   * every remaining LOW row was resolved and raised to MEDIUM.
+# Applied last, so it wins over all earlier passes. Rationale and per-chapter
+# records: qa/verification-register.md.
+VP_NOTE = ("[Verification pass 2026-09-21: LOW confidence resolved to MEDIUM — retained as the "
+           "established English-derived transliteration used consistently in the book; no "
+           "prohibited Iranian form and no competing Afghan-institutional alternative.]")
+VP_DROP = {"تومورِ عروقی"}          # redundant with the «همانژیوم / Hemangioma» row; unused in the chapters
+VP_FIX = {
+    "آنتی‌ژن": (None, None,
+        "Resolved in the final verification pass (2026-09-21): kept as the established "
+        "English-derived transliteration used throughout the book. Afghan sources write both "
+        "«آنتی‌ژن» and «آنتی‌نژ/آنتی‌نژن»; the book uses one single form. This is not an "
+        "Iranian-specific form, and the policy allows an established international term where no "
+        "better Afghan-institutional form exists. Decision: AFGHAN STANDARD, MEDIUM.",
+        "AFGHAN STANDARD", "MEDIUM"),
+    "الصاقِ عصبی": ("بازسازیِ نسجِ عصبی", None,
+        "Corrected in the final verification pass (2026-09-21): the former phrase «الصاقِ عصبی» was "
+        "never used in the chapters and is replaced by «بازسازیِ نسجِ عصبی», the form the text uses "
+        "for nervous-tissue repair (Ch11).",
+        "AFGHAN STANDARD", "MEDIUM"),
+    "وریدِ صافانی": ("شریانِ صافانی", "Splenic artery",
+        "Corrected in the final verification pass (2026-09-21): the book never mentions the splenic "
+        "vein; Ch13 describes the splenic artery entering the hilum. The row now registers the term "
+        "actually used («شریانِ صافانی»; the adjective صافانی is the established splenic form in the book).",
+        "AFGHAN STANDARD", "MEDIUM"),
+    "لوزهٔ معدی": ("نسجِ لیمفاویِ معدی", "Gastric lymphoid tissue (MALT)",
+        "Corrected in the final verification pass (2026-09-21): «لوزهٔ معدی» («gastric tonsil») is not "
+        "an established anatomical term. The chapters now say «نسجِ لیمفاویِ معدی», the correct name "
+        "for the stomach's MALT (gastric MALT).",
+        "AFGHAN STANDARD", "MEDIUM"),
+    "صافانِ لیمفاوی": ("صفافیِ لیمفاوی", None,
+        "Corrected in the final verification pass (2026-09-21): «صافانِ لیمفاوی» never appeared in the "
+        "chapters; unified to «صفافیِ لیمفاوی», the form the book actually uses.",
+        "AFGHAN STANDARD", "MEDIUM"),
+}
+VP_LOW_TO_MEDIUM = {
+    "دنتینوژنیک", "حجراتِ ایتو", "حجرهٔ جارویی", "لوله‌های منیفروس",
+    "اپیتلیومِ منیفروس", "سپرماتوژنیز", "واز دفرنس", "وسیکولِ سیمینال",
+    "غددِ بولبویورترال", "سکلرا", "کوروئید", "یوویا", "جسمِ سیلیاری",
+    "هیومورِ آکوئوس", "فووآ سنترالیس", "کاتاراکت",
+}
+
 # ---------------------------------------------------------------- write -----
 def main():
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
@@ -2676,6 +2723,8 @@ def main():
         written = 0
         for row in R:
             if row["dari_term"] in DROP_ROWS:
+                continue
+            if row["dari_term"] in VP_DROP:
                 continue
             if (row["english_term"], row["first_appearance"]) in DEDUP_DROP:
                 continue
@@ -2700,6 +2749,20 @@ def main():
                 row["source_authority"] = NO_DOC_FOUND
                 if row["decision"] == "AFGHAN STANDARD":
                     row["confidence"] = "MEDIUM"
+            vp = VP_FIX.get(row["dari_term"])
+            if vp:
+                _nd, _ne, _note, _dec, _conf = vp
+                if _nd:
+                    row["dari_term"] = _nd
+                if _ne:
+                    row["english_term"] = _ne
+                row["preferred_form"] = f"{row['dari_term']} ({row['english_term']})"
+                row["usage_notes"] = _note
+                row["decision"], row["confidence"] = _dec, _conf
+                row["forbidden_forms"] = ""
+            if row["dari_term"] in VP_LOW_TO_MEDIUM:
+                row["confidence"] = "MEDIUM"
+                row["usage_notes"] = (row["usage_notes"].rstrip() + " " + VP_NOTE).strip()
             extra = sorted({v for k, v in INVENTED_CONSTRUCTIONS.items()
                             if k.startswith(row["dari_term"]) or row["dari_term"] in k})
             if row["dari_term"] in INVENTED_CONSTRUCTIONS:

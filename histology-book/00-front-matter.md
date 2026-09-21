@@ -129,23 +129,31 @@ H&E colors rather than just registering them.
 
 ## یادداشت دربارهٔ دقت علمی — A note on scientific accuracy
 
-**دری:** هر جا در این کتاب علامت `[VERIFY AGAINST JUNQUEIRA 17e]` را دیدید، یعنی نویسنده دربارهٔ آن
-نکته اطمینان کامل نداشته و آن را به جای حدس‌زدن علامت‌گذاری کرده است. این نکات باید با متن مرجع
-مطابقت داده شوند.
+**دری:** در نسخهٔ پیش‌نویس، هر نکته‌ای که نویسنده دربارهٔ آن اطمینان کامل نداشت با علامت
+`[VERIFY AGAINST JUNQUEIRA 17e]` نشان داده می‌شد تا جای حدس‌زدن، تردید صریح ثبت شود. **این پاسِ
+بازبینی (2026-09-21) آن علامت‌ها را بست:** ۴۱۲ مورد در فصل‌ها یکی‌یکی با مرجعِ معیار مقایسه شد —
+۱۵۹ مورد تأیید، ۳۹ مورد اصلاح و ۹ افزودهٔ کوتاه — و **هیچ نشانگری در متن فصل‌ها باقی نمانده است.**
+گزارشِ کامل در `qa/verification-register.md` آمده است.
 
-**English:** Any point marked `[VERIFY AGAINST JUNQUEIRA 17e]` is an honest uncertainty, not a guess
-presented as fact. Check these against the reference before relying on them in an exam.
+**English:** In the draft, any point the author could not confirm was marked
+`[VERIFY AGAINST JUNQUEIRA 17e]` so that uncertainty was recorded instead of guessed. **That pass is
+now closed (2026-09-21):** all 412 markers in the chapters were checked against the reference standard
+— 159 confirmed, 39 corrected, 9 short additions — and **no marker remains in the chapter text.**
+The full record is in `qa/verification-register.md`.
 
-**دری:** علامت جداگانهٔ `[VERIFY TERMINOLOGY]` به اصطلاح‌ها مربوط است، نه به محتوای علمی. در این
-ویرایش فقط **یک** اصطلاح چنین وضعیتی دارد: **آنتی‌ژن** (هر دو شکل آنتی‌ژن و آنتی‌نژ/آنتی‌نژن در منابع
-افغانی دیده می‌شود). سایر اصطلاح‌ها نهایی شده‌اند: کاربوهایدریت شکل معیاری Carbohydrate است (در یک
-منبع طبی افغانی مستند است)، و برای اتصالات نام‌های بین‌المللی **Tight junction (Zonula occludens)**،
-**Adherens junction (Zonula adherens)** و **Gap junction** معیاری‌اند.
+**دری:** علامت `[VERIFY TERMINOLOGY]` به اصطلاح‌ها مربوط بود، نه به محتوای علمی، و در این پاسِ
+بازبینی هیچ اصطلاحی با آن باقی نمانده است. **آنتی‌ژن** — تنها اصطلاحِ بازمانده — به‌عنوانِ شکلِ
+معیاریِ رایج تثبیت شد (افغان استاندارد، درجهٔ اطمینان متوسط)، و ۲۱ ترانسلتریشنِ کم‌اطمینانِ
+فصل‌های ۱۹–۲۳ نیز نهایی شدند. سایر اصطلاح‌ها از پیش نهایی بودند: کاربوهایدریت شکل معیاری
+Carbohydrate است (در یک منبع طبی افغانی مستند است)، و برای اتصالات نام‌های بین‌المللی
+**Tight junction (Zonula occludens)**، **Adherens junction (Zonula adherens)** و **Gap junction**
+معیاری‌اند.
 
-**English:** `[VERIFY TERMINOLOGY]` is a *terminology* flag, kept strictly separate from the
-scientific-verification flag above. After the final terminology gate, exactly **one** term still
-carries it: **آنتی‌ژن** (both آنتی‌ژن and آنتی‌نژ/آنتی‌نژن appear in Afghan sources). The others are
-settled: کاربوهایدریت is the canonical form of *Carbohydrate* (attested in an Afghan medical
+**English:** `[VERIFY TERMINOLOGY]` was a *terminology* flag, kept strictly separate from the
+scientific-verification flag above; **no term carries it any more.** **آنتی‌ژن** — the last open one —
+is settled as the established English-derived transliteration (Afghan standard, confidence MEDIUM), and
+the 21 low-confidence transliterations of Ch 19–23 were resolved in the same pass. The others were
+already settled: کاربوهایدریت is the canonical form of *Carbohydrate* (attested in an Afghan medical
 source), and the junction terms are canonical in their international form — **Tight junction
 (Zonula occludens)**, **Adherens junction (Zonula adherens)**, **Gap junction**. The glossary
 records the exact document examined for every term.

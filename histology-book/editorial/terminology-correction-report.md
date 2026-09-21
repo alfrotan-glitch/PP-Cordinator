@@ -9,7 +9,7 @@
 **Trigger:** corrective directive — *"NEVER invent, construct, or literal-translate a medical/scientific
 term from English."*
 **Scope (as of that pass):** 207 glossary entries + the completed chapters + front matter + README.
-The glossary reached **228 entries** at that gate and **691 rows** by book end (23/23 chapters); these
+The glossary reached **228 entries** at that gate and **691 rows** by book end (23/23 chapters; **690** after the verification pass, which withdrew one redundant row); these
 counts are historical and are superseded by `editorial/final-terminology-status.md` §1 and §6.
 **Verdict:** the directive identified a real methodology error. **4 term families were wrong; 77 in-text
 corrections made; 1 invented compound withdrawn entirely.** No new Dari term was introduced to replace

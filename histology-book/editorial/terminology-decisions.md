@@ -287,7 +287,7 @@ variants in normal use: `سل` (prefix of both حجره and سلول), `میکر
 
 | Term | Status | Detail |
 |---|---|---|
-| **آنتیژن** (Antigen) | **UNRESOLVED — `[VERIFY TERMINOLOGY]`** | Afghan sources show آنتیژن, آنتی نژ and آنتیژن side by side (S5 uses «آنتی نژ»). It is **not** an Iranian-Persian form, so it is not prohibited, but no Afghan institutional source settles the spelling. Per the gate: *do not guess* → the book keeps **آنتیژن**, the term is flagged, and it is carried in the glossary with `decision = VERIFY FURTHER`, `confidence = UNRESOLVED`. Flagged in `00-front-matter.md` §"A note on scientific accuracy". **This is the only unresolved terminology item in the book.** |
+| **آنتیژن** (Antigen) | **RESOLVED 2026-09-21 → AFGHAN STANDARD, MEDIUM** (was UNRESOLVED — `[VERIFY TERMINOLOGY]`; see §15) | Afghan sources show آنتیژن, آنتی نژ and آنتیژن side by side (S5 uses «آنتی نژ»). It is **not** an Iranian-Persian form, so it is not prohibited, but no Afghan institutional source settles the spelling. Per the gate: *do not guess* → the book keeps **آنتیژن**, the term is flagged, and it is carried in the glossary with `decision = VERIFY FURTHER`, `confidence = UNRESOLVED`. Flagged in `00-front-matter.md` §"A note on scientific accuracy". **This was the only unresolved terminology item in the book; it was settled in the verification pass (see §15).** |
 
 **Separation of concerns (mandated):** `[VERIFY TERMINOLOGY]` concerns *wording*;
 `[VERIFY AGAINST JUNQUEIRA 17e]` concerns *scientific facts*. They are never merged.
@@ -426,3 +426,19 @@ the book and is deliberately **not** flagged — `بافته`, `هیستونی`,
    adipose → **نسج شحمی / ادیپوسیت**; cartilage → کندروسیت / لاکونا (verify); bone →
    استئوکلاست/استئوبلاست; blood → **کرویات** series **رقیقهٔ سفید**? (verify); muscle →
    مخطط / ملس; nervous → **نیورون** / گلیا. Each must go through this gate before use.
+
+---
+
+## 15. آنتی‌ژن — resolved in the verification pass (2026-09-21)
+
+The one term this report left open (§14) is now closed. **آنتی‌ژن** is registered as
+**AFGHAN STANDARD, confidence MEDIUM**:
+
+* it is the established English-derived transliteration and the only spelling used anywhere in the
+  book (the variants آنتی‌نژ / آنتی‌نژن appear in no chapter);
+* it is **not** one of the Iranian-specific forms this project prohibits;
+* under the locked policy — *"established international term where appropriate"* — retaining it is the
+  documented decision, not a guess, and no Dari term was invented to replace it.
+
+The `[VERIFY TERMINOLOGY]` flag is retired; the glossary decision column no longer contains a
+`VERIFY FURTHER` row, and the self-test now asserts zero unresolved terms.

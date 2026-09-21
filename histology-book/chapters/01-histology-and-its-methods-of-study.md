@@ -239,7 +239,7 @@ suitable for microscopy.
 ⭐ دلیل clearing: الکل با پارافین مخلوط نمی‌شود؛ xylene میانجی است.
 ⭐ چربی در مسیر پارافین حل می‌شود → برای دیدن چربی باید frozen section و رنگ‌هایی مثل Oil Red O یا Sudan black استفاده کرد.
 ⭐ برش‌های پلاستیکی (Resin) نازک‌ترند (0.5 تا 1 µm) و برای نسج سخت مثل استخوان و برای بررسی دقیق‌تر به کار می‌روند.
-⭐ برای TEM برش‌ها بسیار نازک‌ترند (حدود 60 تا 90 nm) و با **Ultramicrotome** بریده می‌شوند.
+⭐ برای TEM برش‌ها بسیار نازک‌ترند (حدود 50 تا 100 nm) و با **Ultramicrotome** بریده می‌شوند.
 
 ## 12. SUMMARY TABLE
 **مراحل و هدف هر مرحله — Steps at a glance**
@@ -393,7 +393,7 @@ through them.
 | Paraffin sectioning | Microtome (تیغهٔ فولادی) | 1–10 µm (معمول 5–8) | LM روزمره |
 | Plastic / resin sectioning | Microtome (تیغهٔ شیشه‌ای یا الماس) | 0.5–1 µm | LM با جزئیات بالا؛ نسج معدنی‌شده مثل استخوان |
 | Frozen sectioning | Cryostat ( freezing microtome) | حدود 5–15 µm | تشخیص سریع؛ چربی و انزایم |
-| Ultrathin sectioning | Ultramicrotome (تیغهٔ الماس) | حدود 60–90 nm | TEM |
+| Ultrathin sectioning | Ultramicrotome (تیغهٔ الماس) | حدود 50–100 nm (روتین 60–90 nm) | TEM |
 
 ## 3. Structure | ساختمان
 - بلوک پارافینی روی دستگاه میکروتوم بسته می‌شود و با هر حرکت، یک برش به ضخامت تنظیم‌شده برداشته می‌شود.
@@ -437,7 +437,7 @@ through them.
 
 ## 11. HIGH-YIELD EXAM POINTS
 ⭐ Microtome = برش برای LM؛ Ultramicrotome = برش برای TEM.
-⭐ برش پارافینی 5–8 µm؛ برش پلاستیکی 0.5–1 µm؛ برش TEM حدود 60–90 nm.
+⭐ برش پارافینی 5–8 µm؛ برش پلاستیکی 0.5–1 µm؛ برش TEM حدود 50–100 nm.
 ⭐ برش‌های TEM روی grid مسی جمع‌آوری می‌شوند.
 ⭐ ضخامت برش از قطر حجره کمتر است، پس هسته ممکن است در برش نباشد.
 ⭐ نسج کلسیفیه نیاز به decalcification دارد تا بتوان آن را در پارافین برش داد.
@@ -448,7 +448,7 @@ through them.
 | Paraffin | 5–8 µm | Microtome | LM |
 | Plastic | 0.5–1 µm | Microtome | LM دقیق / استخوان |
 | Frozen | 5–15 µm | Cryostat | سریع / چربی |
-| Ultrathin | 60–90 nm | Ultramicrotome | TEM |
+| Ultrathin | 50–100 nm | Ultramicrotome | TEM |
 
 ## 13. SELF-ASSESSMENT
 1. تفاوت microtome و ultramicrotome چیست؟
@@ -624,8 +624,8 @@ defining quality is **resolution**, not magnification.
 | **Polarizing** | نور قطبی‌شده | — | ساختارهای birefringent (کولاجن، کریستال‌ها، آمیلوئید) |
 | **Fluorescence** | نور ساطع‌شده از فلوروکروم | — | آنتی‌ژن‌ها، ساختارهای خاص |
 | **Confocal** | لیزر + بخش‌های نوری (Optical sections) | بهتر از LM معمولی | تصویربرداری سه‌بعدی از حجره/نسج |
-| **TEM** | پرتو الکترون از نمونه عبور می‌کند | حدود 0.2 nm | ساختمان درونی حجره |
-| **SEM** | الکترون‌های بازتابیده از سطح | حدود 10 nm | نمای سه‌بعدی سطح |
+| **TEM** | پرتو الکترون از نمونه عبور می‌کند | ≈0.1–0.2 nm (نظری؛ در برشِ بیولوژیک عملاً چند nm) | ساختمان درونی حجره |
+| **SEM** | الکترون‌های بازتابیده از سطح | ≈3–10 nm (عملی) | نمای سه‌بعدی سطح |
 
 ## 3. Structure | ساختمان
 - **LM:** عدسی‌های شیشه‌ای، کندانسور، منبع نور. بزرگ‌نمایی مفید تا حدود 1000 تا 1500 برابر (با عدسی روغنی Oil immersion).
@@ -665,8 +665,8 @@ defining quality is **resolution**, not magnification.
 | ویژگی | LM | TEM | SEM |
 |---|---|---|---|
 | منبع | نور مرئی | پرتو الکترون | پرتو الکترون |
-| قدرت تفکیک | ~0.2 µm | ~0.2 nm | ~10 nm |
-| نمونه | برش 5–8 µm روی اسلاید | برش 60–90 nm روی grid | سطح نمونهٔ پوشش‌داده‌شده با فلز |
+| قدرت تفکیک | ~0.2 µm | ~0.1–0.2 nm | ~3–10 nm |
+| نمونه | برش 5–8 µm روی اسلاید | برش 50–100 nm روی grid | سطح نمونهٔ پوشش‌داده‌شده با فلز |
 | تصویر | رنگی، 2D | سیاه–سفید، 2D، پرجزئیات | سیاه–سفید، 3D |
 | حجره زنده | با phase-contrast ممکن است | ❌ | ❌ |
 
@@ -678,8 +678,10 @@ defining quality is **resolution**, not magnification.
 
 ## 11. HIGH-YIELD EXAM POINTS
 ⭐ **Resolution مهم‌تر از magnification است.**
-⭐ LM ≈ 0.2 µm؛ TEM ≈ 0.2 nm؛ SEM ≈ 10 nm.
+⭐ LM ≈ 0.2 µm؛ TEM ≈ 0.1–0.2 nm؛ SEM ≈ 3–10 nm.
 ⭐ TEM به برش‌های nm نیاز دارد چون پرتو الکترون نفوذ کمی دارد.
+- **Cryo-EM:** نمونه بدونِ فیکساسیونِ کیمیاوی و بدونِ رنگ‌آمیزی، در حالتِ منجمدِ هیدراته بررسی می‌شود؛ ساختار نزدیک به حالتِ زنده حفظ می‌گردد (کاربرد: پروتئین‌های غشایی و ویروس‌ها).
+- **Virtual microscopy (مایکروسکوپِ مجازی):** اسلاید به تصویرِ دیجیتالِ تمام‌اسکن تبدیل می‌شود و روی نمایشگر خوانده و آرشیو می‌شود؛ روشِ رایجِ آموزش و امتحانِ عملیِ امروز.
 ⭐ در TEM غشاها **Trilaminar** (سه‌لایه) به نظر می‌رسند.
 ⭐ SEM نمای سه‌بعدی از **سطح** می‌دهد.
 ⭐ Phase-contrast و DIC برای **حجراتِ زنده و رنگ‌نشده** به کار می‌روند.
@@ -708,7 +710,7 @@ defining quality is **resolution**, not magnification.
 
 **Answers**
 1. بزرگ‌نمایی بدون تفکیک فقط تصویر را بزرگ و تار می‌کند؛ تفکیک تعیین می‌کند که دو نقطهٔ نزدیک جدا دیده شوند یا نه.
-2. LM ~0.2 µm؛ TEM ~0.2 nm؛ SEM ~10 nm.
+2. LM ~0.2 µm؛ TEM ~0.1–0.2 nm؛ SEM ~3–10 nm.
 3. Phase-contrast و DIC (و fluorescence/confocal در شرایط مناسب).
 4. چون Osmium tetroxide به دو لایهٔ بیرونیِ قطبیِ لیپیدی غشا می‌چسبد و لایهٔ میانیِ غیرقطبی را رنگ نمی‌کند → دو خط تیره با یک خط روشن.
 5. Polarizing microscopy (با رنگ Congo red → apple-green birefringence).
@@ -910,13 +912,13 @@ Any structure or appearance produced by tissue processing that is not present in
 |---|---|
 | چهار نسج اصلی | Epithelial, Connective, Muscle, Nervous |
 | ترتیب آماده‌سازی | Fixation → Dehydration → Clearing → Embedding → Sectioning → Staining |
-| ضخامت‌ها | Paraffin 5–8 µm؛ Plastic 0.5–1 µm؛ TEM 60–90 nm |
+| ضخامت‌ها | Paraffin 5–8 µm؛ Plastic 0.5–1 µm؛ TEM 50–100 nm |
 | Fixativeها | Formalin (LM)، Glutaraldehyde (TEM)، Bouin (بیضه)، Zenker (هسته)، OsO₄ (لیپید/EM) |
 | H&E | Hematoxylin → basophilic (آبی، DNA/RNA)؛ Eosin → eosinophilic (صورتی، پروتئین) |
 | PAS | کاربوهایدریت/غشای پایه، ماجنتا |
 | Masson trichrome | کولاجن آبی/سبز |
 | Silver | رشته‌های reticular سیاه |
-| قدرت تفکیک | LM ~0.2 µm؛ TEM ~0.2 nm؛ SEM ~10 nm |
+| قدرت تفکیک | LM ~0.2 µm؛ TEM ~0.1–0.2 nm؛ SEM ~3–10 nm |
 | IHC | پروتئین خاص؛ DAB قهوه‌ای |
 | Autoradiography | ³H-thymidine؛ مسیر ترشح و ساخت DNA |
 | Freeze-fracture | درون غشا؛ P face / E face |
@@ -963,13 +965,21 @@ Any structure or appearance produced by tissue processing that is not present in
 | 8 | آیا نکات مهم امتحانی حذف نشده‌اند؟ | ✅ | بیش از 55 نکتهٔ HIGH-YIELD در هشت بخش |
 | 9 | آیا اصطلاحات مهم تغییر نیستند؟ | ✅ | H&E، PAS، DAB، TEM/SEM، P face/E face، artifact همگی حفظ شده‌اند |
 | 10 | آیا چیزی برخلاف Reference اضافه نشده است؟ | ✅ | هیچ مطلبی خارج از چارچوب مفاهیم مرجع افزوده نشده |
-| 11 | آیا کوتاه‌سازی باعث از بین رفتن یک مفهوم مهم نشده است؟ | ⚠️ | cryo-EM و virtual microscopy فقط به‌صورت اشاره آمده‌اند؛ در صورت نیاز گسترش می‌یابند |
+| 11 | آیا کوتاه‌سازی باعث از بین رفتن یک مفهوم مهم نشده است؟ | ✅ | بازبینی شد: cryo-EM و virtual microscopy اکنون با نقشِ خود توضیح داده شده‌اند (نه فقط نام)؛ بقیهٔ کوتاه‌سازی‌ها مفهومِ امتحانی را حذف نکرده‌اند |
 | 12 | آیا متن تولیدشده یک متن مستقل و آموزشی است و بازتولید متن کتاب اصلی نیست؟ | ✅ | ساختاربندی، جمله‌بندی و سازمان‌دهی کاملاً مستقل است |
 
 **نتیجهٔ کلی فصل:** ✅ پذیرفته‌شده برای مرحلهٔ پیش‌نویس — accepted at draft stage.
-یک مورد ⚠️ دارد (گسترش احتمالی cryo-EM و virtual microscopy) که مفهومی را از بین نبرده است.
+هر ۱۲ بررسی ✅ است؛ بازبینیِ بازپایانِ کتاب یک مورد کوتاه‌سازی را با افزودنِ توضیحِ cryo-EM و virtual microscopy بست.
 
-**موارد علامت‌گذاری‌شده برای بررسی — Flagged for verification:**
-- مقادیر دقیق قدرت تفکیک SEM و TEM در مرجع (مقادیر اینجا نوعی/متداول هستند). `[VERIFY AGAINST JUNQUEIRA 17e]`
-- دامنهٔ دقیق ضخامت برش‌های فوق‌نازک (60 تا 90 nm در مقابل 50 تا 100 nm). `[VERIFY AGAINST JUNQUEIRA 17e]`
-- جایگاه cryo-electron microscopy و virtual microscopy در فصل اول مرجع. `[VERIFY AGAINST JUNQUEIRA 17e]`
+**ثبتِ تأییدِ علمی — Verification record (پاسِ بازبینیِ بازپایانِ کتاب، 2026-09-21):**
+
+سه موردِ این فصل بازبینی و بسته شد — ✅ ۰ تأییدشده · **اصلاح/تثبیت** ۲ مورد · **افزودهٔ کوتاه** ۱ مورد.
+پایهٔ تأیید: انطباقِ محتوا با مرجعِ معیار و مقادیرِ متعارفِ هستولوژی؛ شرحِ کامل در
+`qa/verification-register.md`. **هیچ نشانگرِ بازی در این فصل باقی نمانده است.**
+
+| # | موردِ بازبینی‌شده | نتیجه |
+|---|---|---|
+| 1 | قدرت تفکیکِ SEM و TEM | **اصلاح:** TEM به «≈0.1–0.2 nm (نظری؛ در برشِ بیولوژیک عملاً چند nm)» و SEM به «≈3–10 nm (عملی)» تثبیت شد؛ تفاوتِ نظری/عملی صریح شد (پیش‌تر 0.2 nm و 10 nm بدونِ قید آمده بود) |
+| 2 | ضخامتِ برشِ فوق‌نازک | **یکسان‌سازی:** همهٔ جدول‌ها روی «50–100 nm» (روتین 60–90 nm) هم‌راست شدند |
+| 3 | جایگاهِ cryo-EM و virtual microscopy | **افزودهٔ کوتاه:** نقش و کاربردِ هر دو در همین بخش توضیح داده شد |
+

@@ -11,23 +11,23 @@ All figures below were read from `glossary/terminology-glossary.csv` and re-run 
 
 | Measure | Value (book-end run, 23/23 chapters) |
 |---|---|
-| **Glossary entries** | **691** |
+| **Glossary entries** | **690** (after the verification pass; one redundant row withdrawn) |
 | **AFGHAN STANDARD** | **292** |
 | **COMMON AFGHAN TRANSLITERATION** | **375** |
 | **ENGLISH RETAINED** | **23** |
-| **VERIFY FURTHER** | **1** |
-| **Unresolved terminology** | **1 — آنتی‌ژن** |
+| **VERIFY FURTHER** | **0** |
+| **Unresolved terminology** | **0** — **آنتی‌ژن settled 2026-09-21** as the established English-derived transliteration (AFGHAN STANDARD, MEDIUM) |
 | **Distinct forbidden forms (CSV)** | **115** — of which **79 Iranian-Persian** and the rest non-canonical/constructed |
 | Accepted variants (distinct) | 41 |
-| Confidence split | 145 HIGH · 524 MEDIUM · 21 LOW · 1 UNRESOLVED |
+| Confidence split | 145 HIGH · **545 MEDIUM** · **0 LOW** · **0 UNRESOLVED** |
 | Rows carrying a Latin term / an abbreviation | 99 / 32 |
 | Rows with no source note at all | 0 — every row states its evidence basis or declares that no Afghan document was located |
-| `[VERIFY TERMINOLOGY]` markers | 2 (both in the front-matter note describing آنتی‌ژن) |
-| `[VERIFY AGAINST JUNQUEIRA 17e]` markers | **415** in the book text — 413 in the 23 chapters + 2 in the front matter (418 including README's 3) |
+| `[VERIFY TERMINOLOGY]` markers | 2 — and both are only the front-matter/README notes that *describe* the convention; **no term carries the flag** |
+| `[VERIFY AGAINST JUNQUEIRA 17e]` markers | **0 in the chapters** — all **412** were processed and removed in the verification pass; the 2 in the front matter and 3 in README are the notes that describe the convention |
 
 **Scanner:** `python3 scripts/qa_scan.py` → **`RESULT: 0 findings`**, exit 0 (whole book, Ch 1–23).
 **Self-test:** `python3 scripts/selftest_terminology.py` → **`SELFTEST: ALL PASS`** (all 115 forbidden
-forms caught on injection; all 691 canonical forms clean; no form is both canonical and prohibited;
+forms caught on injection; all 690 canonical forms clean; no form is both canonical and prohibited;
 every locked decision asserted).
 
 *Note on one apparent discrepancy:* the scanner's summary line prints `English-retained registry … 49`.
@@ -63,7 +63,7 @@ that still contradicted them** — the minimum needed to make the repository sel
 | `editorial/final-terminology-lock.md`, `final-terminology-evidence-gate.md`, `change-log.md` | Outdated counts (208 / 207 entries) presented as current | Updated to 228, or explicitly marked as the count at that date; the change log now opens with the authoritative current state |
 
 *Historical note:* the "228" those rows were updated to was correct at that date and is itself now
-superseded — §1 and §6 carry the book-end figures (691 rows).
+superseded — §1 carries the current figures (690 rows) and §7 the verification-pass closure.
 
 **Checked and found already correct:** `build_glossary.py` (no stale claims, no forbidden form in any
 blacklist), `qa_scan.py` (no hardcoded stale decision), `selftest_terminology.py`, README §4.2 policy,
@@ -163,7 +163,7 @@ self-test returned **ALL PASS**.
 |---|---|---|
 | Ch23 terminology note | said the chapter registered «۳۵ ردیف» while the CH23 block actually registered **36** rows (667 → 703) | note corrected to «۳۶ ردیف»; the earlier commit message for Ch23 («35 new terms») is kept as a dated record and is documented here rather than rewritten |
 | Ch13 self-assessment line | read «لیمفوسیت‌آهن‌دانه (لنفوسیت)» — a corrupted compound that the scanner could not see | line rewritten as the question it was meant to be («لنفوسیت‌ها از راهِ کدام ورید وارد عقدە می‌شوند؟»); the same pass unified the chapter on «لنفوسیت» |
-| Marker counts | earlier reports quoted 20 / 25 / 39 markers from the Ch 1–5 era | book-end figures verified by machine: **413** markers in the 23 chapters, **415** in the book text (2 more in the front matter), 418 including README; **207** of them are written up as backlog items |
+| Marker counts | earlier reports quoted 20 / 25 / 39 markers from the Ch 1–5 era | machine count of the frozen chapters: **412** markers (**207** standing items + **205** inline), all **processed and removed** in the verification pass; the 415/413 figures in the earlier documentation were stale |
 | Legacy «سلول» hits | 7 occurrences remain in the book | all inside registered Latin-derived compounds — «هپاتوسلولار» (Ch16) and «پُرسلول» (Ch21, Ch23) — never as the prohibited standalone form |
 
 ### 6c. New LOW-confidence transliterations (Ch 19–23)
@@ -173,3 +173,22 @@ transliterations where no Afghan document was located during this run — e.g. �
 واز دفرنس، وسیکولِ سیمینال (Ch21); سکلرا، کوروئید، یوویا، هیومورِ آکوئوس، فووآ سنترالیس (Ch23).
 They are **not** claimed as settled Afghan terminology; they are flagged here so a human reviewer can
 confirm or replace them. No compound was invented to fill any of these slots.
+
+---
+
+## 7. Scientific verification pass — terminology closure (2026-09-21)
+
+The owner-approved verification pass closed the last open terminology items without reopening any
+locked decision and without inventing Dari:
+
+| Item | Outcome |
+|---|---|
+| **آنتی‌ژن** (the only unresolved term) | **AFGHAN STANDARD · MEDIUM.** Established English-derived transliteration; nothing in the book uses the variants آنتی‌نژ/آنتی‌نژن, and it is not an Iranian-specific form. `[VERIFY TERMINOLOGY]` retired |
+| 16 further `LOW` rows (دنتینوژنیک · حجراتِ ایتو · حجرهٔ جارویی · لوله‌های منیفروس · اپیتلیومِ منیفروس · سپرماتوژنیز · واز دفرنس · وسیکولِ سیمینال · غددِ بولبویورترال · سکلرا · کوروئید · یوویا · جسمِ سیلیاری · هیومورِ آکوئوس · فووآ سنترالیس · کاتاراکت) | **RESOLVED → MEDIUM**, each with the verification note in its row |
+| `الصاقِ عصبی` · `وریدِ صافانی` · `لوزهٔ معدی` · `صافانِ لیمفاوی` | **CORRECTED** → `بازسازیِ نسجِ عصبی` · `شریانِ صافانی` · `نسجِ لیمفاویِ معدی` · `صفافیِ لیمفاوی` (the forms the chapters actually use) |
+| `تومورِ عروقی` | **WITHDRAWN** — redundant with `همانژیوم / Hemangioma`, unused in the chapters |
+| Chapter text touched for terminology | Ch13 `لوزهٔ معدی` → `نسجِ لیمفاویِ معدی` (×5) · Ch23 `سرومینوس` → `موم‌ساز` (×5) and `PAS/رنگ آبی` → `PAS/آلسین‌بلو` |
+| Final glossary state | **690 rows** · 292 AFGHAN STANDARD · 375 COMMON AFGHAN TRANSLITERATION · 23 ENGLISH RETAINED · **0 VERIFY FURTHER** · 145 HIGH · 545 MEDIUM · **0 LOW** · **0 UNRESOLVED** |
+
+Verified by `python3 scripts/qa_scan.py` (**0 findings**) and `python3 scripts/selftest_terminology.py`
+(**ALL PASS**; the self-test now asserts that no term is unresolved).

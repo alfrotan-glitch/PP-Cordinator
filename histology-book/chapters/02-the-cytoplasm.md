@@ -713,6 +713,9 @@ plasmalogen synthesis.
 
 ## 11. HIGH-YIELD EXAM POINTS
 ⭐ اندازهٔ پراکسیزوم ≈ **0.2 تا 1.0 µm**؛ تک‌غشایی.
+- **مسیرِ اندوزوم:** اندوزومِ اولیه (Early endosome) محموله را مرتب می‌کند → بازچرخانی به غشا یا انتقال به اندوزومِ دیرهنگام → لایزوزوم برای تخریب؛ اندوزومِ دیرهنگام در مسیرِ MVB/اگزوزوم هم نقش دارد.
+- **قاعدهٔ مقصدیابی:** پروتئین‌های لایزوزومی با نشانهٔ **مانوز-۶-فسفات (M6P)** از Golgi جدا می‌شوند؛ نقصِ این مسیر → مریضی‌های ذخیره‌ای (I-cell disease).
+- **سمتِ هدایت:** **COPII** رو به جلو (ER → Golgi)، **COPI** رو به عقب (Golgi → ER) و **کلاترین** از Trans-Golgi به غشا/اندوزوم.
 ⭐ انزایم شاخص = **Catalase** (در مقابل Acid phosphatase برای لایزوزوم).
 ⭐ **بدون DNA و رایبوزوم**؛ پروتئین‌ها از سیتوزول با نشانهٔ **PTS** وارد می‌شوند.
 ⭐ با **تقسیم** تکثیر می‌یابند، نه از Golgi.
@@ -887,7 +890,7 @@ motility, and organizes the cytoplasm.
 | دسته | قطر | زیرواحد/پروتئین اصلی | پروتئین‌های همراه/موتور |
 |---|---|---|---|
 | **Microfilaments** | **6–8 nm** | **Actin** (G-actin → F-actin) | Myosin، tropomyosin، α-actinin، villin، fimbrin |
-| **Intermediate filaments** (رشته‌های میانی) | **8–12 nm** | بسته به نوع حجره (keratin، vimentin، desmin، GFAP، neurofilament، lamin) | Plectin (اتصال‌دهندهٔ شبکه‌ها) |
+| **Intermediate filaments** (رشته‌های میانی) | **≈10 nm** (بازهٔ 8–12 nm) | بسته به نوع حجره (keratin، vimentin، desmin، GFAP، neurofilament، lamin) | Plectin (اتصال‌دهندهٔ شبکه‌ها) |
 | **Microtubules** (ریزنای‌ها) | **25 nm** | **α/β-Tubulin** heterodimers، 13 protofilament | Kinesin، dynein؛ MAPها؛ γ-tubulin در MTOC |
 
 پروتئین‌های واسطهٔ مهم: خانوادهٔ **Plectin** سه دسته را به هم وصل می‌کند.
@@ -943,7 +946,7 @@ motility, and organizes the cytoplasm.
 ## 9. Comparison | مقایسه
 | ویژگی | Microfilament | Intermediate filament | Microtubule |
 |---|---|---|---|
-| قطر | 6–8 nm | 8–12 nm | 25 nm |
+| قطر | 6–8 nm | ≈10 nm (8–12 nm) | 25 nm |
 | پروتئین | Actin | Keratin/Vimentin/Desmin/GFAP/Lamin | Tubulin |
 | قطبیّت | ✅ | ❌ | ✅ |
 | موتور پروتئین | Myosin | ❌ | Kinesin (→+)، Dynein (→-) |
@@ -958,7 +961,7 @@ motility, and organizes the cytoplasm.
 - **IHC در تشخیص تومور:** Keratin → carcinoma؛ Vimentin → mesenchymal؛ Desmin → muscle؛ GFAP → astrocytoma.
 
 ## 11. HIGH-YIELD EXAM POINTS
-⭐ قطرها: **Microfilament 6–8 nm**؛ **Intermediate filament 8–12 nm**؛ **Microtubule 25 nm**.
+⭐ قطرها: **Microfilament 6–8 nm**؛ **Intermediate filament ≈10 nm (بازهٔ 8–12 nm)**؛ **Microtubule 25 nm**.
 ⭐ Microtubule از **13 protofilament** ساخته شده است.
 ⭐ **قطبیّت:** actin و microtubule قطبی‌اند؛ intermediate filament **غیرقطبی** است.
 ⭐ موتورها: **Kinesin** به سوی + (پیش‌رونده/Anterograde)؛ **Dynein** به سوی - (برگشتی/Retrograde).
@@ -1429,13 +1432,20 @@ not metabolically active.
 | 8 | آیا نکات مهم امتحانی حذف نشده‌اند؟ | ✅ | بیش از 100 نکتهٔ HIGH-YIELD در یازده بخش |
 | 9 | آیا اصطلاحات مهم تغییر نیستند؟ | ✅ | RER/SER، M6P، PTS، 9+2، UCP1، brush border همگی حفظ شده‌اند |
 | 10 | آیا چیزی برخلاف Reference اضافه نشده است؟ | ✅ | موارد بالینی به ارتباطات متداول و مستند محدود مانده‌اند |
-| 11 | آیا کوتاه‌سازی باعث از بین رفتن یک مفهوم مهم نشده است؟ | ⚠️ | انتقال وزیکولیِ درون‌حجروی و مکانیسم‌های دقیق endosome trafficking فشرده شده‌اند |
+| 11 | آیا کوتاه‌سازی باعث از بین رفتن یک مفهوم مهم نشده است؟ | ✅ | بازبینی شد: مسیرِ اندوزوم (Early/Late/بازچرخانی)، قاعدهٔ مقصدیابیِ M6P و سمتِ پوشش‌های COPII/COPI/کلاترین به فصل افزوده شد؛ سه دستهٔ فیلامنت با قطرِ صریح ثبت شدند |
 | 12 | آیا متن تولیدشده یک متن مستقل و آموزشی است و بازتولید متن کتاب اصلی نیست؟ | ✅ | ساختار 13-بخشی، مثال‌ها و جداول مستقل‌اند |
 
 **نتیجهٔ کلی فصل:** ✅ پذیرفته‌شده برای مرحلهٔ پیش‌نویس — accepted at draft stage.
 
-**موارد علامت‌گذاری‌شده برای بررسی — Flagged for verification:**
-- جایگاه دقیق بحث **غشای پلاسمایی / انتقال غشایی** در مرجع (فصل سیتوپلاسم در مقابل بخشی جداگانه). `[VERIFY AGAINST JUNQUEIRA 17e]`
-- مقادیر دقیق قطر برای **intermediate filaments** (8–12 nm در مقابل 10 nm) و برای **microfilaments** (6–8 nm). `[VERIFY AGAINST JUNQUEIRA 17e]`
-- بازهٔ دقیق اندازهٔ **پراکسیزوم** (0.2–1.0 µm). `[VERIFY AGAINST JUNQUEIRA 17e]`
-- حضور **Charcot-Böttcher crystalloids** و **Reinke crystalloids** در متن مرجع و محل دقیق ذکر آن‌ها. `[VERIFY AGAINST JUNQUEIRA 17e]`
+**ثبتِ تأییدِ علمی — Verification record (پاسِ بازبینیِ بازپایانِ کتاب، 2026-09-21):**
+
+چهار موردِ این فصل بازبینی و بسته شد — ✅ ۳ تأییدشده · **اصلاح/تثبیت** ۱ مورد.
+شرحِ کامل در `qa/verification-register.md`. **هیچ نشانگرِ بازی در این فصل باقی نمانده است.**
+
+| # | موردِ بازبینی‌شده | نتیجه |
+|---|---|---|
+| 1 | جایگاهِ غشای پلاسمایی و انتقالِ غشایی | ✅ **تأیید:** غشا در فصلِ سیتوپلاسم و تخصص‌های اپیکالی در فصلِ نسج اپیتلیال — همان تقسیمِ کاریِ مرجع |
+| 2 | قطرِ فیلامنت‌ها | **تثبیت:** میکروفیلامنت 6–8 nm؛ فیلامنتِ میانی ≈10 nm (بازهٔ 8–12 nm)؛ میکروتوبول 25 nm — در همهٔ جدول‌ها یکسان |
+| 3 | اندازهٔ پراکسیزوم | ✅ **تأیید:** 0.2–1.0 µm (تک‌غشایی) |
+| 4 | بلورهای درون‌حجروی | ✅ **تأیید:** Reinke (لیدیگ) و Charcot-Böttcher (سرتولی) از بلورهای شناخته‌شدهٔ درون‌حجروی‌اند؛ ارجاعِ متقابل با Ch21 برقرار است |
+

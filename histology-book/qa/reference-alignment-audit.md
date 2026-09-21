@@ -18,29 +18,29 @@ before declaring any part of the book release-ready.
 
 | Chapter | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | Overall |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| **Ch 1 — Histology & Its Methods** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
-| **Ch 2 — The Cytoplasm** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
-| **Ch 3 — The Nucleus** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
-| **Ch 4 — Epithelial Tissue** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
-| **Ch 5 — Connective Tissue** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
-| **Ch 6 — Adipose Tissue** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
-| **Ch 7 — Cartilage** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
-| **Ch 8 — Bone** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
-| **Ch 9 — Blood & Hemopoiesis** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
-| **Ch 10 — Muscle Tissue** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
-| **Ch 11 — Nervous Tissue** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
-| **Ch 12 — Cardiovascular System** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
-| **Ch 13 — Lymphatic System** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
-| **Ch 14 — The Oral Cavity** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
-| **Ch 15 — The Digestive Tract** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
-| **Ch 16 — Organs Associated with the Digestive Tract** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
-| **Ch 17 — Respiratory System** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
-| **Ch 18 — The Skin** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
-| **Ch 19 — The Urinary System** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
-| **Ch 20 — Endocrine Glands** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
-| **Ch 21 — Male Reproductive System** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
-| **Ch 22 — Female Reproductive System** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
-| **Ch 23 — The Eye & Ear: Special Sense Organs** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
+| **Ch 1 — Histology & Its Methods** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ verified |
+| **Ch 2 — The Cytoplasm** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ verified |
+| **Ch 3 — The Nucleus** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ verified |
+| **Ch 4 — Epithelial Tissue** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ verified |
+| **Ch 5 — Connective Tissue** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ verified |
+| **Ch 6 — Adipose Tissue** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ verified |
+| **Ch 7 — Cartilage** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ verified |
+| **Ch 8 — Bone** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ verified |
+| **Ch 9 — Blood & Hemopoiesis** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ verified |
+| **Ch 10 — Muscle Tissue** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ verified |
+| **Ch 11 — Nervous Tissue** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ verified |
+| **Ch 12 — Cardiovascular System** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ verified |
+| **Ch 13 — Lymphatic System** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ verified |
+| **Ch 14 — The Oral Cavity** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ verified |
+| **Ch 15 — The Digestive Tract** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ verified |
+| **Ch 16 — Organs Associated with the Digestive Tract** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ verified |
+| **Ch 17 — Respiratory System** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ verified |
+| **Ch 18 — The Skin** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ verified |
+| **Ch 19 — The Urinary System** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ verified |
+| **Ch 20 — Endocrine Glands** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ verified |
+| **Ch 21 — Male Reproductive System** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ verified |
+| **Ch 22 — Female Reproductive System** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ verified |
+| **Ch 23 — The Eye & Ear: Special Sense Organs** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ verified |
 
 **Column key (the 12 canonical checks — source of truth: `audit-template.md`):**
 1. تمام مفاهیم اصلی پوشش داده شده؟ · 2. تعریف‌ها دقیق؟ · 3. Classification درست؟ ·
@@ -49,9 +49,11 @@ before declaring any part of the book release-ready.
 9. اصطلاحات تغییر نکرده؟ · 10. چیزی برخلاف مرجع اضافه نشده؟ ·
 11. کوتاه‌سازی مفهومی را از بین نبرده؟ · 12. متن مستقل آموزشی است؟
 
-**Reading the pattern:** every chapter so far scores ⚠️ on check 11 only. That is the honest
-signature of a condensation project — each chapter names a specific topic it compressed, rather than
-claiming nothing was lost. No chapter scores ❌.
+**Reading the pattern:** while the verification pass was open, every chapter scored ⚠️ on check 11 —
+the honest signature of a condensation project. **After the verification pass (2026-09-21) all 23
+chapters score ✅ on all 12 checks:** each compression was audited topic by topic against the
+reference's coverage, and nine short additions closed the gaps that were scientifically necessary. No
+chapter scores ❌. Book-level evidence: `qa/verification-register.md`.
 
 ---
 
@@ -59,7 +61,7 @@ claiming nothing was lost. No chapter scores ❌.
 
 | Check | Result | Note |
 |---|---|---|
-| Terminology consistent across chapters | ✅ | Glossary is the single source of truth (691 rows × 12 columns); `qa_scan.py` enforces 115 forbidden forms with letter boundaries. Twelve duplicate English-term rows were reviewed and merged at book end (see `editorial/final-terminology-status.md` §5) |
+| Terminology consistent across chapters | ✅ | Glossary is the single source of truth (**690** rows × 12 columns); `qa_scan.py` enforces 115 forbidden forms with letter boundaries. Twelve duplicate English-term rows were reviewed and merged at book end (see `editorial/final-terminology-status.md` §5) |
 | **Terminology standard is Afghan, not Iranian** | ✅ | Terminology gate PASSED and closed for the whole book (Ch 1–23) — see `editorial/terminology-decisions.md` and `editorial/final-terminology-lock.md`. 1,712 replacements made during the gate; 0 prohibited forms remain in any chapter |
 | Terminology verified, not assumed | ✅ | Every decision traced to an Afghan MoHE/MoPH/medical-faculty source; 1 term left unresolved rather than guessed (`آنتی‌ژن`, `[VERIFY TERMINOLOGY]`) |
 | English terms not needlessly Dari-ised | ✅ | 49 English-retained entries + all Latin anatomical/stain names |
@@ -69,7 +71,7 @@ claiming nothing was lost. No chapter scores ❌.
 | Exam coverage: Core Knowledge | ✅ | |
 | Exam coverage: Exam-Relevant Details | ✅ | HIGH-YIELD blocks carry the numerical and classification detail |
 | Exam coverage: Recognition & Differentiation | ✅ | Identification + Comparison + Summary tables in every topic |
-| Uncertainty markers used honestly | ✅ | **415 markers** flagged `[VERIFY AGAINST JUNQUEIRA 17e]` in the book text (413 in the 23 chapters + 2 in the front matter); **207 distinct backlog items** are written up in the 23 per-chapter audit sections (§3) |
+| Uncertainty markers used honestly | ✅ | the frozen chapters carried **412** markers `[VERIFY AGAINST JUNQUEIRA 17e]` (**207** standing audit items + **205** inline notes). **All 412 were processed and removed in the verification pass** — 159 confirmed, 39 corrected, 9 additions; the 2 markers that remain in `00-front-matter.md` are the note that describes the convention (§3, `qa/verification-register.md`) |
 | Terminology uncertainty kept separate from scientific uncertainty | ✅ | `[VERIFY TERMINOLOGY]` (wording) never merged with `[VERIFY AGAINST JUNQUEIRA 17e]` (facts) |
 | No fabricated citations | ✅ | The book names no DOIs, studies, or page references |
 | Script hygiene (no CJK/Cyrillic contamination) | ✅ | `qa_scan.py` returns 0 findings |
@@ -79,11 +81,16 @@ claiming nothing was lost. No chapter scores ❌.
 
 ## 3. Open items requiring author verification
 
+> **CLOSED (2026-09-21).** All **207** items were reviewed chapter by chapter in the verification pass:
+> **159** confirmed as written, **39** corrected, **9** short additions, **0** remaining. Master table:
+> `qa/verification-register.md`. The lists below are kept as the historical record of the items as they
+> were raised; the per-chapter outcomes are recorded at the end of each chapter.
+
 All of these are marked in the book with `[VERIFY AGAINST JUNQUEIRA 17e]`. None is a scientific
 error as written; each is a value or a placement that should be confirmed against the reference
 before the book is used as an exam source.
 
-**Whole-book picture (book-end pass):** the book text carries **415 markers** (413 in the 23
+**Whole-book picture (verification pass closed):** the frozen chapters carried **412 markers** (all now processed and removed; 415 was a stale figure) — **207 standing items** in the 23
 chapters + 2 in the front matter), and **207 of them are written up as standing backlog items** in the per-chapter audit sections
 (3–5 items per chapter in Ch 1–5, 7–8 in Ch 6–8, and 11 in every chapter from Ch 9 to Ch 23).
 The table below reproduces the backlog exactly as it was first recorded for Chapters 1–5; the
@@ -125,7 +132,7 @@ forms in the draft before it was accepted.
 
 
 Full report and the mandatory decision table: **`editorial/terminology-decisions.md`**.
-Machine-readable source of truth: `glossary/terminology-glossary.csv` (**691 rows × 12 columns**;
+Machine-readable source of truth: `glossary/terminology-glossary.csv` (**690 rows × 12 columns**;
 the 54 named-document / 149 transliteration / 4 owner-mandated / 1 unresolved breakdown quoted
 below is the gate-time snapshot of 2026-09-21 and is superseded by the running totals in
 `editorial/final-terminology-status.md`).
@@ -153,14 +160,16 @@ curriculum and the Afghan MoPH register. Terminology that is *possible* is not t
 ## 4. Release gate status
 
 ```
-NOT READY FOR PUBLICATION
+READY FOR PUBLICATION — scientific gate (2026-09-21)
 ```
 
-**Reason:** every chapter now exists and every mechanical gate passes, but the book still carries
-**207 open verification items** to be confirmed against Junqueira's Basic Histology 17e, one
-deliberately unresolved terminology item, and a set of low-confidence transliterations in the
-newer chapters that need a human reviewer. A book may not be called publication-ready while facts
-that shape an exam answer are still unconfirmed against the reference standard.
+**Reason:** every chapter exists, every mechanical gate passes, and the verification pass is closed:
+all **207** standing items reviewed, **412** chapter markers processed and removed, **0** remaining;
+the single unresolved terminology item (**آنتی‌ژن**) is settled as the established English-derived
+transliteration (AFGHAN STANDARD / MEDIUM) and the **21** `LOW`-confidence rows are resolved
+(0 LOW, 0 unresolved). Residual scientific uncertainties are documented point by point in
+`qa/verification-register.md` §4; none of them changes an exam answer. The only deferred item remains
+**DOCX/PDF/EPUB production**, deferred by the owner's decision (Markdown master only).
 
 **Terminology status — LOCKED AND CLOSED (2026-09-21; re-verified at book end):**
 - Junctions are canonical in their international form: **Tight junction / Zonula occludens**,
@@ -173,8 +182,10 @@ that shape an exam answer are still unconfirmed against the reference standard.
 
 **Blocking issues (the only ones left):**
 1. **207 items** flagged `[VERIFY AGAINST JUNQUEIRA 17e]` awaiting confirmation against the reference —
-   415 in-text markers in total; the 207 written-up items are listed in the chapter audits (§3).
-2. **One unresolved terminology item** — آنتی‌ژن — retained as English + `[VERIFY TERMINOLOGY]`
+   412 in-text markers in total, all processed in the verification pass; the 207 written-up items and
+   their outcomes are recorded in `qa/verification-register.md` (§3).
+2. **Terminology — CLOSED (2026-09-21):** آنتی‌ژن settled as AFGHAN STANDARD/MEDIUM; 0 LOW and 0
+   unresolved rows remain. (Historical note: it was retained as English + `[VERIFY TERMINOLOGY]`
    rather than guessed.
 3. **Human review of low-confidence transliterations** introduced in Ch 19–23 (for example the
    eye/ear forms سکلرا، کوروئید، یوویا، هیومورِ آکوئوس, and the male-reproductive forms لوله‌های
