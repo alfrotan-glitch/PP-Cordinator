@@ -307,14 +307,49 @@ T("دسموزوم", "Desmosome", "پل حجروی", AFG, "", "Ch04",
   dec="COMMON AFGHAN TRANSLITERATION")
 T("همی‌دسموزوم", "Hemidesmosome", "", AFG, "", "Ch04",
   dec="COMMON AFGHAN TRANSLITERATION")
-T("اتصال مضبوط", "Tight junction", "zonula occludens", AFG,
-  "Afghan teaching writes مضبوط اتصال / tight junction. The Latin zonula occludens is given in "
-  "parentheses for exam recognition.", "Ch04", dec="COMMON AFGHAN TRANSLITERATION")
-T("اتصال چسبنده", "Adherens junction", "zonula adherens", AFG, "", "Ch04",
-  dec="COMMON AFGHAN TRANSLITERATION")
-T("اتصال شکافی", "Gap junction", "connexon", AFG,
-  "Afghan teaching uses Gap junction; اتصال شکافی/ارتباطی is the Dari gloss.", "Ch04",
-  dec="COMMON AFGHAN TRANSLITERATION", conf="MEDIUM")
+# ---- targeted junction evidence check (final gate, 2026-09-21) -----------
+# EVIDENCE PASSES. The book's Dari form is attested in an Afghan medical-faculty
+# source, and it is NOT the Iranian form (Iranian writes اتصالات محکم / اتصال تنگ
+# / پیوند سخت for this junction).
+T("اتصال مضبوط", "Tight junction", "zonula occludens",
+  "wasiweb.com, «حجروي اتصال، د اتصال ډولونه» — byline «قاسم خان همت کندهار طب "
+  "پوهنځۍ محصل» (a Kandahar Faculty of Medicine student): «①مضبوط اتصال【Tight "
+  "junction】»، «د مضبوط اتصال وظایف»، «د مضبوط اتصال ناروغۍ». The same page places it "
+  "«په(Epithelial) انساجو په سطحي برخه کښې».",
+  "Evidence passes. Afghan medical-faculty material writes مضبوط اتصال / اتصال مضبوط and "
+  "pairs it directly with 【Tight junction】. Distinct from the Iranian forms (اتصالات محکم، "
+  "اتصال تنگ، پیوند سخت). Single-source basis, so confidence is MEDIUM not HIGH. The Latin "
+  "zonula occludens is kept alongside for exam recognition.",
+  "Ch04", dec="AFGHAN STANDARD", conf="MEDIUM")
+
+# EVIDENCE INSUFFICIENT. No Afghan Dari form for this junction could be located.
+# Afghan sources use the international/Latin name, and the book's Dari form
+# coincides with Iranian usage. Per policy: retain and flag, do not invent.
+T("اتصال چسبنده", "Adherens junction", "zonula adherens",
+  "No Afghan Dari form located. Afghan sources use the international name: TolAfghan "
+  "(tolafghan.com), «هستولوژي Histology — دوهمه برخه»: «b- Zonula Adherence = Intermediate "
+  "Juntion»; wasiweb.com «حجروي اړیکې او ډولونه یې»: «adherence junction».",
+  "EVIDENCE INSUFFICIENT — RETAINED AND FLAGGED, not changed. Two findings: (1) no Afghan "
+  "source using a Dari term for this junction was located — Afghan sources write Zonula "
+  "adherens / Intermediate junction / adherence junction; (2) the retained Dari form "
+  "corresponds to the Iranian wording اتصالات چسبنده. Under the policy the term is kept "
+  "and marked [VERIFY TERMINOLOGY] instead of being replaced by an invented form or "
+  "silently inverted. The book's chapter text already uses Zonula adherens / Adherens "
+  "junction, so no text change is required. Decision owed by the author.",
+  "Ch04", dec="VERIFY FURTHER", conf="UNRESOLVED")
+
+T("اتصال شکافی", "Gap junction", "connexon",
+  "No Afghan Dari form located. Afghan sources use the transliteration or a Pashto "
+  "descriptor: wasiweb.com «حجروي اتصال، د اتصال ډولونه»: «③ګپ جنکشن Gap Junction»; "
+  "wasiweb.com «حجروي اړیکې او ډولونه یې»: «درز junction یا gap junction»; ps.wikipedia "
+  "«بشروي نسجونه»: «٤-Gapjunction».",
+  "EVIDENCE INSUFFICIENT — RETAINED AND FLAGGED, not changed. Afghan sources use the "
+  "transliteration gap junction / ګپ جنکشن or the Pashto descriptor درز junction; no "
+  "Afghan source using اتصال شکافی was located, and the nearest Persian form (اتصال "
+  "شکافدار) is Iranian. Per policy the term is kept and marked [VERIFY TERMINOLOGY] rather "
+  "than inverted. The book's chapter text already uses Gap junction / Nexus, so no text "
+  "change is required. Decision owed by the author.",
+  "Ch04", dec="VERIFY FURTHER", conf="UNRESOLVED")
 T("کادهرین", "Cadherin", "", AFG, "", "Ch04", dec="ENGLISH RETAINED")
 T("اینتگرین", "Integrin", "", AFG, "", "Ch04", dec="ENGLISH RETAINED")
 T("کلودین", "Claudin", "", AFG, "", "Ch04", dec="ENGLISH RETAINED")

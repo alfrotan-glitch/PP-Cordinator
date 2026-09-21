@@ -125,6 +125,12 @@ NOT READY FOR PUBLICATION
 five existing chapters, so they are sound as far as they go — but a partial book cannot be declared
 publication-ready.
 
+**Terminology status (post junction check):**
+- 1 of 3 junction terms passes the evidence gate — tight junction (`اتصال مضبوط`, attested in Afghan
+  medical-faculty material).
+- 2 are flagged `[VERIFY TERMINOLOGY]` and need an author decision — adherens junction and gap junction.
+- Full record: `editorial/junction-terminology-check.md`.
+
 **Blocking issues:**
 1. 18 chapters not yet written (Ch 6–23).
 

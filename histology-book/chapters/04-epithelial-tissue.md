@@ -302,6 +302,19 @@ collagen, laminin, perlecan, and nidogen.
 Specialized membrane structures that adhere epithelial cells to one another, seal the intercellular
 space, and provide direct communication between cytoplasms.
 
+> **یادداشت اصطلاح‌شناسی — Terminology note.** در این بخش نام‌های بین‌المللی اتصالات
+> (Tight junction، Zonula adherens، Gap junction) به کار می‌رود، چون همین نام‌ها در منابع
+> طبی افغانی نیز به کار می‌روند. برای tight junction شکل دری **اتصال مضبوط** در منابع
+> افغانی مستند است. برای adherens junction و gap junction هیچ شکل دریِ مستندِ افغانی
+> یافت نشد؛ بنابراین این دو با `[VERIFY TERMINOLOGY]` علامت‌گذاری شده‌اند و کتاب نام
+> بین‌المللی را نگه می‌دارد — ترجمهٔ ساختگی اضافه نمی‌شود.
+>
+> **English:** The international names are used here because Afghan medical sources use them.
+> The Dari form **اتصال مضبوط** for tight junction is attested in Afghan medical-faculty
+> material. For adherens junction and gap junction no attested Afghan Dari form was found, so
+> those two carry `[VERIFY TERMINOLOGY]` and the book keeps the international name rather than
+> inventing a Dari equivalent.
+
 ## 2. Classification | طبقه‌بندی
 
 | دسته | نوع | English | اتصال به اسکلت حجروی |

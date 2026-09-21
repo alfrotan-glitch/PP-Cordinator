@@ -144,6 +144,6 @@ presented as fact. Check these against the reference before relying on them in a
 scientific-verification flag above. It marks a term whose Afghan form could not be established with
 confidence; the English form is retained in the text instead of inventing a Dari equivalent. Two
 terms currently carry this flag: **آنتی‌ژن** (both آنتی‌ژن and آنتی‌نژ/آنتی‌نژن appear in Afghan
-sources) and **Carbohydrate**, which is kept in English because no Afghan medical source using a
-Dari form could be identified. Per the book's terminology policy, the English term is retained
-rather than a translation being supplied.
+sources), **Carbohydrate**, and the Dari equivalents of **adherens junction** and **gap junction**.
+In each case the book keeps the established English/international form rather than supplying a
+translation. The glossary records the exact source examined for every term.

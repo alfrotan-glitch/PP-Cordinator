@@ -371,6 +371,54 @@ clinical claim was altered. Line counts are unchanged (146 / 975 / 1441 / 1086 /
 
 None. Line counts unchanged (146 / 975 / 1441 / 1086 / 1079 / 1152).
 
+---
+
+## Session 5 — Targeted junction terminology evidence check
+
+**Scope:** three terms only. No other terminology changed. Report:
+`editorial/junction-terminology-check.md`.
+
+| Term | Evidence found | Outcome |
+|---|---|---|
+| Tight junction / Zonula occludens | **`اتصال مضبوط`** — wasiweb.com «حجروي اتصال، د اتصال ډولونه», byline «قاسم خان همت **کندهار طب پوهنځۍ** محصل» (Kandahar Faculty of Medicine student): «①مضبوط اتصال【Tight junction】»، «د مضبوط اتصال وظایف» | **PASS** — glossary decision upgraded to AFGHAN STANDARD (MEDIUM). Not the Iranian form (Iranian = اتصالات محکم / اتصال تنگ) |
+| Adherens junction / Zonula adherens | No Afghan Dari form located. TolAfghan «هستولوژي Histology — دوهمه برخه»: «**Zonula Adherence = Intermediate Juntion**»; wasiweb: «**adherence junction**». The retained Dari form matches the **Iranian** «اتصالات چسبنده» | **FLAGGED** `[VERIFY TERMINOLOGY]` — retained, decision owed |
+| Gap junction | No Afghan Dari form located. Afghan usage is the transliteration: «**ګپ جنکشن** Gap Junction» (wasiweb), «**درز junction** یا gap junction» (wasiweb), «٤-**Gapjunction**» (ps.wikipedia). Nearest Persian form اتصال شکاف‌دار is Iranian | **FLAGGED** `[VERIFY TERMINOLOGY]` — retained, decision owed |
+
+### Terminological
+
+| Location | Change |
+|---|---|
+| Glossary — `اتصال مضبوط` | decision `COMMON AFGHAN TRANSLITERATION` → **AFGHAN STANDARD**; source_authority replaced with the named document + verbatim quotations |
+| Glossary — `اتصال چسبنده`, `اتصال شکافی` | decision → **VERIFY FURTHER**, confidence UNRESOLVED; source_authority records every Afghan document examined |
+| Ch 4 §4.3 | one bilingual terminology note: international names are used because Afghan sources use them; `اتصال مضبوط` is attested for tight junction; adherens and gap junction carry `[VERIFY TERMINOLOGY]` |
+| `00-front-matter.md` | `[VERIFY TERMINOLOGY]` list updated to include the two junction equivalents |
+
+Not done, deliberately: no inversion, no new term, no new forbidden form, no other terminology change.
+
+### Correction to my own earlier reports
+
+Reading the sources directly for this check exposed two overstatements in
+`editorial/terminology-correction-report.md` and `final-terminology-evidence-gate.md`. Both corrected in
+the report; neither term changed, per instruction.
+
+| Earlier claim | Correction |
+|---|---|
+| «کاربوهایدریت appears in NO Afghan source» | **Wrong.** TolAfghan «فزیولوژی حجره» (tolafghan.com/posts/30498) writes «سایر لیپیدها ۴ فیصد و **کاربوهایدریت‌ها** ۳ فیصد». The Afghan-pattern transliteration does occur in an Afghan source. `Carbohydrate` stays English-retained because no Afghan source uses `کربوهیدرات`, but the basis is weaker than reported |
+| «اندامک was the Iranian form» | **Half right.** The same TolAfghan page writes «به اجزای درون حجره **اندامک** گفته می‌شود», so an Afghan author uses it. `ارگانل` still stands on **institutional precedence** (the official MoE Grade-7 curriculum writes «ارگانل (Organelle)»), not on `اندامک` being un-Afghan |
+
+Process note recorded: TolAfghan is an Afghan source with a **mixed register** (the same page contains
+حجره and سلول, انزایم and انزیم, مایتوکاندریا and مایتوکندریا). It is good evidence of what an Afghan
+author uses and weaker evidence of institutional standardisation; the institutional tier must keep
+outranking it.
+
+### Verification
+
+`python3 scripts/qa_scan.py` → **RESULT: 0 findings**, exit 0.
+`[VERIFY TERMINOLOGY]` 4 · unresolved: اتصال چسبنده, اتصال شکافی, آنتی‌ژن, Carbohydrate.
+Scientific content unchanged.
+
+**Chapter 6 remains blocked** — 2 of 3 terms flagged, decisions owed.
+
 ## Open issues (not yet resolved)
 
 See `qa/reference-alignment-audit.md` §3 — 20 items flagged `[VERIFY AGAINST JUNQUEIRA 17e]`
