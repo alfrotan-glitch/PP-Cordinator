@@ -10,7 +10,8 @@
 **Gate:** the mandatory check before Chapter 6.
 **Policy locked:** `README.md` §4.2 (canonical rule, source hierarchy, no-construction rule, no-overclaim rule).
 **Result: PASS — scanner 0 findings, exit 0.**
-**Glossary: 208 entries.**
+**Glossary: 208 entries at the time of this gate** (228 today, after Chapter 6's 20 new terms —
+see `editorial/final-terminology-lock.md` for current numbers).
 
 ---
 
@@ -203,7 +204,7 @@ TERMINOLOGY GATE SUMMARY
 
 | | |
 |---|---|
-| **Final glossary count** | **208 entries** (12 columns) |
+| **Final glossary count** | **208 entries** at this gate (12 columns); **228 today** |
 | Decisions | 94 AFGHAN STANDARD · 97 COMMON AFGHAN TRANSLITERATION · 16 ENGLISH RETAINED · 1 VERIFY FURTHER |
 | Confidence | 143 HIGH · 63 MEDIUM · 2 UNRESOLVED |
 | Forbidden forms enforced | 106 |

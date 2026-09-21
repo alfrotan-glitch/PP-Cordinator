@@ -1,4 +1,10 @@
 # Editorial Change Log
+
+> **Current state (authoritative):** 228 glossary entries — 97 AFGHAN STANDARD · 110 COMMON
+> AFGHAN TRANSLITERATION · 20 ENGLISH RETAINED · 1 VERIFY FURTHER; 102 forbidden forms; 1 unresolved
+> (آنتی‌ژن). `qa_scan.py` → 0 findings; `selftest_terminology.py` → ALL PASS.
+> Entries below are a dated record and show the counts that were true when each session ran.
+> The locked decisions are in `editorial/final-terminology-lock.md`.
 # لاگ تغییرات ادیتوریال
 
 Classification scheme (one label per substantive change):
@@ -522,6 +528,34 @@ glossary 228 entries · per-chapter matrix in `qa/reference-alignment-audit.md` 
 (✅ draft, ⚠️ on check 11 only, like every other chapter).
 
 **Next chapter: Chapter 7 — Cartilage.**
+
+---
+
+## Session 8 — Repository reconciliation against the locked decisions
+
+**Report:** `editorial/final-terminology-status.md`. Reconciliation only — no new terminology, no
+research redone, no unrelated change.
+
+The six locked decisions were already in place. Four artifacts still contradicted them and were fixed:
+
+| Artifact | Contradiction | Fix |
+|---|---|---|
+| `scripts/apply_terminology_correction.py` | `WORD_RULES` still mapped **کاربوهایدریت → کربوهیدرات** — re-running it would have reintroduced a forbidden form and broken the gate | 5 rules removed; header note records the inversion |
+| same file | Docstring called اندامک "the Iranian form" and the Carbohydrate form "INVENTED … no Afghan source uses it" | Both corrected, each with the actual Afghan source quoted |
+| `editorial/terminology-correction-report.md` | Rows still asserted "Iranian form corrected" for اندامک and "invented compound withdrawn" for کاربوهایدریت; scope said 207 entries | Explicit CORRECTED CLAIM / REVERSED notes; counts marked historical |
+| `final-terminology-lock.md`, `final-terminology-evidence-gate.md`, `change-log.md` | 208/207 entries presented as current | Updated to 228 or marked as the count at that date |
+
+Mechanical check added: **no rule in any apply-script maps to a forbidden form** ✅.
+Verified unchanged and correct: `build_glossary.py`, `qa_scan.py`, the self-test, README §4.2,
+front matter, all six chapters.
+
+Current authoritative numbers: **228 entries** — 97 AFGHAN STANDARD · 110 COMMON AFGHAN
+TRANSLITERATION · 20 ENGLISH RETAINED · 1 VERIFY FURTHER · 1 unresolved (آنتی‌ژن) · 102 forbidden
+(79 Iranian-Persian + 23 non-canonical) · 39 accepted variants.
+`qa_scan.py` → 0 findings · self-test → ALL PASS.
+
+**Gate: FINAL / CLOSED.** Chapter 6 was already written under these decisions; no disputed new term
+arose, so the gate is not reopened. **Next: Chapter 7 — Cartilage.**
 
 ## Open issues (not yet resolved)
 

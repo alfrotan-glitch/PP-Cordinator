@@ -8,7 +8,9 @@
 
 **Trigger:** corrective directive — *"NEVER invent, construct, or literal-translate a medical/scientific
 term from English."*
-**Scope:** all 207 glossary entries + all five completed chapters + front matter + README.
+**Scope (as of that pass):** 207 glossary entries + the completed chapters + front matter + README.
+The glossary is now **228 entries**; these counts are historical and are superseded by
+`editorial/final-terminology-lock.md`.
 **Verdict:** the directive identified a real methodology error. **4 term families were wrong; 77 in-text
 corrections made; 1 invented compound withdrawn entirely.** No new Dari term was introduced to replace
 any of them — every correction moves *toward* established Afghan usage, not away from it.
@@ -44,9 +46,9 @@ pipeline's first step, not its last.
 
 | Correction | n | Type |
 |---|---:|---|
-| اندامک → **ارگانل** | 36 | Iranian form corrected |
+| اندامک → **ارگانل** | 36 | **CORRECTED CLAIM:** not an Iranian-only form. ارگانل became canonical because the official Afghan MoE Grade-7 textbook uses it; اندامک is an ACCEPTED AFGHAN VARIANT (TolAfghan, «فزیولوژی حجره») and is not prohibited |
 | نورون → **نیورون** | 21 | Iranian form corrected |
-| کاربوهایدریت → **کربوهیدرات** | 11 | invented compound withdrawn |
+| کاربوهایدریت → **کربوهیدرات** | 11 | **REVERSED — DO NOT REUSE.** This correction was wrong. کاربوهایدریت is attested in an Afghan source (TolAfghan, «فزیولوژی حجره») and is now the CANONICAL term; کربوهیدرات is a FORBIDDEN form. The book has been changed back |
 | میتوکندریایی → **مایتوکندریایی** | 8 | third spelling unified |
 | کیمیا تداوی → **کیموتراپی** | 1 | constructed compound removed (pass 2) |
 
@@ -213,7 +215,7 @@ TERMINOLOGY GATE SUMMARY
 ========================================================================
 ```
 
-Exit code **0**. 207 glossary entries written. Zero occurrences of اندامک، نورون، کاربوهایدریت،
+Exit code **0**. 207 glossary entries written at that time (228 today). Zero occurrences of اندامک، نورون،
 کیمیا تداوی، میتوکندریایی or any constructed compound anywhere in the book.
 
 ---

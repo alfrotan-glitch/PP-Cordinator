@@ -10,18 +10,33 @@ been *observed*, and invalid for terms derived by translating English morphemes.
 That produced four defects, all found by auditing against official Afghan
 documents rather than by linguistic reasoning:
 
-  1. اندامک   (36x) — the Iranian form. The Afghan MoE Grade-7 Biology textbook
-                     (moe.gov.af, Kabul 1398) defines the concept as
-                     «اعضاچه یا ارگانل (Organelle)» — and ارگانل is the form an
-                     Afghan student meets.
+  1. اندامک   (36x) — the form used by the first draft. The Afghan MoE Grade-7
+                     Biology textbook (moe.gov.af, Kabul 1398) defines the concept
+                     as «اعضاچه یا ارگانل (Organelle)», so ارگانل is the form an
+                     Afghan student meets and is the book's canonical term.
+                     NOTE (final lock): اندامک is NOT an Iranian-only form and is
+                     NOT prohibited — it is an ACCEPTED AFGHAN VARIANT, attested
+                     in TolAfghan, «فزیولوژی حجره»: «به اجزای درون حجره اندامک
+                     گفته می‌شود». The rule below normalises to the canonical
+                     form; it does not mark اندامک as wrong.
   2. نورون    (21x) — the Iranian form. The Afghan MoE Grade-12 science textbook
                      writes نیورون consistently («نیورون دوم»، «نیورون های حرکي»).
   3. میتوکندریایی (8x) — a third spelling of mitochondria. The book's own
                      canonical form مایتوکندریا is the form attested in Afghan
                      material (TolAfghan: «مایتوکاندریا (Mitochondria)»).
-  4. کاربوهایدریت (13x) — INVENTED. No Afghan source uses it; it was constructed
-                     by transliterating "carbo-hydrate" morpheme by morpheme.
-                     Removed entirely; the text now uses کربوهیدرات.
+  4. کاربوهایدریت (13x) — SUPERSEDED, DO NOT RE-APPLY. This rule was written on
+                     the belief that the form was constructed and unattested.
+                     Both judgements were withdrawn: the form IS attested in an
+                     Afghan source (TolAfghan, «فزیولوژی حجره»: «… و سایر لیپیدها
+                     ۴ فیصد و کاربوهایدریت‌ها ۳ فیصد») and it is now the CANONICAL
+                     Afghan-Dari term for Carbohydrate (owner decision, the
+                     final lock). The reverse rules were removed from WORD_RULES
+                     below so that re-running this script cannot reintroduce the
+                     prohibited form. کربوهیدرات is now a FORBIDDEN form.
+
+STATUS: historical one-time pass. The authoritative rule set is the locked
+terminology policy (README section 4.2 + editorial/final-terminology-lock.md).
+Reconciled with the final lock on 2026-09-21 — see the two corrections above.
 
 Rules applied
 -------------
@@ -55,8 +70,8 @@ EVIDENCE = {
               "«اعضاچه یا ارگانل (Organelle)»",
     "نیورون": "Afghan MoE, Science Grade 12 (moe.gov.af): «نيورون هاي حرکي»، «نیورون دوم»",
     "مایتوکندریایی": "TolAfghan, فزیولوژی حجره: «مایتوکاندریا (Mitochondria)»",
-    "کربوهیدرات": "No Afghan source found for either spelling; invented form withdrawn, "
-                  "standard transliteration restored and flagged for verification",
+    # کربوهیدرات is a FORBIDDEN form since the final lock; no rule maps to it.
+    # کاربوهایدریت is canonical and its evidence is TolAfghan «فزیولوژی حجره».
 }
 
 # (source form, target form, evidence key) — longest source first per family.
@@ -79,12 +94,11 @@ WORD_RULES = [
     ("میتوکندریایی", "مایتوکندریایی"),
     ("میتوکندریا", "مایتوکندریا"),
 
-    # 4. carbohydrate — withdraw the invented compound
-    ("کاربوهایدریت‌های", "کربوهیدرات‌های"),
-    ("کاربوهایدریتیِ", "کربوهیدراتیِ"),
-    ("کاربوهایدریتی", "کربوهیدراتی"),
-    ("کاربوهایدریت‌ها", "کربوهیدرات‌ها"),
-    ("کاربوهایدریت", "کربوهیدرات"),
+    # 4. carbohydrate — RULES REMOVED (superseded by the final lock).
+    #    This pass used to map کاربوهایدریت -> کربوهیدرات. That is now exactly
+    #    backwards: کاربوهایدریت is the canonical Afghan term and کربوهیدرات is
+    #    forbidden. Re-running the old rule would have silently undone the locked
+    #    decision and broken the scanner, so the mapping is gone.
 ]
 
 
