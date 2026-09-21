@@ -1855,6 +1855,75 @@ for _d, _e, _lat, _ab, _forb, _n, _dec, _c in [
 ]:
     T(_d, _e, _forb, AFG, _n, "Ch18", _dec, _c, lat=_lat, abbr=_ab)
 
+# ====================================================== CH19 — URINARY ======
+for _d, _e, _lat, _ab, _forb, _n, _dec, _c in [
+ ("نفرون", "Nephron", "", "", "", "Transliteration (کلیه is already canonical for kidney).",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("گلومرولوس", "Glomerulus", "glomerulus", "", "",
+  "Transliteration; the capillary tuft inside Bowman's capsule.", "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("کپسولِ بومن", "Bowman capsule", "capsula glomeruli", "", "",
+  "Composed of the established transliteration کپسول + the eponym; the double-walled cup of the "
+  "renal corpuscle.", "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("جسمِ کلیوی", "Renal corpuscle", "corpusculum renis", "", "",
+  "Composed of the ordinary words جسم + کلیوی; glomerulus plus Bowman capsule.",
+  "AFGHAN STANDARD", "MEDIUM"),
+ ("لولهٔ پروکسیمال", "Proximal tubule", "", "", "",
+  "Composed of the canonical لوله + the transliteration پروکسیمال.",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("لولهٔ دیستال", "Distal tubule", "", "", "",
+  "Composed of the canonical لوله + the transliteration دیستال.",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("حلقهٔ هنله", "Loop of Henle", "ansa nephroni", "", "",
+  "Composed of the ordinary word حلقه + the eponym.", "AFGHAN STANDARD", "MEDIUM"),
+ ("لولهٔ جمع‌کننده", "Collecting duct", "ductus colligens", "", "",
+  "Composed of the canonical لوله + جمع‌کننده (ordinary Dari).",
+  "AFGHAN STANDARD", "MEDIUM"),
+ ("حاشیهٔ مسواکیِ کلیوی", "Renal brush border", "", "", "",
+  "Reuses the canonical حاشیهٔ مسواکی (Ch15) with the qualifier کلیوی; the microvillous border of "
+  "the proximal tubule.", "AFGHAN STANDARD", "MEDIUM"),
+ ("پودوسیت", "Podocyte", "", "", "",
+  "Transliteration; the visceral epithelial cell of Bowman capsule with foot processes.",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("پروسه‌های پایی", "Foot processes (pedicels)", "", "", "",
+  "Descriptive Dari phrase; the interdigitating processes of podocytes.",
+  "AFGHAN STANDARD", "MEDIUM"),
+ ("سدِ فیلتراسیون", "Filtration barrier", "", "", "",
+  "Composed of the canonical سد + the transliteration فیلتراسیون; endothelium, basal lamina and "
+  "podocyte slits.", "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("حجراتِ مزانژیال", "Mesangial cells", "", "", "",
+  "Composed of canonical حجرات + the transliteration مزانژیال; the supporting, contractile and "
+  "phagocytic cells of the glomerular tuft.", "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("آپاراتوسِ ژوکستاگلومرولار", "Juxtaglomerular apparatus", "", "JGA", "",
+  "Composed of the transliteration آپاراتوس + ژوکستاگلومرولار; the renin-secreting complex.",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("حجراتِ ژوکستاگلومرولار", "Juxtaglomerular cells", "", "", "",
+  "Composed of canonical حجرات + the transliteration; the modified smooth muscle cells secreting "
+  "renin.", "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("ماکولا دنسا", "Macula densa", "", "", "",
+  "Transliteration; the sodium-sensing cells of the distal tubule in the juxtaglomerular apparatus.",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("حالب", "Ureter", "", "", "", "Established Dari word for the ureter.", "AFGHAN STANDARD", "MEDIUM"),
+ ("مثانه", "Urinary bladder", "vesica urinaria", "", "",
+  "Ordinary Dari word.", "AFGHAN STANDARD", "MEDIUM"),
+ ("اپیتلیومِ انتقالی", "Transitional epithelium", "urothelium", "", "",
+  "Composed of the canonical اپیتلیوم + the established adjective انتقالی.",
+  "AFGHAN STANDARD", "MEDIUM"),
+ ("حجرهٔ چتری", "Umbrella cell", "cellula superficialis", "", "",
+  "Descriptive Dari phrase; the large superficial cell of transitional epithelium, distinct from "
+  "the goblet «حجرهٔ جامی» registered in Ch4.", "AFGHAN STANDARD", "MEDIUM"),
+ ("مجرای ادرار", "Urethra", "", "", "", "Composed of established Dari words.",
+  "AFGHAN STANDARD", "MEDIUM"),
+ ("سنگِ کلیه", "Kidney stone", "nephrolithiasis", "", "",
+  "Descriptive Dari phrase; the commonest urinary-tract calcification.",
+  "AFGHAN STANDARD", "MEDIUM"),
+ ("نارساییِ مزمنِ کلیه", "Chronic kidney disease", "", "CKD", "",
+  "Descriptive Dari phrase built from established words.", "AFGHAN STANDARD", "MEDIUM"),
+ ("گلومرولونفریت", "Glomerulonephritis", "", "", "",
+  "Transliteration; immune-mediated inflammation of the glomerulus.",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+]:
+    T(_d, _e, _forb, AFG, _n, "Ch19", _dec, _c, lat=_lat, abbr=_ab)
+
 OVERRIDES = {
     "رنگ‌آمیزی":        ("", "", "", None),
     "مطبق":            ("", "", "", None),
