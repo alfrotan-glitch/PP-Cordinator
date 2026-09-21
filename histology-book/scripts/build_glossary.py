@@ -991,6 +991,136 @@ T("ترومبوسیتوپنی", "Thrombocytopenia", "", AFG, "Transliteration.",
 T("هموفیلی", "Hemophilia", "", AFG, "Transliteration.", "Ch09",
   "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
 
+# ======================================================= CH10 — MUSCLE =======
+T("عضله", "Muscle", "", AFG2,
+  "Ordinary Dari word. Muscle tissue is classified into skeletal, cardiac and smooth types.",
+  "Ch10", "AFGHAN STANDARD", "MEDIUM")
+
+T("میوسیت", "Myocyte (muscle cell)", "", AFG,
+  "Transliteration; the muscle cell, whether striated or smooth.", "Ch10",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("سارکولما", "Sarcolemma", "", AFG,
+  "Transliteration; the muscle cell membrane plus its external lamina.", "Ch10",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("سارکوپلاسم", "Sarcoplasm", "", AFG,
+  "Transliteration; the cytoplasm of a muscle cell.", "Ch10",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("سارکومر", "Sarcomere", "", AFG,
+  "Transliteration; the contractile unit between two Z discs.", "Ch10",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("اکتین", "Actin", "", AFG, "Transliteration; the thin filament protein.", "Ch10",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("میوزین", "Myosin", "", AFG, "Transliteration; the thick filament protein.", "Ch10",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("تروپومیوزین", "Tropomyosin", "", AFG, "Transliteration.", "Ch10",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("تروپونین", "Troponin", "", AFG,
+  "Transliteration; the calcium-binding regulatory complex on the thin filament.", "Ch10",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("دیسک Z", "Z disc", "Z line", AFG,
+  "Composed of the established transliteration دیسک + the letter Z. The boundary of a sarcomere.",
+  "Ch10", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("نوار A", "A band", "", AFG,
+  "Composed of نوار + the letter A. The dark band spanning the length of the thick filaments.",
+  "Ch10", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("نوار I", "I band", "", AFG,
+  "Composed of نوار + the letter I. The light band containing only thin filaments, bisected by the "
+  "Z disc.", "Ch10", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("نوار H", "H band", "", AFG,
+  "Composed of نوار + the letter H. The lighter central region of the A band containing only thick "
+  "filaments.", "Ch10", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("خط M", "M line", "", AFG,
+  "Composed of خط + the letter M. The midline of the H band where thick filaments are cross-linked.",
+  "Ch10", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("تیوبول T", "T tubule", "", AFG,
+  "Composed of تیوبول + T. The invagination of the sarcolemma carrying the action potential inward.",
+  "Ch10", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("شبکهٔ سارکوپلاسمی", "Sarcoplasmic reticulum", "", AFG,
+  "Composed of the canonical شبکهٔ + the established transliteration سارکوپلاسمی. Stores calcium.",
+  "Ch10", "AFGHAN STANDARD", "MEDIUM")
+
+T("دیاد", "Diad", "", AFG,
+  "Transliteration; one T tubule plus one terminal cisterna, at the cardiac Z disc.", "Ch10",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("تریاد", "Triad", "", AFG,
+  "Transliteration; one T tubule plus two terminal cisternae, at the skeletal A-I junction.",
+  "Ch10", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("کاوئولا", "Caveola", "", AFG,
+  "Transliteration; the surface invagination of smooth muscle that substitutes for T tubules.",
+  "Ch10", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("عضله اسکلتی", "Skeletal muscle", "", AFG2,
+  "Canonical عضله + the ordinary word اسکلتی (already used in Ch1 for skeletal system).",
+  "Ch10", "AFGHAN STANDARD", "MEDIUM")
+
+T("عضله قلبی", "Cardiac muscle", "", AFG2,
+  "Canonical عضله + the ordinary word قلبی.", "Ch10", "AFGHAN STANDARD", "MEDIUM")
+
+T("عضله صاف", "Smooth muscle", "", AFG2,
+  "Canonical عضله + the ordinary word صاف (already used in Ch2 for smooth ER).",
+  "Ch10", "AFGHAN STANDARD", "MEDIUM")
+
+T("مخطط", "Striated", "", AFG2,
+  "Ordinary Dari word for the striated appearance of skeletal and cardiac muscle; already used in "
+  "Ch2 in the same sense.", "Ch10", "AFGHAN STANDARD", "MEDIUM")
+
+T("املس", "Non-striated", "", AFG2,
+  "Established Dari descriptor for smooth muscle (عضلهٔ املس); not a construction.",
+  "Ch10", "AFGHAN STANDARD", "MEDIUM")
+
+T("دیسک میان‌حجروی", "Intercalated disc", "", AFG,
+  "Composed of دیسک + میان‌حجروی (already canonical in Ch4). The junctional complex joining "
+  "adjacent cardiac muscle cells.", "Ch10", "AFGHAN STANDARD", "MEDIUM")
+
+T("مایوگلوبین", "Myoglobin", "", AFG,
+  "Transliteration; the oxygen-binding protein of muscle.", "Ch10",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("استیل‌کولین", "Acetylcholine", "ACh", AFG,
+  "Transliteration; the neurotransmitter at the neuromuscular junction.", "Ch10",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("صفحهٔ محرکهٔ عصبی-عضلانی", "Neuromuscular junction", "", AFG2,
+  "Composed of established Dari terms: صفحه (as in صفحهٔ اپی‌فیز) + محرکهٔ عصبی-عضلانی.",
+  "Ch10", "AFGHAN STANDARD", "MEDIUM")
+
+T("واحدِ محرکهٔ عضلانی", "Motor unit", "", AFG2,
+  "Composed of ordinary Dari words. One motor neuron and all the muscle fibers it innervates.",
+  "Ch10", "AFGHAN STANDARD", "MEDIUM")
+
+T("عضلهٔ دوکی", "Spindle (muscle shape)", "", AFG2,
+  "Ordinary Dari descriptor for the spindle or fusiform shape of smooth muscle cells.",
+  "Ch10", "AFGHAN STANDARD", "MEDIUM")
+
+T("دیستروفی عضلانی", "Muscular dystrophy", "", AFG2,
+  "Canonical عضلانی + the established transliteration دیستروفی.", "Ch10",
+  "AFGHAN STANDARD", "MEDIUM")
+
+T("میاستنی گراو", "Myasthenia gravis", "", AFG,
+  "Transliteration.", "Ch10", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("مایوپاتی", "Myopathy", "", AFG, "Transliteration.", "Ch10",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("رگور مورتیس", "Rigor mortis", "", AFG, "Transliteration.", "Ch10",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
 OVERRIDES = {
     "رنگ‌آمیزی":        ("", "", "", None),
     "مطبق":            ("", "", "", None),
