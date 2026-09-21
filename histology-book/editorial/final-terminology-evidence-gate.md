@@ -71,7 +71,7 @@ Afghan readers recognise; no Afghanistan-specific documentary source located in 
 
 Examples: هپارین · هیستامین · ترپتاز · دسموزوم · همیدسموزوم · گرانول · ایسکمی · نکروز · آپوپتوز ·
 کندرویتین سولفات · کراتان سولفات · درماتان سولفات · رایبوزوم · لایزوزوم · پراکسیزوم · گابلت ·
-ماستسل · پلاسماسل · آدیپوسایت · میواپیتلیال · کارسینوم درجا · تولوئیدینبلو · لامینا پروپریا ·
+ماستسل · پلاسماسل · ادیپوسیت · میواپیتلیال · کارسینوم درجا · تولوئیدینبلو · لامینا پروپریا ·
 اپیژنتیک.
 
 **None of these is a constructed compound.** They are phonetic borrowings, and the policy's rule for

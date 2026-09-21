@@ -423,6 +423,6 @@ the book and is deliberately **not** flagged — `بافته`, `هیستونی`,
 3. **Do not add to `forbidden_forms`:** a prefix of the term itself; an Afghan transliteration variant
    in normal teaching use; a legitimate Latin gloss or Dari translation given in parentheses.
 4. **Chapters 6–23 will need new terms.** Anticipated pressure points already researched:
-   adipose → **نسج شحمی / آدیپوسایت**; cartilage → کندروسیت / لاکونا (verify); bone →
+   adipose → **نسج شحمی / ادیپوسیت**; cartilage → کندروسیت / لاکونا (verify); bone →
    استئوکلاست/استئوبلاست; blood → **کرویات** series **رقیقهٔ سفید**? (verify); muscle →
    مخطط / ملس; nervous → **نیورون** / گلیا. Each must go through this gate before use.

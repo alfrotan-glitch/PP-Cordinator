@@ -103,15 +103,19 @@ now 0 except the intended parenthetical first-use.
 | 9 | No unsupported institutional claims remain | ✅ | 0 rows naming an institution without an identifiable document; 0 generic-label rows; 0 empty source fields |
 | 10 | No accidental Iranian-only terminology remains | ✅ (one item flagged — see §7) | scanner now classifies per form: **79 Iranian-Persian + 23 non-canonical/constructed** |
 
-**Glossary:** 228 entries · 102 forbidden forms · 64 canonical replacements · 39 accepted variants ·
-45 English-retained · 1 unresolved (آنتی‌ژن) · `[VERIFY TERMINOLOGY]` markers: 2 (both in the
-front-matter explanation, describing that single term).
+**Glossary at the time of this lock:** 228 entries · 102 forbidden forms · 64 canonical
+replacements · 39 accepted variants · 45 English-retained · 1 unresolved (آنتی‌ژن) ·
+`[VERIFY TERMINOLOGY]` markers: 2 (both in the front-matter explanation, describing that single term).
+*(Book-end counts, 23/23 chapters: **691 rows** · 115 forbidden forms · 77 canonical replacements ·
+41 accepted variants · 23 English-retained rows · same single unresolved term —
+see `editorial/final-terminology-status.md` §1.)*
 
 **Scanner:** `RESULT: 0 findings` — no prohibited terminology, no unexplained inconsistency, all 13
 mandated sections present in every topic, all structural checks pass.
 
 **Self-test:** `SELFTEST: ALL PASS` — all 102 forbidden forms detected on injection; all 228 canonical
 forms clean; no form is simultaneously canonical and prohibited; the locked decisions all hold.
+*(Re-run at book end against 115 forbidden forms and 691 canonical rows: still **ALL PASS**.)*
 
 ---
 

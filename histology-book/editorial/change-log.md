@@ -1,10 +1,13 @@
 # Editorial Change Log
 
-> **Current state (authoritative):** 228 glossary entries — 97 AFGHAN STANDARD · 110 COMMON
-> AFGHAN TRANSLITERATION · 20 ENGLISH RETAINED · 1 VERIFY FURTHER; 102 forbidden forms; 1 unresolved
-> (آنتی‌ژن). `qa_scan.py` → 0 findings; `selftest_terminology.py` → ALL PASS.
+> **Current state (authoritative, book end):** **691** glossary rows — 292 AFGHAN STANDARD ·
+> 375 COMMON AFGHAN TRANSLITERATION · 23 ENGLISH RETAINED · 1 VERIFY FURTHER; 115 forbidden forms;
+> 41 accepted variants; 0 duplicate English terms; 1 unresolved terminology item (آنتی‌ژن).
+> **23 of 23 chapters drafted** (108 topics, every one 13/13 sections, 23 × 12-row audits).
+> `qa_scan.py` → 0 findings; `selftest_terminology.py` → ALL PASS.
 > Entries below are a dated record and show the counts that were true when each session ran.
-> The locked decisions are in `editorial/final-terminology-lock.md`.
+> The locked decisions are in `editorial/final-terminology-lock.md`; the current-state report is
+> `editorial/final-terminology-status.md`.
 # لاگ تغییرات ادیتوریال
 
 Classification scheme (one label per substantive change):
@@ -549,19 +552,40 @@ Mechanical check added: **no rule in any apply-script maps to a forbidden form**
 Verified unchanged and correct: `build_glossary.py`, `qa_scan.py`, the self-test, README §4.2,
 front matter, all six chapters.
 
-Current authoritative numbers: **228 entries** — 97 AFGHAN STANDARD · 110 COMMON AFGHAN
+Counts at that gate: **228 entries** — 97 AFGHAN STANDARD · 110 COMMON AFGHAN
 TRANSLITERATION · 20 ENGLISH RETAINED · 1 VERIFY FURTHER · 1 unresolved (آنتی‌ژن) · 102 forbidden
 (79 Iranian-Persian + 23 non-canonical) · 39 accepted variants.
 `qa_scan.py` → 0 findings · self-test → ALL PASS.
 
 **Gate: FINAL / CLOSED.** Chapter 6 was already written under these decisions; no disputed new term
-arose, so the gate is not reopened. **Next: Chapter 7 — Cartilage.**
+arose, so the gate is not reopened.
+
+---
+
+## Session 10 — Chapters 7–23 and the book-end pass (2026-09-21)
+
+| Area | Work done |
+|---|---|
+| Chapters | Ch 7–Ch 23 drafted to the fixed template (13 sections per topic + 12-row audit + chapter review), each debugged to `qa_scan.py` → 0 findings before commit |
+| Terms | Every genuinely new term registered in `scripts/build_glossary.py` **before** first use; glossary grew 246 → **691** rows; no locked decision was reopened; nothing invented |
+| Duplicate rows | 12 duplicate English-term pairs reviewed and merged (Endothelium, Submucosa, Plasma cell, Adipocyte, Chondroitin sulfate, Keratan sulfate, Fibrin, Capillary, Bone marrow, Lymphocyte, Leukemia, Insulin) → **0 duplicates** |
+| Count fixes | Ch23 note «۳۵ ردیف» → «۳۶ ردیف»; Ch13 corrupted self-assessment line repaired; marker counts re-verified by machine (413 in chapters / 415 in book text / 207 backlog items); 7 remaining «سلول» hits confirmed as registered Latin compounds (هپاتوسلولار, پُرسلول) |
+| Spelling drift | 4 cross-chapter variants harmonised (مغز استخوان · سولفات · پلاسماسل · لنفوسیت); 2 corrupted lines repaired (Ch12 note, Ch13 question) |
+| Structural audit | 23 chapters · **108 topics** · 108 × 13/13 sections · 23 × 12-row audits · 0 problems |
+| QA | Whole-book `qa_scan.py` → **0 findings**; `selftest_terminology.py` → **ALL PASS** |
+| Book-level docs | `qa/reference-alignment-audit.md` §2–§4 refreshed (whole-book figures); `editorial/final-terminology-status.md` §1 and new §6; README status/metadata resynced |
+| Reference-fidelity backlog | **415** `[VERIFY AGAINST JUNQUEIRA 17e]` markers, written up as **207** standing items across the 23 chapter audits |
+| Release gate | Left at **NOT READY FOR PUBLICATION** — not because anything failed, but because 207 items still await confirmation against the reference and one terminology item remains deliberately unresolved |
+
+Per-chapter commit SHAs: Ch7 `f482eba` · Ch8 `f471e8a` · Ch9 `0bbe62a` · Ch10 `77e192f` ·
+Ch11 `06b8841` · Ch12 `3a1dac5` · Ch13 `3ca9ca9` · Ch14 `9c90829` · Ch15 `ae1b6d6` · Ch16 `e5c3ef3` ·
+Ch17 `1cf6412` · Ch18 `54c321d` · Ch19 `fc0716e` · Ch20 `857950b` · Ch21 `628683e` · Ch22 `bb07cba` ·
+Ch23 `6d4ea8e` (book-end documentation pass follows in its own commit).
 
 ## Open issues (not yet resolved)
 
-See `qa/reference-alignment-audit.md` §3 — 20 items flagged `[VERIFY AGAINST JUNQUEIRA 17e]`
-awaiting confirmation against the reference text. One **terminology** item is also open:
-**آنتی‌ژن** (`[VERIFY TERMINOLOGY]`, glossary decision `VERIFY FURTHER`). Both classes are recorded
-here rather than silently resolved, per the standing rule that a flagged gap is honest and a
-fabricated answer is a defect. These are recorded here rather than silently
-resolved, per the standing rule that a flagged gap is honest and a fabricated answer is a defect.
+See `qa/reference-alignment-audit.md` §3 — **207** items flagged `[VERIFY AGAINST JUNQUEIRA 17e]`
+(415 markers in text) awaiting confirmation against the reference text. One **terminology** item is
+also open: **آنتی‌ژن** (`[VERIFY TERMINOLOGY]`, glossary decision `VERIFY FURTHER`). Both classes are
+recorded here rather than silently resolved, per the standing rule that a flagged gap is honest and a
+fabricated answer is a defect.

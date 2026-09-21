@@ -48,22 +48,29 @@ Junqueira 17e, could they read → understand → review → recognize → recal
 | Ch 21 — Male Reproductive System | ✅ Draft 1 — audit passed |
 | Ch 22 — Female Reproductive System | ✅ Draft 1 — audit passed |
 | Ch 23 — The Eye & Ear: Special Sense Organs | ✅ Draft 1 — audit passed |
-| Terminology glossary | ✅ 703 entries × 12 columns (see `glossary/terminology-glossary.csv`) |
-| Terminology gate (Ch 1–6) | ✅ **PASS — FINAL AND CLOSED** (2026-09-21); see `editorial/final-terminology-lock.md` |
+| Terminology glossary | ✅ 691 rows × 12 columns, no duplicate English terms (see `glossary/terminology-glossary.csv`) |
+| Terminology gate (Ch 1–23, whole book) | ✅ **PASS — FINAL AND CLOSED** (2026-09-21); see `editorial/final-terminology-lock.md` and `editorial/final-terminology-status.md` |
 | Terminology decision report | ✅ `editorial/terminology-decisions.md` (mandatory table + evidence) |
 | Terminology **correction** report | ✅ `editorial/terminology-correction-report.md` (pass 3 — invented-term audit) |
-| QA scanner | ✅ `scripts/qa_scan.py` — six passes, 102 forbidden forms, 64 canonical, 0 findings |
+| QA scanner | ✅ `scripts/qa_scan.py` — six passes, 115 forbidden forms, 77 canonical replacements, 0 findings |
 | Terminology self-test | ✅ `scripts/selftest_terminology.py` — injection / clean / locked decisions, ALL PASS |
 | Editorial change log | ✅ `editorial/change-log.md` |
 | Book-level audit roll-up | ✅ `qa/reference-alignment-audit.md` |
-| Full-book QA + release gate | ⏳ Deferred until all chapters exist |
+| Full-book QA + release gate | ✅ **Run at book end** — see `qa/reference-alignment-audit.md` §2–§4 |
 
-**Release gate status: `NOT READY FOR PUBLICATION`** — the book is incomplete (23 of 23 chapters).
-See `qa/reference-alignment-audit.md` §4 for the blocking list.
+**Release gate status: `NOT READY FOR PUBLICATION`** — all 23 chapters are drafted and every
+mechanical gate passes, but the book still carries **207 open verification items** to confirm against
+Junqueira 17e, one deliberately unresolved terminology item, and the `LOW`-confidence transliterations
+of Ch 19–23 awaiting human review. See `qa/reference-alignment-audit.md` §4 for the full blocking list.
 
-**Verification backlog:** 20 items are flagged `[VERIFY AGAINST JUNQUEIRA 17e]` across the five
-chapters (numerical values, and placement of some topics in the reference). None is a scientific
-error as written; each needs confirmation against the reference text.
+**Verification backlog:** **415** markers `[VERIFY AGAINST JUNQUEIRA 17e]` in the book text (413 in the chapters), written up as
+**207 standing items** in the 23 chapter audits (11 per chapter from Ch 9 onward). None is a
+scientific error as written; each is a value or a placement that needs confirmation against the
+reference text.
+
+**Book-end QA (2026-09-21):** structural audit 23 chapters / **108 topics / 108 × 13 sections** /
+23 × 12-row audits, 0 problems · `qa_scan.py` → **0 findings** · `selftest_terminology.py` →
+**ALL PASS** · duplicate glossary rows 12 → **0** · variant spellings harmonised across chapters (4).
 
 > **Note on chapter order:** the sequence of *topics* follows the reference's canonical organization.
 > Chapter numbering varies between printings and between editions; treat the topic sequence, not the

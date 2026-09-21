@@ -2339,6 +2339,8 @@ for _d, _e, _lat, _ab, _forb, _n, _dec, _c in [
 ]:
     T(_d, _e, _forb, AFG, _n, "Ch23", _dec, _c, lat=_lat, abbr=_ab)
 
+
+
 OVERRIDES = {
     "رنگ‌آمیزی":        ("", "", "", None),
     "مطبق":            ("", "", "", None),
@@ -2490,6 +2492,31 @@ INVENTED_CONSTRUCTIONS = {
 # (pass 1 added the invented form, pass 3 added the restored one); a withdrawn row
 # is dropped at write time so the two can never contradict each other.
 DROP_ROWS = set()   # no withdrawn rows remain; both Carbohydrate spellings are settled
+
+# --- duplicate-row cleanup (whole-book pass, end of run) ----------------------
+# Twelve English terms had been registered twice because later chapters re-introduced
+# them. Each pair was reviewed: the row listed here is dropped and, where the two rows
+# used different Dari forms, the surviving row records the other form so no reader loses
+# a form that appears in the text. Nothing else is changed by this list.
+DEDUP_DROP = {
+    ("Endothelium",        "Ch12"),   # identical to the Ch04 row
+    ("Submucosa",          "Ch15"),   # «تحت مخاط» kept; «زیرمخاطی» recorded as its variant
+    ("Plasma cell",        "Ch13"),   # «پلاسما‌سل» kept with «پلاسموسیت» as variant
+    ("Adipocyte",          "Ch05"),   # unused «آدیپوسایت»; the book writes «ادیپوسیت»
+    ("Chondroitin sulfate", "Ch07"),  # «کندرویتین سولفات» kept (sulfate spelling normalised)
+    ("Keratan sulfate",    "Ch07"),   # «کراتان سولفات» kept (sulfate spelling normalised)
+    ("Fibrin",             "Ch09"),   # identical to the Ch05 row
+    ("Capillary",          "Ch12"),   # «موی‌رگ» is the single primary form
+    ("Insulin",            "Ch16"),   # identical to the Ch06 row
+    ("Bone marrow",        "Ch13"),   # «مغز استخوان» kept (kасre form normalised in text)
+    ("Lymphocyte",         "Ch13"),   # «لنفوسیت» kept with «لیمفوسیت» as variant
+    ("Leukemia",           "Ch13"),   # identical to the Ch09 row
+}
+
+# The two variants that survive only as recorded alternative forms:
+OVERRIDES.setdefault("تحت مخاط", ("", "زیرمخاطی;لایهٔ زیرمخاطی", "", None))
+OVERRIDES.setdefault("لنفوسیت",  ("", "لیمفوسیت", "", None))
+   # no withdrawn rows remain; both Carbohydrate spellings are settled
 
 # Applicability note attached to entries whose evidence is a transliteration
 # convention rather than a located Afghan document.
@@ -2646,8 +2673,11 @@ def main():
     with open(OUT, "w", encoding="utf-8", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=COLS)
         w.writeheader()
+        written = 0
         for row in R:
             if row["dari_term"] in DROP_ROWS:
+                continue
+            if (row["english_term"], row["first_appearance"]) in DEDUP_DROP:
                 continue
             ov = OVERRIDES.get(row["dari_term"])
             if ov:
@@ -2688,7 +2718,8 @@ def main():
                 row["usage_notes"] = (row["usage_notes"].rstrip()
                                       + " [NON-CANONICAL: " + ";".join(constructed) + "]").strip()
             w.writerow(row)
-    print(f"wrote {len(R)} entries -> {OUT}")
+            written += 1
+    print(f"wrote {written} rows -> {OUT} ({len(R) - written} duplicate/withdrawn rows skipped)")
 
 
 if __name__ == "__main__":

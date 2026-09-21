@@ -59,17 +59,17 @@ claiming nothing was lost. No chapter scores ❌.
 
 | Check | Result | Note |
 |---|---|---|
-| Terminology consistent across chapters | ✅ | Glossary is the single source of truth (195 entries); `qa_scan.py` enforces 75 forbidden forms with letter boundaries |
-| **Terminology standard is Afghan, not Iranian** | ✅ | Terminology gate PASSED for Ch 1–5 — see `editorial/terminology-decisions.md`. 1,712 replacements; 0 prohibited forms remain |
+| Terminology consistent across chapters | ✅ | Glossary is the single source of truth (691 rows × 12 columns); `qa_scan.py` enforces 115 forbidden forms with letter boundaries. Twelve duplicate English-term rows were reviewed and merged at book end (see `editorial/final-terminology-status.md` §5) |
+| **Terminology standard is Afghan, not Iranian** | ✅ | Terminology gate PASSED and closed for the whole book (Ch 1–23) — see `editorial/terminology-decisions.md` and `editorial/final-terminology-lock.md`. 1,712 replacements made during the gate; 0 prohibited forms remain in any chapter |
 | Terminology verified, not assumed | ✅ | Every decision traced to an Afghan MoHE/MoPH/medical-faculty source; 1 term left unresolved rather than guessed (`آنتی‌ژن`, `[VERIFY TERMINOLOGY]`) |
-| English terms not needlessly Dari-ised | ✅ | 42 English-retained entries + all Latin anatomical/stain names |
-| Structural template applied consistently | ✅ | All 5 chapters: 13 sections per topic + 12-point audit |
+| English terms not needlessly Dari-ised | ✅ | 49 English-retained entries + all Latin anatomical/stain names |
+| Structural template applied consistently | ✅ | All 23 chapters: **108 topics, every one 13/13 sections**, plus a 12-row audit per chapter (automated check at book end: 0 problems) |
 | Bilingual balance maintained | ✅ | Dari explanation first, compact English equivalent, shared detail given once |
-| No duplication between chapters | ⚠️ | Microvilli/cilia appear in both Ch2 and Ch4 — intentional (Ch4 cross-references Ch2), but worth re-checking at final pass |
+| No duplication between chapters | ⚠️ | Microvilli/cilia appear in both Ch2 and Ch4 — intentional (Ch4 cross-references Ch2); duplicate glossary rows removed in the book-end pass |
 | Exam coverage: Core Knowledge | ✅ | |
 | Exam coverage: Exam-Relevant Details | ✅ | HIGH-YIELD blocks carry the numerical and classification detail |
 | Exam coverage: Recognition & Differentiation | ✅ | Identification + Comparison + Summary tables in every topic |
-| Uncertainty markers used honestly | ✅ | 25 markers flagged `[VERIFY AGAINST JUNQUEIRA 17e]`; 20 distinct backlog items (§3) |
+| Uncertainty markers used honestly | ✅ | **415 markers** flagged `[VERIFY AGAINST JUNQUEIRA 17e]` in the book text (413 in the 23 chapters + 2 in the front matter); **207 distinct backlog items** are written up in the 23 per-chapter audit sections (§3) |
 | Terminology uncertainty kept separate from scientific uncertainty | ✅ | `[VERIFY TERMINOLOGY]` (wording) never merged with `[VERIFY AGAINST JUNQUEIRA 17e]` (facts) |
 | No fabricated citations | ✅ | The book names no DOIs, studies, or page references |
 | Script hygiene (no CJK/Cyrillic contamination) | ✅ | `qa_scan.py` returns 0 findings |
@@ -82,6 +82,13 @@ claiming nothing was lost. No chapter scores ❌.
 All of these are marked in the book with `[VERIFY AGAINST JUNQUEIRA 17e]`. None is a scientific
 error as written; each is a value or a placement that should be confirmed against the reference
 before the book is used as an exam source.
+
+**Whole-book picture (book-end pass):** the book text carries **415 markers** (413 in the 23
+chapters + 2 in the front matter), and **207 of them are written up as standing backlog items** in the per-chapter audit sections
+(3–5 items per chapter in Ch 1–5, 7–8 in Ch 6–8, and 11 in every chapter from Ch 9 to Ch 23).
+The table below reproduces the backlog exactly as it was first recorded for Chapters 1–5; the
+equivalent tables for Chapters 6–23 sit at the end of each chapter file, so the owner can work
+chapter by chapter instead of through one long list.
 
 | # | Chapter | Item |
 |---|---|---|
@@ -118,14 +125,17 @@ forms in the draft before it was accepted.
 
 
 Full report and the mandatory decision table: **`editorial/terminology-decisions.md`**.
-Machine-readable source of truth: `glossary/terminology-glossary.csv` (206 entries × 12 columns).
+Machine-readable source of truth: `glossary/terminology-glossary.csv` (**691 rows × 12 columns**;
+the 54 named-document / 149 transliteration / 4 owner-mandated / 1 unresolved breakdown quoted
+below is the gate-time snapshot of 2026-09-21 and is superseded by the running totals in
+`editorial/final-terminology-status.md`).
 
 | Check | Result |
 |---|---|
-| Prohibited Iranian-Persian terminology | **0** — 86 forbidden forms enforced |
-| Unexplained terminology inconsistency | **0** — 56 canonical replacements, 35 accepted variants |
+| Prohibited Iranian-Persian terminology | **0** — 115 forbidden forms enforced (whole book, Ch 1–23) |
+| Unexplained terminology inconsistency | **0** — 77 canonical replacements, 41 accepted variants |
 | Terminology decided against Afghan sources (not assumed) | ✅ Research recorded in `editorial/terminology-decisions.md` §2–§3 |
-| English terms needlessly Dari-ised | **0** — 42 English-retained entries, all Latin anatomical/stain names kept |
+| English terms needlessly Dari-ised | **0** — 49 English-retained entries, all Latin anatomical/stain names kept |
 | Invented Dari equivalents | **0**. The one form previously classed as a morpheme-by-morpheme construction (the Afghan transliteration of *Carbohydrate*) is **withdrawn from that class**: it is attested in an Afghan source and is now canonical. Remaining constructed forms (the one built from «chemistry» + «treatment», and the ریز‑ compounds) are 0 occurrences in the text and enforced.
 | Every canonical decision has a named Afghan source | ⚠️ **Partial, honestly labelled** — see `editorial/final-terminology-evidence-gate.md`: 54 entries anchored to a named Afghan document, 149 declared as transliterations with no Afghan document located, 4 declared owner-mandated decisions, 1 unresolved. No entry claims an Afghan institution without identifying a document |
 | KUMS (Kabul University of Medical Sciences) evidence tier | ✅ **5 entries** — a KUMS news bulletin (kums.edu.af, «دیپارتمنت فزیوتراپی در شفاخانه تدریسی علی آباد پوهنتون علوم طبی کابل…») was read and corroborates مریض، تداوی، داکتر، محصل، شفاخانه. The earlier "not retrievable" note applied to KUMS *syllabi*; the institutional site itself is readable. |
@@ -146,11 +156,13 @@ curriculum and the Afghan MoPH register. Terminology that is *possible* is not t
 NOT READY FOR PUBLICATION
 ```
 
-**Reason:** the book is incomplete. Only 5 of 23 chapters exist. The 12-point audit passes for all
-five existing chapters, so they are sound as far as they go — but a partial book cannot be declared
-publication-ready.
+**Reason:** every chapter now exists and every mechanical gate passes, but the book still carries
+**207 open verification items** to be confirmed against Junqueira's Basic Histology 17e, one
+deliberately unresolved terminology item, and a set of low-confidence transliterations in the
+newer chapters that need a human reviewer. A book may not be called publication-ready while facts
+that shape an exam answer are still unconfirmed against the reference standard.
 
-**Terminology status — LOCKED AND CLOSED (2026-09-21):**
+**Terminology status — LOCKED AND CLOSED (2026-09-21; re-verified at book end):**
 - Junctions are canonical in their international form: **Tight junction / Zonula occludens**,
   **Adherens junction / Zonula adherens**, **Gap junction**. «مضبوط اتصال» is a permitted Afghan Dari
   gloss; the two Dari calques are non-canonical and enforced as prohibited.
@@ -159,14 +171,28 @@ publication-ready.
 - Scanner 0 findings; self-test ALL PASS; unresolved terminology is exactly one term (آنتی‌ژن).
 - Full record: `editorial/final-terminology-lock.md`.
 
-**Blocking issues:**
-1. 18 chapters not yet written (Ch 6–23).
+**Blocking issues (the only ones left):**
+1. **207 items** flagged `[VERIFY AGAINST JUNQUEIRA 17e]` awaiting confirmation against the reference —
+   415 in-text markers in total; the 207 written-up items are listed in the chapter audits (§3).
+2. **One unresolved terminology item** — آنتی‌ژن — retained as English + `[VERIFY TERMINOLOGY]`
+   rather than guessed.
+3. **Human review of low-confidence transliterations** introduced in Ch 19–23 (for example the
+   eye/ear forms سکلرا، کوروئید، یوویا، هیومورِ آکوئوس, and the male-reproductive forms لوله‌های
+   منیفروس, واز دفرنس, وسیکولِ سیمینال) — each is labelled `LOW` in the glossary rather than
+   presented as settled.
+4. **DOCX/PDF/EPUB production** deferred by the owner's decision for this pass.
 
 **Cleared gates:**
-- ✅ **Terminology gate (Ch 1–5)** — PASS, 0 findings, exit code 0. Report:
-  `editorial/terminology-decisions.md`. Chapter 6 is unblocked.
-2. 20 items flagged `[VERIFY AGAINST JUNQUEIRA 17e]` awaiting confirmation against the reference.
-3. Whole-book QA passes (consistency, cross-references, glossary completeness) deferred until all chapters exist.
+- ✅ **All 23 chapters drafted** — Chapter 23 (The Eye & Ear) completed and committed.
+- ✅ **Structural audit** — 23 chapters, **108 topics, 108 × 13/13 sections**, 23 × 12-row audits,
+  0 problems (automated book-end check).
+- ✅ **Terminology gate** — `python3 scripts/qa_scan.py` → **RESULT: 0 findings**, exit 0, whole book.
+- ✅ **Self-tests** — `python3 scripts/selftest_terminology.py` → **ALL PASS**.
+- ✅ **Glossary completeness** — every new term registered before first use; the book-end pass
+  removed the last 12 duplicate English-term rows and harmonised four variant spellings that had
+  drifted between chapters (see `editorial/change-log.md`, session 10).
+- ✅ **Reference fidelity** — every chapter ends with its 12-point Reference Alignment Audit; no
+  chapter scores ❌, and no chapter claims completeness it does not have.
 
 **Not blocking, but noted:** DOCX/PDF/EPUB production is deferred by the author's decision for this
 pass. The Markdown is structured so it converts cleanly when that stage begins.
