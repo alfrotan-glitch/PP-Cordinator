@@ -235,8 +235,39 @@ for diffing only — never as a restore source.**
 
 ---
 
+---
+
+## Session 2 addendum — deliverables of the Terminology Gate
+
+| Deliverable | Where |
+|---|---|
+| Complete terminology audit of Chapters 1–5 + front matter | `editorial/terminology-decisions.md` §2, §9 |
+| Mandatory decision table (English \| Current Book Term \| Proposed Afghan Term \| Evidence/Source \| Decision \| Confidence) | `editorial/terminology-decisions.md` §3 and §3b |
+| Rebuilt glossary | `glossary/terminology-glossary.csv` — 206 entries × 12 columns |
+| Scanner upgraded | `scripts/qa_scan.py` — six passes, 86 forbidden forms, self-tested |
+| Two terminology passes | `scripts/apply_terminology.py` (1,712), `scripts/apply_terminology_supplement.py` (34 + 1 repair) |
+| Decision report | `editorial/terminology-decisions.md` |
+| QA evidence | `python3 scripts/qa_scan.py` → **RESULT: 0 findings**, exit 0 |
+
+**Decision values used** (the only five permitted, per the gate):
+`AFGHAN STANDARD`, `COMMON AFGHAN TRANSLITERATION`, `ENGLISH RETAINED`, `EXPLANATORY DARI ONLY`,
+`VERIFY FURTHER`. `EXPLANATORY DARI ONLY` was **not** needed by any term in this pass; the one case
+that would have required it (Cellulitis, paracellular seal) was handled by retaining the English term
+with an inline Dari explanation, which is the same principle.
+
+**[VERIFY TERMINOLOGY]** is kept strictly separate from `[VERIFY AGAINST JUNQUEIRA 17e]`:
+the first is about *wording*, the second about *scientific facts*. One term is still on gate
+hold: **آنتی‌ژن**, for which Afghan sources show آنتی‌ژن, آنتی نژ and آنتی‌نژن side by side. It is
+not an Iranian-Persian form, so it is not prohibited; it is flagged rather than guessed, and the
+book keeps the English-recognisable spelling.
+
+---
+
 ## Open issues (not yet resolved)
 
 See `qa/reference-alignment-audit.md` §3 — 20 items flagged `[VERIFY AGAINST JUNQUEIRA 17e]`
-awaiting confirmation against the reference text. These are recorded here rather than silently
+awaiting confirmation against the reference text. One **terminology** item is also open:
+**آنتی‌ژن** (`[VERIFY TERMINOLOGY]`, glossary decision `VERIFY FURTHER`). Both classes are recorded
+here rather than silently resolved, per the standing rule that a flagged gap is honest and a
+fabricated answer is a defect. These are recorded here rather than silently
 resolved, per the standing rule that a flagged gap is honest and a fabricated answer is a defect.

@@ -49,7 +49,8 @@ Junqueira 17e, could they read → understand → review → recognize → recal
 | Ch 22 — Female Reproductive System | ⏳ Pending |
 | Ch 23 — The Eye & Ear: Special Sense Organs | ⏳ Pending |
 | Terminology glossary | ✅ 206 entries × 12 columns (see `glossary/terminology-glossary.csv`) |
-| Terminology gate (Ch 1–5) | ✅ **PASS** — 0 findings; report in `editorial/terminology-decisions.md` |
+| Terminology gate (Ch 1–5) | ✅ **PASS** — 0 findings; decision table in `editorial/terminology-decisions.md` |
+| Terminology decision report | ✅ `editorial/terminology-decisions.md` (mandatory table + evidence) |
 | QA scanner | ✅ `scripts/qa_scan.py` — six passes, 86 forbidden forms, 0 findings |
 | Editorial change log | ✅ `editorial/change-log.md` |
 | Book-level audit roll-up | ✅ `qa/reference-alignment-audit.md` |

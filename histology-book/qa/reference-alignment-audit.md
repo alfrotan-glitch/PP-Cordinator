@@ -90,6 +90,29 @@ before the book is used as an exam source.
 
 ---
 
+## 3b. Terminology gate (Chapters 1–5) — PASSED
+
+Full report and the mandatory decision table: **`editorial/terminology-decisions.md`**.
+Machine-readable source of truth: `glossary/terminology-glossary.csv` (206 entries × 12 columns).
+
+| Check | Result |
+|---|---|
+| Prohibited Iranian-Persian terminology | **0** — 86 forbidden forms enforced |
+| Unexplained terminology inconsistency | **0** — 56 canonical replacements, 35 accepted variants |
+| Terminology decided against Afghan sources (not assumed) | ✅ Research recorded in `editorial/terminology-decisions.md` §2–§3 |
+| English terms needlessly Dari-ised | **0** — 42 English-retained entries, all Latin anatomical/stain names kept |
+| Invented Dari equivalents | **0** — 1 term left English rather than guessed |
+| Terms flagged `[VERIFY TERMINOLOGY]` | 1 (آنتی‌ژن) — deliberately unresolved, not guessed |
+| Scanner command | `python3 scripts/qa_scan.py` → **RESULT: 0 findings**, exit 0 |
+
+**Why the earlier assumption was wrong.** The first draft used سلول / بافت / بافت همبند — the
+Iranian-Persian standards — because they are linguistically possible Dari. Afghan medical teaching
+uses **حجره / نسج / نسج منضم**, as confirmed by an Afghan faculty histology text, the Afghan MoHE
+curriculum and the Afghan MoPH register. Terminology that is *possible* is not terminology that is
+*in use*; the gate now requires evidence for every term.
+
+---
+
 ## 4. Release gate status
 
 ```
