@@ -1802,6 +1802,59 @@ for _d, _e, _lat, _ab, _forb, _n, _dec, _c in [
         continue
     T(_d, _e, _forb, AFG, _n, "Ch17", _dec, _c, lat=_lat, abbr=_ab)
 
+# ======================================================= CH18 — THE SKIN =====
+for _d, _e, _lat, _ab, _forb, _n, _dec, _c in [
+ ("اپیدرم", "Epidermis", "", "", "",
+  "Transliteration; the keratinized stratified squamous epithelial layer of the skin (جلد is "
+  "already canonical for skin).", "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("درم", "Dermis", "", "", "",
+  "Transliteration; the connective tissue layer beneath the epidermis.", "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("هایپودرم", "Hypodermis (subcutaneous tissue)", "tela subcutanea", "", "",
+  "Transliteration for the subcutaneous fat layer.", "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("لایهٔ بازال", "Stratum basale", "stratum germinativum", "", "",
+  "Descriptive Dari layer name with the international Latin alongside, as in the other layered "
+  "tissues of the book.", "AFGHAN STANDARD", "MEDIUM"),
+ ("لایهٔ خاردار", "Stratum spinosum", "", "", "",
+  "Descriptive Dari layer name; the prickle-cell layer.", "AFGHAN STANDARD", "MEDIUM"),
+ ("لایهٔ گرانولار", "Stratum granulosum", "", "", "",
+  "Descriptive Dari layer name; the keratohyaline-granule layer.", "AFGHAN STANDARD", "MEDIUM"),
+ ("لایهٔ شاخی", "Stratum corneum", "", "", "",
+  "Descriptive Dari layer name; the keratinized layer.", "AFGHAN STANDARD", "MEDIUM"),
+ ("جسمِ لاملارِ اپیدرمی", "Lamellar body (Odland body)", "corpusculum lamellosum", "", "",
+  "Composed of the established جسم + لاملار (registered for the lung in Ch17) with the qualifier "
+  "اپیدرمی; the lipid-secreting organelle of the granular layer.", "AFGHAN STANDARD", "MEDIUM"),
+ ("حجراتِ مرکل", "Merkel cells", "", "", "",
+  "Composed of canonical حجرات + the eponym; the tactile epithelial cells.", "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("فولیکولِ مو", "Hair follicle", "folliculus pili", "", "",
+  "Composed of the transliteration فولیکول + the ordinary Dari word مو.", "AFGHAN STANDARD", "MEDIUM"),
+ ("غدواتِ عرقیه", "Sweat glands", "glandulae sudoriferae", "", "",
+  "The form recorded in the Afghan medical-student source that also gives «غدوات شحمی»; the "
+  "adjective عرقی (sweat) follows from it.", "AFGHAN STANDARD", "MEDIUM"),
+ ("غدهٔ عرقیِ اکراین", "Eccrine sweat gland", "", "", "",
+  "Composed of the canonical غدهٔ عرقی + the transliteration اکراین; the common sweat gland.",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("غدهٔ عرقیِ آپوکراین", "Apocrine sweat gland", "", "", "",
+  "Composed of the canonical غدهٔ عرقی + the transliteration آپوکراین.", "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("ناخن", "Nail", "unguis", "", "", "Ordinary Dari word.", "AFGHAN STANDARD", "MEDIUM"),
+ ("اسکار", "Scar", "", "", "", "Transliteration in clinical use; the fibrous replacement tissue of healed wounds.",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("زخم", "Wound", "", "", "", "Ordinary Dari word, kept distinct from قرحه (ulcer, Ch15).",
+  "AFGHAN STANDARD", "MEDIUM"),
+ ("سوختگی", "Burn", "combustio", "", "", "Ordinary Dari word.", "AFGHAN STANDARD", "MEDIUM"),
+ ("ویتیلیگو", "Vitiligo", "", "", "", "Transliteration; autoimmune loss of melanocytes.",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("پسوریازیس", "Psoriasis", "", "", "", "Transliteration; a hyperproliferative epidermal disorder.",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("میلانوما", "Melanoma", "", "", "", "Transliteration; malignant tumour of melanocytes.",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("کارسینومِ حجرویِ بازال", "Basal cell carcinoma", "", "", "",
+  "Composed of the international term + the canonical حجروی and بازال; the commonest skin cancer.",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+ ("درماتیت", "Dermatitis", "", "", "", "Transliteration; inflammation of the skin.",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM"),
+]:
+    T(_d, _e, _forb, AFG, _n, "Ch18", _dec, _c, lat=_lat, abbr=_ab)
+
 OVERRIDES = {
     "رنگ‌آمیزی":        ("", "", "", None),
     "مطبق":            ("", "", "", None),
