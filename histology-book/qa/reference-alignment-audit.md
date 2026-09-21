@@ -30,6 +30,7 @@ before declaring any part of the book release-ready.
 | **Ch 10 — Muscle Tissue** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
 | **Ch 11 — Nervous Tissue** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
 | **Ch 12 — Cardiovascular System** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
+| **Ch 13 — Lymphatic System** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ draft |
 
 **Column key (the 12 canonical checks — source of truth: `audit-template.md`):**
 1. تمام مفاهیم اصلی پوشش داده شده؟ · 2. تعریف‌ها دقیق؟ · 3. Classification درست؟ ·

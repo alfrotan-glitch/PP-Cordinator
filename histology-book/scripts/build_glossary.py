@@ -1368,6 +1368,111 @@ T("وارِیس", "Varicose vein", "varicose veins", AFG,
   "Transliteration in clinical use for dilated, incompetent superficial veins.", "Ch12",
   "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
 
+# ================================================ CH13 — LYMPHATIC =========
+T("لیمف", "Lymph", "", AFG,
+  "Transliteration; the interstitial fluid carried by lymphatic vessels. Ch13 onward uses لیمف "
+  "consistently; the adjective is لیمفاوی.", "Ch13",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM", lat="lymph")
+
+T("لیمفاوی", "Lymphatic", "", AFG,
+  "Adjective formed from the canonical noun لیمف.", "Ch13",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("عقدۀ لیمفاوی", "Lymph node", "lymph gland", AFG,
+  "Composed of the ordinary word عقدۀ + the canonical لیمفاوی. The encapsulated filter organ of "
+  "the lymphatic system.", "Ch13", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("لیمفوسیت", "Lymphocyte", "", AFG,
+  "Transliteration; already introduced in Ch9 as لنفوسیت. The single canonical form used in this "
+  "book is لنفوسیت, as registered in the Ch9 row; this row records the alternative transliteration "
+  "that some Afghan texts print, without making it canonical.", "Ch13",
+  "COMMON AFGHAN TRANSLITERATION", "LOW")
+
+T("تیموس", "Thymus", "", AFG,
+  "Transliteration; the primary lymphoid organ behind the sternum.", "Ch13",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("صفال", "Spleen", "", AFG2,
+  "Established Dari word for the spleen, already used in Ch9 and Ch12.", "Ch13",
+  "AFGHAN STANDARD", "MEDIUM")
+
+T("مغزِ استخوان", "Bone marrow", "", AFG2,
+  "Composed of the ordinary words مغز + استخوان (canonical from Ch8).", "Ch13",
+  "AFGHAN STANDARD", "MEDIUM")
+
+T("لوزه", "Tonsil", "", AFG2,
+  "Ordinary Dari word; the tonsils are MALT organs of the pharynx.", "Ch13",
+  "AFGHAN STANDARD", "MEDIUM")
+
+T("لوزهٔ معدی", "Gastric tonsil", "", AFG2,
+  "Composed of the canonical لوزه + the ordinary word معدی.", "Ch13",
+  "AFGHAN STANDARD", "LOW")
+
+T("MALT", "Mucosa-associated lymphoid tissue", "", AFG,
+  "International abbreviation retained, as everywhere in the medical literature and teaching.",
+  "Ch13", "COMMON AFGHAN TRANSLITERATION", "MEDIUM", abbr="MALT")
+
+T("پلاسموسیت", "Plasma cell", "", AFG,
+  "Transliteration; the antibody-secreting descendant of a B lymphocyte.", "Ch13",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("حجراتِ دندریتیک", "Dendritic cells", "", AFG2,
+  "Composed of canonical حجرات + the established transliteration دندریتیک (the same root as "
+  "دندریت in Ch11). The major antigen-presenting cells.", "Ch13",
+  "AFGHAN STANDARD", "MEDIUM")
+
+T("مرکزِ زاینده", "Germinal centre", "", AFG2,
+  "Descriptive Dari phrase built from established words; the site of B-cell proliferation in a "
+  "secondary follicle.", "Ch13", "AFGHAN STANDARD", "MEDIUM")
+
+T("مرکزِ ثانویه", "Secondary nodule", "", AFG2,
+  "Composed of the established مرکز + the transliteration ثانویه; a nodule with a germinal centre.",
+  "Ch13", "AFGHAN STANDARD", "MEDIUM")
+
+T("وریدچهٔ پس‌مویِرگیِ پُرمکعب", "High endothelial venule (HEV)", "", AFG2,
+  "Descriptive Dari phrase built from canonical parts (وریدچهٔ پس‌مویِرگی from Ch12 + پُرمکعب) plus "
+  "the international abbreviation HEV.", "Ch13", "AFGHAN STANDARD", "MEDIUM", abbr="HEV", lat="postcapillary venule")
+
+T("ایمونوگلوبولین", "Immunoglobulin", "", AFG,
+  "Transliteration; the antibody molecule secreted by plasma cells.", "Ch13",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM", lat="antibody, immunoglobulin")
+
+T("لوزهٔ حلقی", "Pharyngeal tonsil", "", AFG2,
+  "Composed of the canonical لوزه + the ordinary word حلقی.", "Ch13",
+  "AFGHAN STANDARD", "MEDIUM", lat="pharyngeal tonsil, adenoid")
+
+T("صافانِ لیمفاوی", "Lymphatic nodule", "", AFG2,
+  "Descriptive Dari phrase; the nodular lymphoid tissue inside lymph nodes, spleen and tonsils.",
+  "Ch13", "AFGHAN STANDARD", "LOW")
+
+T("دستگاهِ لیمفاوی", "Lymphatic system", "", AFG2,
+  "Composed of the canonical adjective لیمفاوی + دستگاه.", "Ch13",
+  "AFGHAN STANDARD", "MEDIUM")
+
+T("لیمفادِنیت", "Lymphadenitis", "", AFG,
+  "Transliteration; inflammation of a lymph node.", "Ch13",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("لیمفوما", "Lymphoma", "", AFG,
+  "Transliteration; malignant tumour of lymphoid tissue.", "Ch13",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("مرضِ هوچکین", "Hodgkin lymphoma", "Hodgkin disease", AFG2,
+  "Composed of the established مرض + the established name هوچکین.", "Ch13",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("تیموما", "Thymoma", "", AFG,
+  "Transliteration; tumour of the thymic epithelium.", "Ch13",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("اسپلنومگالی", "Splenomegaly", "", AFG,
+  "Transliteration; enlargement of the spleen.", "Ch13",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("لوسمی", "Leukemia", "", AFG,
+  "Transliteration; already registered in Ch9; repeated here because Chapter 13 introduces the "
+  "marrow as a lymphoid organ.", "Ch13", "COMMON AFGHAN TRANSLITERATION", "LOW")
+
 OVERRIDES = {
     "رنگ‌آمیزی":        ("", "", "", None),
     "مطبق":            ("", "", "", None),
