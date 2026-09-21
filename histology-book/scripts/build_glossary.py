@@ -1,0 +1,626 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+build_glossary.py — regenerates glossary/terminology-glossary.csv.
+
+This file is the AUTHORITATIVE terminology source of truth for the book.
+qa_scan.py reads it and derives both its forbidden-form list and its
+canonical-form list from it, so there is exactly one place to change a term.
+
+Schema (11 columns):
+  dari_term, english_term, latin_term, abbreviation, preferred_form,
+  forbidden_forms, source_authority, usage_notes, first_appearance,
+  decision, confidence
+
+decision  ∈ {AFGHAN STANDARD, COMMON AFGHAN TRANSLITERATION,
+             ENGLISH RETAINED, EXPLANATORY DARI ONLY, VERIFY FURTHER}
+confidence ∈ {HIGH, MEDIUM, LOW, UNRESOLVED}
+
+forbidden_forms is semicolon-separated. Only GENUINE Iranian-Persian or
+non-canonical forms go here. Never add:
+  * a prefix of the term itself (سل is a prefix of سلول)
+  * an Afghan transliteration variant that is in normal teaching use
+    (ماست‌سل, میکروتوبول) — record those in usage_notes instead.
+"""
+
+import csv
+import os
+
+OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                   "glossary", "terminology-glossary.csv")
+
+COLS = ["dari_term", "english_term", "latin_term", "abbreviation",
+        "preferred_form", "forbidden_forms", "accepted_variants",
+        "source_authority", "usage_notes", "first_appearance",
+        "decision", "confidence"]
+
+R = []
+
+
+def T(dari, eng, forb="", src="", notes="", first="",
+      dec="AFGHAN STANDARD", conf="HIGH", lat="", abbr="", acc=""):
+    R.append({
+        "dari_term": dari, "english_term": eng, "latin_term": lat,
+        "abbreviation": abbr,
+        "preferred_form": f"{dari} ({eng})",
+        "forbidden_forms": forb, "accepted_variants": acc,
+        "source_authority": src,
+        "usage_notes": notes, "first_appearance": first,
+        "decision": dec, "confidence": conf,
+    })
+
+
+AFG = "Afghan medical education usage (MOHE curriculum / Afghan medical-university teaching material)"
+MAND = "Project canonical decision (Terminology Gate) — Afghan usage confirmed by sources"
+
+# ============================================================ CORE / CH1 ===
+T("حجره", "Cell", "سلول;یاخته", MAND,
+  "CANONICAL. Afghan Dari uses حجره for Cell; plural حجرات. Confirmed by MOHE Biology curriculum "
+  "(«حجره نباتی»), خاتم النبیین histology text, and AfghanVet («در کشور ما افغانستان ... واژه حجره "
+  "به عوض سلول به مفهوم Cell به کار گرفته شده است»). سلول is the Iranian-Persian standard and is "
+  "prohibited. NEVER list «سل» as forbidden — it is a prefix of both حجره and سلول.",
+  "Ch01")
+T("حجرات", "Cells", "سلول‌ها", MAND,
+  "Plural of حجره. Use انساج for the plural of نسج.", "Ch01")
+T("حجروی", "Cellular", "سلولی", MAND,
+  "Adjective from حجره. Also used in the official MOHE book title «معافیت حجروی و مالیکولی».",
+  "Ch01")
+T("بین‌حجروی", "Intercellular", "بین‌سلولی", MAND,
+  "Attested in Afghan Pashto/Dari teaching («بین الحجروي مسافه»).", "Ch04")
+T("خارج‌حجروی", "Extracellular", "خارج‌سلولی", MAND, "", "Ch02")
+T("درون‌حجروی", "Intracellular", "درون‌سلولی", MAND, "", "Ch02")
+T("نسج", "Tissue", "بافت", MAND,
+  "CANONICAL. Afghan Dari uses نسج (plural انساج). Confirmed by MOHE Biology curriculum "
+  "(«انواع انساج نباتی»), the خاتم النبیین histology text, and the Scribd Afghan lecture "
+  "«Connective Tissue نسج منضم». بافت is the Iranian-Persian standard and is prohibited.",
+  "Ch01")
+T("انساج", "Tissues", "بافت‌ها;بافت‌های;نسج‌ها;نسج‌های", MAND,
+  "Afghan plural of نسج. The plural construct is «انساجِ».", "Ch01")
+T("نسج منضم", "Connective tissue", "بافت پیوندی;بافت رابط;بافت همبند", MAND,
+  "CANONICAL, user-mandated and independently confirmed by an Afghan histology lecture "
+  "titled «Connective Tissue نسج منضم» and by the خاتم النبیین text («محل اصلی WBC در نسج منضم است»).",
+  "Ch01")
+T("نسج اپیتلیال", "Epithelial tissue", "بافت پوششی;بافت اپیتلیال;بافت پوششی", MAND,
+  "Afghan teaching uses اپیتلیوم as the noun; the tissue is نسج اپیتلیال.", "Ch01")
+T("هستولوژی", "Histology", "بافت شناسی;بافت‌شناسی", MAND,
+  "The official course name in the Afghan medical curriculum (kateb.edu.af: «Histology (1) · هستولوژی · 77005»).",
+  "Ch01")
+T("سایتولوژی", "Cytology", "یاخته‌شناسی;سلول‌شناسی", MAND,
+  "Used by the Afghan MoPH job description («پتالوژی اناتومیک (هستولوژی/هستوپتالوژی، سایتولوژی)»).",
+  "Ch01")
+T("پتالوژی", "Pathology", "پاتولوژی;آسیب‌شناسی", MAND,
+  "Afghan MoPH and MoHE use پتالوژی; the Kabul medical curriculum lists «Pathology (1) · پتالوژی».",
+  "Ch01")
+T("هستوپتالوژی", "Histopathology", "هیستوپاتولوژی;بافت‌آسیب‌شناسی", MAND,
+  "Afghan MoHE job-advert source list names «بست هستوپتالوژی پوهنحی طب».", "Ch01")
+T("اناتومی", "Anatomy", "کالبدشناسی;تشریح", MAND,
+  "Afghan medical curriculum: «Anatomy (1) · اناتومی».", "Ch01")
+T("فزیولوژی", "Physiology", "فیزیولوژی", MAND,
+  "Afghan curriculum spells it فزیولوژی (ز not ز-ی); both are heard, this is the book standard.",
+  "Ch01")
+T("طب", "Medicine (discipline)", "پزشکی", MAND,
+  "Afghan usage: «فاکولته طب»، «طب معالجوی»، «مرکز طبی». پزشکی is the Iranian form.", "Ch01")
+T("داکتر", "Doctor / physician", "پزشک", MAND,
+  "Afghan forms داکتر and دوکتور both occur; داکتر is the book standard.", "Ch01")
+T("شفاخانه", "Hospital", "بیمارستان", MAND, "", "Ch01")
+T("محصل", "Student", "دانشجو", MAND, "Afghan: «محصلین» in every Afghan curriculum document.", "Ch01")
+T("پوهنحی", "Faculty (of a university)", "دانشکده", MAND,
+  "Afghan: پوهنحی طب معالجوی. University = پوهنتون.", "Ch01")
+T("مریضی", "Disease", "بیماری", MAND,
+  "Afghan: «مریضی سل»، «امراض». Iranian standard is بیماری.", "Ch01", conf="HIGH")
+T("مریض", "Patient", "بیمار", MAND, "Afghan clinical register: «مریضان».", "Ch01")
+T("امراض", "Diseases", "بیماری‌ها", MAND,
+  "The Afghan institutional plural («امراض جلدی»، «امراض هاضمه»); accepted alongside مریضی‌ها.",
+  "Ch01")
+T("تداوی", "Treatment", "درمان;معالجه", MAND,
+  "Wikipedia's Afghan/Iranian differential list records «تداوی: درمان». Afghan MoPH and every "
+  "Afghan hospital site use تداوی.", "Ch01")
+T("وقایه", "Prevention", "پیشگیری", MAND, "Afghan: «قابل اجتناب (وقایه یا تداوی)».", "Ch05")
+
+# ==================================================== METHODS (Ch1) ========
+T("اسلاید", "Slide", "لام;لام میکروسکوپی", MAND,
+  "English retained and used as the Afghan technical word.", "Ch01",
+  dec="ENGLISH RETAINED")
+T("رنگ‌آمیزی", "Staining", "رنگ‌آمیزی (فاصله‌دار)", "AfghanVet biology text («بعد از رنگ‌آمیزی در زیر مایکروسکوپ»).",
+  "Written with ZWNJ. Not an Iranian-specific form.", "Ch01")
+T("مایکروسکوپ", "Microscope", "میکروسکوپ", MAND,
+  "Afghan sources write مایکروسکوپ (AfghanVet, khateb texts).", "Ch01")
+T("مایکروسکوپ نوری", "Light microscope (LM)", "", MAND,
+  "Abbreviated LM in English text throughout the book.", "Ch01", abbr="LM")
+T("مایکروسکوپ الکترونی", "Electron microscope", "", MAND,
+  "TEM = مایکروسکوپ الکترونی انتقالی; SEM = مایکروسکوپ الکترونی سکنی.", "Ch01")
+T("تثبیت", "Fixation", "", AFG, "Also written فیکساتیو (English transliteration).", "Ch01",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("فرمالین", "Formalin", "", AFG, "Afghan texts also use فرمالین/فورمالین interchangeably; استاندارد = فرمالین.",
+  "Ch01", dec="COMMON AFGHAN TRANSLITERATION")
+T("پارافین", "Paraffin", "", AFG, "", "Ch01", dec="COMMON AFGHAN TRANSLITERATION")
+T("میکروتوم", "Microtome", "", AFG, "", "Ch01", dec="COMMON AFGHAN TRANSLITERATION")
+T("بیوپسی", "Biopsy", "", AFG, "Afghan clinical form; English also used in full.", "Ch01",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("آرتیفکت", "Artifact", "", AFG, "", "Ch01", dec="COMMON AFGHAN TRANSLITERATION")
+T("هماتوکسیلین", "Hematoxylin", "", AFG, "", "Ch01", dec="COMMON AFGHAN TRANSLITERATION")
+T("ائوزین", "Eosin", "", AFG, "The H&E pair; H&E is kept as the English abbreviation.",
+  "Ch01", dec="COMMON AFGHAN TRANSLITERATION")
+T("بازوفیلی", "Basophilia", "", AFG, "", "Ch01", dec="COMMON AFGHAN TRANSLITERATION")
+T("ائوزینوفیلی", "Eosinophilia", "", AFG, "", "Ch01", dec="COMMON AFGHAN TRANSLITERATION")
+T("متاکرومازی", "Metachromasia", "", AFG, "Classic exam point: mast-cell granules.", "Ch01",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("تولوئیدین‌بلو", "Toluidine blue", "", AFG, "", "Ch01", dec="COMMON AFGHAN TRANSLITERATION")
+T("ایمونوهیستوشیمی", "Immunohistochemistry", "", AFG, "Abbreviated IHC.", "Ch01",
+  dec="COMMON AFGHAN TRANSLITERATION", abbr="IHC")
+
+# =================================================== CYTOPLASM (Ch2) =======
+T("سیتوپلاسم", "Cytoplasm", "", AFG,
+  "All three spellings circulate in Afghan texts (سیتوپلاسم, سیتوپلازم, سایتوپلازم). The book "
+  "standardises on سیتوپلاسم (AfghanVet form). Variants accepted, NOT forbidden. Do not add "
+  "سیتوپلازم or سایتوپلازم to forbidden_forms.", "Ch02", conf="MEDIUM")
+T("سیتوزول", "Cytosol", "", AFG, "Also written سایتوزول; both accepted.", "Ch02", conf="MEDIUM")
+T("غشای حجروی", "Cell membrane", "غشای سلولی;غشای پلاسمایی", MAND,
+  "Afghan sources write «غشای حجره» / «حجروي غشا» (TolAfghan, wasiweb). پلاسمالما is kept as the "
+  "English/Latin term where the exam needs it.", "Ch02")
+T("پلاسمالما", "Plasma membrane", "plasmalemma", AFG,
+  "English/Latin term retained for exam recognition.", "Ch02", dec="ENGLISH RETAINED")
+T("مالیکول", "Molecule", "مولکول", "MOHE official book title «معافیت حجروی و مالیکولی»; TolAfghan biology text.",
+  "Afghan transliteration is مالیکول/مالیکولی. مولکول is the Iranian form.", "Ch02")
+T("ایون", "Ion", "یون", "Afghan biology texts («آیون کلسیم»، «ایون کلسیم»).",
+  "Afghan transliteration ایون. یون is the Iranian form. Note: the substring یون also occurs inside "
+  "پیوند، اکسیداسیون، فیلتراسیون — those are ordinary words and must never be flagged.",
+  "Ch02")
+T("انزایم", "Enzyme", "آنزیم", "Afghan histology text (خاتم النبیین) repeatedly writes انزایم; Afghan biology texts likewise.",
+  "Afghan transliteration انزایم. آنزیم is the Iranian form.", "Ch02")
+T("کیمیاوی", "Chemical", "شیمیایی", "MOHE Biology curriculum: «ساختمان کیمیاوی آن».",
+  "Afghan form کیمیاوی/کیمیا. شیمیایی is the Iranian form. بیوشیمیایی (biochemical) is a legitimate "
+  "compound and must NOT be flagged.", "Ch02")
+T("میتابولیسم", "Metabolism", "متابولیسم", "TolAfghan: «دخالت در میتابولیسم قندها».",
+  "Afghan transliteration میتابولیسم.", "Ch02")
+T("ماتریکس", "Matrix", "extracellular matrix", AFG,
+  "International term, used throughout Afghan teaching. The Afghan variant بستره also occurs "
+  "(TolAfghan) but is not required. Abbreviated ECM.", "Ch02", dec="ENGLISH RETAINED",
+  abbr="ECM")
+T("رایبوزوم", "Ribosome", "ریبوزوم", "TolAfghan and AfghanVet biology texts.",
+  "Afghan transliteration رایبوزوم, matching the Dari pronunciation.", "Ch02")
+T("شبکه آندوپلاسمی", "Endoplasmic reticulum", "شبکه درون‌یاخته‌ای", AFG,
+  "Abbreviated ER; خشن = rough (RER), صاف/نرم = smooth (SER). «شبکه درون‌یاخته‌ای» is the Iranian "
+  "purist coinage and is prohibited.", "Ch02", abbr="ER")
+T("دستگاه گلژی", "Golgi apparatus", "", AFG, "Afghan texts use دستگاه گلژی.", "Ch02",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("لایزوزوم", "Lysosome", "لیزوزوم", "Afghan histology text writes لایزوزوم/لیزوزم.",
+  "Both لایزوزوم and لیزوزوم occur in Afghan texts; لایزوزوم is the book standard.", "Ch02",
+  dec="COMMON AFGHAN TRANSLITERATION", conf="MEDIUM")
+T("پروتئازوم", "Proteasome", "", AFG, "", "Ch02", dec="COMMON AFGHAN TRANSLITERATION")
+T("پراکسیزوم", "Peroxisome", "", AFG, "", "Ch02", dec="COMMON AFGHAN TRANSLITERATION")
+T("مایتوکندریا", "Mitochondrion", "", MAND,
+  "Canonical per the project decision list. Afghan texts print both مایتوکندریا and مایتوکاندریا; "
+  "the variant is ACCEPTED, not forbidden. Do not list مایتوکاندریا as forbidden.",
+  "Ch02", acc="مایتوکاندریا;میتوکندری")
+T("کریستا", "Crista", "cristae", AFG, "Plural کریستاها. English retained.",
+  "Ch02", dec="ENGLISH RETAINED")
+T("سیتواسکلتون", "Cytoskeleton", "اسکلت حجروی", AFG,
+  "English retained; «اسکلت حجروی» is the Dari gloss.", "Ch02", dec="ENGLISH RETAINED")
+T("میکروتوبول", "Microtubule", "ریزلوله", AFG,
+  "Afghan exam form is میکروتوبول. Do NOT list it as forbidden — it is not an Iranian form.",
+  "Ch02")
+T("میکروفیلامنت", "Microfilament", "ریزرشته", AFG, "Afghan exam form.", "Ch02")
+T("فیلامنت میانی", "Intermediate filament", "", AFG, "", "Ch02")
+T("مژک", "Cilium", "", AFG,
+  "Both مژک and سیلیا/سلیا are attested in Afghan teaching material (the خاتم النبیین text uses "
+  "«مژک دار» and «سلیا دار» in the same chapter). مژک is the book standard; سیلیا is accepted. "
+  "Do NOT forbid سیلیا.", "Ch02", conf="MEDIUM", acc="سیلیا;سلیا")
+T("میکروویلی", "Microvillus", "ریزپرز;مایکروویلای", MAND,
+  "Afghan transliteration; the Pashto teaching text writes مایکروویلای. ریزپرز is the Iranian form.",
+  "Ch02")
+T("استروئید", "Steroid", "استرویید", AFG,
+  "Afghan histology and biology texts write استروئید. استرویید is the Iranian transliteration.",
+  "Ch02")
+T("کاربوهایدریت", "Carbohydrate", "کربوهیدرات", AFG,
+  "Afghan transliteration pattern (کاربن, کاربوهایدریت). کربوهیدرات is the Iranian form.",
+  "Ch02", conf="MEDIUM")
+T("فسفوریلیشن", "Phosphorylation", "فسفریلاسیون;فسفوریلاسیون", AFG,
+  "Afghan texts write «فسفوریلیشن اکسیداتیو» (TolAfghan, خاتم النبیین).", "Ch02", conf="MEDIUM")
+T("اگزوسایتوز", "Exocytosis", "", AFG, "", "Ch02", dec="COMMON AFGHAN TRANSLITERATION")
+T("اندوسایتوز", "Endocytosis", "", AFG, "", "Ch02", dec="COMMON AFGHAN TRANSLITERATION")
+T("فاگوسایتوز", "Phagocytosis", "بیگانه‌خواری", AFG, "", "Ch02",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("پینوسایتوز", "Pinocytosis", "", AFG, "", "Ch02", dec="COMMON AFGHAN TRANSLITERATION")
+T("گلیکوکالیکس", "Glycocalyx", "", AFG, "", "Ch02", dec="COMMON AFGHAN TRANSLITERATION")
+T("گلیکوزیلاسیون", "Glycosylation", "", AFG, "", "Ch02",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("لیپوفوسین", "Lipofuscin", "", AFG, "Wear-and-tear pigment.", "Ch02",
+  dec="COMMON AFGHAN TRANSLITERATION")
+
+# ===================================================== NUCLEUS (Ch3) =======
+T("هسته", "Nucleus", "", AFG, "", "Ch03")
+T("هسته‌چه", "Nucleolus", "هستک", AFG,
+  "Afghan histology text writes «هسته چه» (e.g. «هسته بزرگ و هسته چه»). هستک is the Iranian form.",
+  "Ch03")
+T("غشای هستوی", "Nuclear envelope", "پوشش هسته‌ای", AFG,
+  "Also written پوشش هستوی; both acceptable, book uses غشای هستوی/پوشش هستوی.", "Ch03",
+  conf="MEDIUM")
+T("منفذ هستوی", "Nuclear pore", "منفذ هسته‌ای", AFG, "", "Ch03", conf="MEDIUM")
+T("کروماتین", "Chromatin", "", AFG, "", "Ch03", dec="COMMON AFGHAN TRANSLITERATION")
+T("هتروکروماتین", "Heterochromatin", "", AFG, "", "Ch03",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("یوکروماتین", "Euchromatin", "", AFG, "", "Ch03",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("نوکلئوزوم", "Nucleosome", "", AFG, "", "Ch03",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("هیستون", "Histone", "", AFG, "Adjective هیستونی (histonic) — must not be confused with ستونی.",
+  "Ch03", dec="COMMON AFGHAN TRANSLITERATION")
+T("کروموزوم", "Chromosome", "", AFG, "", "Ch03", dec="COMMON AFGHAN TRANSLITERATION")
+T("کروماتید", "Chromatid", "", AFG, "", "Ch03", dec="COMMON AFGHAN TRANSLITERATION")
+T("سانترومر", "Centromere", "", AFG, "", "Ch03", dec="COMMON AFGHAN TRANSLITERATION")
+T("کینتوکور", "Kinetochore", "", AFG, "", "Ch03", dec="COMMON AFGHAN TRANSLITERATION")
+T("تلومر", "Telomere", "", AFG, "", "Ch03", dec="COMMON AFGHAN TRANSLITERATION")
+T("کاریوتایپ", "Karyotype", "", AFG, "", "Ch03", dec="COMMON AFGHAN TRANSLITERATION")
+T("کرویاتِ سرخ", "Erythrocyte", "گویچهٔ سرخ;گلبول قرمز;حجرات سرخ", AFG,
+  "Afghan histology text uses کرویات («کرویات سفید خون»); گویچه is the Iranian form. حجرات سرخ also "
+  "occurs in Afghan texts but کرویات is the book standard. RBC retained as the abbreviation.",
+  "Ch03", abbr="RBC")
+T("میتوز", "Mitosis", "", AFG, "Phase names: پروفاز، متافاز، آنافاز، تلوفاز.", "Ch03",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("میوز", "Meiosis", "", AFG, "", "Ch03", dec="COMMON AFGHAN TRANSLITERATION")
+T("آپوپتوز", "Apoptosis", "مرگ برنامه‌ریزی‌شدهٔ حجره", AFG,
+  "Both the transliteration and the Dari gloss are used; the English term is kept for exam "
+  "recognition.", "Ch03", dec="COMMON AFGHAN TRANSLITERATION")
+T("نکروز", "Necrosis", "", AFG, "", "Ch03", dec="COMMON AFGHAN TRANSLITERATION")
+T("کاسپاز", "Caspase", "", AFG, "", "Ch03", dec="COMMON AFGHAN TRANSLITERATION")
+T("اپی‌ژنتیک", "Epigenetics", "", AFG, "", "Ch03", dec="COMMON AFGHAN TRANSLITERATION")
+T("متیلاسیون", "Methylation", "", AFG, "", "Ch03", dec="COMMON AFGHAN TRANSLITERATION")
+T("استیلاسیون", "Acetylation", "", AFG, "", "Ch03", dec="COMMON AFGHAN TRANSLITERATION")
+T("تریزومی", "Trisomy", "", AFG, "", "Ch03", dec="COMMON AFGHAN TRANSLITERATION")
+T("مونوزومی", "Monosomy", "", AFG, "", "Ch03", dec="COMMON AFGHAN TRANSLITERATION")
+T("آنیوپلوئیدی", "Aneuploidy", "", AFG, "", "Ch03", dec="COMMON AFGHAN TRANSLITERATION")
+T("کاریوکنیزیس", "Karyokinesis", "", AFG, "", "Ch03", dec="ENGLISH RETAINED")
+
+# ================================================== EPITHELIUM (Ch4) =======
+T("اپیتلیوم", "Epithelium", "بافت پوششی", MAND,
+  "International term used unchanged in Afghan teaching (خاتم النبیین: «اپیتلیوم استوانه‌یی چند "
+  "طبقه کاذب مژک دار»). Adjective: اپیتلیال.", "Ch04")
+T("لامینای پایه", "Basal lamina", "غشای پایه", MAND,
+  "Afghan teaching keeps the international terminology (the Afghan text writes basal lamina / "
+  "basel membrane). غشای پایه is used only where the reference means the whole basement membrane.",
+  "Ch04")
+T("غشای پایه", "Basement membrane", "", AFG,
+  "The composite structure = لامینای پایه + لامینا رتیکولاریس. Kept distinct from لامینای پایه.",
+  "Ch04")
+T("مسطح", "Squamous", "سنگفرشی;خشت فرشی;فلس", MAND,
+  "CANONICAL per the project decision list («Simple Squamous Epithelium = اپیتلیوم سادهٔ مسطح»). "
+  "Afghan teaching material shows سنگفرشی and خشت‌فرشی as well, so این forms are classified as "
+  "non-canonical variants rather than Iranian — but the book must use مسطح consistently. "
+  "Classified as NON-CANONICAL (book-consistency) not as an Iranian-Persian violation.",
+  "Ch04", conf="MEDIUM")
+T("مکعبی", "Cuboidal", "", AFG,
+  "Matches Afghan teaching («اپیتلیوم مکعبی»). No competing Afghan form.", "Ch04")
+T("استوانه‌ای", "Columnar", "منشوری;ستونی", AFG,
+  "Afghan histology text uses «استوانه‌یی» throughout. منشوری is the Iranian form. ستونی is a "
+  "Pashto-side equivalent and is not used in the Dari text. NOTE: هیستونی (histonic) contains the "
+  "letters ستونی and must never be flagged.", "Ch04")
+T("مطبق", "Stratified", "چندلایه", AFG,
+  "Afghan teaching: «اپیتلیوم خشت فرشی چند طبقه‌یی». مطبق is the reference's term.", "Ch04")
+T("شبه‌مطبق", "Pseudostratified", "", AFG,
+  "Afghan text: «اپیتلیوم استوانه‌یی چند طبقه کاذب»; شبه‌مطبق and مطبق کاذب both occur.",
+  "Ch04", conf="MEDIUM")
+T("یوروتلیوم", "Urothelium", "اپیتلیوم انتقالی;اپیتلیوم مثانه", MAND,
+  "International term retained per the reference; اپیتلیوم انتقالی given as the Dari gloss.",
+  "Ch04", dec="ENGLISH RETAINED")
+T("دسموزوم", "Desmosome", "پل حجروی", AFG, "", "Ch04",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("همی‌دسموزوم", "Hemidesmosome", "", AFG, "", "Ch04",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("اتصال مضبوط", "Tight junction", "zonula occludens", AFG,
+  "Afghan teaching writes مضبوط اتصال / tight junction. The Latin zonula occludens is given in "
+  "parentheses for exam recognition.", "Ch04", dec="COMMON AFGHAN TRANSLITERATION")
+T("اتصال چسبنده", "Adherens junction", "zonula adherens", AFG, "", "Ch04",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("اتصال شکافی", "Gap junction", "connexon", AFG,
+  "Afghan teaching uses Gap junction; اتصال شکافی/ارتباطی is the Dari gloss.", "Ch04",
+  dec="COMMON AFGHAN TRANSLITERATION", conf="MEDIUM")
+T("کادهرین", "Cadherin", "", AFG, "", "Ch04", dec="ENGLISH RETAINED")
+T("اینتگرین", "Integrin", "", AFG, "", "Ch04", dec="ENGLISH RETAINED")
+T("کلودین", "Claudin", "", AFG, "", "Ch04", dec="ENGLISH RETAINED")
+T("اوکلودین", "Occludin", "", AFG, "", "Ch04", dec="ENGLISH RETAINED")
+T("کراتینوسایت", "Keratinocyte", "", AFG, "", "Ch04",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("ملانوسایت", "Melanocyte", "", AFG, "", "Ch04",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("گابلت", "Goblet cell", "حجرهٔ جامی", AFG,
+  "Afghan histology text keeps Goblet cell in English; حجرهٔ جامی is the Dari gloss.", "Ch04",
+  dec="ENGLISH RETAINED")
+T("موسین", "Mucin", "", AFG, "", "Ch04", dec="COMMON AFGHAN TRANSLITERATION")
+T("موسینوژن", "Mucinogen", "", AFG, "", "Ch04", dec="COMMON AFGHAN TRANSLITERATION")
+T("موکوس", "Mucus", "", AFG, "Afghan histology text uses موکوس.", "Ch04",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("غدوات شحمی", "Sebaceous glands", "غدد سباسه", AFG,
+  "Afghan medical-student source writes «غدوات شحمی» and «غدوات عرقیه». سباسه is the Iranian form.",
+  "Ch04", conf="MEDIUM")
+T("اندوتلیوم", "Endothelium", "آندوتلیوم", AFG,
+  "Both اندوتلیوم and آندوتلیوم occur in Afghan texts; اندوتلیوم is the book standard.", "Ch04",
+  conf="MEDIUM")
+T("مزوتلیوم", "Mesothelium", "", AFG, "", "Ch04",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("لامینا پروپریا", "Lamina propria", "", AFG, "International term retained.", "Ch04",
+  dec="ENGLISH RETAINED")
+T("مخاط", "Mucosa", "", AFG, "Afghan histology text: «سطح مخاط»، «تحت مخاط».", "Ch04")
+T("تحت مخاط", "Submucosa", "", AFG, "", "Ch04")
+T("سروزا", "Serosa", "", AFG, "Afghan histology text: «لایه سروزا».", "Ch04")
+T("متاپلازی", "Metaplasia", "", AFG, "", "Ch04", dec="COMMON AFGHAN TRANSLITERATION")
+T("دیسپلازی", "Dysplasia", "", AFG, "", "Ch04", dec="COMMON AFGHAN TRANSLITERATION")
+T("نئوپلازی", "Neoplasia", "", AFG, "", "Ch04", dec="COMMON AFGHAN TRANSLITERATION")
+T("کارسینوم درجا", "Carcinoma in situ", "", AFG, "", "Ch04", abbr="CIS")
+T("میواپی‌تلیال", "Myoepithelial", "", AFG, "", "Ch04",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("هاضموی", "Digestive / gastrointestinal", "گوارشی;لوله گوارش", AFG,
+  "Afghan clinical usage favours هاضمه («امراض هاضمه»، «دستگاه هاضمه»). NOTE: the Afghan "
+  "histology text also shows «لوله گوارشی», so گوارشی is classified as non-canonical (book "
+  "consistency) rather than Iranian. هاضموی is the book standard.", "Ch04", conf="MEDIUM")
+
+# ================================================= CONNECTIVE (Ch5) ========
+T("مادهٔ زمینه‌ای", "Ground substance", "", AFG, "", "Ch05")
+T("کولاجن", "Collagen", "", AFG, "Afghan spelling کولاجن (Pashto teaching text: د کوالجنس).",
+  "Ch05", dec="COMMON AFGHAN TRANSLITERATION")
+T("تروپوکولاجن", "Tropocollagen", "", AFG, "", "Ch05",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("پروکولاجن", "Procollagen", "", AFG, "", "Ch05",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("فیبروبلاست", "Fibroblast", "", AFG, "", "Ch05",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("ماکروفاژ", "Macrophage", "", AFG, "Afghan teaching uses ماکروفاژ.", "Ch05",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("ماست‌سل", "Mast cell", "سلول مست;ماست سیت", AFG,
+  "Afghan form ماست‌سل / ماست سیت. NOTE: ماست‌سل is a transliteration, NOT an Iranian form — do "
+  "not list it under forbidden_forms of any entry.", "Ch05",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("پلاسما‌سل", "Plasma cell", "پلاسموسیت;سلول پلاسما", AFG, "", "Ch05",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("شحمی", "Adipose / fatty", "چربی (اصطلاح بافتی)", AFG,
+  "Afghan sources use شحم/شحمی for fat («قطرات شحم»، «غدوات شحمی»). چربی remains the everyday word.",
+  "Ch05", conf="MEDIUM")
+T("آدیپوسایت", "Adipocyte", "حجرهٔ شحمی", AFG, "English/transliterated term retained.",
+  "Ch05", dec="ENGLISH RETAINED")
+T("میوفیبروبلاست", "Myofibroblast", "", AFG, "", "Ch05",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("رشتهٔ رتیکولار", "Reticular fiber", "", AFG, "Type III collagen; silver stain.", "Ch05")
+T("رشتهٔ الاستیک", "Elastic fiber", "", AFG, "", "Ch05")
+T("الاستین", "Elastin", "", AFG, "", "Ch05", dec="COMMON AFGHAN TRANSLITERATION")
+T("فیبریلین", "Fibrillin", "", AFG, "Marfan syndrome protein.", "Ch05",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("دسموزین", "Desmosine", "", AFG, "Cross-link marker of elastin.", "Ch05",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("فیبرونکتین", "Fibronectin", "", AFG, "", "Ch05",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("لامینین", "Laminin", "", AFG, "", "Ch05",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("نیدوژن", "Nidogen", "entactin", AFG, "", "Ch05",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("پروتئوگلیکان", "Proteoglycan", "", AFG, "", "Ch05",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("گلیکوزآمینوگلیکان", "Glycosaminoglycan", "mucopolysaccharide", AFG, "", "Ch05",
+  dec="COMMON AFGHAN TRANSLITERATION", abbr="GAG")
+T("هیالورونان", "Hyaluronan", "hyaluronic acid", AFG, "", "Ch05",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("هیالورونیداز", "Hyaluronidase", "", AFG, "", "Ch05",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("کندرویتین سولفات", "Chondroitin sulfate", "", AFG, "", "Ch05",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("کراتان سولفات", "Keratan sulfate", "", AFG, "", "Ch05",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("درماتان سولفات", "Dermatan sulfate", "", AFG, "", "Ch05",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("هپارین", "Heparin", "", AFG, "", "Ch05",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("هیستامین", "Histamine", "", AFG, "", "Ch05",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("ترپتاز", "Tryptase", "", AFG, "Mast-cell marker.", "Ch05",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("نسج منضم شل", "Loose (areolar) connective tissue", "بافت همبند سست;نسج منضم سست",
+  AFG, "Afghan teaching writes نسج منضم; شل and سست are both acceptable qualifiers.",
+  "Ch05", conf="MEDIUM")
+T("نسج منضم متراکم", "Dense connective tissue", "بافت همبند متراکم", AFG, "", "Ch05")
+T("تاندون", "Tendon", "", AFG, "", "Ch05")
+T("رباط", "Ligament", "", AFG, "", "Ch05")
+T("نسج گرانولاسیون", "Granulation tissue", "بافت گرانوله", AFG,
+  "Scribd Afghan lecture «Connective Tissue نسج منضم» uses this term family.", "Ch05")
+T("فیبروز", "Fibrosis", "", AFG, "", "Ch05", dec="COMMON AFGHAN TRANSLITERATION")
+T("ادم", "Edema", "", AFG, "", "Ch05", dec="COMMON AFGHAN TRANSLITERATION")
+T("فیبرین", "Fibrin", "", AFG, "", "Ch05", dec="COMMON AFGHAN TRANSLITERATION")
+T("رگ‌زایی", "Angiogenesis", "واسکولارزاسیون", AFG, "Afghan form رگ‌زایی.", "Ch05",
+  conf="MEDIUM")
+T("اسکوروی", "Scurvy", "اسکوربوت", AFG, "Vitamin-C deficiency; collagen hydroxylation fails.",
+  "Ch05", dec="COMMON AFGHAN TRANSLITERATION")
+T("مارفان", "Marfan syndrome", "", AFG, "", "Ch05",
+  dec="COMMON AFGHAN TRANSLITERATION")
+T("جلد", "Skin", "پوست", AFG,
+  "Afghan histology text: «اپیتلیوم جلد»; Afghan clinical usage: «امراض جلدی». پوست is the Iranian "
+  "form in the differential list. اپیدرم/درم/هیپودرم are kept as the international layer names.",
+  "Ch01")
+
+# =========================================== BLOOD VESSELS & ORGAN NAMES ===
+T("اوعیهٔ دموی", "Blood vessels", "رگ‌های خونی;رگهای خونی;عروق خونی", MAND,
+  "CANONICAL, user-mandated. Used for the collective/plural concept. A single named vessel keeps "
+  "its own term (شریان، ورید، موی‌رگ); the generic singular رگ is attested in Afghan teaching and "
+  "is allowed in fixed phrases such as «دیوارهٔ رگ».", "Ch01", conf="MEDIUM")
+T("شریان", "Artery", "", MAND, "", "Ch01")
+T("ورید", "Vein", "", MAND, "", "Ch01")
+T("شریانچه", "Arteriole", "", MAND, "", "Ch01")
+T("وریدچه", "Venule", "", MAND, "", "Ch01")
+T("موی‌رگ", "Capillary", "مویرگ", "Afghan histology text: «قلب، شریان، ورید، موی رگها».",
+  "Afghan written form is موی‌رگ (two elements). مویرگ is the contracted Iranian form.", "Ch01")
+T("سرخرگ", "Artery (arterial)", "", AFG,
+  "Afghan everyday/clinical form used for named arteries (آئورت, سرخرگ ریوی). Retained alongside "
+  "the canonical شریان; the book uses شریان for the histological definition.", "Ch05",
+  conf="MEDIUM")
+
+# ---- terms deliberately RETAINED IN ENGLISH / unresolved ----
+T("آنتی‌ژن", "Antigen", "", AFG,
+  "[VERIFY TERMINOLOGY] Afghan sources show both آنتی‌ژن and آنتی‌نژ/آنتی‌نژن. Not an Iranian "
+  "form; the book keeps آنتی‌ژن until an Afghan institutional source settles it.", "Ch05",
+  dec="VERIFY FURTHER", conf="UNRESOLVED")
+T("Cellulitis", "Cellulitis", "", AFG,
+  "No reliable Afghan Dari standard could be established; kept in English with a Dari explanation "
+  "(«گسترش عفونت در نسج منضم سست زیر جلد»). Rule 4 of the Terminology Gate.",
+  "Ch05", dec="ENGLISH RETAINED")
+T("باکتری", "Bacteria", "باکتریا", AFG,
+  "Afghan histology text writes باکتریا; باکتری is equally current in Afghanistan and is what the "
+  "book already used, so باکتری is kept as the book standard (no stylistic churn) and باکتریا is "
+  "registered as an accepted variant.", "Ch02",
+  dec="ENGLISH RETAINED", conf="MEDIUM", acc="باکتریا")
+T("پاراسلولار", "Paracellular", "", AFG,
+  "English term retained. The book writes «(paracellular seal)» rather than a Dari coinage, per "
+  "rule 4 (do not invent).", "Ch04", dec="ENGLISH RETAINED")
+
+
+# ============================================ SUPPLEMENT (Gate pass 2) ======
+# Clinical-register vocabulary decided in the second source review. Pass 1 did
+# not reach this layer because it is not the سلول/بافت core; it is the everyday
+# clinical vocabulary that a student meets on ward signs and in MoPH documents.
+AFG2 = ("Afghan institutional usage: MoPH publications / Afghanistan health "
+        "sector documents / Afghan hospitals and Afghan medical-faculty material")
+
+T("دوا", "Drug / medicine",
+  "دارو;داروی;دارویی;داروها;داروهای;داروهایی;داروهایش", AFG2,
+  "Afghan register. MoPH-sector text: «تمامی خدمات به شمول دوا غذا رایگان است»، «کیفیت دواهای "
+  "در حال فروش»، «دواخانه»، «دواسازی»، «مصارف ادویه». Afghanistan's medicines regulator is "
+  "literally «اداره ملی ادویه و غذا» (dpmea.gov.af), whose own text writes «محصولات دوایی» and "
+  "«قاچاق دوا ها». Afghan hospitals: «با استفاده از روش‌های تداوی مختلفی از جمله دواهای مرتبط». "
+  "دارو does still appear in Afghan journalistic prose, so this is a REGISTER standardisation, "
+  "not a hard ban. Keep the family: دوا / دوایی / دواخانه / ادویه / دواسازی.",
+  "Ch2 (drug-metabolising SER); Ch3 (chemotherapy)", "AFGHAN STANDARD", "MEDIUM",
+  acc="ادویه;دواخانه;دواسازی")
+
+T("کیموتراپی", "Chemotherapy", "شیمی‌درمانی;شیمی درمانی;کیمیا تداوی;کیمیا‌تداوی", AFG2,
+  "Afghan/Arabic transliteration in current Afghan use (کیموتراپی). «کیمیا تداوی» and "
+  "«کیمیا‌تداوی» are recorded as forbidden because they are also the exact artefact produced when "
+  "a rule replaces شیمی inside شیمی‌درمانی — forbid them so the artefact can never reappear.",
+  "Ch3 (stage-specific chemotherapy)", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("کلیه", "Kidney", "", AFG2,
+  "Formal anatomical register. Afghan MoPH nephrology posting: «امراض کلیه، از جمله عدم کفایه "
+  "کلیه (گرده)» — i.e. Afghan official medical writing uses کلیه as the term and glosses it with "
+  "the colloquial گرده. Both are Afghan; کلیه is the one that belongs in a histology text. NOT an "
+  "Iranian-specific form.", "Ch2 (cilium flow sensor); Ch4; Ch5 (macrophage location)",
+  "AFGHAN STANDARD", "MEDIUM", acc="گرده")
+
+T("کبد", "Liver", "", AFG2,
+  "Afghan clinical text writes both: «امراض کبدی یا جگر، مانند سیروز، صفرا، سرطان کبد و هپاتیت» "
+  "(Afghan hospital) — کبد as the technical term, جگر as the everyday gloss. Both are Afghan; "
+  "کبد is the register of a histology textbook.", "Ch2 (SER, hepatocytes)",
+  "AFGHAN STANDARD", "MEDIUM", acc="جگر")
+
+T("ریه", "Lung", "", AFG2,
+  "Both ریه and شش are Afghan. Afghan hospital: «کیست ها و تومورهای ریه»، «بذل پریکارد قلب و "
+  "ریه»؛ Afghan hospital department list uses «شش». The book is internally consistent on ریه, so "
+  "ریه»؛ Afghan hospital department list uses «شش». The book is internally consistent on ریه. "
+  "NOTE: شش is NOT in accepted_variants — in this book شش is the numeral 'six' "
+  "(«شش ویژگی»، «شش وظیفه»), so a variant registration would produce a meaningless "
+  "inconsistency flag. Recorded here in usage_notes instead.", "Ch2; Ch4; Ch5",
+  "AFGHAN STANDARD", "MEDIUM")
+T("پانکراس", "Pancreas", "", AFG2,
+  "Afghan hospitals write «لوزالمعده» («... مانند مری، معده، روده کوچک، روده بزرگ، کبد، "
+  "لوزالمعده»); پانکراس is the international transliteration and is what students meet in exam "
+  "questions. Both are Afghan — kept پانکراس, لوزالمعده registered as an accepted variant.",
+  "Ch2 (RER-rich acinar cell); Ch4", "COMMON AFGHAN TRANSLITERATION", "MEDIUM",
+  acc="لوزالمعده")
+
+T("آلرژی", "Allergy", "", AFG2,
+  "Kept. Afghan hospital text uses «تداوی حساسیت های...» (حساسیت) for allergy, but in this book "
+  "حساسیت is reserved for the DIFFERENT concept hypersensitivity/sensitivity («حساسیت فوری»، "
+  "«حساسیت زیاد»), so replacing it would create a collision. آلرژی is a transliteration current in "
+  "Afghanistan, not an Iranian-specific form. Do NOT register حساسیت as a variant here.",
+  "Ch4/Ch5 (Type I hypersensitivity)", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
+
+T("غشا", "Membrane", "", AFG2,
+  "Orthographic variant only: غشا / غشاء. Both occur in Afghan and Iranian writing; the book uses "
+  "غشا consistently (302 uses, غشاء 0). Purely a consistency note — no contamination involved.",
+  "Whole book", "AFGHAN STANDARD", "HIGH", acc="غشاء")
+
+T("پروتئین", "Protein", "", AFG2,
+  "International transliteration; standard in Afghan medical writing. A simplified spelling "
+  "پروتین occurs in Dari but is not the Afghan medical standard, so it is recorded only as an "
+  "accepted variant, not as a preferred form.", "Whole book",
+  "COMMON AFGHAN TRANSLITERATION", "MEDIUM", acc="پروتین")
+
+T("عفونت", "Infection", "", AFG2,
+  "Kept. Afghan clinic register: «تداوی امراض مختلفه انتانی (عفونت، مکروبی)» — i.e. Afghan usage "
+  "pairs the adjective انتانی (infectious; cf. «شفاخانه انتانی»، «امراض انتانی») with the noun "
+  "عفونت, which is current in Afghanistan. Not registered as a variant of انتانی: different part "
+  "of speech, so an INCONSIST flag would be meaningless.", "Ch3; Ch4; Ch5",
+  "AFGHAN STANDARD", "MEDIUM")
+
+T("لنفوئید", "Lymphoid", "", AFG2,
+  "Afghan histology teaching uses لنفاوی for lymphatic (Afghan faculty text: «ندول لنفاوی»); the "
+  "-oid adjective is لنفوئید. The book had split across لمفوئید (2), لمفاوی (2) and لنفاوی (21) — "
+  "an internal split, not a second Afghan standard, so all three were unified. CONFIDENCE MEDIUM: "
+  "no Afghan source was found that writes لنفوئیدی explicitly.", "Ch2; Ch4; Ch5",
+  "AFGHAN STANDARD", "MEDIUM", acc="لمفوئید;لمفاوی")
+
+# --------------------------------------------------------------------------
+# Slot corrections applied at write time.
+#
+# Rationale: several entries originally parked a LATIN term or a legitimate
+# Afghan synonym in the forbidden_forms slot. That produced false violations
+# (cristae, entactin, غشای پلاسمایی, اسکلت حجروی ...). forbidden_forms is ONLY
+# for forms that must never appear; Latin names belong in latin_term and
+# Afghan synonyms in accepted_variants.
+#
+# key = dari_term ; value = (forbidden, accepted_variants, latin_term, new_dari)
+# --------------------------------------------------------------------------
+OVERRIDES = {
+    "رنگ‌آمیزی":        ("", "", "", None),
+    "مطبق":            ("", "", "", None),
+    "میکروفیلامنت":    ("", "ریزرشته", "", None),
+    "اندوتلیوم":       ("", "آندوتلیوم", "", "آندوتلیوم"),
+    "غشای حجروی":       ("غشای سلولی", "غشای پلاسمایی", "", None),
+    "پلاسمالما":        ("", "", "plasmalemma", None),
+    "ماتریکس":          ("", "", "extracellular matrix", None),
+    "کریستا":           ("", "", "cristae", None),
+    "سیتواسکلتون":      ("", "اسکلت حجروی", "", None),
+    "لایزوزوم":         ("", "لیزوزوم", "", None),
+    "میکروویلی":        ("ریزپرز", "مایکروویلای", "", None),
+    "غشای هستوی":       ("", "پوشش هسته‌ای", "", None),
+    "منفذ هستوی":       ("", "منفذ هسته‌ای", "", None),
+    "کرویاتِ سرخ":      ("گویچهٔ سرخ;گلبول قرمز", "حجرات سرخ", "", None),
+    "آپوپتوز":          ("", "مرگ برنامه‌ریزی‌شدهٔ حجره", "", None),
+    "لامینای پایه":     ("", "", "", None),   # غشای پایه is a DIFFERENT structure (basement membrane)
+    "یوروتلیوم":        ("", "اپیتلیوم انتقالی;اپیتلیوم مثانه", "", None),
+    "دسموزوم":          ("", "پل حجروی", "", None),
+    "اتصال مضبوط":      ("", "", "zonula occludens", None),
+    "اتصال چسبنده":     ("", "", "zonula adherens", None),
+    "اتصال شکافی":      ("", "", "connexon", None),
+    "گابلت":            ("", "حجرهٔ جامی", "", None),
+    "اندوتلیوم":        ("", "آندوتلیوم", "", None),
+    "ماست‌سل":          ("", "ماست سیت", "", None),
+    "پلاسما‌سل":        ("", "پلاسموسیت", "", None),
+    "شحمی":             ("", "", "", None),
+    "آدیپوسایت":        ("", "حجرهٔ شحمی", "", None),
+    "نیدوژن":           ("", "", "entactin", None),
+    "گلیکوزآمینوگلیکان": ("", "", "mucopolysaccharide", None),
+    "هیالورونان":       ("", "", "hyaluronic acid", None),
+    "نسج منضم شل":      ("", "شل", "", "نسج منضم سست"),
+    "رگ‌زایی":          ("", "واسکولارزاسیون", "", None),
+    "اسکوروی":          ("", "اسکوربوت", "", None),
+    "باکتری":           ("", "باکتریا", "", None),
+}
+
+# ---------------------------------------------------------------- write -----
+def main():
+    os.makedirs(os.path.dirname(OUT), exist_ok=True)
+    with open(OUT, "w", encoding="utf-8", newline="") as fh:
+        w = csv.DictWriter(fh, fieldnames=COLS)
+        w.writeheader()
+        for row in R:
+            ov = OVERRIDES.get(row["dari_term"])
+            if ov:
+                forb, acc, lat, newdari = ov
+                row["forbidden_forms"] = forb
+                row["accepted_variants"] = acc
+                if lat:
+                    row["latin_term"] = lat
+                if newdari:
+                    row["dari_term"] = newdari
+                    row["preferred_form"] = f"{newdari} ({row['english_term']})"
+            w.writerow(row)
+    print(f"wrote {len(R)} entries -> {OUT}")
+
+
+if __name__ == "__main__":
+    main()
