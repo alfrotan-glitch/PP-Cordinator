@@ -59,6 +59,7 @@ Junqueira 17e, could they read → understand → review → recognize → recal
 | Structural audit script | ✅ `scripts/structural_audit.py` — 23 chapters · 108 topics · 13/13 sections · 12 audit rows each · 0 markers → **0 problems** |
 | Verification register | ✅ `qa/verification-register.md` — **207** items across 23 chapters: 159 confirmed · 39 corrected · 9 additions · **0 remaining** |
 | Full-book QA + release gate | ✅ **Run at book end** — see `qa/reference-alignment-audit.md` §2–§4 |
+| Editorial review (3 perspectives) | ✅ 2026-09-21 — professor / student / author-editor read of all 23 chapters; problems fixed in the manuscript (reader-facing cleanup, terminology alignment, numeral consistency) — see `editorial/final-report.md` §6 |
 
 **Release gate status: `READY FOR PUBLICATION — scientific gate`** (verification pass completed
 2026-09-21) — all 23 chapters are drafted, every mechanical gate passes, all **207** standing
