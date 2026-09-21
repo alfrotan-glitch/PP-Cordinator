@@ -1,3 +1,8 @@
 __pycache__/
 *.pyc
 .DS_Store
+
+# generated at build time from the staged fonts above
+assets/fonts/zwnj/
+# one-chapter smoke-test by-product
+dist/_subset.pdf

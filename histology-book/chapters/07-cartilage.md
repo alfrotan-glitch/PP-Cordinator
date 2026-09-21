@@ -85,7 +85,7 @@ chondrocytes derived from one dividing cell — the microscopic signature of **i
 
 **دری:**
 - **تحمل بار و مقاومت به فشار** در سطح مفاصل با اصطکاک بسیار کم.
-- **الگوی اسکلت جنینی:** غضروف هایالین پیش‌سازِ استخوان‌سازیِ اندوکندراﻝ است.
+- **الگوی اسکلت جنینی:** غضروف هایالین پیش‌سازِ استخوان‌سازیِ اندوکندرال است.
 - **انعطاف و استحکام** در نای، برونش و دنده‌ها (نای با غضروف باز می‌ماند).
 - **رشد درازای استخوان** از طریق صفحهٔ اپی‌فیزِ غضروفی.
 
@@ -180,7 +180,7 @@ cartilage injury; and age-related loss of water and GAG content.
 7. **Isogenous group** = نشانهٔ تقسیم یک حجره = رشد بینابینی.
 8. **متاکرومازی** با تولوئیدین‌بلو نشانهٔ GAGهای ماتریکس است.
 9. **آکندروپلازی** اشکال در غضروفِ صفحهٔ اپی‌فیز است، نه در ماتریکس استخوان.
-10. غضروف هایالین **الگوی جنینیِ** استخوان‌سازی اندوکندراﻝ است.
+10. غضروف هایالین **الگوی جنینیِ** استخوان‌سازی اندوکندرال است.
 
 **English:** The ten lines summarise the examinable core: avascularity, type II collagen, lacunae,
 perichondrium, the bare articular surface, diffusion-based nutrition, isogenous groups,
