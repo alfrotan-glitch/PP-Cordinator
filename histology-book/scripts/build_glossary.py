@@ -1378,8 +1378,8 @@ T("لیمفاوی", "Lymphatic", "", AFG,
   "Adjective formed from the canonical noun لیمف.", "Ch13",
   "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
 
-T("عقدۀ لیمفاوی", "Lymph node", "lymph gland", AFG,
-  "Composed of the ordinary word عقدۀ + the canonical لیمفاوی. The encapsulated filter organ of "
+T("عقدهٔ لیمفاوی", "Lymph node", "lymph gland", AFG,
+  "Composed of the ordinary word عقدهٔ + the canonical لیمفاوی. The encapsulated filter organ of "
   "the lymphatic system.", "Ch13", "COMMON AFGHAN TRANSLITERATION", "MEDIUM")
 
 T("لیمفوسیت", "Lymphocyte", "", AFG,

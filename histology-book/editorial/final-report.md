@@ -92,3 +92,44 @@ reference standard, the corrections are recorded chapter by chapter, and the nin
 only places where the text grew. The residual scientific uncertainties are documented rather than
 hidden, and exports remain the owner's deferred decision. `READY` here means *scientifically verified*,
 not *ready for the printer*.
+
+---
+
+## 6. Editorial review pass — three perspectives (2026-09-21)
+
+After the scientific gate, the whole book was read three times: as a professor of histology (accuracy,
+concept order, classification completeness, structure–function, identification usefulness, clinical
+appropriateness, HIGH-YIELD selection), as a medical student (explanations before use, bilingual
+pairing, density, tables, comparisons, self-assessment quality, pre-exam revision), and as a
+professional medical editor (architecture, chapter-to-chapter consistency, terminology and English/Dari
+presentation, repetition, punctuation, headings/tables, absence of production language).
+
+Genuine problems found were fixed directly in the manuscript rather than reported only:
+
+- reader-facing text: draft/verification-record language and marker talk removed from all 23 chapters
+  and from the front matter (the front-matter notes are now a reader-facing *Scientific basis and
+  terminology* note); terminology notes rewritten as plain notes; 12-point audit tables restated as
+  content statements; removed strings archived in `editorial/review-archive.md`;
+- terminology consistency (locked gate respected, aligned to glossary canonicals): serous سیروزی,
+  serosa سروزا, اندوتلیال, ترومبوسیت, شریان, غدد, پُرحجره, مایتوکندریا, ملانین, ارگانل, هولوکراین,
+  «عقده» (U+06D5 family, 61 instances in ch13 and 3 in the glossary generator) — glossary regenerated
+  and still 690 rows;
+- content: ch8 osteon lamellae corrected to ۴–۲۰ (each ۳–۷ µm) in prose and audit rows; ch16
+  «پاراسیتملاریا» replaced by amoebic abscess and hydatid cyst; ch1 TEM/SEM named in Dari at first use;
+  ch14 empty «VII ()» completed; ch19/ch20/ch21/ch23 spellings and question forms corrected;
+- typography: Dari numerals and «٪» unified (1,173 tokens), «~» → «≈», sentences split by a leading
+  period rejoined, trailing whitespace and stray punctuation removed.
+
+Gates re-run after the fixes: `qa_scan.py` 0 findings, `selftest_terminology.py` ALL PASS,
+`structural_audit.py` 0 problems (23 chapters · 108 topics · 13-13 sections · 12 audit rows · 0 markers ·
+no corrupted characters), glossary regeneration idempotent.
+
+```
+READY FOR FINAL PRODUCTION — editorial review gate (2026-09-21)
+```
+
+Residual non-material notes: the terminology notes state which forms the book uses (intended, and
+useful for students who meet Iranian or English variants); Latin digits are kept deliberately in
+structural numbering (section headings, audit row numbers, objective markers) and inside
+Latin identifiers; two chapter-level self-assessment items and one HIGH-YIELD line echo their
+topic-level counterpart because each topic is written to stand alone.

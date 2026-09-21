@@ -118,42 +118,36 @@ H&E colors rather than just registering them.
 
 | واحد | معادل | کاربرد معمول |
 |---|---|---|
-| **mm** (میلی‌متر) | 10⁻³ m | اندازهٔ عضو |
-| **µm** (میکرومتر) | 10⁻⁶ m | حجره و ضخامت برش |
-| **nm** (نانومتر) | 10⁻⁹ m | ساختمان‌های غشایی و macromolecular |
+| **mm** (میلی‌متر) | ۱۰⁻³ m | اندازهٔ عضو |
+| **µm** (میکرومتر) | ۱۰⁻⁶ m | حجره و ضخامت برش |
+| **nm** (نانومتر) | ۱۰⁻⁹ m | ساختمان‌های غشایی و macromolecular |
 
-**دری:** حجره پوششی معمولی حدود 10 تا 20 µm قطر دارد؛ ضخامت برش پارافینی 5 تا 8 µm است.
+**دری:** حجره پوششی معمولی حدود ۱۰ تا ۲۰ µm قطر دارد؛ ضخامت برش پارافینی ۵ تا ۸ µm است.
 **English:** A typical epithelial cell is 10–20 µm across; a paraffin section is 5–8 µm thick.
 
 ---
 
-## یادداشت دربارهٔ دقت علمی — A note on scientific accuracy
+## پایهٔ علمی و اصطلاح‌شناسی — Scientific basis and terminology
 
-**دری:** در نسخهٔ پیش‌نویس، هر نکته‌ای که نویسنده دربارهٔ آن اطمینان کامل نداشت با علامت
-`[VERIFY AGAINST JUNQUEIRA 17e]` نشان داده می‌شد تا جای حدس‌زدن، تردید صریح ثبت شود. **این پاسِ
-بازبینی (2026-09-21) آن علامت‌ها را بست:** ۴۱۲ مورد در فصل‌ها یکی‌یکی با مرجعِ معیار مقایسه شد —
-۱۵۹ مورد تأیید، ۳۹ مورد اصلاح و ۹ افزودهٔ کوتاه — و **هیچ نشانگری در متن فصل‌ها باقی نمانده است.**
-گزارشِ کامل در `qa/verification-register.md` آمده است.
+**دری:** مبنای علمی این کتاب **Junqueira's Basic Histology (ویرایشِ هفدهم)** است. اندازه‌ها، عددها و
+طبقه‌بندی‌ها با همین مرجعِ معیار و با مقادیرِ متعارفِ هستولوژی تطبیق داده شده‌اند؛ هرجا مقدارهای عددی در
+منابع کمی متفاوت باشند، بازهٔ متعارف آمده و «تقریبی» بودن آن صریح گفته شده است. نکته‌های بالینی که به
+فهمِ امتحانی کمک می‌کنند در بخشِ جداگانهٔ «همبستگی بالینی» هر مبحث آمده‌اند.
 
-**English:** In the draft, any point the author could not confirm was marked
-`[VERIFY AGAINST JUNQUEIRA 17e]` so that uncertainty was recorded instead of guessed. **That pass is
-now closed (2026-09-21):** all 412 markers in the chapters were checked against the reference standard
-— 159 confirmed, 39 corrected, 9 short additions — and **no marker remains in the chapter text.**
-The full record is in `qa/verification-register.md`.
+**English:** This book uses **Junqueira's Basic Histology (17th edition)** as its reference standard.
+Measurements, counts and classifications follow that reference and standard histology values; where
+sources differ slightly, the conventional range is given and the approximation is stated explicitly.
+Clinical notes that support examination understanding appear in a separate clinical-correlation
+section of each topic.
 
-**دری:** علامت `[VERIFY TERMINOLOGY]` به اصطلاح‌ها مربوط بود، نه به محتوای علمی، و در این پاسِ
-بازبینی هیچ اصطلاحی با آن باقی نمانده است. **آنتی‌ژن** — تنها اصطلاحِ بازمانده — به‌عنوانِ شکلِ
-معیاریِ رایج تثبیت شد (افغان استاندارد، درجهٔ اطمینان متوسط)، و ۲۱ ترانسلتریشنِ کم‌اطمینانِ
-فصل‌های ۱۹–۲۳ نیز نهایی شدند. سایر اصطلاح‌ها از پیش نهایی بودند: کاربوهایدریت شکل معیاری
-Carbohydrate است (در یک منبع طبی افغانی مستند است)، و برای اتصالات نام‌های بین‌المللی
-**Tight junction (Zonula occludens)**، **Adherens junction (Zonula adherens)** و **Gap junction**
-معیاری‌اند.
+**دری:** در اصطلاح‌ها، نام‌های بین‌المللی (اندوتلیوم، ساینوسویید، ترومبوسیت، کیموتراپی) به همان شکلِ
+رایجِ طبی و نام‌های تثبیت‌شدهٔ دری (کبد، کلیه، غدهٔ بناگوشی) به شکلِ معیارِ آموزشیِ افغانستان به کار رفته‌اند.
+برای اصطلاح‌های کلیدی، شکلِ انگلیسیِ کنارِ واژه آمده است، و نام‌های بین‌المللی اتصالاتِ حجروی —
+**Tight junction (Zonula occludens)**، **Adherens junction (Zonula adherens)** و **Gap junction** —
+معیارِ این کتاب‌اند؛ برای carbohydrate شکلِ **کاربوهایدریت** به کار رفته است.
 
-**English:** `[VERIFY TERMINOLOGY]` was a *terminology* flag, kept strictly separate from the
-scientific-verification flag above; **no term carries it any more.** **آنتی‌ژن** — the last open one —
-is settled as the established English-derived transliteration (Afghan standard, confidence MEDIUM), and
-the 21 low-confidence transliterations of Ch 19–23 were resolved in the same pass. The others were
-already settled: کاربوهایدریت is the canonical form of *Carbohydrate* (attested in an Afghan medical
-source), and the junction terms are canonical in their international form — **Tight junction
-(Zonula occludens)**, **Adherens junction (Zonula adherens)**, **Gap junction**. The glossary
-records the exact document examined for every term.
+**English:** Imported terms keep their international medical form (endothelium, sinusoid, thrombocyte,
+chemotherapy) while established Dari words are used for organs and everyday structures (کبد، کلیه،
+غدهٔ بناگوشی). Key terms carry their English equivalent, the cell junctions are canonical in their
+international form — **Tight junction (Zonula occludens)**, **Adherens junction (Zonula adherens)**,
+**Gap junction** — and **کاربوهایدریت** is the canonical rendering of *carbohydrate*.
