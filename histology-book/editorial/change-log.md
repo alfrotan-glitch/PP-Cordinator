@@ -628,3 +628,47 @@ structural audit → 23 chapters · 108 topics · 108 × 13 sections · 23 × 12
 
 **Release gate:** `READY FOR PUBLICATION — scientific gate`, with exports (DOCX/PDF/EPUB) deferred by
 the owner's decision.
+
+---
+
+## Session 12 — Whole-book editorial review from three perspectives (2026-09-21)
+
+**Directive:** read the entire book three times — as a professor of histology, as a medical student and
+as a professional medical author/editor — against the full checklist; fix every genuine problem in the
+manuscript itself (no style-only rewriting, no new terminology decisions, no change to verified facts
+without an identified problem), then re-run all gates and report.
+
+**What was done**
+
+1. **Reader-facing text.** Draft/verification-record language was removed from all 23 chapters
+   (verdict lines, totals lines, review labels, check-count line) and from the front matter, whose two
+   production notes were replaced by a reader-facing *Scientific basis and terminology* note; the
+   terminology notes of Ch6–23 (including Ch12, which the first cleanup pass had missed) were rewritten
+   as plain reader notes; the 12-point audit tables now state content facts rather than review history;
+   the removed strings are archived in `editorial/review-archive.md`.
+2. **Terminology consistency** (locked gate respected; chapters aligned to glossary canonicals):
+   serous **سیروزی**, serosa **سروزا**, **اندوتلیال**, **ترومبوسیت**, **شریان**, **غدد**,
+   **پُرحجره**, **مایتوکندریا**, **ملانین**, **ارگانل**, **هولوکراین**, **لایزوزوم**,
+   **استوانه‌ای** (for cylindrical) and the **عقده** family (61 instances of U+06D5 in Ch13 plus 3 in
+   `scripts/build_glossary.py`; the glossary was regenerated and still holds 690 rows). A
+   disambiguation gloss was added where «سیروزی (Serous)» and «سیروزِ کبد» co-occur (Ch16) and where
+   «صفال» (spleen) and «صفافیِ لیمفاوی» (nodule) sit next to each other (Ch13).
+3. **Content and pedagogy.** Osteon lamellae corrected to **۴–۲۰** (each ۳–۷ µm) in Ch8 prose and audit
+   rows, with the superseded «۱۰–۲۰ برابر» claim removed from the audit result; Ch16
+   «پاراسیتملاریا» replaced by amoebic abscess and hydatid cyst; Ch1 now names TEM and SEM in Dari
+   (مایکروسکوپ الکترونی عبوری/پویشی) at first use; Ch14's empty «VII ()» completed; Ch19/20/21/23
+   spellings, comparison-table wording and question marks cleaned; Ch12's punctuation fixed.
+4. **Typography.** Dari numerals and the percent sign unified (**1,173** tokens converted, ranges and
+   decimals included), «~» → «≈», sentences split by a leading period rejoined, orphan period lines
+   reattached, trailing whitespace and stray ASCII punctuation removed. Latin digits remain only in
+   structural numbering and Latin identifiers.
+5. **Verification of the edits.** Line-count comparison against the pre-review snapshot showed no
+   accidental loss (23 chapters: 20,985 → 20,806 lines, all changes accounted for), table integrity
+   check 0 mismatches, no U+FFFD, bold-marker parity intact.
+
+**Gates after the review:** `qa_scan.py` → **0 findings** · `selftest_terminology.py` → **ALL PASS** ·
+`structural_audit.py` → 23 chapters · 108 topics · 108 × 13 sections · 23 × 12-row audits · **0
+problems** · glossary regeneration idempotent (690 rows). **Review commit: `01834cf`** (plus this
+follow-up commit that records it).
+
+**Release gate:** `READY FOR FINAL PRODUCTION — editorial review gate`.
